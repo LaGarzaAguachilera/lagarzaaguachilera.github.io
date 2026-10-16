@@ -89,8 +89,34 @@ try {
         }
     }
 
-    # 5. Documento Guia de Publicacion y Parametros Oficiales
-    Write-Host "`n5. Agregando Guia de Uso del Paquete..." -ForegroundColor Green
+    # 5. Especial Spooky: Halloween y Dia de Muertos en carpeta Especial_Halloween_Dia_Muertos/
+    Write-Host "`n5. Agregando Coleccion Especial Spooky (Halloween y Dia de Muertos)..." -ForegroundColor Green
+    $spookyFolder = "Especial_Halloween_Dia_Muertos"
+    $spookyFiles = @(
+        "copy_01.txt",
+        "copy_02.txt",
+        "copy_03.txt",
+        "copy_04.txt",
+        "copy_05.txt",
+        "copy_06.txt",
+        "spooky_post01_juancho_resurreccion.png",
+        "spooky_post02_mapache_freddy_crunch.png",
+        "spooky_post03_ovni_ultratumba.png",
+        "spooky_post04_tridente_spooky_pack.png"
+    )
+    foreach ($sf in $spookyFiles) {
+        $spookyPath = Join-Path $projectRoot "contenido_redes\catalogo_mes\spooky\$sf"
+        Add-FileToZip $spookyPath "$spookyFolder/$sf"
+    }
+
+    # Video Promocional de Temporada
+    $spookyVideo = Join-Path $projectRoot "VIDEOS\promo_halloween_zombies_crudos.mp4"
+    if (Test-Path $spookyVideo) {
+        Add-FileToZip $spookyVideo "$spookyFolder/promo_halloween_zombies_crudos.mp4"
+    }
+
+    # 6. Documento Guia de Publicacion y Parametros Oficiales
+    Write-Host "`n6. Agregando Guia de Uso del Paquete..." -ForegroundColor Green
     $guiaLines = @(
         "================================================================================",
         "LA GARZA AGUACHILERA - PAQUETE MAESTRO DE CONTENIDO PARA REDES SOCIALES",
@@ -106,6 +132,7 @@ try {
         "- Semana_2/: El Poder de la Frescura en Vivo (4 piezas Feed 1:1, Stories 9:16 y copys)",
         "- Semana_3/: La Cura Sagrada del Domingo (4 piezas Feed 1:1, Stories 9:16 y copys)",
         "- Semana_4/: Rutas de Entrega y Comunidad (4 piezas Feed 1:1, Stories 9:16 y copys)",
+        "- Especial_Halloween_Dia_Muertos/: Coleccion Spooky de Temporada (Posters Feed 1:1, Video Full HD y 6 paquetes de copy)",
         "",
         "PARAMETROS OFICIALES DE MARCA:",
         "- Producto: Tostiaguachile Verde Tradicional",
@@ -196,6 +223,7 @@ if ($violations.Count -gt 0) {
 
 Write-Host " [OK] Cero palabras prohibidas en entradas y textos del ZIP." -ForegroundColor Green
 Write-Host " [OK] Estructura semanal Semana_1 a Semana_4 verificada." -ForegroundColor Green
+Write-Host " [OK] Especial Spooky Especial_Halloween_Dia_Muertos/ verificado." -ForegroundColor Green
 Write-Host " [OK] Tamano $zipSizeMb MB (>= 20 MB y < 100 MB) verificado." -ForegroundColor Green
 Write-Host "`n=================================================================" -ForegroundColor Cyan
 Write-Host "  EMPAQUETADO EXITOSO CON CERO INCONFORMIDADES" -ForegroundColor Green
