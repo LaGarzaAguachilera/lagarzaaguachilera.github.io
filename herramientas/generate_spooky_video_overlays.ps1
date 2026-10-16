@@ -291,7 +291,7 @@ $penPriceRing.Dispose()
 $fontPriceSub = MakeFont "Segoe UI Black" 19 ([System.Drawing.FontStyle]::Bold)
 $fontPriceNum = MakeFont "Segoe UI Black" 54 ([System.Drawing.FontStyle]::Bold)
 DrawStickerText $gSub3 "SOLO" $fontPriceSub $brushWhite $penOutlineDark 880 455 $sfCenter
-DrawStickerText $gSub3 "$170" $fontPriceNum $brushWhite $penOutlineDark 880 520 $sfCenter
+DrawStickerText $gSub3 "`$170" $fontPriceNum $brushWhite $penOutlineDark 880 520 $sfCenter
 DrawStickerText $gSub3 "MXN" $fontPriceSub $brushWhite $penOutlineDark 880 585 $sfCenter
 
 # Juancho Jason Sticker holding shrimp fork on Left (X: 30, Y: 940, W: 480, H: 480)
@@ -340,7 +340,7 @@ DrawRoundedRectangle $gSub4 $brushGrand $penGrand $rectGrand 26
 $fontGrandHead = MakeFont "Segoe UI Black" 33 ([System.Drawing.FontStyle]::Bold)
 $fontGrandSub = MakeFont "Segoe UI Black" 26 ([System.Drawing.FontStyle]::Bold)
 DrawStickerText $gSub4 "!LA VERDADERA CURA DE TAMPICO Y MADERO!" $fontGrandHead $brushYellow $penOutlineDark 540 305 $sfCenter
-DrawStickerText $gSub4 "TOSTIAGUACHILE VERDE TRADICIONAL * $170 MXN" $fontGrandSub $brushOrangeNeon $penOutlineDark 540 370 $sfCenter
+DrawStickerText $gSub4 "TOSTIAGUACHILE VERDE TRADICIONAL * `$170 MXN" $fontGrandSub $brushOrangeNeon $penOutlineDark 540 370 $sfCenter
 $fontPortion = MakeFont "Segoe UI" 18 ([System.Drawing.FontStyle]::Bold)
 $gSub4.DrawString("~100g camaron mariposa * Tostitos Salsa Verde * Picante natural", $fontPortion, $brushWhite, [float]540, [float]418, $sfCenter)
 

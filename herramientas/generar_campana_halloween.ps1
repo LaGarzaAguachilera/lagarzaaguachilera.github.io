@@ -588,7 +588,7 @@ function Render-SpookyStory($item) {
     $fBul = [System.Drawing.Font]::new("Segoe UI", 13.5, [System.Drawing.FontStyle]::Bold)
     $bLime = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(163, 230, 53))
     $bGray = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(226, 232, 240))
-    $g.DrawString("$($script:bul) ~100g Camar$($script:lO)n mariposa fresco con limón Colima y chile serrano", $fBul, $bLime, [float]125, [float]1258)
+    $g.DrawString("$($script:bul) ~100g Camar$($script:lO)n mariposa fresco con lim$($script:lO)n Colima y chile serrano", $fBul, $bLime, [float]125, [float]1258)
     $g.DrawString("$($script:bul) Tostitos Salsa Verde (crujientes, ensamble al instante)", $fBul, $bGray, [float]125, [float]1288)
     $g.DrawString("$($script:bul) $($item.ExtraTag) $($script:bul) $($script:iE)La cura sagrada de Tampico!", $fBul, $bGray, [float]125, [float]1318)
     $fBul.Dispose(); $bLime.Dispose(); $bGray.Dispose()
