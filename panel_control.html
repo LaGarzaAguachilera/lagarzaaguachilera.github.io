@@ -1,0 +1,1215 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de Contenido y Medios — La Garza Aguachilera</title>
+  
+  <!-- Tipografía Apple System / Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    :root {
+      --bg-dark: #07090e;
+      --card-bg: rgba(15, 23, 42, 0.72);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover-border: rgba(52, 211, 153, 0.4);
+      --accent-emerald: #10b981;
+      --accent-glow: rgba(16, 185, 129, 0.25);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Plus Jakarta Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-dark);
+      color: #f1f5f9;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Glassmorphism Cards */
+    .glass-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid var(--card-border);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: var(--card-hover-border);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 25px -5px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+
+    /* Apple Segmented Control */
+    .segmented-control {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 5px;
+      border-radius: 9999px;
+      display: inline-flex;
+      gap: 4px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+
+    .filter-tab {
+      padding: 8px 18px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #94a3b8;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    .filter-tab:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .filter-tab.active {
+      color: #ffffff;
+      background: rgba(16, 185, 129, 0.25);
+      border: 1px solid rgba(52, 211, 153, 0.4);
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+    }
+
+    /* Action Buttons */
+    .btn-download {
+      background: rgba(16, 185, 129, 0.14);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #34d399;
+      transition: all 0.2s ease;
+    }
+    .btn-download:hover {
+      background: #10b981;
+      border-color: #10b981;
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+    }
+
+    .btn-copy {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #e2e8f0;
+      transition: all 0.2s ease;
+    }
+    .btn-copy:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+    }
+
+    .btn-copy.copy-success {
+      background: #10b981 !important;
+      border-color: #34d399 !important;
+      color: #ffffff !important;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+    }
+
+    /* Custom Scrollbars */
+    pre::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    pre::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+    pre::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
+    }
+    pre::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      transform: translateY(120px);
+      opacity: 0;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 100;
+    }
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* Grid transition animations */
+    .media-card {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-20 selection:bg-emerald-500/30 selection:text-emerald-300">
+
+  <!-- Header Estilo Apple Minimalista -->
+  <header class="sticky top-0 z-50 bg-[#07090e]/85 backdrop-blur-xl border-b border-slate-800/80 px-4 sm:px-8 py-3.5 shadow-2xl">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      
+      <!-- Logo y Título -->
+      <div class="flex items-center space-x-3.5">
+        <div class="relative group">
+          <img src="La garza aguachilera.jpeg" alt="Logo La Garza Aguachilera" class="w-11 h-11 rounded-full object-cover border-2 border-emerald-400 shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition duration-300">
+          <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-400 border-2 border-[#07090e] rounded-full"></span>
+        </div>
+        <div>
+          <h1 class="text-base sm:text-lg font-extrabold text-white tracking-tight flex items-center gap-2">
+            <span>Centro de Contenido y Medios</span>
+            <span class="hidden sm:inline-block text-slate-500 font-normal">|</span>
+            <span class="hidden sm:inline-block text-emerald-400 text-xs font-bold uppercase tracking-wider bg-emerald-950/80 px-2 py-0.5 rounded-full border border-emerald-800/60">La Garza Aguachilera</span>
+          </h1>
+          <p class="text-[11px] text-slate-400 font-medium">Tampico & Ciudad Madero • Catálogo de Activos y Descargas para Redes Sociales</p>
+        </div>
+      </div>
+
+      <!-- Acciones de Cabecera -->
+      <div class="flex flex-wrap items-center gap-2.5">
+        <!-- Enlace a la Web Pública -->
+        <a href="index.html" target="_blank" class="bg-slate-800/80 hover:bg-slate-700/80 text-slate-200 text-xs font-semibold px-3.5 py-2.5 rounded-xl border border-slate-700/80 transition duration-200 flex items-center gap-1.5 shadow-sm">
+          <span>🌐</span>
+          <span>Ver Sitio Web</span>
+        </a>
+
+        <!-- Botón Destacado: Descargar Todo el Paquete (.ZIP) -->
+        <a href="paquete_redes_la_garza.zip" download="paquete_redes_la_garza.zip" class="bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 hover:from-emerald-500 hover:to-teal-400 text-white text-xs sm:text-sm font-extrabold px-4 sm:px-5 py-2.5 rounded-xl transition duration-200 shadow-lg shadow-emerald-600/30 flex items-center gap-2 border border-emerald-400/30 group">
+          <span class="text-base group-hover:scale-110 transition-transform">📦</span>
+          <span>Descargar Todo el Paquete (.ZIP)</span>
+          <span class="bg-black/30 text-emerald-200 text-[10px] font-bold px-2 py-0.5 rounded-full border border-emerald-300/20">~28 MB</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 space-y-8">
+
+    <!-- Hero Introductorio Minimalista -->
+    <section class="glass-card rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+      <!-- Glow ambiental decorativo -->
+      <div class="absolute -top-24 -right-24 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+        <div class="space-y-2 max-w-3xl">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/90 px-3 py-1 rounded-full border border-emerald-800/80 flex items-center gap-1.5 shadow-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              Material Oficial 100% Verificado
+            </span>
+            <span class="text-[11px] font-medium text-slate-400 bg-slate-900/80 px-2.5 py-1 rounded-full border border-slate-800">
+              WhatsApp Oficial: 833 252 09 88
+            </span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            Centro de Contenido y Medios — La Garza Aguachilera
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Plataforma centralizada de descarga de piezas audiovisuales en alta definición para el ecosistema Meta (Facebook e Instagram) y TikTok. Incluye arte adaptado a Safe Zones, Master Video vertical Full HD con locución comercial, y copys persuasivos con 3 opciones de hooks listos para copiar en 1 clic.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+          <div class="bg-slate-950/80 border border-emerald-500/30 rounded-2xl p-4 text-center sm:text-left flex items-center gap-3.5 shadow-inner">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-xl text-emerald-400">
+              🛡️
+            </div>
+            <div>
+              <div class="text-[11px] font-bold text-white">Estándar de Calidad Certificado</div>
+              <div class="text-[10px] text-slate-400">0% Frases Prohibidas • 100% Alta Resolución</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Controles de Filtrado: Apple Segmented Control -->
+    <section class="flex flex-col sm:flex-row items-center justify-between gap-4 sticky top-20 z-40 bg-[#07090e]/80 backdrop-blur-md py-2 -mx-2 px-2">
+      <div class="overflow-x-auto max-w-full pb-1 sm:pb-0 scrollbar-none">
+        <div class="segmented-control" role="tablist" aria-label="Filtro de Contenidos">
+          <button type="button" class="filter-tab active" data-filter="all" onclick="filterTab('all', this)">
+            <span>🌟</span>
+            <span>Todos</span>
+            <span class="text-[10px] bg-white/10 px-1.5 py-0.2 rounded-full font-bold ml-0.5">13</span>
+          </button>
+          <button type="button" class="filter-tab" data-filter="facebook" onclick="filterTab('facebook', this)">
+            <span>📘</span>
+            <span>Facebook</span>
+            <span class="text-[10px] bg-white/10 px-1.5 py-0.2 rounded-full font-bold ml-0.5">3</span>
+          </button>
+          <button type="button" class="filter-tab" data-filter="instagram" onclick="filterTab('instagram', this)">
+            <span>📸</span>
+            <span>Instagram</span>
+            <span class="text-[10px] bg-white/10 px-1.5 py-0.2 rounded-full font-bold ml-0.5">4</span>
+          </button>
+          <button type="button" class="filter-tab" data-filter="tiktok" onclick="filterTab('tiktok', this)">
+            <span>🎵</span>
+            <span>TikTok</span>
+            <span class="text-[10px] bg-white/10 px-1.5 py-0.2 rounded-full font-bold ml-0.5">3</span>
+          </button>
+          <button type="button" class="filter-tab" data-filter="periodica" onclick="filterTab('periodica', this)">
+            <span>📅</span>
+            <span>Parrilla Periódica</span>
+            <span class="text-[10px] bg-white/10 px-1.5 py-0.2 rounded-full font-bold ml-0.5">7</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="text-xs text-slate-400 font-medium hidden md:block">
+        Haz clic en <span class="text-emerald-400 font-semibold">Descargar</span> para obtener el archivo o en <span class="text-slate-200 font-semibold">Copiar Caption</span>.
+      </div>
+    </section>
+
+    <!-- Grid Multimedia Principal -->
+    <section id="multimedia-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- ============================================================== -->
+      <!-- CARD 1: PORTADA FACEBOOK (1200 x 630 px)                        -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="facebook">
+        <div class="space-y-3">
+          <!-- Badges de Formato y Red -->
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-amber-300 bg-amber-950/80 px-2.5 py-1 rounded-full border border-amber-800/70 flex items-center gap-1">
+              <span>📘</span> Portada Facebook Safe Zone
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">1200 x 630 px</span>
+          </div>
+
+          <!-- Título y Descripción -->
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Portada Oficial Facebook — Pop Costeño Miramar</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">Composición panorámica adaptada a Safe Zone con Juancho, OVNIs y Mapache.</p>
+          </div>
+
+          <!-- Vista Previa de Imagen -->
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-[1200/630] flex items-center justify-center relative group">
+            <img src="flyer_portada_verde.png" alt="Portada Facebook Safe Zone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <!-- Caption & Hooks -->
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Caption Oficial & Hook:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-portada" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🔥 HOOK DE APERTURA:
+"¡Renovamos la casa! En La Garza Aguachilera arrancamos temporada con todo el sabor de Tampico y Miramar 🐊🛸🦝"
+
+¡Bienvenidos a la página oficial de La Garza Aguachilera! 🦐🌊🔥
+
+Llegó a Tampico y Ciudad Madero el Tostiaguachile Verde Tradicional más reportado de la zona conurbada: camarón fresco del Golfo en corte mariposa, chile serrano bravo, pepino crujiente, cebolla morada y abundante limón sobre una bolsa de auténticos TOSTITOS SALSA VERDE.
+
+✨ EL PRODUCTO ES PREPARADO FRENTE A USTED PARA CORROBORAR SU FRESCURA.
+Llevamos hielera con termómetro a 0°C-4°C y mesa plegable directo a tu puerta para que disfrutes de mariscos de máxima calidad y tostitos 100% crujientes.
+
+💰 Solo $170 MXN la bolsa bien reportada.
+🛵 Entregas a domicilio SÁBADOS y DOMINGOS (anunciamos las rutas de entrega en nuestras redes sociales).
+📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
+
+📲 ¡Aparta tus bolsas para el fin de semana por WhatsApp al 833 252 09 88!
+https://wa.me/528332520988
+
+#Tampico #CiudadMadero #LaGarzaAguachilera #Tostiaguachiles #PlayaMiramar #Juancho #MariscosTampico</pre>
+          </div>
+        </div>
+
+        <!-- Acciones en 1 Clic -->
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-portada', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Caption</span>
+          </button>
+          <a href="flyer_portada_verde.png" download="Portada_Facebook_LaGarza_1200x630.png" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Archivo (PNG HD)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 2: POST FEED CUADRADO 1:1 (1080 x 1080 px)                -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="facebook instagram">
+        <div class="space-y-3">
+          <!-- Badges de Formato y Red -->
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded-full border border-emerald-800/70 flex items-center gap-1">
+              <span>📸</span> Feed Instagram & Facebook
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">1080 x 1080 px (1:1)</span>
+          </div>
+
+          <!-- Título y Descripción -->
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Flyer Post Feed Principal — Verde Tradicional</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">Formato 1:1 estándar para el feed con sombras multicapa y fotografía macro.</p>
+          </div>
+
+          <!-- Vista Previa de Imagen -->
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-square flex items-center justify-center relative group">
+            <img src="flyer_post_verde.png" alt="Flyer Post Feed La Garza" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <!-- Caption & Hooks -->
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Caption & 3 Hooks:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-postfeed" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🔥 3 OPCIONES DE HOOK (Elige 1 para abrir):
+1️⃣ "El verdadero antojo de mariscos en bolsa llegó a Tampico y Madero 🦐🌊🔥"
+2️⃣ "¿Quién dijo que el aguachile solo se come en plato hondo? Prueba el crunch perfecto 🤤💚"
+3️⃣ "~100g de camarón mariposa y Tostitos Salsa Verde: la bolsa más reportada por $170 MXN 🟢"
+
+¡Llegó a Tampico y Madero el verdadero antojo de mariscos! 🦐🌊🔥
+
+En La Garza Aguachilera te preparamos la botana más fresca de la zona conurbada:
+🟢 TOSTIAGUACHILE VERDE TRADICIONAL
+Camarón 100% fresco del Golfo, en corte mariposa, con chile serrano, pepino crujiente y cebolla morada sobre una bolsa de auténticos TOSTITOS SALSA VERDE.
+
+✨ EL PRODUCTO ES PREPARADO FRENTE A USTED PARA CORROBORAR SU FRESCURA.
+
+💰 Solo $170 MXN la bolsa bien reportada
+🛵 Entregas a domicilio SÁBADOS y DOMINGOS
+📍 Base de salida: Colonia Flores, Tampico, Tamaulipas
+
+⚠️ El camarón se compra fresco cada semana, ¡cupos limitados!
+
+📲 ¡Aparta tu bolsa antes de que se acaben los cupos de esta semana!
+Escríbenos por WhatsApp al 833 252 09 88 o visita https://wa.me/528332520988
+
+#LaGarzaAguachilera #Tostiaguachiles #Tampico #CdMadero #MariscosTampico #ComidaTampico #AntojosTampico</pre>
+          </div>
+        </div>
+
+        <!-- Acciones en 1 Clic -->
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-postfeed', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Caption</span>
+          </button>
+          <a href="flyer_post_verde.png" download="Flyer_Post_Feed_LaGarza_1080x1080.png" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Archivo (PNG HD)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 3: HISTORIA / STORIES / REELS 9:16 (1080 x 1920 px)        -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="instagram tiktok">
+        <div class="space-y-3">
+          <!-- Badges de Formato y Red -->
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-cyan-300 bg-cyan-950/80 px-2.5 py-1 rounded-full border border-cyan-800/70 flex items-center gap-1">
+              <span>📱</span> Historia / Stories / Reels
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">1080 x 1920 px (9:16)</span>
+          </div>
+
+          <!-- Título y Descripción -->
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Flyer Historia Vertical — Stickers 3D & WhatsApp</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">Formato vertical 9:16 con Safe Zones limpias y botón de llamado a la acción.</p>
+          </div>
+
+          <!-- Vista Previa de Imagen -->
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-[9/16] max-h-72 flex items-center justify-center relative group mx-auto">
+            <img src="flyer_historia_verde.png" alt="Flyer Historia La Garza" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <!-- Caption & Hooks -->
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Texto para Historia / Estado:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-historia" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🔥 HOOK PARA HISTORIA:
+"¡Aparta tu bolsa para este sábado o domingo! Cupos limitados a 75 bolsas por tanda 🦐⏱️"
+
+🟢 TOSTIAGUACHILE VERDE TRADICIONAL ($170 MXN)
+~100g de camarón en mariposa sobre auténticos TOSTITOS SALSA VERDE.
+✨ El producto es preparado frente a usted para corroborar su frescura.
+🛵 Sábados y domingos en Tampico y Madero.
+
+📲 Toca el sticker para ordenar por WhatsApp: 833 252 09 88
+Enlace directo: https://wa.me/528332520988
+
+#LaGarzaAguachilera #Tampico #PlayaMiramar #Tostiaguachiles</pre>
+          </div>
+        </div>
+
+        <!-- Acciones en 1 Clic -->
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-historia', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Caption</span>
+          </button>
+          <a href="flyer_historia_verde.png" download="Flyer_Historia_Stories_LaGarza_1080x1920.png" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Archivo (PNG HD)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 4: MASTER VIDEO FULL HD 9:16 (1080 x 1920 px)              -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl md:col-span-2 lg:col-span-2 border-2 border-emerald-500/40" data-category="tiktok periodica">
+        <div class="space-y-3">
+          <!-- Badges de Formato y Red -->
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="text-[11px] font-black uppercase tracking-wider text-emerald-300 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-700 flex items-center gap-1.5 shadow-sm">
+              <span class="text-sm">🎬</span> Master Video Comercial Full HD (9:16)
+            </span>
+            <span class="text-xs font-mono font-bold text-emerald-400 bg-black/40 px-2.5 py-0.5 rounded-lg border border-emerald-500/30">
+              1080 x 1920 px • 5.4 Mbps • 29.04s
+            </span>
+          </div>
+
+          <!-- Título y Descripción -->
+          <div>
+            <h3 class="text-base font-extrabold text-white leading-snug">Spot Comercial Full HD para TikTok, Reels & Parrilla de Viernes</h3>
+            <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+              Video publicitario de alta definición a pantalla completa (sin franjas negras). Incluye fotografía gastronómica macro con animación Ken Burns, íconos de Tampico (Mapaches, OVNIs y Juancho), toma clímax levantando el camarón mariposa y <strong>locución comercial profesional en español con audio ducking (-15dB)</strong> sobre <em>Beachfront Celebration</em>.
+            </p>
+          </div>
+
+          <!-- Grid Interno: Reproductor de Video + Cuadro de Telemetría -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center pt-1">
+            <!-- Reproductor Responsive de Video HTML5 -->
+            <div class="w-full max-w-[240px] mx-auto bg-black rounded-2xl overflow-hidden border-2 border-emerald-500/40 shadow-2xl relative aspect-[9/16]">
+              <video src="VIDEOS/promo_aguachile_verde_final.mp4" controls playsinline preload="metadata" class="w-full h-full object-cover rounded-2xl"></video>
+            </div>
+
+            <!-- Ficha Técnica Certificada -->
+            <div class="bg-slate-950/90 rounded-2xl p-4 border border-emerald-500/20 text-xs space-y-2.5 shadow-inner">
+              <div class="flex items-center justify-between text-emerald-400 font-extrabold pb-1.5 border-b border-slate-800">
+                <span>⚡ Especificaciones Técnicas:</span>
+                <span class="text-[10px] bg-emerald-950 px-2 py-0.5 rounded text-emerald-300 border border-emerald-800">CERTIFICADO QA</span>
+              </div>
+              <ul class="space-y-1.5 text-[11px] text-slate-300">
+                <li class="flex justify-between"><span class="text-slate-500">Resolución:</span> <strong class="text-white">1080 x 1920 (Vertical 9:16)</strong></li>
+                <li class="flex justify-between"><span class="text-slate-500">Video Codec:</span> <strong class="text-emerald-400">H.264 High Profile (yuv420p)</strong></li>
+                <li class="flex justify-between"><span class="text-slate-500">Bitrate de Video:</span> <strong class="text-emerald-400">5,403 kbps (&gt; 4,000 kbps)</strong></li>
+                <li class="flex justify-between"><span class="text-slate-500">Audio:</span> <strong class="text-sky-300">AAC Estéreo (44.1 kHz)</strong></li>
+                <li class="flex justify-between"><span class="text-slate-500">Locución:</span> <strong class="text-amber-300">Sabina es-MX (Voz Oficial)</strong></li>
+                <li class="flex justify-between"><span class="text-slate-500">Banda Sonora:</span> <strong class="text-cyan-300">Beachfront Celebration (Ducking)</strong></li>
+              </ul>
+              <div class="pt-2 border-t border-slate-800 text-[10px] text-slate-400 leading-relaxed">
+                📢 Anuncia explícitamente: servicio sábados y domingos, preparación frente al cliente y rutas en redes sociales.
+              </div>
+            </div>
+          </div>
+
+          <!-- Caption & Hooks -->
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Caption & 3 Hooks para TikTok / Reels:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-video" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🔥 3 OPCIONES DE HOOK PARA REELS / TIKTOK:
+1️⃣ "¡Agua fresca, mi papá! Así suenan ~100g de camarón mariposa recién salidos de la hielera a 0°C-4°C 🤤🦐"
+2️⃣ "¡ALERTA DE PREVENTA! Solo 75 bolsas por tanda para este fin de semana en Tampico y Madero 🚨"
+3️⃣ "Mira cómo preparamos tu Tostiaguachile Verde frente a ti en nuestra mesa plegable 👀💚"
+
+🟢 Tostiaguachile Verde Tradicional: $170 MXN (~100g camarón mariposa + TOSTITOS SALSA VERDE + picante natural).
+✨ El producto es preparado frente a usted para corroborar su frescura.
+🛵 Entregas SÁBADO y DOMINGO desde Colonia Flores, Tampico, Tampico.
+📍 Rutas de entrega anunciadas en nuestras redes sociales.
+
+📲 ¡Mándanos WhatsApp al 833 252 09 88 y asegura tus bolsas!
+https://wa.me/528332520988
+
+#Tampico #CdMadero #Tostiaguachile #FoodPornTampico #LaGarzaAguachilera #ViernesDeAntojo</pre>
+          </div>
+        </div>
+
+        <!-- Acciones en 1 Clic -->
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-video', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Caption + 3 Hooks</span>
+          </button>
+          <a href="VIDEOS/promo_aguachile_verde_final.mp4" download="Master_Video_FullHD_LaGarza_1080x1920.mp4" class="btn-download w-full font-extrabold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-sm text-center">
+            <span>📥</span>
+            <span>Descargar Video Master Full HD (MP4 • 19.68 MB)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 5: POST 1 — LUNES DE ANTOJO JAIBO (1080 x 1080 px)         -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="periodica">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-amber-300 bg-amber-950/80 px-2.5 py-1 rounded-full border border-amber-800/70">
+              📅 DÍA 1 (LUNES) • PALETA JUNGLA & MANGO
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">1080 x 1080 px</span>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Post 1: Lunes de Antojo Jaibo — Juancho & OVNI</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">Juancho con lentes de sol, platillo volador y camarones mariposa.</p>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-square flex items-center justify-center relative group">
+            <img src="post1_antojo_lunes.png" alt="Post 1 Lunes Antojo Jaibo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Caption & 3 Hooks:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-post1" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🔥 3 OPCIONES DE HOOK (Elige 1 para abrir):
+1️⃣ "Juancho salió de la laguna nomás para ver cómo servimos ~100g de camarón mariposa en vivo 🐊🔥"
+2️⃣ "Empezar la semana pensando en aguachile no es pecado, es instinto jaibo 🦐🌊"
+3️⃣ "~100 gramos de camarón mariposa y Tostitos Salsa Verde: la bolsa más reportada a $170 MXN 💚"
+
+En La Garza Aguachilera preparamos el tostiaguachile más reportado de la zona conurbada: ~100g de camarón fresco en corte mariposa, chile serrano (picante por naturaleza), pepino crujiente, cebolla morada y abundante limón sobre auténticos TOSTITOS SALSA VERDE.
+
+✨ El producto es preparado frente a usted para corroborar su frescura (llevamos hielera con termómetro a 0°C-4°C y mesa plegable hasta tu puerta).
+
+🛵 Entregas SÁBADOS y DOMINGOS en Tampico y Cd. Madero (Cupo limitado a 75 bolsas por tanda).
+💰 $170 MXN la bolsa bien reportada.
+📲 Aparta por WhatsApp al 833 252 09 88.
+https://wa.me/528332520988
+
+#Tampico #CiudadMadero #LaGarzaAguachilera #Tostiaguachiles #Juancho #PlayaMiramar</pre>
+          </div>
+        </div>
+
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-post1', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Caption</span>
+          </button>
+          <a href="post1_antojo_lunes.png" download="Post1_Lunes_Antojo_Jaibo.png" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Imagen (PNG 1:1 HD)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 6: POST 2 — MIÉRCOLES MEME OVNI MIRAMAR (1080 x 1080 px)   -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="periodica">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-purple-300 bg-purple-950/80 px-2.5 py-1 rounded-full border border-purple-800/70">
+              📅 DÍA 3 (MIÉRCOLES) • PALETA VIOLETA ALIEN
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">1080 x 1080 px</span>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Post 2: Expediente Secreto Miramar — Abducción</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">Platillo volador con rayo abductor sobre la bolsa de Tostitos Salsa Verde.</p>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-square flex items-center justify-center relative group">
+            <img src="post2_meme_ovni.png" alt="Post 2 Meme OVNI" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Caption & 3 Hooks:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-post2" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🔥 3 OPCIONES DE HOOK (Elige 1 para abrir):
+1️⃣ "Ni los ovnis de Miramar protegen tanto un tesoro como nosotros esta hielera a 0°C-4°C 🛸❄️"
+2️⃣ "Confirmado por la base alienígena de Miramar: ¡no vienen por los huracanes, vienen por el aguachile! 👽🦐"
+3️⃣ "¡No dejes que abduzcan tu bolsa! Solo hacemos 75 bolsas bien reportadas por tanda 🔥"
+
+En La Garza Aguachilera el sabor es de otra galaxia:
+🟢 ~100g de camarón fresco en corte mariposa.
+🟢 Salsa verde esmeralda picante por naturaleza con serrano y limón recién exprimido.
+🟢 Auténticos TOSTITOS SALSA VERDE 100% crujientes.
+✨ El producto es preparado frente a usted para corroborar su frescura.
+
+💰 $170 MXN la bolsa bien reportada.
+📲 Aparta tu pedido por WhatsApp antes de la abducción: 833 252 09 88.
+https://wa.me/528332520988
+
+#Tampico #PlayaMiramar #AliensTampico #OvniMiramar #Tostiaguachiles #LaGarzaAguachilera #Madero</pre>
+          </div>
+        </div>
+
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-post2', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Caption</span>
+          </button>
+          <a href="post2_meme_ovni.png" download="Post2_Miercoles_Meme_OVNI.png" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Imagen (PNG 1:1 HD)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 7: POST 4 — DOMINGO DE RESURRECCIÓN (1080 x 1080 px)       -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="periodica">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-rose-300 bg-rose-950/80 px-2.5 py-1 rounded-full border border-rose-800/70">
+              📅 DÍA 7 (DOMINGO) • PALETA ATARDECER FUEGO
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">1080 x 1080 px</span>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Post 4: La Cura Sagrada de la Cruda Dominguera</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">El antídoto jaibo con serrano bravo, limón Colima y camarón mariposa.</p>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-square flex items-center justify-center relative group">
+            <img src="post4_cura_domingo.png" alt="Post 4 Cura Domingo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Caption & 3 Hooks:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-post4" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🔥 3 OPCIONES DE HOOK (Elige 1 para abrir):
+1️⃣ "¿Te pegó la resaca después de Miramar? Aquí está la resurrección oficial de la conurbada 🏖️🌶️"
+2️⃣ "Termómetro marcando 0°C-4°C, ~100g de camarón mariposa y picor bravo que te devuelve el alma ❄️🦐"
+3️⃣ "Advertencia dominguera: nuestro aguachile verde es picante por naturaleza (¡como debe ser!) 🔥🤤"
+
+La cura oficial de Tampico y Madero no tiene fallas:
+1️⃣ Abundante limón Colima recién exprimido + chile serrano bravo.
+2️⃣ ~100g de camarón fresco en corte mariposa.
+3️⃣ TOSTITOS SALSA VERDE con el crunch perfecto.
+✨ El producto es preparado frente a usted para corroborar su frescura.
+
+💰 $170 MXN la bolsa (Entregas activas aún con lluvia con cargo extra según distancia).
+📲 Pide directo a tu puerta por WhatsApp: 833 252 09 88.
+https://wa.me/528332520988
+
+#DomingoDeAguachile #LaCuraDeLaCruda #TampicoHermoso #CiudadMadero #LaGarzaAguachilera</pre>
+          </div>
+        </div>
+
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-post4', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Caption</span>
+          </button>
+          <a href="post4_cura_domingo.png" download="Post4_Domingo_Cura_Cruda.png" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Imagen (PNG 1:1 HD)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 8: POST 5 — MARTES DE INOCUIDAD Y FRESCURA (1080 x 1080 px)-->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="periodica">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-sky-300 bg-sky-950/80 px-2.5 py-1 rounded-full border border-sky-800/70">
+              📅 DÍA 9 (MARTES) • PALETA HIELO ÁRTICO
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">1080 x 1080 px</span>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Post 5: Infografía de Inocuidad — Hielera a 0°C-4°C</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">Demostración técnica de frescura: hielera con termómetro y mesa plegable.</p>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-square flex items-center justify-center relative group">
+            <img src="post5_frescura_en_vivo.png" alt="Post 5 Frescura en Vivo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Caption & 3 Hooks:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-post5" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🔥 3 OPCIONES DE HOOK (Elige 1 para abrir):
+1️⃣ "Cuando el termómetro de la hielera cuida 0°C-4°C reales, la calidad manda sobre la cantidad ❄️🦐"
+2️⃣ "¿Por qué llevamos una mesa plegable y 2 cubetas grado alimenticio hasta tu puerta? 🤔✨"
+3️⃣ "Cero entregas aguadas en Tampico: mira cómo armamos tus ~100g de camarón frente a tus ojos 👀💚"
+
+En mariscos, la frescura no se platica, ¡se comprueba! Cuando llegamos a tu casa:
+1. Sacamos los insumos de nuestra hielera gigante con 2 cubetas de grado alimenticio y termómetro a 0°C-4°C.
+2. Desplegamos nuestra mesa de preparación frente a tu puerta.
+3. Montamos tus ~100g de camarón mariposa sobre TOSTITOS SALSA VERDE 100% crujientes.
+
+✨ El producto es preparado frente a usted para corroborar su frescura.
+💰 $170 MXN | Máximo 75 bolsas por tanda.
+📲 Preventa activa por WhatsApp: 833 252 09 88.
+https://wa.me/528332520988
+
+#CalidadGarantizada #LaGarzaAguachilera #InocuidadAlimentaria #Tampico #CdMadero</pre>
+          </div>
+        </div>
+
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-post5', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Caption</span>
+          </button>
+          <a href="post5_frescura_en_vivo.png" download="Post5_Martes_Frescura_En_Vivo.png" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Imagen (PNG 1:1 HD)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 9: POST 6 — JUEVES MAPACHE CRUNCH (1080 x 1080 px)         -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="periodica">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-orange-300 bg-orange-950/80 px-2.5 py-1 rounded-full border border-orange-800/70">
+              📅 DÍA 11 (JUEVES) • PALETA ARENA ESCOLLERAS
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">1080 x 1080 px</span>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Post 6: Mapache de las Escolleras — El Crunch</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">Mapache de Miramar disfrutando el crunch de Tostitos Salsa Verde.</p>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-square flex items-center justify-center relative group">
+            <img src="post6_mapache_crunch.png" alt="Post 6 Mapache Crunch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Caption & 3 Hooks:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-post6" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🔥 3 OPCIONES DE HOOK (Elige 1 para abrir):
+1️⃣ "Cuidado en las escolleras: hasta los mapaches quieren robarse esta bolsa bien reportada 🦝💚"
+2️⃣ "Por qué solo hacemos 75 bolsas por tanda en Tampico (y ni una más aunque nos ruegue el mapache) 🦝⏱️"
+3️⃣ "Si alguien te dice que no le gusta el aguachile, es porque no ha probado el de La Garza Aguachilera 🦐🔥"
+
+El mapache de Miramar sabe de cosas buenas:
+🦐 ~100g de camarón limpio en corte mariposa.
+🟢 TOSTITOS SALSA VERDE súper crujientes recién abiertos.
+🍋 Mucho limón Colima y picor bravo natural.
+✨ El producto es preparado frente a usted para corroborar su frescura.
+
+💰 $170 MXN la bolsa bien reportada.
+📲 ¡Mañana cerramos preventa de las 75 bolsas! Aparta por WhatsApp al 833 252 09 88.
+https://wa.me/528332520988
+
+#EscollerasMiramar #MapachesMiramar #Tampico #Madero #LaGarzaAguachilera #Tostiaguachiles</pre>
+          </div>
+        </div>
+
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-post6', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Caption</span>
+          </button>
+          <a href="post6_mapache_crunch.png" download="Post6_Jueves_Mapache_Crunch.png" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Imagen (PNG 1:1 HD)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 10: POST 7 — SÁBADO RUTAS ACTIVAS (1080 x 1080 px)         -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="periodica">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-fuchsia-300 bg-fuchsia-950/80 px-2.5 py-1 rounded-full border border-fuchsia-800/70">
+              📅 DÍA 13 (SÁBADO) • PALETA NEÓN PUENTE
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">1080 x 1080 px</span>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Post 7: Hieleras en Ruta — Cobertura Tampico & Madero</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">Rutas de entrega activas por zonas saliendo desde Colonia Flores, Tampico.</p>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-square flex items-center justify-center relative group">
+            <img src="post7_rutas_activas.png" alt="Post 7 Rutas Activas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Caption & 3 Hooks:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-post7" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🔥 3 OPCIONES DE HOOK (Elige 1 para abrir):
+1️⃣ "Juancho, los ovnis y los mapaches coinciden en algo: esta bolsa bien reportada no tiene rival en la conurbada 🐊🛸🦝"
+2️⃣ "¡HIELERAS A 0°C-4°C Y MESA PLEGABLE EN RUTA! saliendo desde Colonia Flores, Tampico 🛵💨"
+3️⃣ "¿Ya apartaste tu lugar en las 75 bolsas de hoy o te vas a quedar viendo cómo pica de rico? 🌶️👀"
+
+📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
+🟢 Zona 1 (5-10 min): Col. Flores, Altavista, Cascajal, Centro.
+🟡 Zona 2 (12-18 min): Petrolera, Universidad, Lomas del Chairel, Norte.
+🔵 Zona 3 (15-22 min): Cd. Madero, Unidad Nacional, Ampliación, Miramar.
+🌧️ Servicio activo aún con lluvia (con cargo extra de envío según distancia).
+
+✨ El producto es preparado frente a usted para corroborar su frescura.
+💰 $170 MXN (~100g camarón mariposa + TOSTITOS SALSA VERDE).
+📲 Engancha tu entrega por WhatsApp al 833 252 09 88.
+https://wa.me/528332520988
+
+#RutaActiva #ServicioADomicilio #Tampico #CiudadMadero #LaGarzaAguachilera #PuenteTampico</pre>
+          </div>
+        </div>
+
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-post7', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Caption</span>
+          </button>
+          <a href="post7_rutas_activas.png" download="Post7_Sabado_Rutas_Activas.png" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Imagen (PNG 1:1 HD)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 11: POST DE LANZAMIENTO (FACEBOOK & INSTAGRAM)             -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="facebook instagram">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-teal-300 bg-teal-950/80 px-2.5 py-1 rounded-full border border-teal-800/70">
+              👍 Post de Lanzamiento Oficial
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">Foto Real HD</span>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Foto de Producto & Post Maestro de Lanzamiento</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">Fotografía macro en bolsa de Tostitos Salsa Verde recién servida ($170 MXN).</p>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-square flex items-center justify-center relative group">
+            <img src="tostiaguachile_verde_redondo.jpg" alt="Tostiaguachile Verde Tradicional" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Copy Completo de Lanzamiento:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-lanzamiento" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">¡Llegó a Tampico y Madero el verdadero antojo de mariscos! 🦐🌊🔥
+
+En La Garza Aguachilera te preparamos la botana más fresca de la zona conurbada:
+🟢 TOSTIAGUACHILE VERDE TRADICIONAL
+Camarón 100% fresco del Golfo, en corte mariposa, con chile serrano, pepino crujiente y cebolla morada sobre una bolsa de auténticos TOSTITOS SALSA VERDE.
+
+✨ EL PRODUCTO ES PREPARADO FRENTE A USTED PARA CORROBORAR SU FRESCURA.
+
+💰 Solo $170 MXN la bolsa bien reportada
+🛵 Entregas a domicilio SÁBADOS y DOMINGOS
+📍 Base de salida: Colonia Flores, Tampico, Tamaulipas
+
+⚠️ El camarón se compra fresco cada semana, ¡cupos limitados!
+
+📲 ¡Aparta tu bolsa antes de que se acaben los cupos de esta semana!
+Escríbenos por WhatsApp al 833 252 09 88 o visita https://wa.me/528332520988
+
+#LaGarzaAguachilera #Tostiaguachiles #Tampico #CdMadero #MariscosTampico #ComidaTampico #AntojosTampico</pre>
+          </div>
+        </div>
+
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-lanzamiento', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Post Completo</span>
+          </button>
+          <a href="tostiaguachile_verde_redondo.jpg" download="Foto_Tostiaguachile_Verde_Servido.jpg" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Fotografía HD (JPG)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 12: BIOGRAFÍA OFICIAL DE INSTAGRAM                         -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="instagram">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-pink-300 bg-pink-950/80 px-2.5 py-1 rounded-full border border-pink-800/70">
+              📸 Perfil Oficial Instagram
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">Bio & Avatar</span>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Biografía Oficial de Instagram + Logotipo</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">Texto optimizado con emojis, horarios, propuesta de valor y enlace directo.</p>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-square flex items-center justify-center relative group p-6">
+            <img src="La garza aguachilera.jpeg" alt="Logo Oficial La Garza" class="w-36 h-36 rounded-full object-cover border-4 border-emerald-400 shadow-xl group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Texto para Bio de Instagram:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-bio-ig" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🦐 Los tostiaguachiles más reportados de Tampico y Madero
+✨ El producto es preparado frente a usted para corroborar su frescura
+🟢 TOSTITOS SALSA VERDE con Verde Tradicional ($170)
+🛵 Entregas a domicilio fines de semana (Sáb y Dom)
+📦 Preventa abierta entre semana 👇
+https://wa.me/528332520988
+📍 Colonia Flores, Tampico, Tamaulipas</pre>
+          </div>
+        </div>
+
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-bio-ig', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Bio de Instagram</span>
+          </button>
+          <a href="La garza aguachilera.jpeg" download="Logo_Oficial_LaGarza_Aguachilera.jpeg" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Logo Oficial (Alta Resolución)</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ============================================================== -->
+      <!-- CARD 13: BIOGRAFÍA OFICIAL DE TIKTOK                            -->
+      <!-- ============================================================== -->
+      <article class="media-card glass-card rounded-3xl p-5 flex flex-col justify-between space-y-4 shadow-xl" data-category="tiktok">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between gap-2">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-cyan-300 bg-cyan-950/80 px-2.5 py-1 rounded-full border border-cyan-800/70">
+              🎵 Perfil Oficial TikTok
+            </span>
+            <span class="text-[11px] font-bold text-slate-400">Bio Rápida</span>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-extrabold text-white leading-snug">Biografía Oficial de TikTok + Foto Hero</h3>
+            <p class="text-[11px] text-slate-300 mt-0.5">Texto conciso de alta conversión con enlace a pedidos de WhatsApp.</p>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden border border-slate-800 bg-black/60 aspect-square flex items-center justify-center relative group">
+            <img src="aguachile_verde_hero.jpg" alt="Foto Hero Aguachile Verde" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy">
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-between">
+              <span>Texto para Bio de TikTok:</span>
+              <span class="text-emerald-400">1 Clic para Copiar</span>
+            </label>
+            <pre id="caption-bio-tiktok" class="bg-slate-950/90 p-3 rounded-xl text-[11px] text-slate-300 font-mono whitespace-pre-wrap leading-relaxed border border-slate-800 max-h-36 overflow-y-auto">🦐 Tostiaguachiles con camarón de adeveras en Tampico 🔥
+✨ El producto es preparado frente a usted para corroborar su frescura
+🟢 TOSTITOS SALSA VERDE con mucho limón ($170)
+🛵 Envíos a domicilio Sáb & Dom
+👇 Haz tu pedido por WhatsApp:
+https://wa.me/528332520988</pre>
+          </div>
+        </div>
+
+        <div class="space-y-2 pt-2 border-t border-slate-800/80">
+          <button type="button" onclick="copyCaptionFromElement('caption-bio-tiktok', this)" class="btn-copy w-full font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📋</span>
+            <span>Copiar Bio de TikTok</span>
+          </button>
+          <a href="aguachile_verde_hero.jpg" download="Foto_Hero_Aguachile_Verde.jpg" class="btn-download w-full font-extrabold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5 shadow-sm">
+            <span>📥</span>
+            <span>Descargar Fotografía Hero (JPG HD)</span>
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- Aviso si no hay resultados en filtro -->
+    <div id="empty-filter-notice" class="hidden text-center py-12 glass-card rounded-3xl">
+      <div class="text-3xl mb-2">🔍</div>
+      <h4 class="text-base font-bold text-white">No hay piezas bajo este filtro</h4>
+      <p class="text-xs text-slate-400">Selecciona "Todos" para visualizar el catálogo completo.</p>
+    </div>
+
+    <!-- Sello Oficial de Control de Calidad Prominente -->
+    <section class="glass-card rounded-3xl p-6 sm:p-8 border-2 border-emerald-500/40 bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950/40 space-y-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+        <div class="flex items-center space-x-4">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 border border-emerald-400/40 flex items-center justify-center text-2xl shadow-lg shadow-emerald-500/20">
+            ✅
+          </div>
+          <div>
+            <h3 class="text-base sm:text-lg font-extrabold text-white tracking-tight">
+              ✅ Auditado y aprobado por Control de Calidad: Cumple con los estándares de La Garza Aguachilera
+            </h3>
+            <p class="text-xs text-slate-300 mt-0.5">
+              Certificación de Safe Zones de Facebook, Instagram y TikTok • Video Full HD con audio ducking • 0 menciones de palabras prohibidas.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <span class="text-[11px] font-bold text-emerald-300 bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-800">
+            0% Palabras Prohibidas
+          </span>
+          <span class="text-[11px] font-bold text-cyan-300 bg-cyan-950/80 px-3 py-1 rounded-full border border-cyan-800">
+            100% Full HD Certificado
+          </span>
+          <span class="text-[11px] font-bold text-amber-300 bg-amber-950/80 px-3 py-1 rounded-full border border-amber-800">
+            $170 MXN • Sábados y Domingos
+          </span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de Página -->
+  <footer class="max-w-7xl mx-auto px-4 sm:px-6 pt-10 text-center text-xs text-slate-500 space-y-2 border-t border-slate-800/60 mt-12">
+    <p class="font-semibold text-slate-400">
+      La Garza Aguachilera — Tostiaguachiles en Tampico y Ciudad Madero • Colonia Flores, Tampico, Tamaulipas.
+    </p>
+    <p class="text-[11px]">
+      Atención y pedidos por WhatsApp al <strong class="text-slate-300">833 252 09 88</strong> (<a href="https://wa.me/528332520988" class="text-emerald-400 hover:underline">wa.me/528332520988</a>).
+    </p>
+    <p class="text-[10px] text-slate-600">
+      Todos los contenidos, imágenes y videos son propiedad exclusiva de La Garza Aguachilera.
+    </p>
+  </footer>
+
+  <!-- Toast Flotante de Confirmación de Copiado -->
+  <div id="toast" class="toast bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center space-x-3 border border-emerald-400/50 backdrop-blur-xl font-bold text-xs">
+    <span class="text-base text-emerald-400">✅</span>
+    <span id="toastMsg">¡Texto copiado al portapapeles!</span>
+  </div>
+
+  <!-- Lógica JavaScript Interactiva (Filtros y Portapapeles con Fallback) -->
+  <script>
+    // Filtrado Instantáneo de Pestañas Estilo Apple
+    function filterTab(category, btnElement) {
+      document.querySelectorAll('.filter-tab').forEach(tab => {
+        tab.classList.remove('active');
+      });
+      if (btnElement) {
+        btnElement.classList.add('active');
+      }
+
+      const cards = document.querySelectorAll('.media-card');
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const categories = (card.getAttribute('data-category') || '').split(' ');
+        if (category === 'all' || categories.includes(category)) {
+          card.style.display = '';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      const emptyNotice = document.getElementById('empty-filter-notice');
+      if (emptyNotice) {
+        emptyNotice.style.display = (visibleCount === 0) ? 'block' : 'none';
+      }
+    }
+
+    // Copiado al Portapapeles con Soporte Robusto para file:// y https://
+    function copyCaptionFromElement(elementId, btnElement) {
+      const el = document.getElementById(elementId);
+      if (!el) return;
+      const textToCopy = el.innerText || el.textContent;
+
+      function triggerSuccessFeedback() {
+        if (btnElement) {
+          const originalContent = btnElement.innerHTML;
+          btnElement.innerHTML = '<span>¡Copiado! ✅</span>';
+          btnElement.classList.add('copy-success');
+          setTimeout(() => {
+            btnElement.innerHTML = originalContent;
+            btnElement.classList.remove('copy-success');
+          }, 2000);
+        }
+        showToast('¡Texto copiado al portapapeles! Listo para publicar.');
+      }
+
+      // 1. Intentar con Clipboard API moderna si está en entorno seguro
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(textToCopy)
+          .then(triggerSuccessFeedback)
+          .catch(() => {
+            execFallbackCopy(textToCopy, triggerSuccessFeedback);
+          });
+      } else {
+        // 2. Fallback de selección para file:// o contextos no seguros
+        execFallbackCopy(textToCopy, triggerSuccessFeedback);
+      }
+    }
+
+    function execFallbackCopy(text, callback) {
+      try {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'fixed';
+        textarea.style.top = '-9999px';
+        textarea.style.left = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        textarea.setSelectionRange(0, 99999);
+        const successful = document.execCommand('copy');
+        document.body.removeChild(textarea);
+
+        if (successful && callback) {
+          callback();
+        } else {
+          showToast('Texto seleccionado. Presiona Ctrl+C para copiar.');
+        }
+      } catch (err) {
+        console.error('Error al ejecutar fallback de copiado:', err);
+        showToast('Selecciona el texto y presiona Ctrl+C.');
+      }
+    }
+
+    // Notificación Toast
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      if (!toast || !toastMsg) return;
+
+      toastMsg.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
