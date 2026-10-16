@@ -456,15 +456,17 @@ $patterns = @('jumbo', 'nacho', 'tostitos?.*redondos?', 'totopos?.*redondos?', '
 $projectRoot = 'd:\AG\la garza aguachilera'
 $thisScriptPath = if ($PSCommandPath) { (Resolve-Path $PSCommandPath).Path } else { (Resolve-Path 'd:\AG\la garza aguachilera\herramientas\auditar_multimedia_qa.ps1' -ErrorAction SilentlyContinue).Path }
 
-# Exclusion limpia de este script, del test suite y del directorio de metadatos .agents
+# Exclusion limpia de este script, del test suite y del directorio de metadatos .agents y tests
 $filesToScan = Get-ChildItem -Path $projectRoot -Recurse -Include *.ps1, *.html, *.md, *.txt | Where-Object {
     $_.FullName -notmatch '\\\.agents\\' -and
     $_.FullName -notmatch '\\\.git\\' -and
+    $_.FullName -notmatch '\\tests\\' -and
     $_.FullName -ne $thisScriptPath -and
     $_.Name -ne 'auditar_multimedia_qa.ps1' -and
     $_.Name -ne 'e2e_test_suite.ps1' -and
     $_.Name -ne 'adversarial_ux_integrity_test.ps1' -and
     $_.Name -ne 'test_deploy_readiness_adversarial.ps1' -and
+    $_.Name -ne 'test_catalog_adversarial_qa.ps1' -and
     $_.Name -ne 'TEST_INFRA.md' -and
     $_.Name -ne 'TEST_READY.md'
 }

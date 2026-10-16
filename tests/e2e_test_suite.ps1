@@ -1,4 +1,4 @@
-﻿# =============================================================================
+# =============================================================================
 # SUITE DE PRUEBAS E2E (OPAQUE-BOX): LA GARZA AGUACHILERA
 # Cobertura Completa: Tier 1, Tier 2, Tier 3 y Tier 4
 # =============================================================================
@@ -619,14 +619,14 @@ if ($Tier -eq "All" -or $Tier -eq "4") {
     }
     Register-TestResult "4" "T4-U01" "UAT 1: Visualizacion Movil Optima en Pantalla 9:16 (TikTok/Reels)" $u01Pass "Video vertical Full HD 1080x1920" $u01Act "Garantiza experiencia inmersiva sin bordes en smartphones"
 
-    # T4-U02: Escenario Cliente Ordenando por Calculadora WhatsApp
+    # T4-U02: Escenario Cliente Ordenando por Boton WhatsApp Apple-Style
     $u02Pass = $false
     $u02Act = ""
     $indexRaw = Get-Content 'd:\AG\la garza aguachilera\index.html' -Raw
-    $hasCalcLogic = ($indexRaw -match '170' -and $indexRaw -match 'total' -and $indexRaw -match 'wa\.me')
-    $u02Pass = $hasCalcLogic
-    $u02Act = "LogicaCalculoYEnvioEncontrada=$hasCalcLogic"
-    Register-TestResult "4" "T4-U02" "UAT 2: Flujo de Pedido del Cliente Directo a WhatsApp" $u02Pass "Calculadora operativa en index.html enlazada a WhatsApp" $u02Act "Simula el recorrido de un cliente eligiendo porciones y ordenando"
+    $hasWaOrdering = ($indexRaw -match '170' -and $indexRaw -match 'wa\.me/528332520988' -and $indexRaw -match 'PEDIR POR WHATSAPP')
+    $u02Pass = $hasWaOrdering
+    $u02Act = "BotonPedidoWhatsAppEncontrado=$hasWaOrdering"
+    Register-TestResult "4" "T4-U02" "UAT 2: Flujo de Pedido del Cliente Directo a WhatsApp" $u02Pass "Boton directo de pedido Apple-style en index.html enlazado a WhatsApp con $170 MXN" $u02Act "Simula el recorrido de un cliente ordenando directamente por WhatsApp"
 
     # T4-U03: Escenario Auditoria Integral de Marca de Franquicia
     $allProjectFiles = Get-ChildItem -Path 'd:\AG\la garza aguachilera' -Recurse -Include *.ps1, *.html, *.md | Where-Object {
