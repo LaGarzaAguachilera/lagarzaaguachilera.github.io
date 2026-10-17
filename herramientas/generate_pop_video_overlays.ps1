@@ -1,4 +1,4 @@
-﻿# ==============================================================================
+# ==============================================================================
 # GENERADOR DE OVERLAYS Y STICKERS DINÁMICOS HD (1080 x 1920)
 # La Garza Aguachilera - Estilo Franquicia Comercial con Acabado Premium
 # ==============================================================================
@@ -157,7 +157,7 @@ DrawRoundedRectangle $gFrame $brushDarkPill $penMintPill $rectPricePill 30
 
 $fontPriceText = MakeFont "Arial" 22 ([System.Drawing.FontStyle]::Bold)
 $brushYellow = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(254, 240, 138))
-$gFrame.DrawString("VERDE TRADICIONAL * `$170 MXN * ~100g CAMARON", $fontPriceText, $brushYellow, [float]540, [float]1695, $sfCenter)
+$gFrame.DrawString("VERDE TRADICIONAL * `$150 MXN * ~100g CAMARON", $fontPriceText, $brushYellow, [float]540, [float]1695, $sfCenter)
 
 # Freshness Statement
 $rectFresh = [System.Drawing.Rectangle]::new(60, 1740, 960, 80)
@@ -330,7 +330,7 @@ $penPriceBadge = [System.Drawing.Pen]::new([System.Drawing.Color]::FromArgb(250,
 DrawRoundedRectangle $gS5 $brushPriceBadge $penPriceBadge $rectPriceBadge 35
 $fontBigPrice = MakeFont "Arial" 48 ([System.Drawing.FontStyle]::Bold)
 $fontBigPriceSub = MakeFont "Arial" 20 ([System.Drawing.FontStyle]::Bold)
-DrawStickerText $gS5 "`$170" $fontBigPrice $brushWhite $penBlackStroke 880 1225 $sfCenter
+DrawStickerText $gS5 "`$150" $fontBigPrice $brushWhite $penBlackStroke 880 1225 $sfCenter
 DrawStickerText $gS5 "MXN LA BOLSA" $fontBigPriceSub $brushYellow $penBlackStroke 880 1285 $sfCenter
 
 # WhatsApp Call to Action Banner on Left (Y: 1340 to 1480)

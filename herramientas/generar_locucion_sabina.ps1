@@ -1,4 +1,4 @@
-﻿# ==============================================================================
+# ==============================================================================
 # GENERADOR DE LOCUCION COMERCIAL SAPI: LA GARZA AGUACHILERA
 # Voz: Microsoft Sabina Desktop (es-MX) - 44.1 kHz, 16-bit, Stereo PCM
 # ==============================================================================
@@ -38,7 +38,7 @@ $synth.SetOutputToWaveFile($targetWav, $audioFormat)
 
 # Guion comercial oficial autorizado
 $copyScript = @"
-¡Atención Tampico y Ciudad Madero! En La Garza Aguachilera ya estamos en servicio sábados y domingos. Disfruta el auténtico Tostiaguachile Verde con camarón fresco en mariposa por solo ciento setenta pesos. El producto se prepara frente a ti para corroborar su frescura. Anunciaremos las rutas de entrega en nuestras redes sociales. ¡Aparta tu pedido por WhatsApp al 833 252 09 88!
+¡Atención Tampico y Ciudad Madero! En La Garza Aguachilera ya estamos en servicio sábados y domingos. Disfruta el auténtico Tostiaguachile Verde con camarón fresco en mariposa por solo ciento cincuenta pesos. El producto se prepara frente a ti para corroborar su frescura. Anunciaremos las rutas de entrega en nuestras redes sociales. ¡Aparta tu pedido por WhatsApp al 833 252 09 88!
 "@
 
 Write-Host "Sintetizando locución comercial..." -ForegroundColor Yellow

@@ -1,4 +1,4 @@
-﻿$ffmpeg = "d:\AG\la garza aguachilera\herramientas\ffmpeg\ffmpeg.exe"
+$ffmpeg = "d:\AG\la garza aguachilera\herramientas\ffmpeg\ffmpeg.exe"
 $video = "d:\AG\la garza aguachilera\VIDEOS\aguachile video 1.mp4"
 $overlay = "d:\AG\la garza aguachilera\herramientas\branding_overlay.png"
 $music = "d:\AG\la garza aguachilera\herramientas\tropical_music.mp3"
@@ -12,7 +12,7 @@ drawtext=fontfile='C\\:/Windows/Fonts/arialbd.ttf':text='TOSTIAGUACHILES EN TAMP
 drawtext=fontfile='C\\:/Windows/Fonts/arialbd.ttf':text='CAMARON DEL GOLFO EN CORTE MARIPOSA':fontsize=34:fontcolor=white:box=1:boxcolor=black@0.75:boxborderw=12:x=(w-text_w)/2:y=1450:enable='between(t,5.5,11.5)',
 drawtext=fontfile='C\\:/Windows/Fonts/arialbd.ttf':text='AUTENTICOS TOSTITOS SALSA VERDE CRUJIENTES':fontsize=33:fontcolor=white:box=1:boxcolor=black@0.75:boxborderw=12:x=(w-text_w)/2:y=1450:enable='between(t,11.5,17.5)',
 drawtext=fontfile='C\\:/Windows/Fonts/arialbd.ttf':text='PREPARADO FRENTE A TI PARA CORROBORAR FRESCURA':fontsize=31:fontcolor=yellow:box=1:boxcolor=black@0.8:boxborderw=12:x=(w-text_w)/2:y=1450:enable='between(t,17.5,23)',
-drawtext=fontfile='C\\:/Windows/Fonts/arialbd.ttf':text='PURA CALIDAD! PIDE AL 833 252 09 88 ($170)':fontsize=33:fontcolor=white:box=1:boxcolor=black@0.8:boxborderw=12:x=(w-text_w)/2:y=1450:enable='between(t,23,29.04)'[vout];
+drawtext=fontfile='C\\:/Windows/Fonts/arialbd.ttf':text='PURA CALIDAD! PIDE AL 833 252 09 88 ($150)':fontsize=33:fontcolor=white:box=1:boxcolor=black@0.8:boxborderw=12:x=(w-text_w)/2:y=1450:enable='between(t,23,29.04)'[vout];
 [2:a]volume=0.85,afade=t=in:ss=0:d=1,afade=t=out:st=27.5:d=1.5[aout]
 "@
 

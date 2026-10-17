@@ -1,4 +1,4 @@
-﻿Add-Type -AssemblyName System.Drawing
+Add-Type -AssemblyName System.Drawing
 
 $width = 1080
 $height = 1920
@@ -135,7 +135,7 @@ $g.DrawString("PEDIDOS WHATSAPP: 833 252 09 88", $fontCTA, $whiteBrush, ($width 
 # Product & Price Text
 $fontPrice = New-Object System.Drawing.Font("Trebuchet MS", 34, [System.Drawing.FontStyle]::Bold)
 $goldBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(255, 254, 240, 138))
-$g.DrawString("TOSTIAGUACHILE VERDE  *  `$170 MXN", $fontPrice, $goldBrush, ($width / 2), 1725, $stringFormatCenter)
+$g.DrawString("TOSTIAGUACHILE VERDE  *  `$150 MXN", $fontPrice, $goldBrush, ($width / 2), 1725, $stringFormatCenter)
 
 # Subtitle / Details
 $fontDetail = New-Object System.Drawing.Font("Arial", 20, [System.Drawing.FontStyle]::Bold)

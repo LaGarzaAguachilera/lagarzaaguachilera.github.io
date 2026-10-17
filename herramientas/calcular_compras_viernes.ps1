@@ -1,4 +1,4 @@
-﻿param(
+param(
     [Parameter(Mandatory=$false)]
     [int]$Preventas = 75
 )
@@ -32,5 +32,5 @@ Write-Host "4. Pepino Criollo Fresco             : $PepinoKg kg" -ForegroundColo
 Write-Host "5. Cebolla Morada                    : $CebollaKg kg (para pluma desflemada)" -ForegroundColor Cyan
 Write-Host "6. Bolsas de Hielo en Escama         : $HieloBolsas bolsas para hielera y cubetas con termómetro" -ForegroundColor Cyan
 Write-Host "----------------------------------------------------------------" -ForegroundColor DarkGray
-Write-Host "💰 Proyección de Venta Bruta ($170 MXN/bolsa): `$ $VentaEstimada MXN" -ForegroundColor Green
+Write-Host "💰 Proyección de Venta Bruta ($150 MXN/bolsa): `$ $VentaEstimada MXN" -ForegroundColor Green
 Write-Host "================================================================" -ForegroundColor DarkGreen

@@ -240,10 +240,10 @@ foreach ($f in @("index.html", "panel_control.html")) {
     }
     
     # Required brand terms
-    $hasPrice = $text.Contains("170")
+    $hasPrice = $text.Contains("150")
     $hasWhatsapp = $text.Contains("833 252 09 88") -or $text.Contains("8332520988")
     $hasTampico = $text.Contains("Colonia Flores")
-    Record-Result "BRAND" "$f contains official price ($170 MXN)" $hasPrice "Price presence"
+    Record-Result "BRAND" "$f contains official price ($150 MXN)" $hasPrice "Price presence"
     Record-Result "BRAND" "$f contains official WhatsApp (833 252 09 88)" $hasWhatsapp "WhatsApp presence"
     Record-Result "BRAND" "$f contains official address (Colonia Flores)" $hasTampico "Colonia Flores presence"
 }

@@ -1,4 +1,4 @@
-﻿# 💬 Kit Completo para WhatsApp Business
+# 💬 Kit Completo para WhatsApp Business
 ## "La Garza Aguachilera" - Teléfono: `833 - 2 - 52 - 09 - 88`
 
 Este documento contiene la configuración exacta de **mensajes automáticos, respuestas rápidas y fichas de catálogo** para atender a los clientes en segundos sin tener que escribir todo desde cero.
@@ -32,7 +32,7 @@ Preparamos los tostiaguachiles más reportados de Tampico y Madero con camarón 
 
 Nuestras entregas son los fines de semana (**Sábados y Domingos**).
 
-📋 *NUESTRO MENÚ ($170 MXN la bolsa):*
+📋 *NUESTRO MENÚ ($150 MXN la bolsa):*
 🟢 *Tostitos Verdes:* Aguachile clásico con serrano, pepino, cebolla morada y mucho limón.
 🔴 *Tostitos Rojos:* Aguachile bravo con chiles tatemados, toque oscuro y Tostitos Flamin.
 
@@ -59,21 +59,21 @@ Déjanos aquí:
 
 ### Producto 1: Tostiaguachile Clásico Verde
 * **Nombre:** Tostiaguachile Clásico Verde 🟢
-* **Precio:** $170.00 MXN
+* **Precio:** $150.00 MXN
 * **Descripción:**
   Bolsa de Tostitos salsa verde/limón bien reportada con camarón fresco del Golfo en corte mariposa, pepino en media luna y cebolla morada. El aguachile tradicional de chile serrano y limón Colima se envía en contenedor hermético aparte para mantener el crunch perfecto.
 * **Enlace:** [Link a landing page]
 
 ### Producto 2: Tostiaguachile Bravo Rojo (Flamin)
 * **Nombre:** Tostiaguachile Bravo Rojo (Flamin) 🔴
-* **Precio:** $170.00 MXN
+* **Precio:** $150.00 MXN
 * **Descripción:**
   Bolsa de Tostitos Rojos Flamin rellena de camarón fresco curado al momento con nuestra salsa especial de chiles tatemados, chiltepín y toque de salsas negras. Picor intenso y sabor ahumado. Aguachile en contenedor térmico independiente.
 * **Enlace:** [Link a landing page]
 
 ### Producto 3: Combo Pareja Garza (2 Bolsas)
 * **Nombre:** Combo Dúo Garza (2 Bolsas) 🦐🦐
-* **Precio:** $340.00 MXN
+* **Precio:** $300.00 MXN
 * **Descripción:**
   El paquete ideal para dos personas: elige cualquier combinación (2 verdes, 2 rojas o 1 y 1) con porciones generosas de camarón, salsas artesanales y botana crujiente.
 * **Enlace:** [Link a landing page]
@@ -88,8 +88,8 @@ Configura estos atajos en los ajustes de WhatsApp Business:
 ```text
 🦐 *MENÚ LA GARZA AGUACHILERA:*
 
-🟢 *Tostitos Verdes ($170):* Aguachile tradicional de chile serrano, pepino, cebollita y limón fresco sobre tostitos con sal y limón.
-🔴 *Tostitos Rojos ($170):* Aguachile bravo con chiles tatemados, salsas oscuras y Tostitos Flamin Hot.
+🟢 *Tostitos Verdes ($150):* Aguachile tradicional de chile serrano, pepino, cebollita y limón fresco sobre tostitos con sal y limón.
+🔴 *Tostitos Rojos ($150):* Aguachile bravo con chiles tatemados, salsas oscuras y Tostitos Flamin Hot.
 
 📦 Ambos incluyen porción completa de camarón fresco curado al momento en empaque hermético independiente.
 ```

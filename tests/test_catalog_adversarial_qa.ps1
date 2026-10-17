@@ -111,9 +111,9 @@ foreach ($slug in $copySlugs) {
     $hasWhatsApp = ($rawContent -match "833\s*252\s*09\s*88" -or $rawContent -match "wa\.me/528332520988")
     Assert-Result "$testIdBase-WAPP" "$slug contains WhatsApp CTA (833 252 09 88)" $hasWhatsApp "WhatsApp CTA verified"
 
-    # Check official price $170 MXN
-    $hasPrice = ($rawContent -match '\$170(\s*MXN)?')
-    Assert-Result "$testIdBase-PRICE" "$slug contains official price `$170 MXN" [bool]$hasPrice "Official price verified"
+    # Check official price $150 MXN
+    $hasPrice = ($rawContent -match '\$150(\s*MXN)?')
+    Assert-Result "$testIdBase-PRICE" "$slug contains official price `$150 MXN" [bool]$hasPrice "Official price verified"
 
     # Check address 'Colonia Flores, Tampico, Tamaulipas'
     $hasAddress = ($rawContent -match "Colonia\s+Flores,\s*Tampico,\s*Tamaulipas")
@@ -175,8 +175,8 @@ if (-not (Test-Path $calendarioMdPath)) {
     $allHooks = [regex]::Matches($calRaw, "(?i)Hook\s*[1-3]")
     Assert-Result "CAL-48HOOKS" "Master calendar contains at least 48 hook definitions" ($allHooks.Count -ge 48) "Found: $($allHooks.Count) hooks"
 
-    # Assert official price $170 MXN
-    Assert-Result "CAL-PRICE" "Master calendar contains official price `$170 MXN" ($calRaw -match '\$170\s*MXN') "Price verified"
+    # Assert official price $150 MXN
+    Assert-Result "CAL-PRICE" "Master calendar contains official price `$150 MXN" ($calRaw -match '\$150\s*MXN') "Price verified"
 
     # Assert official address
     Assert-Result "CAL-ADDR" "Master calendar contains 'Colonia Flores, Tampico, Tamaulipas'" ($calRaw -match "Colonia\s+Flores,\s*Tampico,\s*Tamaulipas") "Address verified"
@@ -330,7 +330,7 @@ $allCatalogTexts = @(
     @{ Piece = 'Post 16'; Text = 'ORGULLO Y COMUNIDAD 100% JAIBA * GRACIAS POR TU PREFERENCIA'; Font = 'Segoe UI Black'; Size = [float]12.5 },
     # Story Invariants
     @{ Piece = 'Story Shared'; Text = 'LA GARZA AGUACHILERA'; Font = 'Segoe UI Black'; Size = [float]30.0 },
-    @{ Piece = 'Story Shared'; Text = "170 MXN LA BOLSA * ~100g CAMAR$($uO)N"; Font = 'Segoe UI Black'; Size = [float]21.0 },
+    @{ Piece = 'Story Shared'; Text = "150 MXN LA BOLSA * ~100g CAMAR$($uO)N"; Font = 'Segoe UI Black'; Size = [float]21.0 },
     @{ Piece = 'Story Shared'; Text = 'PEDIDOS Y APARTADOS POR WHATSAPP'; Font = 'Segoe UI Black'; Size = [float]16.0 },
     @{ Piece = 'Story Shared'; Text = '833 252 09 88'; Font = 'Segoe UI Black'; Size = [float]34.0 }
 )

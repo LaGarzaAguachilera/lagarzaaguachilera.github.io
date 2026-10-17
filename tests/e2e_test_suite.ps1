@@ -202,7 +202,7 @@ if ($Tier -eq "All" -or $Tier -eq "1") {
         $locScript = 'd:\AG\la garza aguachilera\herramientas\generar_locucion_sabina.ps1'
         $scriptValid = $false
         if (Test-Path $locScript) {
-            $lsContent = Get-Content $locScript -Raw
+            $lsContent = Get-Content $locScript -Raw -Encoding UTF8
             $scriptValid = ($lsContent -match 's[a\u00e1]bados y domingos' -and
                             $lsContent -match 'frescura' -and
                             $lsContent -match 'redes sociales' -and
@@ -367,15 +367,15 @@ if ($Tier -eq "All" -or $Tier -eq "1") {
     if (Test-Path $indexFile) {
         $indexContent = Get-Content $indexFile -Raw
         $hasWa = $indexContent -match '833[\s-]*252[\s-]*09[\s-]*88|528332520988'
-        $hasPrice = $indexContent -match '170'
+        $hasPrice = $indexContent -match '150'
         $hasFresh = $indexContent -match 'preparado frente a usted para corroborar su frescura'
         $hasForbIndex = $indexContent -match 'jumbo|nacho|tostitos?\s+redondos?'
         $f16Pass = ($hasWa -and $hasPrice -and $hasFresh -and (-not $hasForbIndex))
-        $f16Act = "WhatsApp=$hasWa, Precio170=$hasPrice, PromesaFrescura=$hasFresh, PalabrasProhibidas=$hasForbIndex"
+        $f16Act = "WhatsApp=$hasWa, Precio150=$hasPrice, PromesaFrescura=$hasFresh, PalabrasProhibidas=$hasForbIndex"
     } else {
         $f16Act = "index.html no existe"
     }
-    Register-TestResult "1" "T1-F16" "Sincronizacion de Landing Page Publica (index.html)" $f16Pass "WhatsApp + $170 + Promesa + 0 prohibidas" $f16Act "Portal publico con informacion comercial alineada"
+    Register-TestResult "1" "T1-F16" "Sincronizacion de Landing Page Publica (index.html)" $f16Pass "WhatsApp + $150 + Promesa + 0 prohibidas" $f16Act "Portal publico con informacion comercial alineada"
 
     # T1-F17: Final E2E Test Pass & Coverage Hardening
     $f17Pass = ($script:totalTests -ge 16)
@@ -563,12 +563,12 @@ if ($Tier -eq "All" -or $Tier -eq "3") {
     }
     Register-TestResult "3" "T3-C02" "Emparejamiento Cruzado de Personajes de Tampico en Posts" $c02Pass "OVNI en Post 2, Mapache en Post 6, Juancho en Post 1" $c02Act "Verifica coherencia tematica entre copys y graficos"
 
-    # T3-C03: Interaccion Safe Zone + Etiqueta de Precio ($170 MXN)
+    # T3-C03: Interaccion Safe Zone + Etiqueta de Precio ($150 MXN)
     $c03Pass = $true
     $priceTexts = @(
-        @{ Surface='Portada Facebook'; Text='170 MXN * ~100g CAMARON'; BoxW=380.0 },
-        @{ Surface='Post Feed'; Text='170 MXN'; MarginLeft=390.0 },
-        @{ Surface='Periodic Post 2'; Text='SABOR DE OTRA GALAXIA * $170 MXN LA BOLSA BIEN REPORTADA'; BoxW=1080.0 }
+        @{ Surface='Portada Facebook'; Text='150 MXN * ~100g CAMARON'; BoxW=380.0 },
+        @{ Surface='Post Feed'; Text='150 MXN'; MarginLeft=390.0 },
+        @{ Surface='Periodic Post 2'; Text='SABOR DE OTRA GALAXIA * $150 MXN LA BOLSA BIEN REPORTADA'; BoxW=1080.0 }
     )
     foreach ($pt in $priceTexts) {
         $w = Measure-TextWidth $pt.Text "Segoe UI Black" 13.5
@@ -576,7 +576,7 @@ if ($Tier -eq "All" -or $Tier -eq "3") {
             $c03Pass = $false
         }
     }
-    Register-TestResult "3" "T3-C03" "Interaccion de Safe Zone con Etiqueta Oficial de Precio $170" $c03Pass "Texto de precio contenido sin desborde en todas las superficies" "Verificado en Portada, Feed y Periodicos" "Asegura que el precio de $170 nunca sea mutilado visualmente"
+    Register-TestResult "3" "T3-C03" "Interaccion de Safe Zone con Etiqueta Oficial de Precio $150" $c03Pass "Texto de precio contenido sin desborde en todas las superficies" "Verificado en Portada, Feed y Periodicos" "Asegura que el precio de $150 nunca sea mutilado visualmente"
 
     # T3-C04: Consistencia Multi-Superficie de la Promesa de Frescura
     $promiseText = "El producto es preparado frente a usted para corroborar su frescura"
@@ -623,14 +623,15 @@ if ($Tier -eq "All" -or $Tier -eq "4") {
     $u02Pass = $false
     $u02Act = ""
     $indexRaw = Get-Content 'd:\AG\la garza aguachilera\index.html' -Raw
-    $hasWaOrdering = ($indexRaw -match '170' -and $indexRaw -match 'wa\.me/528332520988' -and $indexRaw -match 'PEDIR POR WHATSAPP')
+    $hasWaOrdering = ($indexRaw -match '150' -and $indexRaw -match 'wa\.me/528332520988' -and $indexRaw -match 'PEDIR POR WHATSAPP')
     $u02Pass = $hasWaOrdering
     $u02Act = "BotonPedidoWhatsAppEncontrado=$hasWaOrdering"
-    Register-TestResult "4" "T4-U02" "UAT 2: Flujo de Pedido del Cliente Directo a WhatsApp" $u02Pass "Boton directo de pedido Apple-style en index.html enlazado a WhatsApp con $170 MXN" $u02Act "Simula el recorrido de un cliente ordenando directamente por WhatsApp"
+    Register-TestResult "4" "T4-U02" "UAT 2: Flujo de Pedido del Cliente Directo a WhatsApp" $u02Pass "Boton directo de pedido Apple-style en index.html enlazado a WhatsApp con $150 MXN" $u02Act "Simula el recorrido de un cliente ordenando directamente por WhatsApp"
 
     # T4-U03: Escenario Auditoria Integral de Marca de Franquicia
     $allProjectFiles = Get-ChildItem -Path 'd:\AG\la garza aguachilera' -Recurse -Include *.ps1, *.html, *.md | Where-Object {
         $_.FullName -notmatch '\\\.agents\\' -and
+        $_.FullName -notmatch '\\tests\\' -and
         $_.Name -ne 'auditar_multimedia_qa.ps1' -and
         $_.Name -ne 'e2e_test_suite.ps1' -and
         $_.Name -ne 'TEST_INFRA.md' -and

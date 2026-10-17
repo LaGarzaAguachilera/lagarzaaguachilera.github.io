@@ -40,7 +40,7 @@ $audioFormat = New-Object System.Speech.AudioFormat.SpeechAudioFormatInfo(
 $synth.Rate = 6
 $synth.SetOutputToWaveFile($targetWav, $audioFormat)
 
-$copyScript = "¡No estaban muertos... solo estaban crudos! La verdadera cura de Tampico y Madero. Disfruta el auténtico Tostiaguachile Verde Tradicional con camarón fresco en mariposa por solo ciento setenta pesos. En servicio sábados y domingos de una a cinco de la tarde. El producto se prepara frente a ti para corroborar su frescura. ¡Aparta tu pedido por WhatsApp al 833 252 09 88!"
+$copyScript = "¡No estaban muertos... solo estaban crudos! La verdadera cura de Tampico y Madero. Disfruta el auténtico Tostiaguachile Verde Tradicional con camarón fresco en mariposa por solo ciento cincuenta pesos. En servicio sábados y domingos de una a cinco de la tarde. El producto se prepara frente a ti para corroborar su frescura. ¡Aparta tu pedido por WhatsApp al 833 252 09 88!"
 
 Write-Host "Sintetizando locucion comercial oficial..." -ForegroundColor Yellow
 $synth.Speak($copyScript.Trim())

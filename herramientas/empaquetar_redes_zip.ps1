@@ -115,8 +115,19 @@ try {
         Add-FileToZip $spookyVideo "$spookyFolder/promo_halloween_zombies_crudos.mp4"
     }
 
-    # 6. Documento Guia de Publicacion y Parametros Oficiales
-    Write-Host "`n6. Agregando Guia de Uso del Paquete..." -ForegroundColor Green
+    # 6. Coleccion Oficial de Merchandising: Gorras (Cachuchas)
+    Write-Host "`n6. Agregando Coleccion Oficial de Merchandising (Gorras Oficiales)..." -ForegroundColor Green
+    $gorrasFolder = "Gorras_Oficiales"
+    $gorrasDir = Join-Path $projectRoot "contenido_redes\merchandising\gorras"
+    if (Test-Path $gorrasDir) {
+        $gorraFiles = Get-ChildItem -Path $gorrasDir -File
+        foreach ($gf in $gorraFiles) {
+            Add-FileToZip $gf.FullName "$gorrasFolder/$($gf.Name)"
+        }
+    }
+
+    # 7. Documento Guia de Publicacion y Parametros Oficiales
+    Write-Host "`n7. Agregando Guia de Uso del Paquete..." -ForegroundColor Green
     $guiaLines = @(
         "================================================================================",
         "LA GARZA AGUACHILERA - PAQUETE MAESTRO DE CONTENIDO PARA REDES SOCIALES",
@@ -133,12 +144,13 @@ try {
         "- Semana_3/: La Cura Sagrada del Domingo (4 piezas Feed 1:1, Stories 9:16 y copys)",
         "- Semana_4/: Rutas de Entrega y Comunidad (4 piezas Feed 1:1, Stories 9:16 y copys)",
         "- Especial_Halloween_Dia_Muertos/: Coleccion Spooky de Temporada (Posters Feed 1:1, Video Full HD y 6 paquetes de copy)",
+        "- Gorras_Oficiales/: Catalogo de 6 Mockups HD de Gorras (Caballero, Universitaria, Damas, Chavos) y Ficha Tecnica",
         "",
         "PARAMETROS OFICIALES DE MARCA:",
         "- Producto: Tostiaguachile Verde Tradicional",
         "- Totopo: Exclusivamente TOSTITOS SALSA VERDE",
         "- Porcion: ~100g de camaron en corte mariposa",
-        "- Precio: $170 MXN",
+        "- Precio: $150 MXN",
         "- Promesa Obligatoria: El producto es preparado frente a usted para corroborar su frescura",
         "- Horario de Operacion: Sabados y Domingos de 1:00 PM a 5:00 PM",
         "- Ubicacion Oficial: Colonia Flores, Tampico, Tamaulipas",

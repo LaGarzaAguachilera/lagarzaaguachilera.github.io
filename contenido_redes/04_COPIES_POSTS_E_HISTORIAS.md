@@ -34,7 +34,7 @@ Disfrútalos en dos estilos:
 
 📦 ¿Lo mejor? El aguachile va en contenedor hermético para que tus tostitos lleguen 100% crujientes hasta tu puerta.
 
-💰 $170 MXN la bolsa
+💰 $150 MXN la bolsa
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS
 📍 Base de salida: Col. Flores, Tampico
 
@@ -57,7 +57,7 @@ Te entregamos tu bolsa de tostitos abierta de lado, con su cama de pepino fresco
 
 Tú lo único que haces al recibirlo es destapar, verter sobre tu bolsa... ¡y disfrutar el crujido perfecto bocado tras bocado! 🤤✨
 
-Por solo $170 pesos tienes la botana más fresca de la zona.
+Por solo $150 pesos tienes la botana más fresca de la zona.
 🛵 Entregas este fin de semana en Tampico y Madero.
 
 Mándanos un WhatsApp al 833-252-09-88 y agenda tu ruta.
@@ -74,7 +74,7 @@ Si este fin de semana te vas a reunir con amigos, con la familia o simplemente q
 En La Garza Aguachilera tenemos todo listo para consentirte este SÁBADO y DOMINGO:
 ✅ Camarón del Golfo fresco, limpio y en mariposa
 ✅ Aguachile Verde Clásico o Rojo Flamin
-✅ Porción bien servida por solo $170
+✅ Porción bien servida por solo $150
 
 📍 Cobertura en Tampico y Ciudad Madero desde nuestra base en Col. Flores.
 ⚠️ Recuerda que como compramos el camarón fresco el viernes por la mañana, nuestros cupos son limitados.
@@ -96,7 +96,7 @@ Te tenemos la solución definitiva en 3 pasos:
 3. Te llega a la puerta un Tostiaguachile heladito, bien picoso y con camarón fresco recién preparado para revivir cuerpo y alma.
 
 🟢 Verde para refrescar | 🔴 Rojo para sudar sabroso
-💰 $170 MXN la bolsa
+💰 $150 MXN la bolsa
 
 🛵 Rutas activas hoy en Tampico y Madero.
 Escríbenos rápido al 833-252-09-88 antes de que cierre la última ruta de la tarde.

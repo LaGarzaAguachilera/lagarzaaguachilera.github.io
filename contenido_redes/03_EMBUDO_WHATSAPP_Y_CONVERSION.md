@@ -1,4 +1,4 @@
-﻿# 📲 EMBUDO DE CONVERSIÓN & WHATSAPP SALES MACHINE
+# 📲 EMBUDO DE CONVERSIÓN & WHATSAPP SALES MACHINE
 ## "La Garza Aguachilera" — Tampico & Ciudad Madero
 *Cierre de Ventas en Menos de 3 Mensajes, Automatización y Recompra*
 
@@ -44,8 +44,8 @@ Cuando un usuario comenta en un Reel o Post de Instagram/Facebook, el algoritmo 
 
 Aquí tienes nuestro menú de Tostiaguachiles con camarón fresco curado al momento:
 
-🟢 Tostitos Verdes ($170): Con serrano, pepino, cebolla y limón Colima.
-🔴 Tostitos Rojos ($170): Con Tostitos Flamin, chiles tatemados y salsas oscuras.
+🟢 Tostitos Verdes ($150): Con serrano, pepino, cebolla y limón Colima.
+🔴 Tostitos Rojos ($150): Con Tostitos Flamin, chiles tatemados y salsas oscuras.
 
 📦 *Recuerda:* El caldo de aguachile y los camarones van en su hielera térmica con preparación frente a ti para que tus tostitos lleguen 100% crujientes a tu casa en Tampico o Madero.
 
@@ -75,7 +75,7 @@ El mayor error de los negocios de comida es contestar con biblias de texto o hac
 
 Preparamos los tostiaguachiles más reportados de Tampico y Madero con camarón fresco curado al momento. 
 
-📋 *NUESTRAS OPCIONES ($170 MXN la bolsa):*
+📋 *NUESTRAS OPCIONES ($150 MXN la bolsa):*
 🟢 *Tostitos Verdes:* Aguachile clásico de serrano, pepino, cebolla morada y limón Colima.
 🔴 *Tostitos Rojos:* Aguachile bravo con chiles tatemados, salsas oscuras y Tostitos Flamin.
 
@@ -95,7 +95,7 @@ Para agendar tu pedido en la ruta:
 ¡Perfecto! Te apartamos **1 Verde Clásico + 1 Rojo Flamin** para este **Domingo** en Col. Petrolera. 🦐🔥
 
 💰 *TOTAL A PAGAR:*
-• 2 Bolsas de Tostiaguachiles: $340 MXN
+• 2 Bolsas de Tostiaguachiles: $300 MXN
 • Envío en Col. Petrolera: $30 MXN
 • **Total final: $370 MXN**
 
@@ -142,8 +142,8 @@ Guarda estos atajos con la barra inclinada `/` para contestar en 3 segundos:
 ### `/menu`
 ```text
 🦐 *MENÚ LA GARZA AGUACHILERA:*
-🟢 *Tostitos Verdes ($170):* Aguachile clásico con chile serrano, pepino, cebolla morada y limón Colima.
-🔴 *Tostitos Rojos ($170):* Aguachile bravo con chiles tatemados, salsas oscuras y Tostitos Flamin.
+🟢 *Tostitos Verdes ($150):* Aguachile clásico con chile serrano, pepino, cebolla morada y limón Colima.
+🔴 *Tostitos Rojos ($150):* Aguachile bravo con chiles tatemados, salsas oscuras y Tostitos Flamin.
 📦 *Empaque inteligente:* Camarones y caldo en contenedor hermético aparte para que la botana llegue crujiente.
 🛵 Entregas a domicilio Sábados y Domingos en Tampico y Cd. Madero.
 ```
@@ -185,7 +185,7 @@ Tú solo destapas el caldo, lo vacías sobre la bolsa... ¡y disfrutas el sonido
 
 ## 5. TÁCTICAS DE UPSELL (VENTA CRUZADA) & VALOR MEDIO DE TICKET
 
-Para pasar de un ticket promedio de $170 a $380+ MXN por cliente:
+Para pasar de un ticket promedio de $150 a $380+ MXN por cliente:
 
 ```
 +--------------------------------------------------------------------------+
@@ -193,15 +193,15 @@ Para pasar de un ticket promedio de $170 a $380+ MXN por cliente:
 +--------------------------+-----------------------+-----------------------+
 | PRODUCTO INICIAL         | PROPUESTA DE UPSELL   | BENEFICIO PERCIBIDO   |
 +--------------------------+-----------------------+-----------------------+
-| 1 Bolsa de $170          | Combo Dúo ($340)      | "1 Verde + 1 Rojo"    |
-| 2 Bolsas ($340)          | Trío Conurbada ($510) | "Envío Gratis Zona 1" |
+| 1 Bolsa de $150          | Combo Dúo ($300)      | "1 Verde + 1 Rojo"    |
+| 2 Bolsas ($300)          | Trío Conurbada ($450) | "Envío Gratis Zona 1" |
 | Cualquier pedido         | Bebida Fría (+$25)    | Refresco helado listo |
 | Cualquier pedido         | Camarón Extra (+$50)  | "Doble proteína"      |
 +--------------------------+-----------------------+-----------------------+
 ```
 
 ### Script de WhatsApp para ofrecer Upsell (Mensaje de transición):
-> *"Oye, por cierto... ¿van a comer dos personas? Mucha gente aprovecha para pedir el **Combo Dúo (1 Verde y 1 Rojo por $340)** para probar ambos sabores sin pagar doble envío. ¿Te agregamos la segunda bolsa de una vez?"*
+> *"Oye, por cierto... ¿van a comer dos personas? Mucha gente aprovecha para pedir el **Combo Dúo (1 Verde y 1 Rojo por $300)** para probar ambos sabores sin pagar doble envío. ¿Te agregamos la segunda bolsa de una vez?"*
 
 ---
 

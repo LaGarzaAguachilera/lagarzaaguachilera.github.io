@@ -96,13 +96,13 @@ $sw = [System.Diagnostics.Stopwatch]::StartNew()
           -profile:v high `
           -level 4.2 `
           -preset medium `
-          -b:v 6000k `
-          -minrate 4000k `
-          -maxrate 9000k `
-          -bufsize 12000k `
+          -b:v 5200k `
+          -minrate 4300k `
+          -maxrate 6000k `
+          -bufsize 10000k `
           -pix_fmt yuv420p `
           -c:a aac `
-          -b:a 256k `
+          -b:a 192k `
           -ar 44100 `
           -ac 2 `
           -t 29.04 `

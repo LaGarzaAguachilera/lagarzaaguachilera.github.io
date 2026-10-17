@@ -1,4 +1,4 @@
-﻿# 📱 Configuración y Optimización de Perfiles para Redes Sociales
+# 📱 Configuración y Optimización de Perfiles para Redes Sociales
 ## "La Garza Aguachilera" - Tampico, Tamps.
 
 Este documento contiene la información lista para copiar y pegar al dar de alta o actualizar las cuentas oficiales del negocio.
@@ -15,7 +15,7 @@ Este documento contiene la información lista para copiar y pegar al dar de alta
 * **Biografía (Lista para copiar y pegar):**
 ```text
 🦐 Los tostiaguachiles más reportados de Tampico y Madero
-🌊 Camarón fresco del Golfo curado al momento ($170)
+🌊 Camarón fresco del Golfo curado al momento ($150)
 🟢 Clásicos Verdes | 🔴 Bravos Rojos
 🛵 Entregas a domicilio fines de semana (Sáb y Dom)
 📦 Preventa abierta entre semana 👇
@@ -25,7 +25,7 @@ Este documento contiene la información lista para copiar y pegar al dar de alta
 * **Enlace en el perfil (Link in Bio):**  
   `https://wa.me/528332520988` *(o el enlace de la página web que creamos).*
 * **Estructura de Historias Destacadas (Highlights):**
-  1. **🦐 Menú:** Foto y video de las bolsas verdes y rojas con el precio ($170).
+  1. **🦐 Menú:** Foto y video de las bolsas verdes y rojas con el precio ($150).
   2. **🛵 Envíos:** Mapa y zonas con tarifas de envío ($25-$70 según colonia).
   3. **📦 Cómo se Come:** Video de 10 segundos mostrando cómo vierten el caldito sin que se remojen los tostitos.
   4. **⭐ Reseñas:** Capturas de pantalla de clientes felices en WhatsApp diciendo que estuvo delicioso.
@@ -70,7 +70,7 @@ Nacemos con la misión de traerte el verdadero sabor del aguachile costeño en s
 ✅ Camarón 100% fresco, en corte mariposa y receta verde artesanal.
 ✅ Tostiaguachile Verde Tradicional con TOSTITOS SALSA VERDE salsa verde.
 ✅ El producto es preparado frente a usted para corroborar su frescura.
-✅ Precio único: $170 MXN la bolsa bien reportada.
+✅ Precio único: $150 MXN la bolsa bien reportada.
 🛵 Servicio a domicilio: Sábados y Domingos en Tampico y Cd. Madero.
 📍 Colonia Flores, Tampico, Tamaulipas
 📲 Pedidos y Preventa: WhatsApp 833-252-09-88
@@ -85,7 +85,7 @@ En La Garza Aguachilera preparamos los tostiaguachiles más reportados de la zon
 🟢 TOSTITOS VERDES: Con serrano, pepino, cebolla morada y abundante limón Colima.
 🔴 TOSTITOS ROJOS: Con base de chiles tatemados, salsas oscuras y Tostitos Flamin.
 
-💰 Solo $170 pesos la bolsa
+💰 Solo $150 pesos la bolsa
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS
 ⚠️ El camarón se compra fresco y se cura al momento, ¡así que los cupos son limitados cada fin de semana!
 

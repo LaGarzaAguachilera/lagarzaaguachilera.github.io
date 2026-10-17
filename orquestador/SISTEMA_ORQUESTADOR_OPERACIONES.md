@@ -14,7 +14,7 @@ Por mandato de la Dirección General y la Propiedad de **La Garza Aguachilera**,
 
 ### Principios Fundamentales del Ecosistema IA:
 1. **Unidad de Doctrina de Marca:**
-   - Monoproducto Insignia: **Tostiaguachile Verde Tradicional a $170 MXN**.
+   - Monoproducto Insignia: **Tostiaguachile Verde Tradicional a $150 MXN**.
    - Ingrediente Base: 100% Tostitos Salsa Verde originales (prohibidos totopos triangulares o sustitutos).
    - Sin desviaciones: Queda prohibida la mención de términos de tamaño no autorizados o presentaciones no oficiales.
    - Garantía Sagrada: *"El producto es preparado frente a usted para corroborar su frescura"*.
@@ -33,7 +33,7 @@ Por directiva expresa e inmutable del dueño del negocio, toda la flota de agent
    - 2 cubetas grandes de grado alimenticio equipadas con **termómetro digital integrado (0°C a 4°C)** para el resguardo de camarón y vegetales.
    - **Mesa plegable de preparación en sitio** para realizar el ensamble higiénico frente a la puerta del cliente.
 2. **Porción Estandarizada de Camarón:**
-   - **~100g neto aprox.** de camarón fresco en corte mariposa por cada bolsa servida ($170 MXN).
+   - **~100g neto aprox.** de camarón fresco en corte mariposa por cada bolsa servida ($150 MXN).
    - Factor bruto de compra en La Puntilla: **115g (0.115 kg)** por orden (absorbe el 15% de merma por descabezado, pelado y desvenado).
 3. **Protocolo Operativo de Lluvia:**
    - El servicio **se mantiene 100% activo bajo lluvia**.
@@ -92,11 +92,11 @@ La flota opera bajo el mando directo del **Agente Orquestador Supremo (`orquesta
 | **Etapa 1** | `cazador_tendencias_trendjacking` | Cazador de Tendencias, Audios y Memes (Trendjacking Agent) | Detecta formatos virales en TikTok/Reels, audios en tendencia y coyuntura local (clima Tampico, quincenas, partidos, Juancho, Ovnis) y entrega briefs al Editor de Video. | **ACTIVO** |
 | **Etapa 1** | `arquitecto_calendario_parrilla` | Arquitecto de Calendario y Parrilla de Contenidos (Social Media Planner) | Estructura la parrilla semanal bajo la regla **70/20/10** (70% antojo/ASMR, 20% humor local, 10% venta directa) en horarios pico de jueves a domingo. | **ACTIVO** |
 | **Etapa 2** | `disenador_grafico_senior` | Director de Arte & Branding Pop Tampiqueño | Diseño gráfico Neo-Brutalista Tropical Costeño, stickers die-cut (Juancho, OVNI, Mapache) y layouts con zonas seguras verificadas. | **ACTIVO** |
-| **Etapa 2** | `food_photography_specialist` | Food Photography Specialist (**Instancia Única**) | Fotografía gastronómica hiperrealista del Tostiaguachile Verde ($170 MXN, ~100g camarón mariposa, Tostitos Salsa Verde oficiales). Reemplaza las instancias duplicadas eliminadas. | **ACTIVO (Única Instancia)** |
+| **Etapa 2** | `food_photography_specialist` | Food Photography Specialist (**Instancia Única**) | Fotografía gastronómica hiperrealista del Tostiaguachile Verde ($150 MXN, ~100g camarón mariposa, Tostitos Salsa Verde oficiales). Reemplaza las instancias duplicadas eliminadas. | **ACTIVO (Única Instancia)** |
 | **Etapa 2** | `editor_video_garza` | Ingeniero y Editor de Video Gastronómico | Reescalado 1080p Lanczos, color grading gastronómico, ritmo dinámico y mezcla de audio con gancho *"¡Agua fresca, mi papá!"*. | **ACTIVO** |
 | **Etapa 3** | `copywriter_gastronomico_hooks` | Copywriter Gastronómico y Especialista en Hooks | Redacta captions persuasivos, textos en pantalla y titulares de carruseles. Entrega siempre **3 opciones de Hook** (primeros 3s), guiños a Tampico/Madero y CTA a WhatsApp. | **ACTIVO** |
 | **Etapa 4** | `especialista_integracion_meta` | Especialista de Integración y Automatización en el Ecosistema Meta | Guía paso a paso la subida, programación y conexión en Meta Business Suite, Creator Studio, Facebook, Instagram y botón/bandeja de WhatsApp. | **ACTIVO** |
-| **Etapa 5** | `control_calidad_empresarial` | Director de Control de Calidad Total | **1) Filtro Previo (Preventivo)** de todo material/copy/diseño; **2) Chequeo Periódico de Salud (Proactivo)** de enlaces WhatsApp, consistencia de horarios/precios ($170)/ubicación en Meta y cuellos de botella; **3) Reporte Amigable** y orden de corrección inmediata. | **ACTIVO (Auditor Continuo)** |
+| **Etapa 5** | `control_calidad_empresarial` | Director de Control de Calidad Total | **1) Filtro Previo (Preventivo)** de todo material/copy/diseño; **2) Chequeo Periódico de Salud (Proactivo)** de enlaces WhatsApp, consistencia de horarios/precios ($150)/ubicación en Meta y cuellos de botella; **3) Reporte Amigable** y orden de corrección inmediata. | **ACTIVO (Auditor Continuo)** |
 | **Etapa 6** | `mentor_tecnico_principiantes` | Mentor Técnico de Despliegue y Soporte en Redes (Tutor para Principiantes) | Explica con peras y manzanas, sin jerga técnica (nivel cero), para qué sirve cada archivo o script `.ps1`, dónde se pone y qué botones picar. | **ACTIVO** |
 | **Etapa 6** | `estratega_pauta_local_ads` | Estratega de Pauta Local (Meta & TikTok Ads Specialist) | Campañas de bajo presupuesto y alto retorno en radio local Tampico-Madero (Colonia Flores, Tampico, Tamaulipas), horarios de hambre, pruebas A/B y optimización a WhatsApp. | **ACTIVO** |
 | **Etapa 6** | `especialista_conversion_whatsapp` | Especialista en Conversión y Cierre por DM / WhatsApp (Community & Sales) | Diseña flujos de respuesta rápida para comentarios, automatizaciones de DM y guiones de cierre en WhatsApp con menú visual, ubicación y link pre-llenado. | **ACTIVO** |
@@ -170,7 +170,7 @@ Para asegurar la frescura marina absoluta del fin de semana, el inventario de ma
 - **Capacidad Estándar:** **75 bolsas por tanda** (ajustable hacia arriba o abajo según producto y demanda).
 - **Política de Sabor:** El producto viene **picante por naturaleza** (receta única con chile serrano fresco).
 
-### 5.1 Ficha Técnica de Consumo por Unidad (1 Bolsa de Tostiaguachile Verde = $170 MXN):
+### 5.1 Ficha Técnica de Consumo por Unidad (1 Bolsa de Tostiaguachile Verde = $150 MXN):
 - **Camarón Fresco (Golfo / La Puntilla):** **100 g neto limpio en corte mariposa** (requiere **115 g en bruto** considerando merma de limpieza/desvenado).
 - **Limón Colima (Agrio y Jugoso):** 60 ml de jugo puro (~4 a 5 limones medianos, peso bruto equivalente: **180 g a 240 g de limón fresco**).
 - **Tostitos Salsa Verde:** 1 bolsa individual oficial (presentación de aprox. 65 g). Las cajas máster contienen **24 unidades**.
@@ -206,7 +206,7 @@ A partir de $P_{\text{táctico}}$, el algoritmo calcula de forma exacta:
 
 ### 5.3 Tabla de Escenarios Típicos de Fin de Semana (Calibrado a 100g neto / 115g con merma)
 
-| Preventa ($N$) | Objetivo ($P$) | Camarón Crudo (115g/u) | Limón Colima | Cajas Tostitos (24u) | Pepino | Cebolla Morada | Hielo (Bolsas) | Inversión Estimada | Venta Proyectada ($170/u) | Utilidad Bruta Est. |
+| Preventa ($N$) | Objetivo ($P$) | Camarón Crudo (115g/u) | Limón Colima | Cajas Tostitos (24u) | Pepino | Cebolla Morada | Hielo (Bolsas) | Inversión Estimada | Venta Proyectada ($150/u) | Utilidad Bruta Est. |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **30 bolsas** | **35** | **4.0 kg** | **8.5 kg** | **2 cajas** (48 u) | 4.6 kg | 1.6 kg | 7 bolsas | ~$1,950 MXN | $5,950 MXN | **$4,000 MXN (67%)** |
 | **50 bolsas** | **58** | **6.7 kg** | **14.0 kg** | **3 cajas** (72 u) | 7.5 kg | 2.6 kg | 8 bolsas | ~$3,200 MXN | $9,860 MXN | **$6,660 MXN (67%)** |
@@ -251,7 +251,7 @@ Write-Host "4. Pepino Criollo Fresco             : $PepinoKg kg" -ForegroundColo
 Write-Host "5. Cebolla Morada                    : $CebollaKg kg (para pluma desflemada)" -ForegroundColor Cyan
 Write-Host "6. Bolsas de Hielo en Escama         : $HieloBolsas bolsas para hielera y cubetas con termómetro" -ForegroundColor Cyan
 Write-Host "----------------------------------------------------------------" -ForegroundColor DarkGray
-Write-Host "💰 Proyección de Venta Bruta ($170 MXN/bolsa): `$ $VentaEstimada MXN" -ForegroundColor Green
+Write-Host "💰 Proyección de Venta Bruta ($150 MXN/bolsa): `$ $VentaEstimada MXN" -ForegroundColor Green
 Write-Host "================================================================" -ForegroundColor DarkGreen
 ```
 
@@ -262,7 +262,7 @@ Write-Host "================================================================" -F
 1. **Auditoría Diaria:** Cada sesión del orquestador revisará que no existan subagentes colgados ni scripts de render consumiendo CPU en segundo plano.
 2. **Cumplimiento Invariable:** Toda pieza publicitaria, video, o actualización de sitio debe validarse contra las 4 directrices sagradas:
    - Receta única Verde Tradicional
-   - Precio oficial $170 MXN
+   - Precio oficial $150 MXN
    - Tostitos Salsa Verde oficiales
    - Slogan de garantía en vivo: *"El producto es preparado frente a usted para corroborar su frescura"*
 3. **Mesa de Ayuda WhatsApp:** 833 252 09 88. Colonia Flores, Tampico, Tamaulipas.

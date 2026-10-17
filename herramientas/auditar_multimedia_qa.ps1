@@ -116,7 +116,7 @@ $portadaTexts = @(
     @{ Text = 'TAMPICO Y MADERO * SABADOS Y DOMINGOS'; Font='Segoe UI Black'; Size=[float]8; BoxW=[float]295 },
     @{ Text = 'LA GARZA AGUACHILERA'; Font='Segoe UI Black'; Size=[float]19; BoxW=[float]410 },
     @{ Text = 'TOSTIAGUACHILE VERDE TRADICIONAL'; Font='Segoe UI Black'; Size=[float]12.5; BoxW=[float]410 },
-    @{ Text = '170 MXN * ~100g CAMARON'; Font='Segoe UI Black'; Size=[float]10.5; BoxW=[float]295 },
+    @{ Text = '150 MXN * ~100g CAMARON'; Font='Segoe UI Black'; Size=[float]10.5; BoxW=[float]295 },
     @{ Text = 'El producto es preparado frente a usted'; Font='Segoe UI Black'; Size=[float]12; BoxW=[float]410 },
     @{ Text = 'para corroborar su frescura'; Font='Segoe UI Black'; Size=[float]12; BoxW=[float]410 },
     @{ Text = 'PEDIDOS Y APARTADOS POR WHATSAPP'; Font='Segoe UI Black'; Size=[float]10; BoxW=[float]410 },
@@ -145,7 +145,7 @@ $postFeedTexts = @(
     @{ Text = 'LA GARZA AGUACHILERA'; Font='Arial'; Size=[float]22; MarginLeft=[float]390 },
     @{ Text = 'TOSTIAGUACHILE'; Font='Arial'; Size=[float]38; MarginLeft=[float]390 },
     @{ Text = 'VERDE TRADICIONAL'; Font='Arial'; Size=[float]32; MarginLeft=[float]390 },
-    @{ Text = '170 MXN'; Font='Arial'; Size=[float]40; MarginLeft=[float]390 },
+    @{ Text = '150 MXN'; Font='Arial'; Size=[float]40; MarginLeft=[float]390 },
     @{ Text = 'Con Tostitos Salsa Verde'; Font='Arial'; Size=[float]21; MarginLeft=[float]390 },
     @{ Text = 'El producto es preparado frente a usted'; Font='Arial'; Size=[float]25; BoxW=[float]940 },
     @{ Text = 'para corroborar su maxima frescura'; Font='Arial'; Size=[float]23; BoxW=[float]940 },
@@ -173,7 +173,7 @@ $periodicTexts = @(
     @{ Post = 'Post 1 (Jungla/Mango)'; Text = 'El producto es preparado frente a usted para corroborar su frescura'; Font='Segoe UI Black'; Size=[float]17.0 },
     @{ Post = 'Post 2 (Violeta Alien)'; Text = 'EXPEDIENTE SECRETO * BASE ALIENIGENA DE PLAYA MIRAMAR'; Font='Segoe UI Black'; Size=[float]13.0 },
     @{ Post = 'Post 2 (Violeta Alien)'; Text = '?PROTEGEN A TAMPICO DE HURACANES'; Font='Segoe UI Black'; Size=[float]20.5 },
-    @{ Post = 'Post 2 (Violeta Alien)'; Text = 'SABOR DE OTRA GALAXIA * $170 MXN LA BOLSA BIEN REPORTADA'; Font='Segoe UI Black'; Size=[float]17.0 },
+    @{ Post = 'Post 2 (Violeta Alien)'; Text = 'SABOR DE OTRA GALAXIA * $150 MXN LA BOLSA BIEN REPORTADA'; Font='Segoe UI Black'; Size=[float]17.0 },
     @{ Post = 'Post 4 (Atardecer Fuego)'; Text = '!LA CURA SAGRADA DE LA CRUDA!'; Font='Segoe UI Black'; Size=[float]24.5 },
     @{ Post = 'Post 4 (Atardecer Fuego)'; Text = 'LIMON RECIEN EXPRIMIDO * CHILE SERRANO * ~100g CAMARON * TOSTITOS SALSA VERDE'; Font='Segoe UI Black'; Size=[float]11.5 },
     @{ Post = 'Post 5 (Hielo Artico)'; Text = 'HIELERA GIGANTE + 2 CUBETAS CON TERMOMETRO'; Font='Segoe UI Black'; Size=[float]12.2; MarginLeft=[float]178; LimitRight=[float]720 },
@@ -236,7 +236,7 @@ $catalogSafeZoneTexts = @(
     @{ Piece = 'Post 16'; Text = 'ORGULLO Y COMUNIDAD 100% JAIBA * GRACIAS POR TU PREFERENCIA'; Font = 'Segoe UI Black'; Size = [float]12.5 },
     # Story Invariants
     @{ Piece = 'Story Shared'; Text = 'LA GARZA AGUACHILERA'; Font = 'Segoe UI Black'; Size = [float]30.0 },
-    @{ Piece = 'Story Shared'; Text = "170 MXN LA BOLSA * ~100g CAMAR$($uO)N"; Font = 'Segoe UI Black'; Size = [float]21.0 },
+    @{ Piece = 'Story Shared'; Text = "150 MXN LA BOLSA * ~100g CAMAR$($uO)N"; Font = 'Segoe UI Black'; Size = [float]21.0 },
     @{ Piece = 'Story Shared'; Text = 'PEDIDOS Y APARTADOS POR WHATSAPP'; Font = 'Segoe UI Black'; Size = [float]16.0 },
     @{ Piece = 'Story Shared'; Text = '833 252 09 88'; Font = 'Segoe UI Black'; Size = [float]34.0 }
 )
@@ -259,7 +259,7 @@ $videoTexts = @(
     @{ Name='Header'; Text='LA GARZA AGUACHILERA'; Font='Arial'; Size=[float]36 },
     @{ Name='Header'; Text='TOSTIAGUACHILE VERDE TRADICIONAL'; Font='Arial'; Size=[float]22 },
     @{ Name='Footer'; Text='PEDIDOS WHATSAPP: 833 252 09 88'; Font='Arial'; Size=[float]28 },
-    @{ Name='Footer'; Text='VERDE TRADICIONAL * 170 MXN * ~100g CAMARON'; Font='Arial'; Size=[float]22 },
+    @{ Name='Footer'; Text='VERDE TRADICIONAL * 150 MXN * ~100g CAMARON'; Font='Arial'; Size=[float]22 },
     @{ Name='Footer'; Text='El producto es preparado frente a usted'; Font='Arial'; Size=[float]20 },
     @{ Name='Footer'; Text='para corroborar su maxima frescura'; Font='Arial'; Size=[float]18 },
     @{ Name='Sub1'; Text='EL TOSTIAGUACHILE MAS REPORTADO!'; Font='Arial'; Size=[float]29; BoxW=[float]960 },
@@ -451,7 +451,22 @@ if (Test-Path $zipPath) {
 # -----------------------------------------------------------------------------
 Write-Host "`n5. ESCANEO INTEGRAL DE PALABRAS PROHIBIDAS:" -ForegroundColor Green
 
-$patterns = @('jumbo', 'nacho', 'tostitos?.*redondos?', 'totopos?.*redondos?', '#tostitosredondos?', 'dark\s*kitchen', 'caldo\s*por\s*separado', 'Rosa\s*210', 'base\s*de\s*operaciones')
+$patterns = @(
+    'jumbo',
+    'nacho',
+    'tostitos?.*redondos?',
+    'totopos?.*redondos?',
+    '#tostitosredondos?',
+    'dark\s*kitchen',
+    'caldo\s*por\s*separado',
+    'Rosa\s*210',
+    'base\s*de\s*operaciones',
+    '\$170',
+    '170\s*MXN',
+    '170\s*pesos',
+    '170%20',
+    'ciento\s*setenta'
+)
 
 $projectRoot = 'd:\AG\la garza aguachilera'
 $thisScriptPath = if ($PSCommandPath) { (Resolve-Path $PSCommandPath).Path } else { (Resolve-Path 'd:\AG\la garza aguachilera\herramientas\auditar_multimedia_qa.ps1' -ErrorAction SilentlyContinue).Path }
@@ -463,6 +478,7 @@ $filesToScan = Get-ChildItem -Path $projectRoot -Recurse -Include *.ps1, *.html,
     $_.FullName -notmatch '\\tests\\' -and
     $_.FullName -ne $thisScriptPath -and
     $_.Name -ne 'auditar_multimedia_qa.ps1' -and
+    $_.Name -ne 'proposed_auditar_multimedia_qa.ps1' -and
     $_.Name -ne 'e2e_test_suite.ps1' -and
     $_.Name -ne 'adversarial_ux_integrity_test.ps1' -and
     $_.Name -ne 'test_deploy_readiness_adversarial.ps1' -and
@@ -480,7 +496,33 @@ if ($forbiddenMatches -and $forbiddenMatches.Count -gt 0) {
     }
     $script:fallasTotales += $forbiddenMatches.Count
 } else {
-    Write-Host " [LIMPIO] Cero menciones de palabras prohibidas ('jumbo', 'tostitos redondos', 'dark kitchen', 'caldo por separado', 'Rosa 210', 'nacho')." -ForegroundColor Green
+    Write-Host " [LIMPIO] Cero menciones de palabras prohibidas ('jumbo', 'tostitos redondos', 'dark kitchen', 'caldo por separado', 'Rosa 210', 'nacho', '$170', '170 MXN', '170 pesos', 'ciento setenta')." -ForegroundColor Green
+}
+
+# -----------------------------------------------------------------------------
+# 5.1 VERIFICACION POSITIVA DE PRECIO OFICIAL $150 MXN (KEY FILES)
+# -----------------------------------------------------------------------------
+Write-Host "`n5.1 VERIFICACION POSITIVA DE PRECIO OFICIAL `$150 MXN (KEY FILES):" -ForegroundColor Green
+
+$keyFilesToValidate = @(
+    @{ Name = 'index.html'; Path = Join-Path $projectRoot 'index.html'; MinOccurrences = 5 },
+    @{ Name = 'panel_control.html'; Path = Join-Path $projectRoot 'panel_control.html'; MinOccurrences = 20 }
+)
+
+foreach ($kf in $keyFilesToValidate) {
+    if (Test-Path $kf.Path) {
+        $content = Get-Content -Path $kf.Path -Raw -Encoding UTF8
+        $matches150 = [regex]::Matches($content, '(\$150|150\s*MXN|150\s*pesos)')
+        if ($matches150.Count -ge $kf.MinOccurrences) {
+            Write-Host " [OK] $($kf.Name) contiene el precio oficial `$150 MXN ($($matches150.Count) menciones detectadas, min esperado: $($kf.MinOccurrences))" -ForegroundColor Green
+        } else {
+            Write-Host " [ERROR BLINDAJE] $($kf.Name) no cuenta con suficientes menciones del precio oficial `$150 MXN (Encontradas: $($matches150.Count), Esperadas: >= $($kf.MinOccurrences))" -ForegroundColor Red
+            $script:fallasTotales++
+        }
+    } else {
+        Write-Host " [ERROR NO EXISTE] Archivo clave ausente para validacion de precio: $($kf.Path)" -ForegroundColor Red
+        $script:fallasTotales++
+    }
 }
 
 # -----------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-﻿Add-Type -AssemblyName System.Drawing
+Add-Type -AssemblyName System.Drawing
 
 $rootDir = "d:\AG\la garza aguachilera"
 $outDir1 = "d:\AG\la garza aguachilera\contenido_redes\posts_periodicos"
@@ -321,7 +321,7 @@ Draw-FramedPhoto $g1 $foodRedondo 55 195 555 440 28 ([System.Drawing.Color]::Fro
 $priceBadge1 = [System.Drawing.RectangleF]::new(75, 565, 360, 52)
 $bPriceBadge1 = [System.Drawing.Drawing2D.LinearGradientBrush]::new($priceBadge1, [System.Drawing.Color]::FromArgb(249, 115, 22), [System.Drawing.Color]::FromArgb(234, 88, 12), 0.0)
 Draw-RoundedBox $g1 $bPriceBadge1 $pWhite4 $priceBadge1 24 $true
-$g1.DrawString("$star `$170 MXN $bul ~100g CAMAR${uO}N $star", $fBlack14, $bWhite, [float]255, [float]591, $sfCenter)
+$g1.DrawString("$star `$150 MXN $bul ~100g CAMAR${uO}N $star", $fBlack14, $bWhite, [float]255, [float]591, $sfCenter)
 
 Draw-StickerWithShadow $g1 $cleanComida 565 180 285 285 -5
 Draw-StickerWithShadow $g1 $juanchoPath 715 320 330 330 4
@@ -402,7 +402,7 @@ $g2.DrawString("${iE}NO SE LLEVEN MI BOLSA!", $fBlack12, $bWhite, [float]225, [f
 $cardRect2 = [System.Drawing.RectangleF]::new(55, 700, 970, 170)
 $bPurpleDark = [System.Drawing.Drawing2D.LinearGradientBrush]::new($cardRect2, [System.Drawing.Color]::FromArgb(245, 30, 10, 60), [System.Drawing.Color]::FromArgb(248, 17, 24, 39), 90.0)
 Draw-RoundedBox $g2 $bPurpleDark $pYellow3 $cardRect2 26 $true
-$g2.DrawString("SABOR DE OTRA GALAXIA $bul `$170 MXN LA BOLSA BIEN REPORTADA", $fBlack18, $bLime, [float]540, [float]738, $sfCenter)
+$g2.DrawString("SABOR DE OTRA GALAXIA $bul `$150 MXN LA BOLSA BIEN REPORTADA", $fBlack18, $bLime, [float]540, [float]738, $sfCenter)
 $g2.DrawString("~100g Camar${lO}n Mariposa $bul Con Tostitos Salsa Verde $bul Lim${lO}n y Serrano", $fBlack16, $bWhite, [float]540, [float]782, $sfCenter)
 $g2.DrawString("El producto es preparado frente a usted para corroborar su frescura", $fBlack18, $bYellow, [float]540, [float]830, $sfCenter)
 
@@ -449,7 +449,7 @@ Draw-StickerWithShadow $g4 $mapachePath 55 445 225 225 6
 $spicePill4 = [System.Drawing.RectangleF]::new(285, 575, 465, 50)
 $bSpiceG = [System.Drawing.Drawing2D.LinearGradientBrush]::new($spicePill4, [System.Drawing.Color]::FromArgb(254, 240, 138), [System.Drawing.Color]::FromArgb(250, 204, 21), 0.0)
 Draw-RoundedBox $g4 $bSpiceG $pDark4 $spicePill4 24 $true
-$g4.DrawString("PICANTE POR NATURALEZA $bul `$170 MXN", $fBlack14, $bNavyTxt, [float]517, [float]600, $sfCenter)
+$g4.DrawString("PICANTE POR NATURALEZA $bul `$150 MXN", $fBlack14, $bNavyTxt, [float]517, [float]600, $sfCenter)
 
 $strip4 = [System.Drawing.RectangleF]::new(55, 655, 970, 62)
 Draw-RoundedBox $g4 $bCream $pDark4 $strip4 20 $true
@@ -518,7 +518,7 @@ Draw-StickerWithShadow $g5 $juanchoPath 735 445 300 300 -5
 $freshRect5 = [System.Drawing.RectangleF]::new(55, 695, 970, 155)
 $bDarkCard5 = [System.Drawing.Drawing2D.LinearGradientBrush]::new($freshRect5, [System.Drawing.Color]::FromArgb(245, 9, 20, 34), [System.Drawing.Color]::FromArgb(248, 4, 10, 18), 90.0)
 Draw-RoundedBox $g5 $bDarkCard5 $pYellow3 $freshRect5 26 $true
-$g5.DrawString("$star NUESTRA PROMESA SAGRADA (`$170 MXN LA BOLSA) $star", $fBlack16, $bCyan, [float]540, [float]735, $sfCenter)
+$g5.DrawString("$star NUESTRA PROMESA SAGRADA (`$150 MXN LA BOLSA) $star", $fBlack16, $bCyan, [float]540, [float]735, $sfCenter)
 Draw-OutlinedText $g5 "El producto es preparado frente a usted" $fBlack20 $bYellow $pOutline6 540 780 $sfCenter
 Draw-OutlinedText $g5 "para corroborar su frescura" $fBlack20 $bWhite $pOutline6 540 820 $sfCenter
 
@@ -568,7 +568,7 @@ $g6.DrawString("${iE}APROBADO POR LAS ESCOLLERAS!", $fBlack14, $bYellow, [float]
 $cBadge6 = [System.Drawing.RectangleF]::new(560, 610, 455, 50)
 $bRose = [System.Drawing.Drawing2D.LinearGradientBrush]::new($cBadge6, [System.Drawing.Color]::FromArgb(225, 29, 72), [System.Drawing.Color]::FromArgb(190, 18, 60), 0.0)
 Draw-RoundedBox $g6 $bRose $pWhite4 $cBadge6 24 $true
-$g6.DrawString("CON TOSTITOS SALSA VERDE $bul `$170 MXN", $fBlack14, $bWhite, [float]787, [float]635, $sfCenter)
+$g6.DrawString("CON TOSTITOS SALSA VERDE $bul `$150 MXN", $fBlack14, $bWhite, [float]787, [float]635, $sfCenter)
 
 $cardRect6 = [System.Drawing.RectangleF]::new(55, 685, 970, 175)
 $bDarkCard6 = [System.Drawing.Drawing2D.LinearGradientBrush]::new($cardRect6, [System.Drawing.Color]::FromArgb(245, 6, 78, 59), [System.Drawing.Color]::FromArgb(248, 4, 30, 20), 90.0)
@@ -618,7 +618,7 @@ Draw-RoundedBox $g7 $bRoseTop $pWhite4 $pillTop7 21 $true
 $g7.DrawString("S${uA}BADO Y DOMINGO EN RUTA $bul PUENTE TAMPICO A PLAYA MIRAMAR", $fBlack14, $bWhite, [float]602, [float]51, $sfCenter)
 
 Draw-OutlinedText $g7 "${iE}HIELERAS CARGADAS Y EN RUTA!" $fBlack26 $bYellow $pOutline8 602 106 $sfCenter
-Draw-OutlinedText $g7 "TAMPICO Y CIUDAD MADERO $bul `$170 MXN" $fBlack20 $bCyan $pOutline6 602 152 $sfCenter
+Draw-OutlinedText $g7 "TAMPICO Y CIUDAD MADERO $bul `$150 MXN" $fBlack20 $bCyan $pOutline6 602 152 $sfCenter
 
 Draw-StickerWithShadow $g7 $juanchoPath 35 190 270 270 -5
 Draw-StickerWithShadow $g7 $ovniPath 285 170 245 245 4

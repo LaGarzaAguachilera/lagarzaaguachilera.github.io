@@ -19,7 +19,7 @@ Todas las publicaciones, guiones, textos en pantalla y copys contenidos en este 
 | **Método de Ensamble** | Ensamble en vivo en puerta para garantizar crunch | Prohibido enviar ingredientes premontados o líquidos desfasados; ensamble al segundo. |
 | **Variedad de Totopo** | Exclusivamente **Tostitos Salsa Verde** | Prohibida cualquier otra variedad o presentación genérica de totopo. |
 | **Porción Oficial** | Bolsa bien reportada con **~100g de camarón mariposa** | Prohibidos adjetivos no autorizados de volumen; strictly ~100g mariposa. |
-| **Precio Oficial** | **$170 MXN** exactos | Prohibido precios variables o recargos no informados. |
+| **Precio Oficial** | **$150 MXN** exactos | Prohibido precios variables o recargos no informados. |
 | **Promesa Obligatoria** | `✨ El producto es preparado frente a usted para corroborar su frescura ✨` | Innegociable en toda comunicación comercial. |
 | **Llamado a la Acción** | WhatsApp directo **833 252 09 88** | Cero formularios ni carritos web engorrosos. |
 
@@ -77,7 +77,7 @@ En La Garza Aguachilera preparamos una auténtica chulada que parece de otra gal
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-💰 Solo $170 MXN la bolsa bien reportada.
+💰 Solo $150 MXN la bolsa bien reportada.
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
 📍 Salimos desde Colonia Flores, Tampico, Tamaulipas.
 
@@ -85,7 +85,7 @@ En La Garza Aguachilera preparamos una auténtica chulada que parece de otra gal
 ```
 * **Hashtags:** `#Tampico #PlayaMiramar #AliensTampico #OvniMiramar #Tostiaguachiles #LaGarzaAguachilera #CulturaJaiba #MariscosTampico #TostitosSalsaVerde`
 * **Llamado a la Acción (CTA):** Enviar mensaje directo a WhatsApp **833 252 09 88**  
-  👉 Enlace directo: `https://wa.me/528332520988?text=Hola%20La%20Garza!%20Quiero%20apartar%20mis%20Tostiaguachiles%20Verdes%20de%20170%20pesos%20antes%20de%20que%20me%20los%20abduzcan`
+  👉 Enlace directo: `https://wa.me/528332520988?text=Hola%20La%20Garza!%20Quiero%20apartar%20mis%20Tostiaguachiles%20Verdes%20de%20150%20pesos%20antes%20de%20que%20me%20los%20abduzcan`
 
 ---
 
@@ -115,7 +115,7 @@ Aquí no andamos con pequeñeces ni regateos:
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-💰 $170 MXN la bolsa bien servida.
+💰 $150 MXN la bolsa bien servida.
 🛵 Rutas activas SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM) en Tampico y Ciudad Madero.
 📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
 
@@ -151,7 +151,7 @@ Y cuando se trata de botanear en serio con este calorón, ellos no aceptan imita
 
 Nada de totopos aguados ni promesas dudosas: puro sabor costeño crujiente en cada bocado, una auténtica chulada.
 
-💰 $170 MXN la bolsa bien reportada.
+💰 $150 MXN la bolsa bien reportada.
 🛵 Entregas en Tampico y Ciudad Madero sábados y domingos (1:00 PM a 5:00 PM).
 📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
 
@@ -189,7 +189,7 @@ El OVNI de Miramar, Juancho de la Laguna del Carpintero y el Mapache de las Esco
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-💰 Solo $170 MXN la bolsa bien reportada.
+💰 Solo $150 MXN la bolsa bien reportada.
 🛵 Rutas activas SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
 📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
 
@@ -232,7 +232,7 @@ Resultado: Tostitos 100% crujientes (jamás remojados ni batidos) y la certeza a
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-💰 $170 MXN la bolsa bien reportada.
+💰 $150 MXN la bolsa bien reportada.
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
 📍 Salimos desde Colonia Flores, Tampico, Tamaulipas.
 
@@ -269,7 +269,7 @@ No usamos mochilas de tela caliente ni recipientes expuestos al sol: protegemos 
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-💰 $170 MXN la bolsa con TOSTITOS SALSA VERDE y ~100g de camarón.
+💰 $150 MXN la bolsa con TOSTITOS SALSA VERDE y ~100g de camarón.
 🛵 Entregas SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
 📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
 
@@ -283,7 +283,7 @@ No usamos mochilas de tela caliente ni recipientes expuestos al sol: protegemos 
 
 ### 📌 PIEZA 07 — Anatomía del Camarón Mariposa: ~100g Sin Trampas
 * **Formato:** Macro Fotografía Cuadrada (1:1 / 1080 x 1080 px) y Vertical Clip 9:16 (1080 x 1920 px)
-* **Objetivo de Marketing:** Evidenciar la generosidad y limpieza del camarón para respaldar el valor de $170 MXN frente a botanas deficientes.
+* **Objetivo de Marketing:** Evidenciar la generosidad y limpieza del camarón para respaldar el valor de $150 MXN frente a botanas deficientes.
 * **3 Hooks Virales de Apertura:**
   - *Hook 1 (Defensa del Consumidor):* "Si tu aguachile trae más cebolla y pepino que camarón... te están viendo la cara 🚩"
   - *Hook 2 (Macro Apetitoso):* "Miren este corte mariposa: ~100g de puro camarón fresco del Golfo bien reportado."
@@ -306,7 +306,7 @@ Carne firme, jugosa y abundante que se siente en cada mordida, acompañada de pe
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-💰 Solo $170 MXN la bolsa bien reportada.
+💰 Solo $150 MXN la bolsa bien reportada.
 🛵 Entregas SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM) en Tampico y Madero.
 📍 Salida desde Colonia Flores, Tampico, Tamaulipas.
 
@@ -342,7 +342,7 @@ Nuestro repartidor llega a tu domicilio en Tampico o Ciudad Madero, abre la bols
 
 ¿El resultado? Un crujido seco, potente y adictivo desde el primer bocado hasta el último camarón. ¡Una chulada de adeveras!
 
-💰 $170 MXN la bolsa bien reportada.
+💰 $150 MXN la bolsa bien reportada.
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
 📍 Salimos desde Colonia Flores, Tampico, Tamaulipas.
 
@@ -383,7 +383,7 @@ Jaibo que se respeta sabe que la resaca no se quita con pastillas: se cura con e
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-💰 $170 MXN la bolsa bien servida y reportada, una chulada salvavidas.
+💰 $150 MXN la bolsa bien servida y reportada, una chulada salvavidas.
 🛵 Estamos en ruta hoy en Tampico y Ciudad Madero (1:00 PM a 5:00 PM).
 📍 Salida desde Colonia Flores, Tampico, Tamaulipas.
 
@@ -420,7 +420,7 @@ Sin aditivos raros, sin congelados insípidos: pura frescura costeña lista para
 🟢 Pepino en rodajas y cebollita morada fileteada.
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-💰 Solo $170 MXN la bolsa bien reportada, qué chulada.
+💰 Solo $150 MXN la bolsa bien reportada, qué chulada.
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM) en Tampico y Madero.
 📍 Salida desde Colonia Flores, Tampico, Tamaulipas.
 
@@ -457,7 +457,7 @@ Picante por naturaleza, acidito en su punto exacto y con el ADN costeño que ama
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-💰 $170 MXN la bolsa bien reportada.
+💰 $150 MXN la bolsa bien reportada.
 🛵 Entregas SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
 📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
 
@@ -473,7 +473,7 @@ Picante por naturaleza, acidito en su punto exacto y con el ADN costeño que ama
 * **Formato:** Fotografía Lifestyle Costero (1:1 / 1080 x 1080 px) y Vertical Story (9:16 / 1080 x 1920 px)
 * **Objetivo de Marketing:** Convertir el producto en el símbolo por excelencia del descanso de fin de semana en casa.
 * **3 Hooks Virales de Apertura:**
-  - *Hook 1 (Plan Perfecto):* "El plan perfecto de domingo en Tampico existe y cuesta solo $170 pesos 🛋️🦐"
+  - *Hook 1 (Plan Perfecto):* "El plan perfecto de domingo en Tampico existe y cuesta solo $150 pesos 🛋️🦐"
   - *Hook 2 (Cero Cocina):* "Domingo: cero estufa, cero sartenes que lavar y puro antojo a tu puerta."
   - *Hook 3 (Costumbre Costera):* "Dime que estás disfrutando el domingo en la conurbada sin decirme que es domingo..."
 * **Dirección Visual & B-Roll:**
@@ -494,7 +494,7 @@ Te llevamos el Tostiaguachile Verde Tradicional listo para disfrutar directo de 
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-💰 Solo $170 MXN la bolsa bien reportada, qué chulada.
+💰 Solo $150 MXN la bolsa bien reportada, qué chulada.
 🛵 Rutas activas hoy en Tampico y Ciudad Madero hasta las 5:00 PM.
 📍 Salida desde Colonia Flores, Tampico, Tamaulipas.
 
@@ -534,7 +534,7 @@ Las motos de La Garza Aguachilera ya están en la calle llevando el sabor más r
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-💰 Solo $170 MXN la bolsa con ~100g de camarón mariposa y TOSTITOS SALSA VERDE.
+💰 Solo $150 MXN la bolsa con ~100g de camarón mariposa y TOSTITOS SALSA VERDE.
 ⏰ Horario de entrega: De 1:00 PM a 5:00 PM.
 ⚠️ Cupos limitados por ruta para garantizar la temperatura óptima y el frío del marisco. ¡Una chulada de servicio!
 
@@ -566,7 +566,7 @@ En La Garza Aguachilera cubrimos los puntos clave de Tampico y Ciudad Madero con
 🗓️ DÍAS DE ENTREGA: Sábados y Domingos exclusivamente.
 ⏰ HORARIOS DE SERVICIO: De 1:00 PM a 5:00 PM (anunciamos las rutas activas en nuestras redes sociales).
 📍 BASE DE DISTRIBUCIÓN: Colonia Flores, Tampico, Tamaulipas.
-💰 PRECIO OFICIAL: $170 MXN por bolsa (~100g de camarón mariposa y TOSTITOS SALSA VERDE).
+💰 PRECIO OFICIAL: $150 MXN por bolsa (~100g de camarón mariposa y TOSTITOS SALSA VERDE).
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
@@ -602,7 +602,7 @@ En La Garza Aguachilera cubrimos los puntos clave de Tampico y Ciudad Madero con
 No nos gusta dejar a nadie con las ganas, pero en La Garza Aguachilera la frescura es innegociable:
 Compramos el camarón fresco de costa exclusivamente para el fin de semana y no guardamos producto sobrante ni congelado. Por eso, cuando los cupos del día se acaban... ¡se cerró la hielera hasta la siguiente semana!
 
-🟢 Tostiaguachile Verde Tradicional: $170 MXN
+🟢 Tostiaguachile Verde Tradicional: $150 MXN
 🦐 ~100g de camarón mariposa limpio y jugoso de adeveras.
 💥 Auténticos TOSTITOS SALSA VERDE ultra crujientes.
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
@@ -641,7 +641,7 @@ Nuestra promesa sigue firme y sin cambios:
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 🦐 ~100g de camarón mariposa limpio y fresco del Golfo de adeveras.
 🟢 Salsa verde serrano artesanal y mucho limón Colima.
-💥 TOSTITOS SALSA VERDE con el crujido intacto por $170 MXN.
+💥 TOSTITOS SALSA VERDE con el crujido intacto por $150 MXN.
 
 🛵 Nos vemos el próximo sábado y domingo de 1:00 PM a 5:00 PM.
 📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.

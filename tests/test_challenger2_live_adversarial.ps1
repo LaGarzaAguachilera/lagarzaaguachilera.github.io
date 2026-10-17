@@ -217,7 +217,7 @@ $officialLocation = "Colonia Flores, Tampico, Tamaulipas"
 Assert-Condition ($liveHtmlIndex.Contains($officialLocation)) "index.html contains official location: '$officialLocation'" "index.html missing official location"
 Assert-Condition ($liveHtmlPanel.Contains($officialLocation)) "panel_control.html contains official location: '$officialLocation'" "panel_control.html missing official location"
 
-$officialPrice = "$170"
+$officialPrice = "$150"
 Assert-Condition ($liveHtmlIndex.Contains($officialPrice)) "index.html contains official price: '$officialPrice'" "index.html missing official price"
 Assert-Condition ($liveHtmlPanel.Contains($officialPrice)) "panel_control.html contains official price: '$officialPrice'" "panel_control.html missing official price"
 

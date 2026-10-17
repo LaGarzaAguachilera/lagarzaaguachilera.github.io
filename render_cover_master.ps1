@@ -310,13 +310,13 @@ $fontSub = [System.Drawing.Font]::new("Segoe UI Black", 12.5, [System.Drawing.Fo
 $brushMint = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(52, 211, 153))
 Draw-OutlinedText $g "TOSTIAGUACHILE VERDE TRADICIONAL" $fontSub $brushMint $penTextOutline $textX 169
 
-# High-Voltage Price Pill: ★ $170 MXN • ~100g CAMARÓN ★
+# High-Voltage Price Pill: ★ $150 MXN • ~100g CAMARÓN ★
 $pillPriceRect = [System.Drawing.RectangleF]::new($textX, 196, 295, 30)
 $brushPriceBg = [System.Drawing.Drawing2D.LinearGradientBrush]::new($pillPriceRect, [System.Drawing.Color]::FromArgb(249, 115, 22), [System.Drawing.Color]::FromArgb(234, 88, 12), 0.0)
 $penPriceBorder = [System.Drawing.Pen]::new([System.Drawing.Color]::White, 2.2)
 Draw-RoundedBox $g $brushPriceBg $penPriceBorder $pillPriceRect 14 $true
 $fontPrice = [System.Drawing.Font]::new("Segoe UI Black", 10.5, [System.Drawing.FontStyle]::Bold)
-$priceStr = "$star `$170 MXN $bul ~100g CAMAR${uO}N $star"
+$priceStr = "$star `$150 MXN $bul ~100g CAMAR${uO}N $star"
 $g.DrawString($priceStr, $fontPrice, $brushWhite, [float]($textX + 147.5), [float]211, $sfCenter)
 
 # ==============================================================================
