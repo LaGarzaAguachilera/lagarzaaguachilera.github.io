@@ -17,5 +17,7 @@ Desktop.ini
 .DS_Store
 *.tmp
 *.log
+*.pyc
+__pycache__/
 .vscode/
 .idea/

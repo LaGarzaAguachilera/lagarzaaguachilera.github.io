@@ -43,13 +43,30 @@ Por directiva expresa e inmutable del dueño del negocio, toda la flota de agent
    - **Cero alteraciones:** No se diluye la salsa, no se reduce el picor a petición, ni se crean variaciones apócrifas; la experiencia original se respeta al 100%.
 5. **Capacidad Productiva por Tanda:**
    - **75 bolsas por tanda estándar** (ajustable hacia arriba o abajo según disponibilidad de camarón fresco en La Puntilla).
-   - Con reserva táctica del +15% ($P = 87$ bolsas), representa **$14,790 MXN de proyección bruta** y exactamente **10.0 kg de camarón fresco**.
+   - Con reserva táctica del +15% ($P = 87$ bolsas), representa **$13,050 MXN de proyección bruta** y exactamente **10.0 kg de camarón fresco**.
 
 ---
 
-## 👥 2. ROSTER DE LA FLOTA ACTIVA DE AGENTES ESPECIALIZADOS (13 AGENTES EN 6 ETAPAS)
+## 👥 2. ROSTER DE LA FLOTA ACTIVA DE AGENTES ESPECIALIZADOS Y AUDITORÍA FASE 1 (PRODUCCIÓN DE ANIMACIÓN)
 
-La flota opera bajo el mando directo del **Agente Orquestador Supremo (`orquestador_supremo_garza`)**, ejecutando un flujo secuencial de extremo a extremo en **6 Etapas Operativas**:
+### 2.1 Auditoría Inteligente de Agentes (Directiva Maestra de Producción Audiovisual)
+1. **REUTILIZADOS / MANTENIDOS (Activos Visuales, Identidad y Conversión):**
+   - `disenador_grafico_senior`: Conservado por sus activos recortados transparentes (`clean_juancho.png`, `clean_mapache.png`, `clean_ovni.png`, `clean_comida.png` y versiones Spooky) e identidad Neo-Brutalista Tropical.
+   - `food_photography_specialist`: Conservado (instancia única) para fotografías reales de Tostiaguachile Verde Tradicional ($150 MXN).
+   - `copywriter_gastronomico_hooks`, `especialista_integracion_meta`, `estratega_pauta_local_ads`, `especialista_conversion_whatsapp`, `mentor_tecnico_principiantes`.
+2. **RECALIBRADOS / MEJORADOS (Enfoque en Animación Cómica Mexicana y Render Técnico):**
+   - `marketing_food_specialist` y `cazador_tendencias_trendjacking`: Recalibrados para alimentar comedia situacional en español mexicano/tampiqueño y narrativa animada.
+   - `editor_video_garza`: Recalibrado de edición tradicional a pipeline híbrido con secuencias animadas a 60fps.
+   - `control_calidad_empresarial`: Elevado a `Director_Control_Calidad_Autonomo` con auditoría de prosodia mexicana, lip-sync, 60fps y blindaje de precio ($150 MXN).
+3. **CREADOS E INSTANCIADOS (Escuadrón Especialista de Animación y Voz):**
+   - `Agente_Showrunner_y_Adaptacion`: Guion técnico segundo a segundo y *timing* de comedia tampiqueña.
+   - `Agente_Voces_y_Prosodia_TTS`: Casting vocal neuronal `es-MX` multi-personaje con ortografía fonética expresiva y modulación de `pitch`/`rate`.
+   - `Agente_Estudio_Animacion_2D_3D`: Motor de animación programática 2D a 60fps con *lip-sync* por envolvente de amplitud WAV, parpadeo, *squash & stretch*, expresiones faciales, *camera shake*, *zoom-in* cómico y subtítulos dinámicos estilo TikTok/Reels.
+   - `Agente_Diseno_Sonoro_y_Mezcla`: Síntesis e integración de SFX cómicos (gemidos, garras, rayo abductor, *crunch* ASMR, limón exprimido) y mezcla con *auto-ducking*.
+   - `Agente_Ingeniero_Render_Final`: Compilación FFmpeg a `.mp4` (Full HD 1080x1920, 60fps, H.264 High Profile, AAC estéreo) y reproductor interactivo.
+   - `Director_Control_Calidad_Autonomo`: Auditor supremo proactivo de los 4 pilares obligatorios (guion, voces mexicanas, animación con lip-sync y archivo `.mp4` reproducible).
+
+La flota opera bajo el mando directo del **Agente Orquestador Supremo (`orquestador_supremo_garza`)**:
 
 ```
 ===================================================================================================
@@ -57,51 +74,21 @@ La flota opera bajo el mando directo del **Agente Orquestador Supremo (`orquesta
                      Colonia Flores, Tampico, Tamaulipas | WhatsApp: 833 252 09 88
 ===================================================================================================
    |
-   +--> [ETAPA 1: ESTRATEGIA Y CALENDARIO]
-   |       |-- Director Creativo (`marketing_food_specialist`)
-   |       |-- Cazador de Tendencias / Trendjacking (`cazador_tendencias_trendjacking`)
-   |       +-- Arquitecto de Calendario 70/20/10 (`arquitecto_calendario_parrilla`)
+   +--> [ESCUADRÓN MAESTRO DE PRODUCCIÓN DE ANIMACIÓN 60FPS]
+   |       |-- 1. Agente_Showrunner_y_Adaptacion (Storyboard Técnico y Comedia Tampiqueña)
+   |       |-- 2. Agente_Voces_y_Prosodia_TTS (Casting Vocal es-MX Expresivo Multi-Personaje)
+   |       |-- 3. Agente_Estudio_Animacion_2D_3D (Rigging 2D, Lip-Sync, Expresiones y Cámara 60fps)
+   |       |-- 4. Agente_Diseno_Sonoro_y_Mezcla (SFX Cómicos, Crunch ASMR y Auto-Ducking)
+   |       |-- 5. Agente_Ingeniero_Render_Final (Compilación FFmpeg 1080x1920 60fps H.264/AAC)
+   |       +-- 6. Director_Control_Calidad_Autonomo (Auditoría Autónoma de Video, Audio y Marca)
    |
-   +--> [ETAPA 2: PRODUCCIÓN VISUAL (INSTANCIA ÚNICA DE FOTOGRAFÍA)]
-   |       |-- Director de Arte Senior (`disenador_grafico_senior`)
-   |       |-- Food Photography Specialist (`food_photography_specialist`) [ÚNICA INSTANCIA ACTIVA]
-   |       +-- Ingeniero de Video (`editor_video_garza`)
-   |
-   +--> [ETAPA 3: REDACCIÓN Y RETENCIÓN]
-   |       +-- Copywriter Gastronómico y Especialista en Hooks (`copywriter_gastronomico_hooks`)
-   |
-   +--> [ETAPA 4: DESPLIEGUE EN EL ECOSISTEMA META]
-   |       +-- Especialista de Integración en Meta (`especialista_integracion_meta`)
-   |
-   +--> [ETAPA 5: CONTROL DE CALIDAD Y AUDITORÍA CONTINUA]
-   |       +-- Director de Control de Calidad Total (`control_calidad_empresarial`)
-   |           * Filtro Previo (Preventivo) + Chequeo Periódico de Salud (Proactivo) + Reporte Amigable
-   |
-   +--> [ETAPA 6: SOPORTE PARA PRINCIPIANTES, PAUTA Y CONVERSIÓN]
-           |-- Mentor Técnico para Principiantes (`mentor_tecnico_principiantes`)
-           |-- Estratega de Pauta Local Meta & TikTok Ads (`estratega_pauta_local_ads`)
-           +-- Especialista en Conversión y Cierre WhatsApp/DM (`especialista_conversion_whatsapp`)
+   +--> [ETAPA 1 A 6: OPERACIONES COMERCIALES, DISEÑO, META Y CONVERSIÓN]
+           |-- marketing_food_specialist, cazador_tendencias_trendjacking, arquitecto_calendario_parrilla
+           |-- disenador_grafico_senior, food_photography_specialist, editor_video_garza
+           |-- copywriter_gastronomico_hooks, especialista_integracion_meta, control_calidad_empresarial
+           +-- mentor_tecnico_principiantes, estratega_pauta_local_ads, especialista_conversion_whatsapp
 ```
 
-### Detalle de Capacidades y Mandatos de la Flota Activa:
-
-| Etapa | ID de Agente | Rol Operativo | Mandato Principal y Reglas Operativas | Estatus |
-| :--- | :--- | :--- | :--- | :--- |
-| **Mando** | `orquestador_supremo_garza` | Agente Orquestador Supremo | Coordina la secuencia de 6 etapas, crea/asigna misiones y purga agentes duplicados u ociosos. | **ACTIVO** |
-| **Etapa 1** | `marketing_food_specialist` | Director Creativo de Marketing Gastronómico | Dirección general de campaña, identidad verbal tampiqueña y estrategia integral de marca. | **ACTIVO** |
-| **Etapa 1** | `cazador_tendencias_trendjacking` | Cazador de Tendencias, Audios y Memes (Trendjacking Agent) | Detecta formatos virales en TikTok/Reels, audios en tendencia y coyuntura local (clima Tampico, quincenas, partidos, Juancho, Ovnis) y entrega briefs al Editor de Video. | **ACTIVO** |
-| **Etapa 1** | `arquitecto_calendario_parrilla` | Arquitecto de Calendario y Parrilla de Contenidos (Social Media Planner) | Estructura la parrilla semanal bajo la regla **70/20/10** (70% antojo/ASMR, 20% humor local, 10% venta directa) en horarios pico de jueves a domingo. | **ACTIVO** |
-| **Etapa 2** | `disenador_grafico_senior` | Director de Arte & Branding Pop Tampiqueño | Diseño gráfico Neo-Brutalista Tropical Costeño, stickers die-cut (Juancho, OVNI, Mapache) y layouts con zonas seguras verificadas. | **ACTIVO** |
-| **Etapa 2** | `food_photography_specialist` | Food Photography Specialist (**Instancia Única**) | Fotografía gastronómica hiperrealista del Tostiaguachile Verde ($150 MXN, ~100g camarón mariposa, Tostitos Salsa Verde oficiales). Reemplaza las instancias duplicadas eliminadas. | **ACTIVO (Única Instancia)** |
-| **Etapa 2** | `editor_video_garza` | Ingeniero y Editor de Video Gastronómico | Reescalado 1080p Lanczos, color grading gastronómico, ritmo dinámico y mezcla de audio con gancho *"¡Agua fresca, mi papá!"*. | **ACTIVO** |
-| **Etapa 3** | `copywriter_gastronomico_hooks` | Copywriter Gastronómico y Especialista en Hooks | Redacta captions persuasivos, textos en pantalla y titulares de carruseles. Entrega siempre **3 opciones de Hook** (primeros 3s), guiños a Tampico/Madero y CTA a WhatsApp. | **ACTIVO** |
-| **Etapa 4** | `especialista_integracion_meta` | Especialista de Integración y Automatización en el Ecosistema Meta | Guía paso a paso la subida, programación y conexión en Meta Business Suite, Creator Studio, Facebook, Instagram y botón/bandeja de WhatsApp. | **ACTIVO** |
-| **Etapa 5** | `control_calidad_empresarial` | Director de Control de Calidad Total | **1) Filtro Previo (Preventivo)** de todo material/copy/diseño; **2) Chequeo Periódico de Salud (Proactivo)** de enlaces WhatsApp, consistencia de horarios/precios ($150)/ubicación en Meta y cuellos de botella; **3) Reporte Amigable** y orden de corrección inmediata. | **ACTIVO (Auditor Continuo)** |
-| **Etapa 6** | `mentor_tecnico_principiantes` | Mentor Técnico de Despliegue y Soporte en Redes (Tutor para Principiantes) | Explica con peras y manzanas, sin jerga técnica (nivel cero), para qué sirve cada archivo o script `.ps1`, dónde se pone y qué botones picar. | **ACTIVO** |
-| **Etapa 6** | `estratega_pauta_local_ads` | Estratega de Pauta Local (Meta & TikTok Ads Specialist) | Campañas de bajo presupuesto y alto retorno en radio local Tampico-Madero (Colonia Flores, Tampico, Tamaulipas), horarios de hambre, pruebas A/B y optimización a WhatsApp. | **ACTIVO** |
-| **Etapa 6** | `especialista_conversion_whatsapp` | Especialista en Conversión y Cierre por DM / WhatsApp (Community & Sales) | Diseña flujos de respuesta rápida para comentarios, automatizaciones de DM y guiones de cierre en WhatsApp con menú visual, ubicación y link pre-llenado. | **ACTIVO** |
-
----
 
 ## 🗑️ 3. BITÁCORA DE AUDITORÍA Y DEPURACIÓN DE AGENTES DUPLICADOS
 
@@ -208,10 +195,10 @@ A partir de $P_{\text{táctico}}$, el algoritmo calcula de forma exacta:
 
 | Preventa ($N$) | Objetivo ($P$) | Camarón Crudo (115g/u) | Limón Colima | Cajas Tostitos (24u) | Pepino | Cebolla Morada | Hielo (Bolsas) | Inversión Estimada | Venta Proyectada ($150/u) | Utilidad Bruta Est. |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **30 bolsas** | **35** | **4.0 kg** | **8.5 kg** | **2 cajas** (48 u) | 4.6 kg | 1.6 kg | 7 bolsas | ~$1,950 MXN | $5,950 MXN | **$4,000 MXN (67%)** |
-| **50 bolsas** | **58** | **6.7 kg** | **14.0 kg** | **3 cajas** (72 u) | 7.5 kg | 2.6 kg | 8 bolsas | ~$3,200 MXN | $9,860 MXN | **$6,660 MXN (67%)** |
-| **75 bolsas (ESTÁNDAR)** | **87** | **10.0 kg** | **21.1 kg** | **4 cajas** (96 u) | **11.3 kg** | **3.9 kg** | **10 bolsas** | **~$4,800 MXN** | **$14,790 MXN** | **$9,990 MXN (67%)** |
-| **100 bolsas**| **115**| **13.2 kg** | **27.8 kg** | **5 cajas** (120 u)| 15.0 kg | 5.2 kg | 12 bolsas | ~$6,350 MXN | $19,550 MXN | **$13,200 MXN (67%)**|
+| **30 bolsas** | **35** | **4.0 kg** | **8.5 kg** | **2 cajas** (48 u) | 4.6 kg | 1.6 kg | 7 bolsas | ~$1,950 MXN | $5,250 MXN | **$3,300 MXN (63%)** |
+| **50 bolsas** | **58** | **6.7 kg** | **14.0 kg** | **3 cajas** (72 u) | 7.5 kg | 2.6 kg | 8 bolsas | ~$3,200 MXN | $8,700 MXN | **$5,500 MXN (63%)** |
+| **75 bolsas (ESTÁNDAR)** | **87** | **10.0 kg** | **21.1 kg** | **4 cajas** (96 u) | **11.3 kg** | **3.9 kg** | **10 bolsas** | **~$4,800 MXN** | **$13,050 MXN** | **$8,250 MXN (63%)** |
+| **100 bolsas**| **115**| **13.2 kg** | **27.8 kg** | **5 cajas** (120 u)| 15.0 kg | 5.2 kg | 12 bolsas | ~$6,350 MXN | $17,250 MXN | **$10,900 MXN (63%)**|
 
 ---
 
@@ -234,7 +221,7 @@ $BolsasTostitos = $CajasTostitos * 24
 $PepinoKg = [Math]::Round(($P * 0.130), 2)
 $CebollaKg = [Math]::Round(($P * 0.045), 2)
 $HieloBolsas = 4 + [Math]::Ceiling($P / 15)
-$VentaEstimada = $P * 170
+$VentaEstimada = $P * 150
 
 Write-Host "================================================================" -ForegroundColor DarkGreen
 Write-Host "  🦐 LA GARZA AGUACHILERA — ALGORITMO DE COMPRAS DE VIERNES" -ForegroundColor Yellow

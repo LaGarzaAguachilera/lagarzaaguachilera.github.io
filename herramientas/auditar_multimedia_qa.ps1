@@ -379,7 +379,93 @@ if (-not $ffprobeBin) {
         }
     }
 
-    # E. Verificacion de Archivos de Locucion Comercial y Musica
+    # 3.1 Verificacion Tecnica de Video Animado 60fps (animacion_la_garza_episodio_crudos_60fps.mp4)
+    Write-Host "`n--- VIDEO ANIMADO 60FPS (1080 x 1920 @ 60 FPS) ---" -ForegroundColor Cyan
+    $anim60File = 'd:\AG\la garza aguachilera\VIDEOS\animacion_la_garza_episodio_crudos_60fps.mp4'
+
+    if (-not (Test-Path $anim60File)) {
+        Write-Host " [ERROR NO EXISTE] Video animado 60fps ausente: $anim60File" -ForegroundColor Red
+        $script:fallasTotales++
+    } else {
+        try {
+            $jsonOutput60 = & $ffprobeBin -v error -print_format json -show_format -show_streams $anim60File | Out-String
+            $probeData60 = $jsonOutput60 | ConvertFrom-Json
+
+            $vStream60 = $probeData60.streams | Where-Object { $_.codec_type -eq 'video' } | Select-Object -First 1
+            $aStream60 = $probeData60.streams | Where-Object { $_.codec_type -eq 'audio' } | Select-Object -First 1
+
+            # A. Verificacion de Resolucion (1080 x 1920 Full HD 9:16)
+            if ($vStream60) {
+                $vw60 = [int]$vStream60.width
+                $vh60 = [int]$vStream60.height
+                if ($vw60 -eq 1080 -and $vh60 -eq 1920) {
+                    Write-Host " [OK] Resolucion de video 60fps: $vw60 x $vh60 px (Full HD 9:16 vertical correcto)" -ForegroundColor Green
+                } else {
+                    Write-Host " [ERROR RESOLUCION] Video 60fps mide $vw60 x $vh60 px (Esperado: 1080 x 1920 px)" -ForegroundColor Red
+                    $script:fallasTotales++
+                }
+
+                # B. Verificacion de Frame Rate (60fps / r_frame_rate -eq '60/1')
+                $rFps = $vStream60.r_frame_rate
+                if ($rFps -eq '60/1') {
+                    Write-Host " [OK] Frame rate de video 60fps: $rFps (60 FPS verificado)" -ForegroundColor Green
+                } else {
+                    Write-Host " [ERROR FRAME RATE] Video r_frame_rate=$rFps (Esperado: 60/1)" -ForegroundColor Red
+                    $script:fallasTotales++
+                }
+
+                # C. Verificacion de Codec y Pixel Format (h264 / yuv420p)
+                $codec60 = $vStream60.codec_name
+                $pixFmt60 = $vStream60.pix_fmt
+                if ($codec60 -eq 'h264' -and $pixFmt60 -eq 'yuv420p') {
+                    Write-Host " [OK] Codec de video 60fps: $codec60 ($pixFmt60) compatible universalmente" -ForegroundColor Green
+                } else {
+                    Write-Host " [ERROR CODEC] Video codec=$codec60, pix_fmt=$pixFmt60 (Esperado: h264 / yuv420p)" -ForegroundColor Red
+                    $script:fallasTotales++
+                }
+
+                # D. Verificacion de Bitrate (>= 4000 kbps)
+                $bitrateBps60 = 0
+                if ($vStream60.bit_rate) {
+                    $bitrateBps60 = [int64]$vStream60.bit_rate
+                } elseif ($probeData60.format.bit_rate) {
+                    $bitrateBps60 = [int64]$probeData60.format.bit_rate
+                }
+
+                $bitrateKbps60 = [math]::Round($bitrateBps60 / 1000, 0)
+                if ($bitrateBps60 -ge 4000000) {
+                    Write-Host " [OK] Bitrate de video 60fps: $bitrateKbps60 kbps (>= 4000 kbps requerido)" -ForegroundColor Green
+                } else {
+                    Write-Host " [ERROR BITRATE] Bitrate de video 60fps insuficiente: $bitrateKbps60 kbps (< 4000 kbps requerido)" -ForegroundColor Red
+                    $script:fallasTotales++
+                }
+            } else {
+                Write-Host " [ERROR STREAM] El archivo 60fps no contiene ningun stream de video." -ForegroundColor Red
+                $script:fallasTotales++
+            }
+
+            # E. Verificacion de Audio (AAC Stereo)
+            if ($aStream60) {
+                $aCodec60 = $aStream60.codec_name
+                $aChannels60 = [int]$aStream60.channels
+                if ($aCodec60 -eq 'aac' -and $aChannels60 -eq 2) {
+                    Write-Host " [OK] Pista de audio 60fps: $aCodec60 stereo ($aChannels60 canales)" -ForegroundColor Green
+                } else {
+                    Write-Host " [ERROR AUDIO] Audio codec=$aCodec60, canales=$aChannels60 (Esperado: aac / 2 canales)" -ForegroundColor Red
+                    $script:fallasTotales++
+                }
+            } else {
+                Write-Host " [ERROR STREAM] El archivo 60fps no contiene ningun stream de audio." -ForegroundColor Red
+                $script:fallasTotales++
+            }
+
+        } catch {
+            Write-Host " [ERROR FFPROBE] Excepcion al analizar streams 60fps con FFprobe: $_" -ForegroundColor Red
+            $script:fallasTotales++
+        }
+    }
+
+    # F. Verificacion de Archivos de Locucion Comercial y Musica
     $locucionPath = 'd:\AG\la garza aguachilera\herramientas\locucion_comercial_sabina.wav'
     $musicaPath = 'd:\AG\la garza aguachilera\herramientas\Beachfront_Celebration.mp3'
 
@@ -409,10 +495,13 @@ $zipPath = 'd:\AG\la garza aguachilera\paquete_redes_la_garza.zip'
 if (Test-Path $zipPath) {
     $zipItem = Get-Item $zipPath
     $zipSizeMB = [math]::Round($zipItem.Length / 1MB, 2)
-    if ($zipItem.Length -ge 20MB) {
-        Write-Host " [OK] Paquete ZIP presente y tamano conforme: $($zipItem.Name) ($zipSizeMB MB >= 20 MB)" -ForegroundColor Green
-    } else {
+    if ($zipItem.Length -ge 20MB -and $zipItem.Length -lt 100MB) {
+        Write-Host " [OK] Paquete ZIP presente y tamano conforme: $($zipItem.Name) ($zipSizeMB MB >= 20 MB y < 100 MB)" -ForegroundColor Green
+    } elseif ($zipItem.Length -lt 20MB) {
         Write-Host " [ERROR TAMANO] Paquete ZIP insuficiente: $zipSizeMB MB (< 20 MB requerido)" -ForegroundColor Red
+        $script:fallasTotales++
+    } else {
+        Write-Host " [ERROR TAMANO] Paquete ZIP excede el limite permitido: $zipSizeMB MB (>= 100 MB)" -ForegroundColor Red
         $script:fallasTotales++
     }
 
@@ -521,6 +610,38 @@ foreach ($kf in $keyFilesToValidate) {
         }
     } else {
         Write-Host " [ERROR NO EXISTE] Archivo clave ausente para validacion de precio: $($kf.Path)" -ForegroundColor Red
+        $script:fallasTotales++
+    }
+}
+
+# -----------------------------------------------------------------------------
+# 5.2 VERIFICACION DE REPRODUCTORES DE VIDEO HTML5 (WEB & PANEL DE CONTROL)
+# -----------------------------------------------------------------------------
+Write-Host "`n5.2 VERIFICACION DE REPRODUCTORES DE VIDEO HTML5 EN WEB Y PANEL:" -ForegroundColor Green
+
+$htmlFilesWithVideo = @(
+    @{ Name = 'index.html'; Path = Join-Path $projectRoot 'index.html' },
+    @{ Name = 'panel_control.html'; Path = Join-Path $projectRoot 'panel_control.html' }
+)
+
+foreach ($hf in $htmlFilesWithVideo) {
+    if (Test-Path $hf.Path) {
+        $htmlContent = Get-Content -Path $hf.Path -Raw -Encoding UTF8
+        if ($htmlContent -match '<video\b[^>]*>') {
+            Write-Host " [OK] $($hf.Name) contiene al menos un reproductor HTML5 (<video> tag detectado)" -ForegroundColor Green
+        } else {
+            Write-Host " [ERROR REPRODUCTOR] $($hf.Name) no contiene etiquetas <video>" -ForegroundColor Red
+            $script:fallasTotales++
+        }
+
+        if ($htmlContent -match 'animacion_la_garza_episodio_crudos_60fps\.mp4') {
+            Write-Host " [OK] $($hf.Name) referencia el video animado 60fps (animacion_la_garza_episodio_crudos_60fps.mp4)" -ForegroundColor Green
+        } else {
+            Write-Host " [ERROR VIDEO 60FPS] $($hf.Name) no referencia animacion_la_garza_episodio_crudos_60fps.mp4" -ForegroundColor Red
+            $script:fallasTotales++
+        }
+    } else {
+        Write-Host " [ERROR NO EXISTE] Archivo HTML ausente: $($hf.Path)" -ForegroundColor Red
         $script:fallasTotales++
     }
 }

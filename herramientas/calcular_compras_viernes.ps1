@@ -15,7 +15,7 @@ $BolsasTostitos = $CajasTostitos * 24
 $PepinoKg = [Math]::Round(($P * 0.130), 2)
 $CebollaKg = [Math]::Round(($P * 0.045), 2)
 $HieloBolsas = 4 + [Math]::Ceiling($P / 15)
-$VentaEstimada = $P * 170
+$VentaEstimada = $P * 150
 
 Write-Host "================================================================" -ForegroundColor DarkGreen
 Write-Host "  🦐 LA GARZA AGUACHILERA — ALGORITMO DE COMPRAS DE VIERNES" -ForegroundColor Yellow

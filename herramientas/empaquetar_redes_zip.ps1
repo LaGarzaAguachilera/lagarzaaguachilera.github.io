@@ -48,28 +48,13 @@ try {
     Add-FileToZip (Join-Path $projectRoot "tostiaguachile_verde_redondo.jpg") "tostiaguachile_verde_redondo.jpg"
     Add-FileToZip (Join-Path $projectRoot "aguachile_verde_hero.jpg") "aguachile_verde_hero.jpg"
 
-    # 2. Master Video Comercial Full HD en carpeta VIDEOS/
-    Write-Host "`n2. Agregando Master Video Comercial Full HD (VIDEOS/promo_aguachile_verde_final.mp4)..." -ForegroundColor Green
-    $masterVideo = Join-Path $projectRoot "VIDEOS\promo_aguachile_verde_final.mp4"
-    Add-FileToZip $masterVideo "VIDEOS/promo_aguachile_verde_final.mp4"
+    # 2. Master Episodio Animado Full HD 60fps en carpeta VIDEOS/
+    Write-Host "`n2. Agregando Master Episodio Animado 60fps Full HD (VIDEOS/animacion_la_garza_episodio_crudos_60fps.mp4)..." -ForegroundColor Green
+    $masterVideo = Join-Path $projectRoot "VIDEOS\animacion_la_garza_episodio_crudos_60fps.mp4"
+    Add-FileToZip $masterVideo "VIDEOS/animacion_la_garza_episodio_crudos_60fps.mp4"
 
-    # 3. Posts Periodicos Originales (Dias 1, 3, 7, 9, 11, 13)
-    Write-Host "`n3. Agregando Posts Periodicos Base..." -ForegroundColor Green
-    $periodicFiles = @(
-        "post1_antojo_lunes.png",
-        "post2_meme_ovni.png",
-        "post4_cura_domingo.png",
-        "post5_frescura_en_vivo.png",
-        "post6_mapache_crunch.png",
-        "post7_rutas_activas.png"
-    )
-    foreach ($pf in $periodicFiles) {
-        $fullPath = Join-Path $projectRoot "contenido_redes\posts_periodicos\$pf"
-        Add-FileToZip $fullPath $pf
-    }
-
-    # 4. Catalogo Completo de 1 Mes Organizado por Carpetas Semanales (Semana_1 a Semana_4)
-    Write-Host "`n4. Agregando Catalogo Mensual (16 Piezas: Feed + Story + Copy)..." -ForegroundColor Green
+    # 3. Catalogo Completo de 1 Mes Organizado por Carpetas Semanales (Semana_1 a Semana_4)
+    Write-Host "`n3. Agregando Catalogo Mensual (16 Piezas: Feed + Story + Copy)..." -ForegroundColor Green
     
     $semanasMap = @(
         @{ Dir = "semana1"; ZipFolder = "Semana_1" },
@@ -89,8 +74,8 @@ try {
         }
     }
 
-    # 5. Especial Spooky: Halloween y Dia de Muertos en carpeta Especial_Halloween_Dia_Muertos/
-    Write-Host "`n5. Agregando Coleccion Especial Spooky (Halloween y Dia de Muertos)..." -ForegroundColor Green
+    # 4. Especial Spooky: Halloween y Dia de Muertos en carpeta Especial_Halloween_Dia_Muertos/
+    Write-Host "`n4. Agregando Coleccion Especial Spooky (Halloween y Dia de Muertos)..." -ForegroundColor Green
     $spookyFolder = "Especial_Halloween_Dia_Muertos"
     $spookyFiles = @(
         "copy_01.txt",
@@ -109,14 +94,8 @@ try {
         Add-FileToZip $spookyPath "$spookyFolder/$sf"
     }
 
-    # Video Promocional de Temporada
-    $spookyVideo = Join-Path $projectRoot "VIDEOS\promo_halloween_zombies_crudos.mp4"
-    if (Test-Path $spookyVideo) {
-        Add-FileToZip $spookyVideo "$spookyFolder/promo_halloween_zombies_crudos.mp4"
-    }
-
-    # 6. Coleccion Oficial de Merchandising: Gorras (Cachuchas)
-    Write-Host "`n6. Agregando Coleccion Oficial de Merchandising (Gorras Oficiales)..." -ForegroundColor Green
+    # 5. Coleccion Oficial de Merchandising: Gorras (Cachuchas)
+    Write-Host "`n5. Agregando Coleccion Oficial de Merchandising (Gorras Oficiales)..." -ForegroundColor Green
     $gorrasFolder = "Gorras_Oficiales"
     $gorrasDir = Join-Path $projectRoot "contenido_redes\merchandising\gorras"
     if (Test-Path $gorrasDir) {
@@ -137,13 +116,12 @@ try {
         "CONTENIDO DEL PAQUETE:",
         "- Portada Facebook Safe Zone (1200x630 px)",
         "- Flyers de Marca Feed (1080x1080 px) e Historias (1080x1920 px)",
-        "- Master Video Comercial Full HD (VIDEOS/promo_aguachile_verde_final.mp4)",
-        "- 6 Posts Periodicos Pop Multipaleta (1080x1080 px)",
+        "- Master Episodio Animado Full HD 60fps (VIDEOS/animacion_la_garza_episodio_crudos_60fps.mp4)",
         "- Semana_1/: Mitologia Costena y Cultura Jaiba (4 piezas Feed 1:1, Stories 9:16 y copys)",
         "- Semana_2/: El Poder de la Frescura en Vivo (4 piezas Feed 1:1, Stories 9:16 y copys)",
         "- Semana_3/: La Cura Sagrada del Domingo (4 piezas Feed 1:1, Stories 9:16 y copys)",
         "- Semana_4/: Rutas de Entrega y Comunidad (4 piezas Feed 1:1, Stories 9:16 y copys)",
-        "- Especial_Halloween_Dia_Muertos/: Coleccion Spooky de Temporada (Posters Feed 1:1, Video Full HD y 6 paquetes de copy)",
+        "- Especial_Halloween_Dia_Muertos/: Coleccion Spooky de Temporada (Posters Feed 1:1 y 6 paquetes de copy)",
         "- Gorras_Oficiales/: Catalogo de 6 Mockups HD de Gorras (Caballero, Universitaria, Damas, Chavos) y Ficha Tecnica",
         "",
         "PARAMETROS OFICIALES DE MARCA:",
