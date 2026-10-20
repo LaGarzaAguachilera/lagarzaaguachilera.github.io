@@ -10,12 +10,12 @@ Este manual te da el contenido exacto para publicar todos los días de la semana
 | Día | Tema de la Historia | Formato / Elemento Interactivo |
 | :--- | :--- | :--- |
 | **Lunes** | *Detrás de cámaras* | Foto o clip corto del limón recién exprimido o camarón limpio. Sticker de música relajada o tropical. |
-| **Martes** | *El Antojo* | Clip en cámara lenta de los tostitos con camarones. Encuesta: *"¿Ya se te antojó para este fin?" (Sííí / Urgente)*. |
-| **Miércoles** | *Duelo de Sabores* | Foto dividida: Tostitos Verdes vs Tostitos Rojos. Sticker de votación: *🟢 Verde vs 🔴 Rojo*. |
-| **Jueves** | *Apertura de Preventa* | Foto con diseño de la bolsa y texto: *"Abrimos agenda de pedidos para Sábado y Domingo. Solo 40 bolsas por día"*. Enlace directo a WhatsApp. |
+| **Martes** | *El Antojo* | Clip en cámara lenta de los tostitos con camarones y aguacate fresco. Encuesta: *"¿Ya se te antojó para este fin?" (Sííí / Urgente)*. |
+| **Miércoles** | *Duelo de Complementos* | Foto de los 4 complementos: Tostitos Salsa Verde, Flamin' Hot, Totopos y Galletas con aguacate cremoso. Encuesta: *"¿Cuál es tu crunch favorito?"*. |
+| **Jueves** | *Apertura de Preventa* | Foto con diseño de la bolsa y texto: *"Abrimos agenda de pedidos para Sábado y Domingo. Solo 40 órdenes por día"*. Enlace directo a WhatsApp. |
 | **Viernes** | *Cuenta Regresiva* | Sticker de cuenta regresiva: *"Últimos cupos para la ruta de mañana"*. Barra deslizable de fuego 🔥. |
-| **Sábado** | *Cocina Activa y Salidas* | Video corto de las bolsas empacadas saliendo en la hielera/mochila térmica. Texto: *"Rutas de hoy en camino 🛵💨"*. |
-| **Domingo** | *Cura de Cruda / Comida Familiar* | Repost de fotos que manden los clientes o video vertiendo el aguachile sobre los tostitos. |
+| **Sábado** | *Cocina Activa y Salidas* | Video corto de las órdenes empacadas saliendo en la hielera/mochila térmica. Texto: *"Rutas de hoy en camino 🛵💨"*. |
+| **Domingo** | *Cura de Cruda / Comida Familiar* | Repost de fotos que manden los clientes o video mostrando el baño de salsas de la casa y el aguacate fresco sobre los tostitos. |
 
 ---
 
@@ -25,20 +25,25 @@ Este manual te da el contenido exacto para publicar todos los días de la semana
 ```text
 ¡Llegó a Tampico y Madero una nueva forma de comer mariscos! 🦐🌊🔥
 
-¿Quién dijo que el aguachile solo se come en plato hondo? En La Garza Aguachilera combinamos lo mejor de dos mundos:
-El crujido inconfundible de los Tostitos + una porción bien reportada de camarón fresco curado en limón Colima al momento.
+¿Quién dijo que el aguachile solo se come en plato hondo? En La Garza Aguachilera creamos los 4 Pilares del Sabor Jaibo:
+1. ~100g de camarón fresco de costa en corte mariposa curado en limón Colima al momento.
+2. Toda porción incluye aguacate fresco y cremoso garantizado para balancear el picor.
+3. Baño con rica combinación especial de salsas de la casa sobre las chips antes de recibir el marisco helado.
+4. Tu base crujiente favorita a elegir entre 4 complementos oficiales.
 
-Disfrútalos en dos estilos:
-🟢 CLÁSICOS VERDES: Con serrano, pepino, cebolla morada y el toque acidito tradicional.
-🔴 BRAVOS ROJOS: Con Tostitos Flamin, chiles tatemados y salsas oscuras para los amantes del picor.
+Disfrútalo con tu complemento favorito:
+🟢 Tostitos Salsa Verde (El clásico de Tampico)
+🔴 Tostitos Flamin' Hot (Intensidad picosa)
+🌽 Chips o Totopos Artesanales (Estilo marisquero tradicional)
+🍘 Galletas Saladas (Elegante y costero)
 
-📦 ¿Lo mejor? El aguachile va en contenedor hermético para que tus tostitos lleguen 100% crujientes hasta tu puerta.
+🛵 Dos modalidades de servicio: preparado en vivo frente a ti por nuestro staff o con complemento por separado para máxima crocancia.
 
-💰 $150 MXN la bolsa
+💰 $150 MXN la orden
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS
-📍 Base de salida: Col. Flores, Tampico
+📍 Salida: Colonia Flores, Tampico
 
-📲 ¡Aparta tu bolsa antes de que se acaben los cupos de esta semana!
+📲 ¡Aparta tu orden antes de que se acaben los cupos de esta semana!
 Escríbenos por WhatsApp al 833-252-09-88 o visita el enlace en nuestro perfil.
 
 #LaGarzaAguachilera #Tostiaguachiles #Tampico #CdMadero #MariscosTampico #ComidaTampico #AntojosTampico #FoodieTampico
@@ -46,21 +51,23 @@ Escríbenos por WhatsApp al 833-252-09-88 o visita el enlace en nuestro perfil.
 
 ---
 
-### POST 2: El Secreto del Crunch (Resolviendo objeciones)
+### POST 2: El Secreto del Crunch y la Suntuosidad (Resolviendo objeciones)
 ```text
 "Oye... ¿pero los tostitos no llegan todos aguados?" 👀❌
 
 ¡Esa fue la primera regla que nos pusimos al crear La Garza Aguachilera! Jamás te vamos a entregar un tostito remojado.
 
 💡 ¿Cómo le hacemos?
-Te entregamos tu bolsa de tostitos abierta de lado, con su cama de pepino fresco y cebolla morada crujiente. Y en un contenedor térmico hermético te mandamos el caldo de aguachile bien frío con los camarones curados al momento.
+En preparación en bolsa las chips se bañan con una rica combinación especial de salsas de la casa antes de recibir el marisco helado, impregnando de sazón cada chip sin ablandarla. Y toda porción incluye aguacate fresco y cremoso que aporta suntuosidad sedosa templando la acidez del limón Colima y el picante serrano.
 
-Tú lo único que haces al recibirlo es destapar, verter sobre tu bolsa... ¡y disfrutar el crujido perfecto bocado tras bocado! 🤤✨
+Además cuentas con 2 modalidades de servicio:
+1. Preparado al momento frente a ti en tu puerta por nuestro staff en ruta.
+2. Con complemento por separado: el aguachile helado con camarón mariposa, aguacate y salsas viajan en empaque hermético independiente para que tus chips mantengan 100% su textura crujiente.
 
-Por solo $150 pesos tienes la botana más fresca de la zona.
+Por solo $150 pesos tienes la botana más fresca y adictiva de la zona.
 🛵 Entregas este fin de semana en Tampico y Madero.
 
-Mándanos un WhatsApp al 833-252-09-88 y agenda tu ruta.
+Mándanos un WhatsApp al 833-252-09-88 y agenda tu ruta con salida desde Colonia Flores.
 
 #Tostiaguachiles #TampicoMadero #BotanaCostera #CrunchPerfecto #AguachileTampico #FoodPornMexico
 ```
@@ -72,16 +79,19 @@ Mándanos un WhatsApp al 833-252-09-88 y agenda tu ruta.
 Si este fin de semana te vas a reunir con amigos, con la familia o simplemente quieres quedarte en casa viendo películas... nosotros ponemos la comida 🦐📺🍿
 
 En La Garza Aguachilera tenemos todo listo para consentirte este SÁBADO y DOMINGO:
-✅ Camarón del Golfo fresco, limpio y en mariposa
-✅ Aguachile Verde Clásico o Rojo Flamin
-✅ Porción bien servida por solo $150
+✅ ~100g de camarón fresco de costa, limpio y en mariposa
+✅ Aguacate fresco y cremoso garantizado en cada orden
+✅ Baño especial de salsas de la casa sobre tus chips
+✅ Tus 4 complementos a elegir: Tostitos Salsa Verde, Flamin' Hot, Totopos Artesanales o Galletas Saladas
+✅ Preparado al momento frente a ti o por separado
+✅ Porción bien reportada por solo $150 MXN
 
-📍 Cobertura en Tampico y Ciudad Madero desde nuestra base en Col. Flores.
+📍 Cobertura en Tampico y Ciudad Madero con salida desde Colonia Flores.
 ⚠️ Recuerda que como compramos el camarón fresco el viernes por la mañana, nuestros cupos son limitados.
 
-📲 ¡No te quedes sin tu bolsa! Mándanos mensajito directo o al WhatsApp 833-252-09-88 para apartar tu horario de entrega.
+📲 ¡No te quedes sin tu orden! Mándanos mensajito directo o al WhatsApp 833-252-09-88 para apartar tu horario de entrega.
 
-#FinDeSemanaTampico #Tampico #MariscosADomicilio #TostiaguachileVerde #TostiaguachileRojo #AntojoFinDeSemana
+#FinDeSemanaTampico #Tampico #MariscosADomicilio #TostiaguachileVerde #AntojoFinDeSemana
 ```
 
 ---
@@ -91,14 +101,15 @@ En La Garza Aguachilera tenemos todo listo para consentirte este SÁBADO y DOMIN
 ¿Domingo con flojera de cocinar o con secuelas de la fiesta de anoche? 🥱🍺
 
 Te tenemos la solución definitiva en 3 pasos:
-1. Te quedas en tu cama o en el sillón.
-2. Nos mandas un WhatsApp con tu dirección.
-3. Te llega a la puerta un Tostiaguachile heladito, bien picoso y con camarón fresco recién preparado para revivir cuerpo y alma.
+1. Te quedas en tu cama o en el sillón con el clima encendido.
+2. Nos mandas un WhatsApp con tu dirección y tu complemento favorito.
+3. Te llega a la puerta un Tostiaguachile Verde Tradicional heladito, bien picoso, bañado con salsas especiales de la casa, coronado con aguacate fresco y cremoso, y con camarón de costa recién preparado para revivir cuerpo y alma.
 
-🟢 Verde para refrescar | 🔴 Rojo para sudar sabroso
-💰 $150 MXN la bolsa
+🥑 Aguacate fresco en cada orden | 🔥 Salsas especiales de la casa
+🥨 Con Tostitos Salsa Verde, Flamin' Hot, Totopos o Galletas
+💰 $150 MXN la orden
 
-🛵 Rutas activas hoy en Tampico y Madero.
+🛵 Rutas activas hoy en Tampico y Madero desde Colonia Flores.
 Escríbenos rápido al 833-252-09-88 antes de que cierre la última ruta de la tarde.
 
 #ParaRevivir #DomingoTampico #CrudaLevantate #Tostiaguachiles #LaGarzaAguachilera #TampicoHermoso

@@ -11,7 +11,7 @@ Este documento contiene la configuración exacta de **mensajes automáticos, res
 * **Categoría:** Entrega de comida a domicilio / Marisquería
 * **Descripción de la Empresa:**
 ```text
-Tostiaguachiles preparados al momento con camarón fresco, salsas artesanales y botana crujiente. Entregas a domicilio fines de semana en Tampico y Cd. Madero. Base en Col. Flores.
+Tostiaguachiles preparados al momento con camarón fresco, aguacate cremoso, combinación especial de salsas de la casa y botana crujiente. Entregas a domicilio fines de semana en Tampico y Cd. Madero. Salida desde Col. Flores.
 ```
 * **Dirección:** Colonia Flores, Tampico, Tamaulipas
 * **Horario Comercial:**
@@ -28,17 +28,24 @@ Tostiaguachiles preparados al momento con camarón fresco, salsas artesanales y 
 ```text
 ¡Hola! 🦐 Gracias por escribir a *La Garza Aguachilera*. 🌊
 
-Preparamos los tostiaguachiles más reportados de Tampico y Madero con camarón fresco curado al momento.
+Preparamos el auténtico Tostiaguachile Verde Tradicional de Tampico y Madero con camarón fresco curado al momento, aguacate cremoso garantizado y el toque especial de salsas de la casa.
 
 Nuestras entregas son los fines de semana (**Sábados y Domingos**).
 
-📋 *NUESTRO MENÚ ($150 MXN la bolsa):*
-🟢 *Tostitos Verdes:* Aguachile clásico con serrano, pepino, cebolla morada y mucho limón.
-🔴 *Tostitos Rojos:* Aguachile bravo con chiles tatemados, toque oscuro y Tostitos Flamin.
+📋 *NUESTRO MENÚ ($150 MXN por orden):*
+Tostiaguachile Verde Tradicional: ~100g de camarón en mariposa, emulsión verde de serrano con limón Colima, baño especial de salsas de la casa en tus chips y aguacate fresco y cremoso garantizado en cada orden.
 
-💡 *Nota:* El aguachile y los camarones van en su hielera térmica con preparación frente a ti para que tus tostitos lleguen 100% crujientes.
+🥨 *ELIGE TU COMPLEMENTO FAVORITO (Incluido):*
+1. Tostitos Salsa Verde (El clásico de Tampico)
+2. Tostitos Flamin' Hot (Intensidad picosa)
+3. Chips o Totopos Artesanales (Estilo marisquero)
+4. Galletas Saladas (Elegante y tradicional)
 
-¿Para qué día te gustaría programar tu pedido y en qué colonia te encuentras? 🙌
+🛵 *2 MODALIDADES DE SERVICIO:*
+✨ *Preparado al momento:* Nuestro staff abre tu botana, baña tus chips con salsas de la casa y corona con aguacate en tu puerta.
+📦 *Por separado:* Aguachile, salsas y aguacate en empaque hermético independiente para 100% de crocancia.
+
+¿Qué complemento se te antoja, en qué modalidad y para qué colonia te programamos tu orden? 🙌
 ```
 
 ### B) Mensaje de Ausencia (Fuera de horario de entrega)
@@ -46,36 +53,44 @@ Nuestras entregas son los fines de semana (**Sábados y Domingos**).
 ¡Hola! 👋 Por el momento nuestra cocina de fin de semana está descansando, pero con gusto te atendemos para agendar tu pedido en la **preventa de este fin de semana**.
 
 Déjanos aquí:
-1. Cuántas bolsas deseas (Verdes o Rojas).
-2. Tu colonia y dirección.
-3. Si lo prefieres para Sábado o Domingo.
+1. Cuántas órdenes deseas y qué complemento eliges (Tostitos Salsa Verde, Flamin' Hot, Totopos o Galletas).
+2. Modalidad de servicio (Preparado al momento frente a ti o Con complemento por separado).
+3. Tu colonia y dirección (salida desde Colonia Flores, Tampico).
+4. Si lo prefieres para Sábado o Domingo.
 
-¡En breve te confirmamos tu apartado! 🦐✨
+¡En breve te confirmamos tu apartado con aguacate fresco y salsas de la casa garantizados! 🦐✨
 ```
 
 ---
 
 ## 3. Catálogo de Productos en WhatsApp
 
-### Producto 1: Tostiaguachile Clásico Verde
-* **Nombre:** Tostiaguachile Clásico Verde 🟢
+### Producto 1: Tostiaguachile Verde Tradicional (Tostitos Salsa Verde)
+* **Nombre:** Tostiaguachile Verde Tradicional 🟢
 * **Precio:** $150.00 MXN
 * **Descripción:**
-  Bolsa de Tostitos salsa verde/limón bien reportada con camarón fresco del Golfo en corte mariposa, pepino en media luna y cebolla morada. El aguachile tradicional de chile serrano y limón Colima se envía en contenedor hermético aparte para mantener el crunch perfecto.
+  ~100g de camarón fresco de costa en corte mariposa, emulsión verde de chile serrano y limón Colima, pepino crujiente, cebolla morada, baño especial de salsas de la casa sobre las chips y aguacate fresco y cremoso garantizado en toda porción. Acompañado con Tostitos Salsa Verde. Elige servido preparado al momento frente a ti o con complemento por separado.
 * **Enlace:** [Link a landing page]
 
-### Producto 2: Tostiaguachile Bravo Rojo (Flamin)
-* **Nombre:** Tostiaguachile Bravo Rojo (Flamin) 🔴
+### Producto 2: Tostiaguachile Verde Tradicional (Tostitos Flamin' Hot)
+* **Nombre:** Tostiaguachile Verde Flamin' Hot 🔥
 * **Precio:** $150.00 MXN
 * **Descripción:**
-  Bolsa de Tostitos Rojos Flamin rellena de camarón fresco curado al momento con nuestra salsa especial de chiles tatemados, chiltepín y toque de salsas negras. Picor intenso y sabor ahumado. Aguachile en contenedor térmico independiente.
+  La combinación más audaz y pedida: camarón fresco mariposa con emulsión verde de chile serrano y limón Colima, bañado con salsas de la casa sobre Tostitos Flamin' Hot crujientes, coronado con aguacate fresco y cremoso en cada orden.
 * **Enlace:** [Link a landing page]
 
-### Producto 3: Combo Pareja Garza (2 Bolsas)
-* **Nombre:** Combo Dúo Garza (2 Bolsas) 🦐🦐
+### Producto 3: Tostiaguachile Verde con Totopos Artesanales o Galletas Saladas
+* **Nombre:** Tostiaguachile Verde Tradicional (Totopos / Galletas) 🌊
+* **Precio:** $150.00 MXN
+* **Descripción:**
+  Estilo tradicional marisquero costeño: camarón fresco mariposa, emulsión verde serrano con limón Colima, baño sazonador de salsas de la casa y aguacate fresco y cremoso garantizado. Con totopos dorados de maíz o galletas saladas clásicas.
+* **Enlace:** [Link a landing page]
+
+### Producto 4: Combo Dúo Garza (2 Órdenes)
+* **Nombre:** Combo Dúo Garza (2 Órdenes) 🦐🦐
 * **Precio:** $300.00 MXN
 * **Descripción:**
-  El paquete ideal para dos personas: elige cualquier combinación (2 verdes, 2 rojas o 1 y 1) con porciones generosas de camarón, salsas artesanales y botana crujiente.
+  El paquete perfecto para compartir: 2 órdenes completas de Tostiaguachile Verde Tradicional con tus complementos favoritos a elegir, baño de salsas de la casa y aguacate fresco y cremoso garantizado en cada una ($150 x 2 = $300 MXN).
 * **Enlace:** [Link a landing page]
 
 ---
@@ -86,12 +101,20 @@ Configura estos atajos en los ajustes de WhatsApp Business:
 
 ### Atajo: `/menu`
 ```text
-🦐 *MENÚ LA GARZA AGUACHILERA:*
+🦐 *MENÚ LA GARZA AGUACHILERA ($150 MXN):*
 
-🟢 *Tostitos Verdes ($150):* Aguachile tradicional de chile serrano, pepino, cebollita y limón fresco sobre tostitos con sal y limón.
-🔴 *Tostitos Rojos ($150):* Aguachile bravo con chiles tatemados, salsas oscuras y Tostitos Flamin Hot.
+🟢 *Tostiaguachile Verde Tradicional ($150 MXN):*
+~100g de camarón fresco de costa en mariposa, emulsión verde de chile serrano y limón Colima, pepino crujiente, cebolla morada fileteada, baño especial de salsas de la casa sobre las chips y aguacate fresco y cremoso garantizado en cada orden.
 
-📦 Ambos incluyen porción completa de camarón fresco curado al momento en empaque hermético independiente.
+🥨 *Tus 4 Complementos Oficiales a Elegir:*
+1. Tostitos Salsa Verde (El clásico de Tampico)
+2. Tostitos Flamin' Hot (Intensidad picosa)
+3. Chips o Totopos Artesanales (Estilo marisquero)
+4. Galletas Saladas (Elegante y tradicional)
+
+🛵 *Tus 2 Modalidades de Servicio:*
+• *Preparado al momento frente a ti:* Ensamble en vivo por nuestro staff en ruta.
+• *Con complemento por separado:* En empaque individual hermético para 100% de crocancia.
 ```
 
 ### Atajo: `/zonas`
@@ -125,8 +148,11 @@ Configura estos atajos en los ajustes de WhatsApp Business:
 ✅ *¡PEDIDO CONFIRMADO CON ÉXITO!* 🦐
 
 📋 *Resumen de tu pedido:*
-• Producto(s): [Especificar verdes / rojos]
-• Nivel de picor: [Normal / Bravo / Extremo]
+• Producto: Tostiaguachile Verde Tradicional ($150 MXN c/u)
+• Complemento(s): [Tostitos Salsa Verde / Flamin' Hot / Totopos Artesanales / Galletas Saladas]
+• Modalidad de servicio: [Preparado al momento frente a ti / Por separado]
+• Aguacate fresco garantizado: [Incluido en cada orden 🥑]
+• Toque de la casa: [Baño especial de salsas de la casa en bolsa 🔥]
 • Día de entrega: [Sábado / Domingo]
 • Rango de horario estimado: [Ej. 1:30 PM - 3:00 PM]
 
@@ -135,17 +161,18 @@ Configura estos atajos en los ajustes de WhatsApp Business:
 [Calle, Número y Colonia]
 [Referencias]
 
-💰 *Total a pagar:* $[Total] MXN (incluye envío).
+💰 *Total a pagar:* $[Total] MXN ($150 por orden + envío).
 
-¡Cualquier duda estamos a la orden! Te avisaremos en cuanto tu pedido vaya en camino. 🛵💨
+¡Cualquier duda estamos a la orden! Te avisaremos en cuanto tu pedido vaya en camino desde Colonia Flores. 🛵💨
 ```
 
 ### Atajo: `/empaque`
 ```text
-💡 *¿Cómo funciona nuestro empaque?*
-Para que tus tostitos no lleguen remojados durante el camino, te entregamos:
-1. La bolsa de tostitos crujientes con sus pepinos y cebollita morada.
-2. Un contenedor hermético con los camarones frescos y el caldo de aguachile bien frío.
+💡 *¿Cómo funcionan nuestras 2 modalidades de servido?*
 
-Cuando lo vayas a comer, simplemente destapas el contenedor, lo viertes sobre tu bolsa ¡y disfrutas el crujido perfecto! 🤤✨
+1. *Preparado al Momento Frente a Ti (En Ruta con Staff La Garza):*
+Nuestro staff abre tu botana en tu puerta, baña las chips con nuestra rica combinación especial de salsas de la casa, sirve los ~100g de camarón mariposa con la emulsión verde serrano y corona con aguacate fresco y cremoso para corroborar máxima frescura al instante.
+
+2. *Con Complemento Por Separado (Delivery / Crocancia 100%):*
+Para que tus chips no se remojen en el trayecto, viajan en su bolsa sellada de fábrica, mientras que el aguachile helado con camarón mariposa, el baño de salsas de la casa y el aguacate fresco y cremoso van en empaque hermético individual frío. Cuando lo vayas a disfrutar, ¡simplemente destapas, viertes y saboreas el crunch perfecto! 🤤✨
 ```

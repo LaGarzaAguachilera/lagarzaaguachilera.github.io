@@ -121,6 +121,33 @@ else:
     deficiencias.append("Selector interactivo de complementos ausente o incompleto")
     a2_results.append("[FALLO] Selector interactivo ausente")
 
+# 2.5 Inclusión de Aguacate Fresco en toda porción y Salsas de la Casa (Campaña Gastronómica)
+gastronomy_docs = [
+    ("index.html", os.path.join(project_root, "index.html")),
+    ("panel_control.html", os.path.join(project_root, "panel_control.html")),
+    ("contenido_redes/05_GUIA_PRODUCTO_COMPLEMENTOS_Y_SERVIDO.md", os.path.join(project_root, "contenido_redes", "05_GUIA_PRODUCTO_COMPLEMENTOS_Y_SERVIDO.md"))
+]
+
+for doc_name, doc_path in gastronomy_docs:
+    if os.path.exists(doc_path):
+        with open(doc_path, "r", encoding="utf-8") as f:
+            doc_content = f.read()
+        if re.search(r"aguacate", doc_content, re.IGNORECASE):
+            a2_results.append(f"[OK] Aguacate fresco garantizado verificado en {doc_name}")
+        else:
+            deficiencias.append(f"Mención de aguacate ausente en {doc_name}")
+            a2_results.append(f"[FALLO] Aguacate ausente en {doc_name}")
+
+        if re.search(r"(salsas?\s+de\s+la\s+casa|combinaci[oó]n\s+especial)", doc_content, re.IGNORECASE):
+            a2_results.append(f"[OK] Salsas de la casa / combinación especial verificadas en {doc_name}")
+        else:
+            deficiencias.append(f"Mención de salsas de la casa o combinación especial ausente en {doc_name}")
+            a2_results.append(f"[FALLO] Salsas de la casa ausentes en {doc_name}")
+    else:
+        deficiencias.append(f"Archivo para auditoría gastronómica ausente: {doc_name}")
+        a2_results.append(f"[FALLO] Archivo inexistente: {doc_name}")
+
+
 
 # =============================================================================
 # AUDITOR 3: BLINDAJE DE MARCA Y PRECIOS

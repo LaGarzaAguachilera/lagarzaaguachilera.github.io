@@ -1,72 +1,58 @@
-# Project: La Garza Aguachilera — Reproducción de Episodio Animado Cartoon Network ($150 MXN)
+# Project: La Garza Aguachilera — Campaña Aguacate & Salsas Especiales
 
 ## Architecture
-- **Pipeline Audiovisual:**
-  1. `Audio Track (TTS & SFX)`: `gemini-3.8-flash-tts` + `herramientas/producir_audio_animacion.py` -> `herramientas/audio_animacion_master_60fps.wav` & `herramientas/timeline_animacion_60fps.json`.
-  2. `Keyframe Studio (2D Cel-Shaded)`: `gemini-nano-banana-2.1` / `image-generator` con condicionamiento multimodal (stickers base) -> `FRAMES/scene[1-6]_(start|end).png` (9:16 vertical 2K).
-  3. `Video Animation Engine`: `gemini-omni-1.1-flash` via `gemini-omni-flash-api/scripts/video/generate_video.py` con `--first-frame` y `--last-frame` -> `VIDEOS/clips/scene[1-6].mp4` (1080x1920 9:16).
-  4. `Compositing & Mastering`: FFmpeg concat + master audio track + subtítulos dinámicos -> `VIDEOS/animacion_la_garza_episodio_crudos_60fps.mp4` (1080x1920 @ 60fps, H.264 High Profile, >=4000 kbps, AAC stereo, peso <= 42 MB).
-  5. `Web & Packaging`: `index.html`, `panel_control.html`, `paquete_redes_la_garza.zip` (< 100 MB).
-  6. `QA & Deployment`: `herramientas/auditar_multimedia_qa.ps1` (código 0, precio estricto $150 MXN) y GitHub Pages (`lagarzaaguachilera.github.io`).
+- **Web Storefront & Public App**: `index.html` (Tailwind CSS, Plus Jakarta Sans, interactive selector for WhatsApp, video player, Hero with badges and "Los 4 Pilares del Sabor Jaibo").
+- **Asset & Marketing Panel**: `panel_control.html` (43 media cards, filtered by platform/category, 1-click copy captions, product specification).
+- **Gastronomic & Social Guides**: `contenido_redes/` (Product guide `05_GUIA_PRODUCTO_COMPLEMENTOS_Y_SERVIDO.md`, WhatsApp kit, monthly catalog, viral hooks).
+- **Packaging & Delivery Automation**: `herramientas/empaquetar_redes_zip.ps1` -> `paquete_redes_la_garza.zip` (< 100 MB).
+- **QA Forensic & Brand Shield Suites**: `herramientas/ejecutar_empresa_qa.py` and `herramientas/auditar_multimedia_qa.ps1`.
+- **Public CDN & Hosting**: GitHub Pages at `https://lagarzaaguachilera.github.io/` on branch `main` with `.nojekyll`.
+
+## Code Layout
+- `index.html` — Public single-page storefront
+- `panel_control.html` — Internal marketing and media dashboard
+- `contenido_redes/` — Official copies, product guides, and campaign scripts
+- `herramientas/` — Automation, packaging, and QA scripts
+- `paquete_redes_la_garza.zip` — Compressed assets bundle for social media distributors (< 100 MB)
+- `control_calidad/` — Enterprise QA audit reports and compliance logs
 
 ## Feature Inventory
 | # | Feature | Description | Milestone | Source |
 |---|---------|-------------|-----------|--------|
-| 1 | Voces Mexicanas Expresivas TTS | Síntesis vocal cómica de Juancho, Freddy, Alien y Locutora con `gemini-3.8-flash-tts` y speech_metadata | M1 | ORIGINAL_REQUEST §4 |
-| 2 | Diseño Sonoro y Auto-Ducking | Efectos procedurales (crunch ASMR, garras Freddy, abducción) y auto-ducking con Beachfront_Celebration.mp3 | M1 | ORIGINAL_REQUEST §4 & R2 |
-| 3 | Keyframes 2D Cel-Shaded Escena 1 | Juancho Zombie en Laguna del Carpintero (start & end) en 9:16 estilo Cartoon Network con Nano Banana | M2 | ORIGINAL_REQUEST R1.1 |
-| 4 | Keyframes 2D Cel-Shaded Escena 2 | Mapache Freddy Krueger en Escolleras Miramar (start & end) en 9:16 estilo Cartoon Network con Nano Banana | M2 | ORIGINAL_REQUEST R1.2 |
-| 5 | Keyframes 2D Cel-Shaded Escena 3 | OVNI Miramar abduciendo limones y hielera a 2°C (start & end) en 9:16 estilo Cartoon Network con Nano Banana | M2 | ORIGINAL_REQUEST R1.3 |
-| 6 | Keyframes 2D Cel-Shaded Escena 4 | Clímax del Crunch y Resurrección (~100g camarón mariposa, Tostitos Salsa Verde a $150 MXN) con Nano Banana | M2 | ORIGINAL_REQUEST R1.4 |
-| 7 | Keyframes 2D Cel-Shaded Escenas 5 y 6 | Fiesta en Miramar y Cierre Comercial con horario (Sáb-Dom 1-5 PM) y WhatsApp 833 252 09 88 con Nano Banana | M2 | ORIGINAL_REQUEST R1.5 |
-| 8 | Interpolación de Video Omni Flash Escenas 1-3 | Clips de video fluido 1080x1920 9:16 para escenas 1, 2 y 3 usando `--first-frame` y `--last-frame` | M3 | ORIGINAL_REQUEST R2.1 |
-| 9 | Interpolación de Video Omni Flash Escenas 4-6 | Clips de video fluido 1080x1920 9:16 para escenas 4, 5 y 6 usando `--first-frame` y `--last-frame` | M3 | ORIGINAL_REQUEST R2.1 |
-| 10 | Ensamble Master 1080x1920 @ 60fps | Concatenación de clips con audio master y subtítulos dinámicos a 60 fps exactos, H.264, bitrate >=4000 kbps | M4 | ORIGINAL_REQUEST R2.2 & R3.1 |
-| 11 | Integración Web y Empaque ZIP < 100MB | Actualización de reproductores `<video>` en `index.html` y `panel_control.html`, re-empaque de `paquete_redes_la_garza.zip` | M4 | ORIGINAL_REQUEST R3.3 |
-| 12 | Auditoría QA y Precio $150 MXN | Ejecución y aprobación al 100% de `herramientas/auditar_multimedia_qa.ps1`, cero menciones de precio erróneo, 0 palabras prohibidas | M5 | ORIGINAL_REQUEST R3.3 & Criteria |
-| 13 | Validación Visual Cartoon Network | Extracción y verificación visual de frames del video compilado confirmando estética 2D cel-shaded | M5 | ORIGINAL_REQUEST R3.2 |
-| 14 | Despliegue en GitHub Pages | Commit y push a `origin/main` en GitHub Pages con sello de control de calidad | M5 | ORIGINAL_REQUEST Criteria |
+| 1 | Aguacate Fresco en Toda Porción (Copy & Guide) | Inclusión garantizada de aguacate fresco y cremoso en cada orden documentado en guías oficiales | M1 | ORIGINAL_REQUEST R1, R3 |
+| 2 | Baño Especial de Salsas de la Casa en Bolsa (Copy & Guide) | Documentar el baño de salsas sobre las chips al momento del ensamble en bolsa | M1 | ORIGINAL_REQUEST R1, R3 |
+| 3 | Hooks Persuasivos Clase Media/Media-Alta | Ganchos sensoriales sin tecnicismos operativos en guías y copies | M1 | ORIGINAL_REQUEST R1 |
+| 4 | Ratificación 4 Complementos & 2 Modalidades | Tostitos Verde, Flamin' Hot, Totopos, Galletas; En ruta en vivo vs Por separado | M1, M2 | ORIGINAL_REQUEST R1, R2 |
+| 5 | Insignias Visuales Aguacate y Salsas en Hero | Badges visuales en el hero de `index.html` para aguacate cremoso y baño de salsas | M2 | ORIGINAL_REQUEST R2 |
+| 6 | Los 4 Pilares del Sabor Jaibo en `index.html` | Evolución de Trilogía a 4 Pilares (Camarón, Limón/Serrano, Aguacate, Salsa de la Casa) y fix de grid | M2 | ORIGINAL_REQUEST R2 |
+| 7 | Actualización de `panel_control.html` | Ficha técnica de producto, badges, captions de venta y corrección de función copyCaption | M2 | ORIGINAL_REQUEST R2 |
+| 8 | Regeneración de `paquete_redes_la_garza.zip` | Actualizar `LEEME_PAQUETE_REDES.txt` y empaquetar con `empaquetar_redes_zip.ps1` (< 100 MB) | M3 | ORIGINAL_REQUEST R3 |
+| 9 | Actualización de Scripts QA | Integrar assertions de aguacate y salsas de la casa en `ejecutar_empresa_qa.py` y `auditar_multimedia_qa.ps1` | M4 | ORIGINAL_REQUEST R4 |
+| 10 | Corrección de Falso Positivo en `auditar_multimedia_qa.ps1` | Excluir `control_calidad/` y `empresa_control_calidad_qa.ps1` del escáner de palabras prohibidas | M4 | ORIGINAL_REQUEST R4 |
+| 11 | Validación E2E QA con Salida 0 | Ambos scripts finalizan con código de salida 0 (0 inconformidades) | M4 | ORIGINAL_REQUEST R4 |
+| 12 | Despliegue y Verificación en GitHub Pages | Git push a `origin/main` y verificación HTTP 200 OK en `https://lagarzaaguachilera.github.io/` | M4 | ORIGINAL_REQUEST R4 |
+| 13 | Sello Oficial de Control de Calidad | Incorporar y validar el sello oficial de auditoría en los reportes finales | M4 | ORIGINAL_REQUEST R4 |
 
 ## Milestones
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
-| M1 | Audio Master & Voces TTS | `gemini-3.8-flash-tts`, SFX procedurales, auto-ducking, `audio_animacion_master_60fps.wav`, `timeline_animacion_60fps.json` | none | DONE (audio_animacion_master_60fps.wav 89.94s, timeline_animacion_60fps.json 5397 frames @ 60fps) |
-| M2 | Keyframes 2D Cel-Shaded Cartoon Network | `gemini-nano-banana-2.1`, pares start/end 9:16 para Escenas 1 a 6 con referencias de personaje | none | DONE (12 keyframes 1080x1920 en FRAMES/scene[1-6]_(start|end).png) |
-| M3 | Animación Fluida Gemini Omni 1.1 Flash | `gemini-omni-1.1-flash`, generación de 6 clips 1080x1920 9:16 vía `--first-frame` y `--last-frame` | M2 | DONE (6 clips 1080x1920 @ 60fps en VIDEOS/clips/scene[1-6].mp4) |
-| M4 | Ensamble Master 60fps, Web & ZIP | FFmpeg concat 1080x1920 @ 60fps, H.264 >=4000kbps, audio sync, `index.html`, `panel_control.html`, `paquete_redes_la_garza.zip` (<100MB) | M1, M3 | IN_PROGRESS (b5dccc14) |
-| M5 | Auditoría QA, Validación Visual & Deploy | `auditar_multimedia_qa.ps1` código 0, inspección visual de frames, despliegue a GitHub Pages | M4 | PLANNED |
+| M1 | Marketing Gastronómico & Contenido | `contenido_redes/05_GUIA_PRODUCTO_COMPLEMENTOS_Y_SERVIDO.md`, copys y hooks de WhatsApp | none | DONE |
+| M2 | Diseño Gráfico & Arte Web | `index.html` (Hero, badges, 4 Pilares, selector) y `panel_control.html` (badges, captions, JS fix) | M1 | DONE |
+| M3 | Empaque de Redes & ZIP | `herramientas/empaquetar_redes_zip.ps1`, regeneración de `paquete_redes_la_garza.zip` (< 100 MB) | M1, M2 | DONE |
+| M4 | QA Enterprise, Auditoría & Deploy | `herramientas/ejecutar_empresa_qa.py`, `herramientas/auditar_multimedia_qa.ps1`, git push y 200 OK | M1, M2, M3 | DONE |
 
 ## Interface Contracts
-### Audio Engine (M1) ↔ Animation & Master Compositing (M3, M4)
-- **Archivos emitidos por M1:**
-  - `herramientas/audio_animacion_master_60fps.wav`: WAV PCM 16-bit estéreo a 44,100 Hz, duración exacta ~65.32s.
-  - `herramientas/timeline_animacion_60fps.json`: Marcas de tiempo exactas por escena (`sc1_juancho_zombie` a `sc6_locutora_cierre`), RMS envelope para lip-sync y duración por escena.
+### M1 ↔ M2 (Marketing & Copy to Web Design)
+- Official phrasing: `"Toda porción incluye aguacate fresco y cremoso"`, `"En preparación en bolsa las chips se bañan con una combinación especial y rica de salsas de la casa"`.
+- 4 Complements: `"Tostitos Salsa Verde"`, `"Tostitos Flamin' Hot"`, `"Chips o Totopos Artesanales"`, `"Galletas Saladas"`.
+- 2 Modalities: `"Preparado al momento frente a ti"`, `"Con complemento por separado"`.
+- Price: Strictly `$150 MXN`.
+- Location: `"Colonia Flores, Tampico, Tamaulipas"`.
 
-### Keyframe Studio (M2) ↔ Gemini Omni 1.1 Flash (M3)
-- **Archivos emitidos por M2:**
-  - `FRAMES/scene[1-6]_start.png`: PNG 9:16 (resolución >= 1080x1920), 2D cel-shaded estilo Cartoon Network.
-  - `FRAMES/scene[1-6]_end.png`: PNG 9:16 (resolución >= 1080x1920), 2D cel-shaded estilo Cartoon Network.
-- **Entradas para M3:**
-  - Invocación de `generate_video.py` con `--first-frame FRAMES/sceneN_start.png --last-frame FRAMES/sceneN_end.png --aspect-ratio 9:16 --resolution 1080p --duration [6|8]`.
+### M2 ↔ M3 (Web Design to Packaging)
+- Updated `05_GUIA_PRODUCTO_COMPLEMENTOS_Y_SERVIDO.md` must be included in root of ZIP.
+- `LEEME_PAQUETE_REDES.txt` generated with updated copy and new gastronomy attributes.
 
-### Video Clips (M3) ↔ Ensamble Master (M4)
-- **Archivos emitidos por M3:**
-  - `VIDEOS/clips/scene[1-6].mp4`: Video clips 1080x1920 H.264.
-- **Entradas para M4:**
-  - Concatenación con FFmpeg:
-    `-f concat -safe 0 -i clips_list.txt -i herramientas/audio_animacion_master_60fps.wav -c:v libx264 -profile:v high -level 4.2 -pix_fmt yuv420p -b:v 4600k -minrate 4200k -maxrate 5500k -bufsize 10000k -r 60 -c:a aac -b:a 192k -ac 2 -shortest VIDEOS/animacion_la_garza_episodio_crudos_60fps.mp4`.
-
-### Master Video (M4) ↔ QA & Deployment (M5)
-- **Archivos emitidos por M4:**
-  - `VIDEOS/animacion_la_garza_episodio_crudos_60fps.mp4` (tamaño <= 42 MB, 1080x1920, 60fps, bitrate >= 4000 kbps).
-  - `VIDEOS/promo_halloween_zombies_crudos.mp4` (copia idéntica del master).
-  - `paquete_redes_la_garza.zip` (tamaño < 100 MB, con estructura intacta).
-  - `index.html` y `panel_control.html` con tags `<video>` apuntando al nuevo video y precio $150 MXN intacto.
-
-## Code Layout
-- `herramientas/`: Scripts de audio (`producir_audio_animacion.py`), animación (`generar_animacion_omni.py`), render y QA (`auditar_multimedia_qa.ps1`, `empaquetar_redes_zip.ps1`), binarios FFmpeg (`herramientas/ffmpeg/`).
-- `FRAMES/`: Cuadros clave 2D cel-shaded (`scene[1-6]_(start|end).png`).
-- `VIDEOS/`: Clips individuales (`VIDEOS/clips/`) y videos finales maestros (`VIDEOS/animacion_la_garza_episodio_crudos_60fps.mp4`, `VIDEOS/promo_halloween_zombies_crudos.mp4`).
-- `tests/`: Suites de pruebas automatizadas E2E y QA.
-- `index.html`, `panel_control.html`: Páginas web de visualización y control.
-- `paquete_redes_la_garza.zip`: Paquete de distribución para redes sociales.
+### M3 ↔ M4 (Packaging to QA & Deployment)
+- `paquete_redes_la_garza.zip` must exist, size must be `>= 20 MB` and `< 100 MB`.
+- Git status must be clean before final push to `origin/main`.

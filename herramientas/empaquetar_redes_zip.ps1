@@ -133,16 +133,18 @@ try {
         "",
         "PARAMETROS OFICIALES DE MARCA (2026):",
         "- Producto: Tostiaguachile Verde Tradicional",
-        "- Precio Oficial: $150 MXN",
-        "- 4 Complementos a Elegir: 1. Tostitos Salsa Verde, 2. Tostitos Flamin Hot, 3. Chips o Totopos, 4. Galletas Saladas",
-        "- Modalidades de Servicio: Preparado al Momento frente al cliente (en ruta directa) o Por Separado (paqueteria/repartidor externo)",
-        "- Porcion: ~100g de camaron limpio en corte mariposa",
+        "- Precio Oficial: `$150 MXN",
+        "- Aguacate Fresco Garantizado: Toda porción incluye aguacate fresco y cremoso en cada orden.",
+        "- El Toque Secreto en Bolsa: En preparación en bolsa las chips se bañan con una combinación especial y rica de salsas de la casa.",
+        "- 4 Complementos a Elegir: 1. Tostitos Salsa Verde, 2. Tostitos Flamin' Hot, 3. Chips o Totopos artesanales, 4. Galletas Saladas",
+        "- 2 Modalidades de Servicio: Preparado al momento frente a ti (staff en ruta directa) o Con complemento por separado (delivery/paquetería para 100% crocancia)",
+        "- Porción: ~100g de camarón fresco limpio en corte mariposa",
         "- Promesa de Marca: El producto es preparado frente a usted para corroborar su frescura",
-        "- Horario de Operacion: Sabados y Domingos de 1:00 PM a 5:00 PM",
-        "- Ubicacion Oficial: Colonia Flores, Tampico, Tamaulipas",
+        "- Horario de Operación: Sábados y Domingos de 1:00 PM a 5:00 PM",
+        "- Ubicación Oficial: Colonia Flores, Tampico, Tamaulipas",
         "- WhatsApp Oficial de Pedidos: 833 252 09 88 (https://wa.me/528332520988)",
         "",
-        "Auditado y aprobado por Control de Calidad: Cumple con los estandares de La Garza Aguachilera."
+        "Auditado y aprobado por Control de Calidad: Cumple con los estándares de La Garza Aguachilera."
     )
     $guiaTxt = $guiaLines -join "`r`n"
     

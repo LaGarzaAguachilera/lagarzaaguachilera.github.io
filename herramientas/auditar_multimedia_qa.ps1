@@ -564,9 +564,11 @@ $filesToScan = Get-ChildItem -Path $projectRoot -Recurse -Include *.ps1, *.html,
     $_.FullName -notmatch '\\\.agents\\' -and
     $_.FullName -notmatch '\\\.git\\' -and
     $_.FullName -notmatch '\\tests\\' -and
+    $_.FullName -notmatch '\\control_calidad\\' -and
     $_.FullName -ne $thisScriptPath -and
     $_.Name -ne 'auditar_multimedia_qa.ps1' -and
     $_.Name -ne 'proposed_auditar_multimedia_qa.ps1' -and
+    $_.Name -ne 'empresa_control_calidad_qa.ps1' -and
     $_.Name -ne 'e2e_test_suite.ps1' -and
     $_.Name -ne 'adversarial_ux_integrity_test.ps1' -and
     $_.Name -ne 'test_deploy_readiness_adversarial.ps1' -and
@@ -678,6 +680,27 @@ foreach ($m in $modesToCheck) {
     } else {
         Write-Host " [ADVERTENCIA/PENDIENTE] Modalidad de servicio '$($m.Name)' aun no detectada en index.html" -ForegroundColor Yellow
     }
+}
+
+# -----------------------------------------------------------------------------
+# 5.4 VERIFICACION DE ATRIBUTOS GASTRONOMICOS (AGUACATE Y SALSAS DE LA CASA)
+# -----------------------------------------------------------------------------
+Write-Host "`n5.4 VERIFICACION DE ATRIBUTOS GASTRONOMICOS (AGUACATE Y SALSAS DE LA CASA):" -ForegroundColor Green
+
+if ($indexContent -match 'aguacate') {
+    $matchesAguacate = [regex]::Matches($indexContent, 'aguacate', 'IgnoreCase')
+    Write-Host " [OK] Aguacate fresco garantizado verificado en index.html ($($matchesAguacate.Count) menciones detectadas)" -ForegroundColor Green
+} else {
+    Write-Host " [ERROR GASTRONOMIA] index.html no contiene menciones de aguacate fresco" -ForegroundColor Red
+    $script:fallasTotales++
+}
+
+if ($indexContent -match '(salsas?\s+de\s+la\s+casa|combinaci[oó]n\s+especial)') {
+    $matchesSalsas = [regex]::Matches($indexContent, '(salsas?\s+de\s+la\s+casa|combinaci[oó]n\s+especial)', 'IgnoreCase')
+    Write-Host " [OK] Salsas especiales / de la casa verificadas en index.html ($($matchesSalsas.Count) menciones detectadas)" -ForegroundColor Green
+} else {
+    Write-Host " [ERROR GASTRONOMIA] index.html no contiene menciones de salsas de la casa o combinacion especial" -ForegroundColor Red
+    $script:fallasTotales++
 }
 
 # -----------------------------------------------------------------------------
