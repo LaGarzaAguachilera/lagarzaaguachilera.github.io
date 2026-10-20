@@ -1,0 +1,120 @@
+{
+  "duration_sync": [
+    {
+      "video": "animacion_la_garza_episodio_crudos_60fps.mp4",
+      "v_dur": 65.316667,
+      "a_dur": 65.293991,
+      "delta": 0.022675999999989926,
+      "status": "PASS"
+    },
+    {
+      "video": "promo_halloween_zombies_crudos.mp4",
+      "v_dur": 65.316667,
+      "a_dur": 65.293991,
+      "delta": 0.022675999999989926,
+      "status": "PASS"
+    }
+  ],
+  "framerate_pixel_format": [
+    {
+      "target": "VIDEOS\\animacion_la_garza_episodio_crudos_60fps.mp4",
+      "fps_exact": true,
+      "pix_fmt_ok": true,
+      "res_ok": true,
+      "r_frame_rate": "60/1",
+      "avg_frame_rate": "60/1",
+      "pix_fmt": "yuv420p",
+      "status": "PASS"
+    },
+    {
+      "target": "VIDEOS\\promo_halloween_zombies_crudos.mp4",
+      "fps_exact": true,
+      "pix_fmt_ok": true,
+      "res_ok": true,
+      "r_frame_rate": "60/1",
+      "avg_frame_rate": "60/1",
+      "pix_fmt": "yuv420p",
+      "status": "PASS"
+    },
+    {
+      "target": "VIDEOS\\clips\\scene1.mp4",
+      "fps_exact": true,
+      "pix_fmt_ok": true,
+      "res_ok": true,
+      "r_frame_rate": "60/1",
+      "avg_frame_rate": "60/1",
+      "pix_fmt": "yuv420p",
+      "status": "PASS"
+    },
+    {
+      "target": "VIDEOS\\clips\\scene2.mp4",
+      "fps_exact": true,
+      "pix_fmt_ok": true,
+      "res_ok": true,
+      "r_frame_rate": "60/1",
+      "avg_frame_rate": "60/1",
+      "pix_fmt": "yuv420p",
+      "status": "PASS"
+    },
+    {
+      "target": "VIDEOS\\clips\\scene3.mp4",
+      "fps_exact": true,
+      "pix_fmt_ok": true,
+      "res_ok": true,
+      "r_frame_rate": "60/1",
+      "avg_frame_rate": "60/1",
+      "pix_fmt": "yuv420p",
+      "status": "PASS"
+    },
+    {
+      "target": "VIDEOS\\clips\\scene4.mp4",
+      "fps_exact": true,
+      "pix_fmt_ok": true,
+      "res_ok": true,
+      "r_frame_rate": "60/1",
+      "avg_frame_rate": "60/1",
+      "pix_fmt": "yuv420p",
+      "status": "PASS"
+    },
+    {
+      "target": "VIDEOS\\clips\\scene5.mp4",
+      "fps_exact": true,
+      "pix_fmt_ok": true,
+      "res_ok": true,
+      "r_frame_rate": "60/1",
+      "avg_frame_rate": "60/1",
+      "pix_fmt": "yuv420p",
+      "status": "PASS"
+    },
+    {
+      "target": "VIDEOS\\clips\\scene6.mp4",
+      "fps_exact": true,
+      "pix_fmt_ok": true,
+      "res_ok": true,
+      "r_frame_rate": "60/1",
+      "avg_frame_rate": "60/1",
+      "pix_fmt": "yuv420p",
+      "status": "PASS"
+    }
+  ],
+  "zip_headroom": {
+    "size_bytes": 96933463,
+    "size_mib": 92.44295406341553,
+    "headroom_mib": 7.557045936584473,
+    "headroom_mb": 3.066537,
+    "corrupted": 0,
+    "status": "PASS"
+  },
+  "pricing_forbidden_scan": {
+    "scanned_files": 102,
+    "violations": [],
+    "misplaced_test_files": [
+      "test_compose.ps1",
+      "test_real_card.ps1",
+      "herramientas\\test_beachfront.mp3",
+      "herramientas\\test_empirical_challenger_m10.py"
+    ],
+    "status": "PASS"
+  },
+  "overall_passed": true
+}

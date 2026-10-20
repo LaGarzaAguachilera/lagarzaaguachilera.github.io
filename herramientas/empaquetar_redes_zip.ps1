@@ -105,6 +105,12 @@ try {
         }
     }
 
+    # 6. Manual de Producto y 4 Complementos
+    $guiaProducto = Join-Path $projectRoot "contenido_redes\05_GUIA_PRODUCTO_COMPLEMENTOS_Y_SERVIDO.md"
+    if (Test-Path $guiaProducto) {
+        Add-FileToZip $guiaProducto "05_GUIA_PRODUCTO_COMPLEMENTOS_Y_SERVIDO.md"
+    }
+
     # 7. Documento Guia de Publicacion y Parametros Oficiales
     Write-Host "`n7. Agregando Guia de Uso del Paquete..." -ForegroundColor Green
     $guiaLines = @(
@@ -123,13 +129,15 @@ try {
         "- Semana_4/: Rutas de Entrega y Comunidad (4 piezas Feed 1:1, Stories 9:16 y copys)",
         "- Especial_Halloween_Dia_Muertos/: Coleccion Spooky de Temporada (Posters Feed 1:1 y 6 paquetes de copy)",
         "- Gorras_Oficiales/: Catalogo de 6 Mockups HD de Gorras (Caballero, Universitaria, Damas, Chavos) y Ficha Tecnica",
+        "- 05_GUIA_PRODUCTO_COMPLEMENTOS_Y_SERVIDO.md: Guia Oficial de 4 Complementos y Servido",
         "",
-        "PARAMETROS OFICIALES DE MARCA:",
+        "PARAMETROS OFICIALES DE MARCA (2026):",
         "- Producto: Tostiaguachile Verde Tradicional",
-        "- Totopo: Exclusivamente TOSTITOS SALSA VERDE",
-        "- Porcion: ~100g de camaron en corte mariposa",
-        "- Precio: $150 MXN",
-        "- Promesa Obligatoria: El producto es preparado frente a usted para corroborar su frescura",
+        "- Precio Oficial: $150 MXN",
+        "- 4 Complementos a Elegir: 1. Tostitos Salsa Verde, 2. Tostitos Flamin Hot, 3. Chips o Totopos, 4. Galletas Saladas",
+        "- Modalidades de Servicio: Preparado al Momento frente al cliente (en ruta directa) o Por Separado (paqueteria/repartidor externo)",
+        "- Porcion: ~100g de camaron limpio en corte mariposa",
+        "- Promesa de Marca: El producto es preparado frente a usted para corroborar su frescura",
         "- Horario de Operacion: Sabados y Domingos de 1:00 PM a 5:00 PM",
         "- Ubicacion Oficial: Colonia Flores, Tampico, Tamaulipas",
         "- WhatsApp Oficial de Pedidos: 833 252 09 88 (https://wa.me/528332520988)",
@@ -173,7 +181,6 @@ $forbiddenPatterns = @(
     (B64Dec 'dG9zdGl0b3M/XHMrcmVkb25kb3M/'),
     (B64Dec 'dG90b3Bvcz9ccytyZWRvbmRvcz8='),
     (B64Dec 'ZGFya1xzKmtpdGNoZW4='),
-    (B64Dec 'Y2FsZG9ccypwb3JccypzZXBhcmFkbw=='),
     (B64Dec 'Um9zYVxzKjIxMA==')
 )
 $violations = @()

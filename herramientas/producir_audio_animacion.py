@@ -1,51 +1,82 @@
 """
- ESCUADRÓN DE PRODUCCIÓN AUDIOVISUAL — LA GARZA AGUACHILERA
- Módulo 1: Agente_Voces_y_Prosodia_TTS + Agente_Diseno_Sonoro_y_Mezcla
- 
- Genera:
- 1. Las 6 pistas vocales diferenciadas en español mexicano (es-MX) con dirección actoral fonética.
- 2. Efectos de sonido (SFX) cómicos y gastronómicos sintetizados en estéreo a 44.1 kHz:
-    - Gemido/tambor de cruda, Whoosh de transición, Garras metálicas de Freddy (Schwing!),
-    - Rayo abductor OVNI de Miramar, Vapor criogénico a 2°C y exprimido de limón,
-    - Trueno/destello mágico de resurrección, CRUNCH ASMR de Tostitos Salsa Verde y Campana final.
- 3. Mezcla Maestra Estéreo (audio_animacion_master_60fps.wav) con Auto-Ducking dinámico sobre
-    Beachfront_Celebration.mp3 para que cada diálogo en español se escuche fuerte, claro y en primer plano.
- 4. Archivo de telemetría (timeline_animacion_60fps.json) con la envolvente de amplitud RMS cuadro por cuadro
-    a 60.0 fps para sincronización labial (Lip-Sync) exacta en el motor de animación 2D.
+ESCUADRÓN DE PRODUCCIÓN AUDIOVISUAL — LA GARZA AGUACHILERA
+Módulo 1: Agente_Voces_y_Prosodia_TTS + Agente_Diseno_Sonoro_y_Mezcla (Milestone 1)
+
+Genera:
+1. Las 6 pistas vocales en español mexicano con Gemini 3.8 Flash TTS (gemini-3.8-flash-tts)
+   incorporando speech_metadata (speaker, style) e inline vocal tags (<groan>, <sigh>, <gasp>, <laugh>, <short pause>),
+   con fallback de respaldo transparente en edge-tts.
+2. Efectos de sonido (SFX) cómicos y gastronómicos sintetizados proceduralmente a 44.1 kHz estéreo:
+   - Tambor cómico de cruda, Whoosh de transición, Garras metálicas de Freddy (Schwing!),
+   - Rayo abductor OVNI de Miramar, Vapor criogénico a 2°C y exprimido de limón,
+   - Trueno/destello mágico de resurrección, CRUNCH ASMR de Tostitos Salsa Verde y Campana final.
+3. Mezcla Maestra Estéreo (audio_animacion_master_60fps.wav) con Auto-Ducking dinámico sobre
+   Beachfront_Celebration.mp3 (atenuación a 0.14 bajo voz, recuperación a 0.46 en pausas).
+4. Archivo de telemetría (timeline_animacion_60fps.json) con envolvente de amplitud RMS cuadro por cuadro
+   a 60.0 fps para sincronización labial (Lip-Sync) exacta.
 """
 
+import argparse
 import asyncio
+import base64
 import json
 import math
 import os
+import re
 import subprocess
+import time
 import wave
-import edge_tts
+import dotenv
 import numpy as np
+
+# Cargar variables de entorno y PATH para FFmpeg y Gemini API
+dotenv.load_dotenv(os.path.expanduser("~/.env"))
 
 BASE_DIR = r"d:\AG\la garza aguachilera"
 TOOLS_DIR = os.path.join(BASE_DIR, "herramientas")
 AUDIO_DIR = os.path.join(TOOLS_DIR, "audio_animacion")
-FFMPEG = os.path.join(TOOLS_DIR, "ffmpeg", "ffmpeg.exe")
+FFMPEG_DIR = os.path.join(TOOLS_DIR, "ffmpeg")
+FFMPEG = os.path.join(FFMPEG_DIR, "ffmpeg.exe")
 MUSIC_PATH = os.path.join(TOOLS_DIR, "Beachfront_Celebration.mp3")
+
+if FFMPEG_DIR not in os.environ.get("PATH", ""):
+    os.environ["PATH"] = FFMPEG_DIR + os.pathsep + os.environ.get("PATH", "")
 
 os.makedirs(AUDIO_DIR, exist_ok=True)
 
 SAMPLE_RATE = 44100
 FPS = 60
 
-# Casting vocal multi-personaje con ortografía fonética expresiva mexicana/tampiqueña
+# Inicializar Google GenAI Client
+genai_client = None
+try:
+    from google import genai
+    from google.genai import types
+    if os.getenv("GEMINI_API_KEY"):
+        genai_client = genai.Client()
+        print(" [TTS] Google GenAI SDK inicializado con Gemini API Key.")
+    else:
+        print(" [TTS] Aviso: GEMINI_API_KEY no encontrada en entorno.")
+except Exception as e:
+    print(f" [TTS] Aviso: No se pudo instanciar genai.Client(): {e}")
+
+import edge_tts
+
+# Casting vocal multi-personaje con gemini-3.8-flash-tts y speech_metadata
 DIALOGUES = [
     {
         "id": "sc1_juancho_zombie",
         "character": "juancho_zombie",
         "speaker_label": "🐊 JUANCHO EL COCODRILO (MODO CRUDO)",
+        "gemini_voice": "Puck",
+        "gemini_speaker": "Juancho",
+        "gemini_style": "exhausted, severe hangover, groaning, comic Mexican crocodile speaking slowly",
+        "text": "<groan> ¡Aaaay mamá!... <sigh> ¡Noooombre compadre, qué trancazo me puso la fiesta de anoche!... No estoy muerto... ¡ando bien crudo aquí en la Laguna del Carpintero!",
+        "subtitle_text": "¡Aaaay mamá! ¡Noooombre compadre, qué trancazo! No estoy muerto... ¡ando bien crudo en la Laguna del Carpintero!",
         "voice": "es-MX-JorgeNeural",
         "rate": "-4%",
         "pitch": "-10Hz",
         "eq_filter": "equalizer=f=160:width_type=h:width=90:g=4.5,equalizer=f=3000:width_type=h:width=900:g=2.0,alimiter=limit=0.95",
-        "text": "¡Aaaay mamá!... ¡Noooombre compadre, qué trancazo me puso la fiesta de anoche!... No estoy muerto... ¡ando bien crudo aquí en la Laguna del Carpintero!",
-        "subtitle_text": "¡Aaaay mamá! ¡Noooombre compadre, qué trancazo! No estoy muerto... ¡ando bien crudo en la Laguna del Carpintero!",
         "pre_pad": 0.35,
         "post_pad": 0.35
     },
@@ -53,12 +84,15 @@ DIALOGUES = [
         "id": "sc2_mapache_freddy",
         "character": "mapache_freddy",
         "speaker_label": "🦝 MAPACHE FREDDY (ESCOLLERAS)",
+        "gemini_voice": "Fenrir",
+        "gemini_speaker": "Mapache",
+        "gemini_style": "frantic, high-energy, mischievous comic cartoon raccoon, starving, desperate delivery",
+        "text": "<gasp> ¡Pérate tantito Juancho, que yo ando peor!... <short pause> ¡Ni con estas garras de Freddy alcanzo un camaroncito!... ¡Tráiganme unos Tostitos Salsa Verde que me muero de antojo!",
+        "subtitle_text": "¡Pérate tantito Juancho, que yo ando peor! ¡Tráiganme unos Tostitos Salsa Verde que me muero de antojo!",
         "voice": "es-MX-JorgeNeural",
         "rate": "+14%",
         "pitch": "+24Hz",
         "eq_filter": "equalizer=f=1100:width_type=h:width=500:g=3.0,equalizer=f=3800:width_type=h:width=1000:g=2.5,alimiter=limit=0.95",
-        "text": "¡Pérate tantito Juancho, que yo ando peor!... ¡Ni con estas garras de Freddy alcanzo un camaroncito!... ¡Tráiganme unos Tostitos Salsa Verde que me muero de antojo!",
-        "subtitle_text": "¡Pérate tantito Juancho, que yo ando peor! ¡Tráiganme unos Tostitos Salsa Verde que me muero de antojo!",
         "pre_pad": 0.30,
         "post_pad": 0.35
     },
@@ -66,12 +100,15 @@ DIALOGUES = [
         "id": "sc3_alien_miramar",
         "character": "alien_ovni",
         "speaker_label": "👽 ALIEN DEL OVNI DE MIRAMAR",
+        "gemini_voice": "Enceladus",
+        "gemini_speaker": "Alien",
+        "gemini_style": "mysterious, friendly cosmic alien from Miramar base, calm eerie cadence",
+        "text": "¡Tsss, tranquilos jaibos crudos!... <short pause> Desde la base submarina de Miramar les trajimos el antídoto sagrado... ¡Hielera a dos grados y puro limón Colima recién exprimido!",
+        "subtitle_text": "¡Tsss, tranquilos jaibos crudos! Desde la base de Miramar trajimos el antídoto a 2°C con limón Colima recién exprimido.",
         "voice": "es-MX-DaliaNeural",
         "rate": "+8%",
         "pitch": "+18Hz",
         "eq_filter": "aecho=0.8:0.85:35:0.22,equalizer=f=2800:width_type=h:width=900:g=2.5,alimiter=limit=0.95",
-        "text": "¡Tsss, tranquilos jaibos crudos!... Desde la base submarina de Miramar les trajimos el antídoto sagrado... ¡Hielera a dos grados y puro limón Colima recién exprimido!",
-        "subtitle_text": "¡Tsss, tranquilos jaibos crudos! Desde la base de Miramar trajimos el antídoto a 2°C con limón Colima recién exprimido.",
         "pre_pad": 0.30,
         "post_pad": 0.35
     },
@@ -79,12 +116,15 @@ DIALOGUES = [
         "id": "sc4_locutora_climax",
         "character": "locutora_climax",
         "speaker_label": "🎙️ LA GARZA AGUACHILERA",
+        "gemini_voice": "Aoede",
+        "gemini_speaker": "Locutora",
+        "gemini_style": "high energy, dramatic, epic Mexican cartoon announcer, excited reveal",
+        "text": "<gasp> ¡Y PUM, papá! Al primer crujido con cien gramos de camarón mariposa... ¡no estaban muertos, solo andaban crudos! El producto es preparado frente a usted para corroborar su frescura.",
+        "subtitle_text": "¡Y PUM, PAPÁ! Al primer CRUNCH con ~100g de camarón mariposa... ¡no estaban muertos, solo andaban crudos! Preparado frente a usted.",
         "voice": "es-MX-DaliaNeural",
         "rate": "+8%",
         "pitch": "+2Hz",
         "eq_filter": "equalizer=f=240:width_type=h:width=120:g=2.5,equalizer=f=3600:width_type=h:width=1000:g=2.0,alimiter=limit=0.95",
-        "text": "¡Y PUM, papá! Al primer crujido con cien gramos de camarón mariposa... ¡no estaban muertos, solo andaban crudos! El producto es preparado frente a usted para corroborar su frescura.",
-        "subtitle_text": "¡Y PUM, PAPÁ! Al primer CRUNCH con ~100g de camarón mariposa... ¡no estaban muertos, solo andaban crudos! Preparado frente a usted.",
         "pre_pad": 0.40,
         "post_pad": 0.35
     },
@@ -92,12 +132,15 @@ DIALOGUES = [
         "id": "sc5_juancho_vivo",
         "character": "juancho_vivo",
         "speaker_label": "🐊 JUANCHO RESUCITADO (AL 100%)",
+        "gemini_voice": "Puck",
+        "gemini_speaker": "Juancho",
+        "gemini_style": "joyful, cheerful, ecstatic, cured of hangover, energetic Mexican crocodile celebrating",
+        "text": "<laugh> ¡Noooombre, qué delicia! ¡Reviví al cien por solo ciento cincuenta pesitos!",
+        "subtitle_text": "¡Noooombre, qué delicia! ¡Reviví al 100% por solo $150 MXN!",
         "voice": "es-MX-JorgeNeural",
         "rate": "+8%",
         "pitch": "-4Hz",
         "eq_filter": "equalizer=f=200:width_type=h:width=100:g=3.0,equalizer=f=3400:width_type=h:width=900:g=2.2,alimiter=limit=0.95",
-        "text": "¡Noooombre, qué delicia! ¡Reviví al cien por solo ciento cincuenta pesitos!",
-        "subtitle_text": "¡Noooombre, qué delicia! ¡Reviví al 100% por solo $150 MXN!",
         "pre_pad": 0.25,
         "post_pad": 0.30
     },
@@ -105,30 +148,127 @@ DIALOGUES = [
         "id": "sc6_locutora_cierre",
         "character": "locutora_cierre",
         "speaker_label": "🦅 PEDIDOS WHATSAPP 833 252 09 88",
+        "gemini_voice": "Aoede",
+        "gemini_speaker": "Locutora",
+        "gemini_style": "professional, vibrant, inviting Mexican radio commercial call-to-action",
+        "text": "¡La Garza Aguachilera! Sábados y domingos en Tampico y Madero. <short pause> ¡Manda WhatsApp al 833 252 09 88 y pide tu cura ya!",
+        "subtitle_text": "¡La Garza Aguachilera! Sábados y domingos en Tampico y Madero. ¡WhatsApp 833 252 09 88!",
         "voice": "es-MX-DaliaNeural",
         "rate": "+8%",
         "pitch": "+2Hz",
         "eq_filter": "equalizer=f=240:width_type=h:width=120:g=2.5,equalizer=f=3600:width_type=h:width=1000:g=2.0,alimiter=limit=0.95",
-        "text": "¡La Garza Aguachilera! Sábados y domingos en Tampico y Madero. ¡Manda WhatsApp al 833 252 09 88 y pide tu cura ya!",
-        "subtitle_text": "¡La Garza Aguachilera! Sábados y domingos en Tampico y Madero. ¡WhatsApp 833 252 09 88!",
         "pre_pad": 0.20,
         "post_pad": 0.85
     }
 ]
 
 
-async def synthesize_line(line_cfg):
-    mp3_tmp = os.path.join(AUDIO_DIR, f"{line_cfg['id']}.mp3")
+def synthesize_with_gemini(client, line_cfg, max_retries=2):
+    """Sintetiza una línea con gemini-3.8-flash-tts usando speech_metadata e inline tags."""
+    if not client:
+        return None
+    for attempt in range(max_retries + 1):
+        try:
+            print(f" [Gemini TTS] Sintetizando {line_cfg['id']} con {line_cfg['gemini_voice']} ({line_cfg['gemini_speaker']})...")
+            resp = client.models.generate_content(
+                model="gemini-3.8-flash-tts",
+                contents=[{
+                    "role": "user",
+                    "parts": [{
+                        "text": line_cfg["text"],
+                        "speech_metadata": {
+                            "speaker": line_cfg["gemini_speaker"],
+                            "style": line_cfg["gemini_style"]
+                        }
+                    }]
+                }],
+                config=types.GenerateContentConfig(
+                    response_modalities=["AUDIO"],
+                    speech_config=types.SpeechConfig(
+                        voice_config=types.VoiceConfig(
+                            prebuilt_voice_config=types.PrebuiltVoiceConfig(
+                                voice_name=line_cfg["gemini_voice"]
+                            )
+                        )
+                    )
+                )
+            )
+            if resp and resp.parts:
+                for part in resp.parts:
+                    if part.inline_data and part.inline_data.data:
+                        raw_data = part.inline_data.data
+                        if isinstance(raw_data, str):
+                            raw_data = base64.b64decode(raw_data)
+                        print(f" [Gemini TTS OK] {line_cfg['id']} -> {len(raw_data)} bytes recibidos.")
+                        return raw_data
+        except Exception as err:
+            err_str = str(err)
+            print(f" [Gemini TTS Retry] Intento {attempt+1}/{max_retries+1} para {line_cfg['id']} falló: {err}")
+            if "429" in err_str or "RESOURCE_EXHAUSTED" in err_str or "quota" in err_str.lower():
+                wait_sec = 25
+                m = re.search(r"retry in (\d+(?:\.\d+)?)s", err_str)
+                if m:
+                    wait_sec = int(float(m.group(1))) + 2
+                print(f" [Gemini TTS Quota] Enfriando API por {wait_sec}s antes de reintentar...")
+                time.sleep(wait_sec)
+            else:
+                time.sleep(2)
+    return None
+
+
+async def synthesize_line(line_cfg, client, pace_delay=22.0, fallback_only=False, skip_existing=False):
+    """Sintetiza un diálogo individual guardándolo en WAV 44.1kHz estéreo."""
     wav_out = os.path.join(AUDIO_DIR, f"{line_cfg['id']}.wav")
+    gemini_raw_wav = os.path.join(AUDIO_DIR, f"{line_cfg['id']}_raw_gemini.wav")
+    mp3_tmp = os.path.join(AUDIO_DIR, f"{line_cfg['id']}_tmp.mp3")
+
+    if skip_existing and os.path.exists(wav_out) and os.path.getsize(wav_out) > 5000:
+        print(f" [Cache] Reutilizando stem existente: {wav_out}")
+        return wav_out, "cached"
+
+    audio_bytes = None
+    engine_used = "edge-tts"
+
+    # Intentar síntesis con Gemini 3.8 Flash TTS
+    if client and not fallback_only:
+        audio_bytes = synthesize_with_gemini(client, line_cfg)
+        if audio_bytes:
+            engine_used = "gemini-3.8-flash-tts"
+            with open(gemini_raw_wav, "wb") as f:
+                f.write(audio_bytes)
+
+            af = f"silenceremove=start_periods=1:start_duration=0.02:start_threshold=-45dB,{line_cfg['eq_filter']}"
+            cmd = [
+                FFMPEG, "-y", "-i", gemini_raw_wav,
+                "-af", af,
+                "-ar", str(SAMPLE_RATE),
+                "-ac", "2",
+                "-c:a", "pcm_s16le",
+                wav_out
+            ]
+            subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            if os.path.exists(gemini_raw_wav):
+                try:
+                    os.remove(gemini_raw_wav)
+                except Exception:
+                    pass
+            if pace_delay > 0:
+                print(f" [Pacing] Esperando {pace_delay:.1f}s para respetar límite 3 RPM de Gemini TTS...")
+                time.sleep(pace_delay)
+            return wav_out, engine_used
+
+    # Fallback con Edge-TTS (limpiando tags <...>)
+    clean_text = re.sub(r"<[^>]+>", "", line_cfg["text"]).strip()
+    clean_text = re.sub(r"\s+", " ", clean_text)
+    print(f" [Fallback Edge-TTS] Sintetizando {line_cfg['id']} con {line_cfg['voice']}...")
     comm = edge_tts.Communicate(
-        line_cfg["text"],
+        clean_text,
         line_cfg["voice"],
         rate=line_cfg["rate"],
         pitch=line_cfg["pitch"]
     )
     await comm.save(mp3_tmp)
 
-    # Convert to 44.1kHz stereo 16-bit PCM WAV and strip leading/trailing dead silence
     af = f"silenceremove=start_periods=1:start_duration=0.02:start_threshold=-45dB,{line_cfg['eq_filter']}"
     cmd = [
         FFMPEG, "-y", "-i", mp3_tmp,
@@ -140,8 +280,11 @@ async def synthesize_line(line_cfg):
     ]
     subprocess.run(cmd, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     if os.path.exists(mp3_tmp):
-        os.remove(mp3_tmp)
-    return wav_out
+        try:
+            os.remove(mp3_tmp)
+        except Exception:
+            pass
+    return wav_out, engine_used
 
 
 def load_wav_stereo(wav_path):
@@ -179,11 +322,9 @@ def make_sfx_whoosh(duration=0.32):
     n = int(SAMPLE_RATE * duration)
     t = np.linspace(0, duration, n, endpoint=False)
     noise = np.random.normal(0, 1, n)
-    # Moving bandpass via amplitude modulation + sweep
     sweep = np.sin(2 * np.pi * (180 + 900 * (t / duration)) * t)
     env = np.sin(np.pi * (t / duration)) ** 1.8
     sig = (noise * 0.35 + sweep * 0.45) * env * 0.45
-    # Pan left to right
     pan_l = np.linspace(0.9, 0.2, n)
     pan_r = np.linspace(0.2, 0.9, n)
     return np.column_stack([sig * pan_l, sig * pan_r])
@@ -191,7 +332,6 @@ def make_sfx_whoosh(duration=0.32):
 
 def make_sfx_freddy_claws(duration=0.38):
     t = np.linspace(0, duration, int(SAMPLE_RATE * duration), endpoint=False)
-    # Metallic high-frequency ring ("Schwing!")
     freqs = [2450, 3720, 5180, 6890]
     sig = np.zeros_like(t)
     for idx, f in enumerate(freqs):
@@ -203,7 +343,6 @@ def make_sfx_freddy_claws(duration=0.38):
 
 def make_sfx_ufo_beam(duration=1.4):
     t = np.linspace(0, duration, int(SAMPLE_RATE * duration), endpoint=False)
-    # Sci-fi theremin wobble chord
     lfo = np.sin(2 * np.pi * 7.5 * t) * 35
     carrier1 = np.sin(2 * np.pi * (520 + lfo) * t)
     carrier2 = np.sin(2 * np.pi * (780 - lfo * 0.8) * t)
@@ -217,7 +356,6 @@ def make_sfx_ufo_beam(duration=1.4):
 def make_sfx_cryo_and_lime(duration=0.8):
     n = int(SAMPLE_RATE * duration)
     t = np.linspace(0, duration, n, endpoint=False)
-    # Cold steam hiss + bubbly citrus splash
     hiss = np.random.normal(0, 1, n) * np.exp(-t * 4.5) * 0.30
     bubbles = np.sin(2 * np.pi * (900 + 600 * np.sin(2 * np.pi * 28 * t)) * t) * np.exp(-t * 5.0) * 0.25
     sig = hiss + bubbles
@@ -227,14 +365,11 @@ def make_sfx_cryo_and_lime(duration=0.8):
 def make_sfx_crunch_asmr(duration=0.55):
     n = int(SAMPLE_RATE * duration)
     t = np.linspace(0, duration, n, endpoint=False)
-    # Multi-impulse crisp tortilla chip fracture bursts
     rng = np.random.default_rng(42)
     noise = rng.normal(0, 1, n)
-    # High-pass crispness by differencing
     crisp = np.diff(noise, prepend=0)
     crisp = np.diff(crisp, prepend=0)
     crisp = crisp / (np.max(np.abs(crisp)) + 1e-6)
-    # 4 distinct jaw-bite micro-impulses for authentic Tostitos crunch
     env = (
         np.exp(-((t - 0.04) / 0.025) ** 2) * 1.0 +
         np.exp(-((t - 0.11) / 0.030) ** 2) * 0.85 +
@@ -248,7 +383,6 @@ def make_sfx_crunch_asmr(duration=0.55):
 
 def make_sfx_resurrection_chime(duration=0.9):
     t = np.linspace(0, duration, int(SAMPLE_RATE * duration), endpoint=False)
-    # Magical emerald chord (C5, E5, G5, B5, D6) + thunder impact
     notes = [523.25, 659.25, 783.99, 987.77, 1174.66]
     chord = np.zeros_like(t)
     for i, f in enumerate(notes):
@@ -271,12 +405,30 @@ def mix_at(master_buf, sfx_buf, start_sec, gain=1.0):
 
 
 async def main():
-    print("=== FASE 2.2: GENERANDO CASTING VOCAL EXPRESIVO (es-MX) ===")
+    parser = argparse.ArgumentParser(description="Productor de Audio Maestro y Telemetría 60fps")
+    parser.add_argument("--skip-existing", action="store_true", help="Reutilizar stems WAV si ya existen")
+    parser.add_argument("--force-tts", action="store_true", help="Forzar re-síntesis de todos los stems")
+    parser.add_argument("--fallback-only", action="store_true", help="Usar únicamente edge-tts")
+    parser.add_argument("--pace-delay", type=float, default=21.0, help="Pausa entre llamadas a Gemini TTS")
+    args = parser.parse_args()
+
+    print("=== ESCUADRÓN AUDIOVISUAL: GENERANDO CASTING VOCAL EXPRESIVO (es-MX) ===")
     scenes_meta = []
     current_sec = 0.0
 
-    for line in DIALOGUES:
-        wav_path = await synthesize_line(line)
+    total_lines = len(DIALOGUES)
+    for idx, line in enumerate(DIALOGUES):
+        # Determinar si aplicar pace delay (no es necesario tras la última línea)
+        is_last = (idx == total_lines - 1)
+        cur_pace = 0.0 if is_last else args.pace_delay
+
+        wav_path, engine = await synthesize_line(
+            line,
+            genai_client,
+            pace_delay=cur_pace,
+            fallback_only=args.fallback_only,
+            skip_existing=(args.skip_existing and not args.force_tts)
+        )
         audio_data = load_wav_stereo(wav_path)
         voice_dur = len(audio_data) / SAMPLE_RATE
         scene_dur = round(line["pre_pad"] + voice_dur + line["post_pad"], 3)
@@ -285,7 +437,7 @@ async def main():
         voice_end_sec = round(voice_start_sec + voice_dur, 3)
         scene_end_sec = round(current_sec + scene_dur, 3)
 
-        print(f" [OK] {line['id']} ({line['voice']} pitch={line['pitch']} rate={line['rate']}) -> {voice_dur:.2f}s (Escena: {current_sec:.2f}s - {scene_end_sec:.2f}s)")
+        print(f" [OK] {line['id']} [{engine}] ({line.get('gemini_voice', line['voice'])}) -> {voice_dur:.2f}s (Escena: {current_sec:.2f}s - {scene_end_sec:.2f}s)")
 
         scenes_meta.append({
             "id": line["id"],
@@ -294,6 +446,9 @@ async def main():
             "text": line["text"],
             "subtitle_text": line["subtitle_text"],
             "wav_path": wav_path,
+            "tts_engine": engine,
+            "gemini_voice": line.get("gemini_voice", "N/A"),
+            "gemini_style": line.get("gemini_style", "N/A"),
             "scene_start": round(current_sec, 3),
             "scene_end": scene_end_sec,
             "scene_duration": scene_dur,
@@ -328,7 +483,6 @@ async def main():
             rms = float(np.sqrt(np.mean(chunk ** 2)))
         else:
             rms = 0.0
-        # Normalizar RMS para apertura de mandíbula (0.0 a 1.0)
         mouth_open = min(1.0, max(0.0, (rms - 0.015) / 0.16))
 
         active_sc = scenes_meta[-1]
@@ -346,7 +500,7 @@ async def main():
             "mouth_open": round(mouth_open if is_speaking else 0.0, 3)
         })
 
-    print("=== FASE 2.4: SINTETIZANDO SFX CÓMICOS Y MEZCLANDO CON AUTO-DUCKING ===")
+    print("=== SINTETIZANDO SFX CÓMICOS Y MEZCLANDO CON AUTO-DUCKING ===")
     sfx_master = np.zeros((total_samples, 2), dtype=np.float32)
 
     # Escena 1: Tambor cómico de cruda
@@ -379,18 +533,19 @@ async def main():
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     music_data = load_wav_stereo(music_wav_tmp)[:total_samples]
     if os.path.exists(music_wav_tmp):
-        os.remove(music_wav_tmp)
+        try:
+            os.remove(music_wav_tmp)
+        except Exception:
+            pass
 
-    # Auto-Ducking: calcular envolvente suavizada de voz para atenuar la música a 0.14 cuando hablan y subir a 0.52 en pausas/final
+    # Auto-Ducking: calcular envolvente suavizada de voz para atenuar la música a 0.14 cuando hablan y subir a 0.46 en pausas
     voice_mono_abs = np.max(np.abs(voice_master), axis=1)
     win = int(SAMPLE_RATE * 0.18)
     kernel = np.ones(win, dtype=np.float32) / win
     smooth_voice = np.convolve(voice_mono_abs, kernel, mode="same")
     duck_gain = np.where(smooth_voice > 0.012, 0.14, 0.46).astype(np.float32)
-    # Suavizar transiciones de ducking (attack/release de 0.25s)
     win_duck = int(SAMPLE_RATE * 0.25)
     duck_gain = np.convolve(duck_gain, np.ones(win_duck, dtype=np.float32) / win_duck, mode="same")
-    # Fade-in inicial y fade-out final de la música
     fade_in_len = int(SAMPLE_RATE * 0.5)
     fade_out_len = int(SAMPLE_RATE * 0.8)
     duck_gain[:fade_in_len] *= np.linspace(0.0, 1.0, fade_in_len)
@@ -420,6 +575,7 @@ async def main():
             "frames": frame_envelopes
         }, f, ensure_ascii=False, indent=2)
     print(f" -> Telemetría Lip-Sync 60fps guardada en: {timeline_json_path}")
+    print("=== PRODUCCIÓN DE AUDIO COMPLETADA EXITOSAMENTE ===")
 
 
 if __name__ == "__main__":

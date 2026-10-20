@@ -547,7 +547,6 @@ $patterns = @(
     'totopos?.*redondos?',
     '#tostitosredondos?',
     'dark\s*kitchen',
-    'caldo\s*por\s*separado',
     'Rosa\s*210',
     'base\s*de\s*operaciones',
     '\$170',
@@ -585,7 +584,7 @@ if ($forbiddenMatches -and $forbiddenMatches.Count -gt 0) {
     }
     $script:fallasTotales += $forbiddenMatches.Count
 } else {
-    Write-Host " [LIMPIO] Cero menciones de palabras prohibidas ('jumbo', 'tostitos redondos', 'dark kitchen', 'caldo por separado', 'Rosa 210', 'nacho', '$170', '170 MXN', '170 pesos', 'ciento setenta')." -ForegroundColor Green
+    Write-Host " [LIMPIO] Cero menciones de palabras prohibidas ('jumbo', 'tostitos redondos', 'dark kitchen', 'Rosa 210', 'nacho', '$170', '170 MXN', '170 pesos', 'ciento setenta')." -ForegroundColor Green
 }
 
 # -----------------------------------------------------------------------------
@@ -643,6 +642,41 @@ foreach ($hf in $htmlFilesWithVideo) {
     } else {
         Write-Host " [ERROR NO EXISTE] Archivo HTML ausente: $($hf.Path)" -ForegroundColor Red
         $script:fallasTotales++
+    }
+}
+
+# -----------------------------------------------------------------------------
+# 5.3 VERIFICACION DE LOS 4 COMPLEMENTOS Y 2 MODALIDADES DE SERVICIO
+# -----------------------------------------------------------------------------
+Write-Host "`n5.3 VERIFICACION DE LOS 4 COMPLEMENTOS Y 2 MODALIDADES DE SERVICIO:" -ForegroundColor Green
+
+$indexContent = if (Test-Path (Join-Path $projectRoot 'index.html')) { Get-Content (Join-Path $projectRoot 'index.html') -Raw -Encoding UTF8 } else { "" }
+
+$complementsToCheck = @(
+    @{ Name = 'Tostitos Salsa Verde'; Pattern = 'Tostitos\s+Salsa\s+Verde' },
+    @{ Name = 'Tostitos Flamin Hot'; Pattern = 'Flamin''?\s*Hot' },
+    @{ Name = 'Chips o Totopos'; Pattern = '(Chips|Totopos)' },
+    @{ Name = 'Galletas Saladas'; Pattern = 'Galletas\s+Saladas' }
+)
+
+foreach ($c in $complementsToCheck) {
+    if ($indexContent -match $c.Pattern) {
+        Write-Host " [OK] Complemento verificado en index.html: $($c.Name)" -ForegroundColor Green
+    } else {
+        Write-Host " [ADVERTENCIA/PENDIENTE] Complemento '$($c.Name)' aun no detectado en index.html" -ForegroundColor Yellow
+    }
+}
+
+$modesToCheck = @(
+    @{ Name = 'Servido Preparado'; Pattern = 'preparado' },
+    @{ Name = 'Servido Por Separado'; Pattern = '(por\s+separado|separado)' }
+)
+
+foreach ($m in $modesToCheck) {
+    if ($indexContent -match $m.Pattern) {
+        Write-Host " [OK] Modalidad de servicio verificada en index.html: $($m.Name)" -ForegroundColor Green
+    } else {
+        Write-Host " [ADVERTENCIA/PENDIENTE] Modalidad de servicio '$($m.Name)' aun no detectada en index.html" -ForegroundColor Yellow
     }
 }
 
