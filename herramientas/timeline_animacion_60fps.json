@@ -1,8 +1,8 @@
 {
   "fps": 60,
   "sample_rate": 44100,
-  "total_duration": 89.939,
-  "total_frames": 5397,
+  "total_duration": 89.786,
+  "total_frames": 5388,
   "master_wav": "d:\\AG\\la garza aguachilera\\herramientas\\audio_animacion_master_60fps.wav",
   "scenes": [
     {
@@ -77,18 +77,18 @@
       "id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
       "speaker_label": "🐊 JUANCHO RESUCITADO (AL 100%)",
-      "text": "<laugh> ¡Noooombre, qué delicia! ¡Reviví al cien por solo ciento cincuenta pesitos!",
-      "subtitle_text": "¡Noooombre, qué delicia! ¡Reviví al 100% por solo $150 MXN!",
+      "text": "<laugh> ¡Noooombre, qué delicia! ¡Reviví al cien por solo ciento setenta pesitos!",
+      "subtitle_text": "¡Noooombre, qué delicia! ¡Reviví al 100% por solo $170 MXN!",
       "wav_path": "d:\\AG\\la garza aguachilera\\herramientas\\audio_animacion\\sc5_juancho_vivo.wav",
-      "tts_engine": "cached",
+      "tts_engine": "gemini-3.8-flash-tts",
       "gemini_voice": "Puck",
       "gemini_style": "joyful, cheerful, ecstatic, cured of hangover, energetic Mexican crocodile celebrating",
       "scene_start": 69.743,
-      "scene_end": 77.435,
-      "scene_duration": 7.692,
+      "scene_end": 77.282,
+      "scene_duration": 7.539,
       "voice_start": 69.993,
-      "voice_end": 77.135,
-      "voice_duration": 7.142
+      "voice_end": 76.982,
+      "voice_duration": 6.989
     },
     {
       "id": "sc6_locutora_cierre",
@@ -100,11 +100,11 @@
       "tts_engine": "cached",
       "gemini_voice": "Aoede",
       "gemini_style": "professional, vibrant, inviting Mexican radio commercial call-to-action",
-      "scene_start": 77.435,
-      "scene_end": 89.939,
+      "scene_start": 77.282,
+      "scene_end": 89.786,
       "scene_duration": 12.504,
-      "voice_start": 77.635,
-      "voice_end": 89.089,
+      "voice_start": 77.482,
+      "voice_end": 88.936,
       "voice_duration": 11.454
     }
   ],
@@ -29514,70 +29514,70 @@
       "time": 70.0,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.551
+      "mouth_open": 0.873
     },
     {
       "frame": 4201,
       "time": 70.0167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.268
+      "mouth_open": 0.457
     },
     {
       "frame": 4202,
       "time": 70.0333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.043
     },
     {
       "frame": 4203,
       "time": 70.05,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.09
     },
     {
       "frame": 4204,
       "time": 70.0667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.146
+      "mouth_open": 0.065
     },
     {
       "frame": 4205,
       "time": 70.0833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.296
+      "mouth_open": 0.0
     },
     {
       "frame": 4206,
       "time": 70.1,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.325
+      "mouth_open": 0.0
     },
     {
       "frame": 4207,
       "time": 70.1167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.123
+      "mouth_open": 0.0
     },
     {
       "frame": 4208,
       "time": 70.1333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.045
     },
     {
       "frame": 4209,
       "time": 70.15,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.951
     },
     {
       "frame": 4210,
@@ -29591,56 +29591,56 @@
       "time": 70.1833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.795
     },
     {
       "frame": 4212,
       "time": 70.2,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.726
+      "mouth_open": 0.259
     },
     {
       "frame": 4213,
       "time": 70.2167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.138
+      "mouth_open": 0.0
     },
     {
       "frame": 4214,
       "time": 70.2333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.147
+      "mouth_open": 0.0
     },
     {
       "frame": 4215,
       "time": 70.25,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.119
+      "mouth_open": 0.0
     },
     {
       "frame": 4216,
       "time": 70.2667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.132
+      "mouth_open": 0.0
     },
     {
       "frame": 4217,
       "time": 70.2833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.16
+      "mouth_open": 0.0
     },
     {
       "frame": 4218,
       "time": 70.3,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.394
+      "mouth_open": 0.719
     },
     {
       "frame": 4219,
@@ -29661,35 +29661,35 @@
       "time": 70.35,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.889
     },
     {
       "frame": 4222,
       "time": 70.3667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.824
+      "mouth_open": 0.418
     },
     {
       "frame": 4223,
       "time": 70.3833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.23
     },
     {
       "frame": 4224,
       "time": 70.4,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.0
     },
     {
       "frame": 4225,
       "time": 70.4167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.634
+      "mouth_open": 0.0
     },
     {
       "frame": 4226,
@@ -29703,14 +29703,14 @@
       "time": 70.45,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.059
+      "mouth_open": 0.0
     },
     {
       "frame": 4228,
       "time": 70.4667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.056
+      "mouth_open": 0.0
     },
     {
       "frame": 4229,
@@ -29724,21 +29724,21 @@
       "time": 70.5,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.194
+      "mouth_open": 0.128
     },
     {
       "frame": 4231,
       "time": 70.5167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.441
     },
     {
       "frame": 4232,
       "time": 70.5333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.735
     },
     {
       "frame": 4233,
@@ -29752,224 +29752,224 @@
       "time": 70.5667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.517
+      "mouth_open": 1.0
     },
     {
       "frame": 4235,
       "time": 70.5833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.579
+      "mouth_open": 0.635
     },
     {
       "frame": 4236,
       "time": 70.6,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.639
+      "mouth_open": 0.073
     },
     {
       "frame": 4237,
       "time": 70.6167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.505
+      "mouth_open": 0.0
     },
     {
       "frame": 4238,
       "time": 70.6333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.534
+      "mouth_open": 0.0
     },
     {
       "frame": 4239,
       "time": 70.65,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.609
+      "mouth_open": 0.0
     },
     {
       "frame": 4240,
       "time": 70.6667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.729
+      "mouth_open": 0.0
     },
     {
       "frame": 4241,
       "time": 70.6833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.862
+      "mouth_open": 0.0
     },
     {
       "frame": 4242,
       "time": 70.7,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.859
+      "mouth_open": 0.0
     },
     {
       "frame": 4243,
       "time": 70.7167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.783
+      "mouth_open": 0.225
     },
     {
       "frame": 4244,
       "time": 70.7333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.918
+      "mouth_open": 0.726
     },
     {
       "frame": 4245,
       "time": 70.75,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.634
     },
     {
       "frame": 4246,
       "time": 70.7667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.504
     },
     {
       "frame": 4247,
       "time": 70.7833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.41
     },
     {
       "frame": 4248,
       "time": 70.8,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.435
     },
     {
       "frame": 4249,
       "time": 70.8167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.487
+      "mouth_open": 0.52
     },
     {
       "frame": 4250,
       "time": 70.8333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.302
+      "mouth_open": 0.512
     },
     {
       "frame": 4251,
       "time": 70.85,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.407
+      "mouth_open": 0.48
     },
     {
       "frame": 4252,
       "time": 70.8667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.471
+      "mouth_open": 0.382
     },
     {
       "frame": 4253,
       "time": 70.8833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.45
+      "mouth_open": 0.39
     },
     {
       "frame": 4254,
       "time": 70.9,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.389
+      "mouth_open": 0.387
     },
     {
       "frame": 4255,
       "time": 70.9167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.421
+      "mouth_open": 0.397
     },
     {
       "frame": 4256,
       "time": 70.9333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.448
+      "mouth_open": 0.455
     },
     {
       "frame": 4257,
       "time": 70.95,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.454
+      "mouth_open": 0.582
     },
     {
       "frame": 4258,
       "time": 70.9667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.533
+      "mouth_open": 0.875
     },
     {
       "frame": 4259,
       "time": 70.9833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.476
+      "mouth_open": 0.982
     },
     {
       "frame": 4260,
       "time": 71.0,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.343
+      "mouth_open": 1.0
     },
     {
       "frame": 4261,
       "time": 71.0167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.316
+      "mouth_open": 1.0
     },
     {
       "frame": 4262,
       "time": 71.0333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.526
+      "mouth_open": 0.907
     },
     {
       "frame": 4263,
       "time": 71.05,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.635
+      "mouth_open": 1.0
     },
     {
       "frame": 4264,
       "time": 71.0667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.886
+      "mouth_open": 1.0
     },
     {
       "frame": 4265,
       "time": 71.0833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.968
+      "mouth_open": 0.887
     },
     {
       "frame": 4266,
@@ -29983,21 +29983,21 @@
       "time": 71.1167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.991
+      "mouth_open": 0.751
     },
     {
       "frame": 4268,
       "time": 71.1333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.702
     },
     {
       "frame": 4269,
       "time": 71.15,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.755
     },
     {
       "frame": 4270,
@@ -30018,49 +30018,49 @@
       "time": 71.2,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.909
+      "mouth_open": 1.0
     },
     {
       "frame": 4273,
       "time": 71.2167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.748
+      "mouth_open": 1.0
     },
     {
       "frame": 4274,
       "time": 71.2333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.436
+      "mouth_open": 1.0
     },
     {
       "frame": 4275,
       "time": 71.25,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.341
+      "mouth_open": 0.936
     },
     {
       "frame": 4276,
       "time": 71.2667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.555
+      "mouth_open": 0.715
     },
     {
       "frame": 4277,
       "time": 71.2833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.768
+      "mouth_open": 0.89
     },
     {
       "frame": 4278,
       "time": 71.3,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.877
+      "mouth_open": 1.0
     },
     {
       "frame": 4279,
@@ -30074,35 +30074,35 @@
       "time": 71.3333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.893
     },
     {
       "frame": 4281,
       "time": 71.35,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.858
     },
     {
       "frame": 4282,
       "time": 71.3667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.9
     },
     {
       "frame": 4283,
       "time": 71.3833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.927
     },
     {
       "frame": 4284,
       "time": 71.4,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.987
     },
     {
       "frame": 4285,
@@ -30137,105 +30137,105 @@
       "time": 71.4833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.46
+      "mouth_open": 1.0
     },
     {
       "frame": 4290,
       "time": 71.5,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.149
+      "mouth_open": 0.878
     },
     {
       "frame": 4291,
       "time": 71.5167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.158
+      "mouth_open": 0.616
     },
     {
       "frame": 4292,
       "time": 71.5333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.83
+      "mouth_open": 0.321
     },
     {
       "frame": 4293,
       "time": 71.55,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.171
     },
     {
       "frame": 4294,
       "time": 71.5667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.831
+      "mouth_open": 1.0
     },
     {
       "frame": 4295,
       "time": 71.5833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.677
+      "mouth_open": 0.876
     },
     {
       "frame": 4296,
       "time": 71.6,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.117
     },
     {
       "frame": 4297,
       "time": 71.6167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.512
     },
     {
       "frame": 4298,
       "time": 71.6333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.84
+      "mouth_open": 1.0
     },
     {
       "frame": 4299,
       "time": 71.65,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.838
+      "mouth_open": 1.0
     },
     {
       "frame": 4300,
       "time": 71.6667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.813
+      "mouth_open": 0.931
     },
     {
       "frame": 4301,
       "time": 71.6833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.984
+      "mouth_open": 0.539
     },
     {
       "frame": 4302,
       "time": 71.7,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.632
+      "mouth_open": 0.198
     },
     {
       "frame": 4303,
       "time": 71.7167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.192
+      "mouth_open": 0.0
     },
     {
       "frame": 4304,
@@ -30319,7 +30319,7 @@
       "time": 71.9167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.151
     },
     {
       "frame": 4316,
@@ -30333,91 +30333,91 @@
       "time": 71.95,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.189
     },
     {
       "frame": 4318,
       "time": 71.9667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.435
     },
     {
       "frame": 4319,
       "time": 71.9833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.661
     },
     {
       "frame": 4320,
       "time": 72.0,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.273
+      "mouth_open": 0.791
     },
     {
       "frame": 4321,
       "time": 72.0167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.22
+      "mouth_open": 0.984
     },
     {
       "frame": 4322,
       "time": 72.0333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.127
+      "mouth_open": 0.966
     },
     {
       "frame": 4323,
       "time": 72.05,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.539
+      "mouth_open": 0.934
     },
     {
       "frame": 4324,
       "time": 72.0667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.448
+      "mouth_open": 0.946
     },
     {
       "frame": 4325,
       "time": 72.0833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.39
+      "mouth_open": 0.936
     },
     {
       "frame": 4326,
       "time": 72.1,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.343
+      "mouth_open": 0.991
     },
     {
       "frame": 4327,
       "time": 72.1167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.446
+      "mouth_open": 1.0
     },
     {
       "frame": 4328,
       "time": 72.1333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.597
+      "mouth_open": 1.0
     },
     {
       "frame": 4329,
       "time": 72.15,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.786
+      "mouth_open": 1.0
     },
     {
       "frame": 4330,
@@ -30438,98 +30438,98 @@
       "time": 72.2,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.438
     },
     {
       "frame": 4333,
       "time": 72.2167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.114
     },
     {
       "frame": 4334,
       "time": 72.2333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.102
     },
     {
       "frame": 4335,
       "time": 72.25,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.778
+      "mouth_open": 0.131
     },
     {
       "frame": 4336,
       "time": 72.2667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.564
+      "mouth_open": 0.169
     },
     {
       "frame": 4337,
       "time": 72.2833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.529
+      "mouth_open": 0.188
     },
     {
       "frame": 4338,
       "time": 72.3,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.646
+      "mouth_open": 0.187
     },
     {
       "frame": 4339,
       "time": 72.3167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.126
     },
     {
       "frame": 4340,
       "time": 72.3333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.097
     },
     {
       "frame": 4341,
       "time": 72.35,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.092
     },
     {
       "frame": 4342,
       "time": 72.3667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.23
     },
     {
       "frame": 4343,
       "time": 72.3833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.874
     },
     {
       "frame": 4344,
       "time": 72.4,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.954
+      "mouth_open": 0.913
     },
     {
       "frame": 4345,
       "time": 72.4167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.894
+      "mouth_open": 1.0
     },
     {
       "frame": 4346,
@@ -30571,441 +30571,441 @@
       "time": 72.5167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.653
     },
     {
       "frame": 4352,
       "time": 72.5333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.409
     },
     {
       "frame": 4353,
       "time": 72.55,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.5
     },
     {
       "frame": 4354,
       "time": 72.5667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.631
     },
     {
       "frame": 4355,
       "time": 72.5833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.627
     },
     {
       "frame": 4356,
       "time": 72.6,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.95
+      "mouth_open": 0.674
     },
     {
       "frame": 4357,
       "time": 72.6167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.463
+      "mouth_open": 0.627
     },
     {
       "frame": 4358,
       "time": 72.6333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.33
+      "mouth_open": 0.538
     },
     {
       "frame": 4359,
       "time": 72.65,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.642
+      "mouth_open": 0.502
     },
     {
       "frame": 4360,
       "time": 72.6667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.99
+      "mouth_open": 0.43
     },
     {
       "frame": 4361,
       "time": 72.6833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.945
+      "mouth_open": 0.363
     },
     {
       "frame": 4362,
       "time": 72.7,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.846
+      "mouth_open": 0.304
     },
     {
       "frame": 4363,
       "time": 72.7167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.668
+      "mouth_open": 0.208
     },
     {
       "frame": 4364,
       "time": 72.7333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.548
+      "mouth_open": 0.286
     },
     {
       "frame": 4365,
       "time": 72.75,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.349
+      "mouth_open": 0.481
     },
     {
       "frame": 4366,
       "time": 72.7667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.237
+      "mouth_open": 0.556
     },
     {
       "frame": 4367,
       "time": 72.7833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.193
+      "mouth_open": 0.623
     },
     {
       "frame": 4368,
       "time": 72.8,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.159
+      "mouth_open": 0.662
     },
     {
       "frame": 4369,
       "time": 72.8167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.177
+      "mouth_open": 0.706
     },
     {
       "frame": 4370,
       "time": 72.8333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.236
+      "mouth_open": 0.702
     },
     {
       "frame": 4371,
       "time": 72.85,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.376
+      "mouth_open": 0.787
     },
     {
       "frame": 4372,
       "time": 72.8667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.406
+      "mouth_open": 0.962
     },
     {
       "frame": 4373,
       "time": 72.8833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.397
+      "mouth_open": 1.0
     },
     {
       "frame": 4374,
       "time": 72.9,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.253
+      "mouth_open": 1.0
     },
     {
       "frame": 4375,
       "time": 72.9167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.353
+      "mouth_open": 0.894
     },
     {
       "frame": 4376,
       "time": 72.9333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.437
+      "mouth_open": 0.736
     },
     {
       "frame": 4377,
       "time": 72.95,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.344
+      "mouth_open": 1.0
     },
     {
       "frame": 4378,
       "time": 72.9667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.349
+      "mouth_open": 0.898
     },
     {
       "frame": 4379,
       "time": 72.9833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.366
+      "mouth_open": 0.68
     },
     {
       "frame": 4380,
       "time": 73.0,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.384
+      "mouth_open": 0.646
     },
     {
       "frame": 4381,
       "time": 73.0167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.362
+      "mouth_open": 0.545
     },
     {
       "frame": 4382,
       "time": 73.0333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.447
+      "mouth_open": 0.511
     },
     {
       "frame": 4383,
       "time": 73.05,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.521
+      "mouth_open": 0.531
     },
     {
       "frame": 4384,
       "time": 73.0667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.423
+      "mouth_open": 0.453
     },
     {
       "frame": 4385,
       "time": 73.0833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.397
+      "mouth_open": 0.393
     },
     {
       "frame": 4386,
       "time": 73.1,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.272
+      "mouth_open": 0.138
     },
     {
       "frame": 4387,
       "time": 73.1167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.125
+      "mouth_open": 0.362
     },
     {
       "frame": 4388,
       "time": 73.1333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.071
+      "mouth_open": 0.605
     },
     {
       "frame": 4389,
       "time": 73.15,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.534
+      "mouth_open": 0.764
     },
     {
       "frame": 4390,
       "time": 73.1667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.771
+      "mouth_open": 0.979
     },
     {
       "frame": 4391,
       "time": 73.1833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.856
+      "mouth_open": 0.739
     },
     {
       "frame": 4392,
       "time": 73.2,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.969
+      "mouth_open": 0.526
     },
     {
       "frame": 4393,
       "time": 73.2167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.957
+      "mouth_open": 0.137
     },
     {
       "frame": 4394,
       "time": 73.2333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.734
+      "mouth_open": 0.163
     },
     {
       "frame": 4395,
       "time": 73.25,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.727
+      "mouth_open": 0.054
     },
     {
       "frame": 4396,
       "time": 73.2667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.634
+      "mouth_open": 0.053
     },
     {
       "frame": 4397,
       "time": 73.2833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.588
+      "mouth_open": 0.0
     },
     {
       "frame": 4398,
       "time": 73.3,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.564
+      "mouth_open": 0.0
     },
     {
       "frame": 4399,
       "time": 73.3167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.544
+      "mouth_open": 0.0
     },
     {
       "frame": 4400,
       "time": 73.3333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.481
+      "mouth_open": 0.0
     },
     {
       "frame": 4401,
       "time": 73.35,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.444
+      "mouth_open": 0.0
     },
     {
       "frame": 4402,
       "time": 73.3667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.237
+      "mouth_open": 0.0
     },
     {
       "frame": 4403,
       "time": 73.3833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.111
+      "mouth_open": 0.105
     },
     {
       "frame": 4404,
       "time": 73.4,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.153
     },
     {
       "frame": 4405,
       "time": 73.4167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.175
     },
     {
       "frame": 4406,
       "time": 73.4333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.155
     },
     {
       "frame": 4407,
       "time": 73.45,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.134
     },
     {
       "frame": 4408,
       "time": 73.4667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.099
     },
     {
       "frame": 4409,
       "time": 73.4833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.113
     },
     {
       "frame": 4410,
       "time": 73.5,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.075
     },
     {
       "frame": 4411,
       "time": 73.5167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.063
     },
     {
       "frame": 4412,
       "time": 73.5333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.043
     },
     {
       "frame": 4413,
       "time": 73.55,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.059
+      "mouth_open": 0.046
     },
     {
       "frame": 4414,
@@ -31019,7 +31019,7 @@
       "time": 73.5833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.042
+      "mouth_open": 0.0
     },
     {
       "frame": 4416,
@@ -31054,63 +31054,63 @@
       "time": 73.6667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.16
     },
     {
       "frame": 4421,
       "time": 73.6833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.273
     },
     {
       "frame": 4422,
       "time": 73.7,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.319
     },
     {
       "frame": 4423,
       "time": 73.7167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.309
+      "mouth_open": 0.716
     },
     {
       "frame": 4424,
       "time": 73.7333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.412
+      "mouth_open": 0.561
     },
     {
       "frame": 4425,
       "time": 73.75,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.627
+      "mouth_open": 0.85
     },
     {
       "frame": 4426,
       "time": 73.7667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.354
+      "mouth_open": 0.927
     },
     {
       "frame": 4427,
       "time": 73.7833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.571
+      "mouth_open": 1.0
     },
     {
       "frame": 4428,
       "time": 73.8,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.591
+      "mouth_open": 1.0
     },
     {
       "frame": 4429,
@@ -31145,42 +31145,42 @@
       "time": 73.8833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.548
     },
     {
       "frame": 4434,
       "time": 73.9,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.344
+      "mouth_open": 0.318
     },
     {
       "frame": 4435,
       "time": 73.9167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.124
+      "mouth_open": 0.435
     },
     {
       "frame": 4436,
       "time": 73.9333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.115
+      "mouth_open": 0.882
     },
     {
       "frame": 4437,
       "time": 73.95,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.427
+      "mouth_open": 1.0
     },
     {
       "frame": 4438,
       "time": 73.9667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.842
+      "mouth_open": 1.0
     },
     {
       "frame": 4439,
@@ -31194,84 +31194,84 @@
       "time": 74.0,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.808
     },
     {
       "frame": 4441,
       "time": 74.0167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.89
+      "mouth_open": 0.174
     },
     {
       "frame": 4442,
       "time": 74.0333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.587
+      "mouth_open": 0.186
     },
     {
       "frame": 4443,
       "time": 74.05,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.139
+      "mouth_open": 0.504
     },
     {
       "frame": 4444,
       "time": 74.0667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.229
+      "mouth_open": 0.745
     },
     {
       "frame": 4445,
       "time": 74.0833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.666
+      "mouth_open": 0.771
     },
     {
       "frame": 4446,
       "time": 74.1,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.788
+      "mouth_open": 0.795
     },
     {
       "frame": 4447,
       "time": 74.1167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.784
+      "mouth_open": 1.0
     },
     {
       "frame": 4448,
       "time": 74.1333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.657
+      "mouth_open": 1.0
     },
     {
       "frame": 4449,
       "time": 74.15,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.518
+      "mouth_open": 1.0
     },
     {
       "frame": 4450,
       "time": 74.1667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.675
+      "mouth_open": 1.0
     },
     {
       "frame": 4451,
       "time": 74.1833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.771
+      "mouth_open": 1.0
     },
     {
       "frame": 4452,
@@ -31299,133 +31299,133 @@
       "time": 74.25,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.98
     },
     {
       "frame": 4456,
       "time": 74.2667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.835
+      "mouth_open": 0.488
     },
     {
       "frame": 4457,
       "time": 74.2833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.461
+      "mouth_open": 0.425
     },
     {
       "frame": 4458,
       "time": 74.3,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.639
+      "mouth_open": 0.312
     },
     {
       "frame": 4459,
       "time": 74.3167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.496
+      "mouth_open": 0.297
     },
     {
       "frame": 4460,
       "time": 74.3333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.256
+      "mouth_open": 0.487
     },
     {
       "frame": 4461,
       "time": 74.35,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.208
+      "mouth_open": 0.397
     },
     {
       "frame": 4462,
       "time": 74.3667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.261
+      "mouth_open": 0.35
     },
     {
       "frame": 4463,
       "time": 74.3833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.172
+      "mouth_open": 0.428
     },
     {
       "frame": 4464,
       "time": 74.4,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.242
+      "mouth_open": 0.432
     },
     {
       "frame": 4465,
       "time": 74.4167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.236
+      "mouth_open": 0.438
     },
     {
       "frame": 4466,
       "time": 74.4333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.23
+      "mouth_open": 0.228
     },
     {
       "frame": 4467,
       "time": 74.45,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.245
+      "mouth_open": 0.201
     },
     {
       "frame": 4468,
       "time": 74.4667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.368
+      "mouth_open": 0.655
     },
     {
       "frame": 4469,
       "time": 74.4833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.253
+      "mouth_open": 1.0
     },
     {
       "frame": 4470,
       "time": 74.5,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.334
+      "mouth_open": 1.0
     },
     {
       "frame": 4471,
       "time": 74.5167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.622
+      "mouth_open": 1.0
     },
     {
       "frame": 4472,
       "time": 74.5333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.744
+      "mouth_open": 1.0
     },
     {
       "frame": 4473,
       "time": 74.55,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.908
+      "mouth_open": 1.0
     },
     {
       "frame": 4474,
@@ -31446,70 +31446,70 @@
       "time": 74.6,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.799
+      "mouth_open": 1.0
     },
     {
       "frame": 4477,
       "time": 74.6167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.566
+      "mouth_open": 0.971
     },
     {
       "frame": 4478,
       "time": 74.6333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.536
+      "mouth_open": 0.607
     },
     {
       "frame": 4479,
       "time": 74.65,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.434
+      "mouth_open": 0.494
     },
     {
       "frame": 4480,
       "time": 74.6667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.394
+      "mouth_open": 0.387
     },
     {
       "frame": 4481,
       "time": 74.6833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.591
+      "mouth_open": 0.233
     },
     {
       "frame": 4482,
       "time": 74.7,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.0
     },
     {
       "frame": 4483,
       "time": 74.7167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.0
     },
     {
       "frame": 4484,
       "time": 74.7333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.736
+      "mouth_open": 0.0
     },
     {
       "frame": 4485,
       "time": 74.75,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.154
+      "mouth_open": 0.0
     },
     {
       "frame": 4486,
@@ -31544,154 +31544,154 @@
       "time": 74.8333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.302
+      "mouth_open": 0.0
     },
     {
       "frame": 4491,
       "time": 74.85,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.0
     },
     {
       "frame": 4492,
       "time": 74.8667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.821
+      "mouth_open": 0.0
     },
     {
       "frame": 4493,
       "time": 74.8833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.903
+      "mouth_open": 0.0
     },
     {
       "frame": 4494,
       "time": 74.9,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.432
+      "mouth_open": 0.0
     },
     {
       "frame": 4495,
       "time": 74.9167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.695
+      "mouth_open": 0.0
     },
     {
       "frame": 4496,
       "time": 74.9333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.653
+      "mouth_open": 0.073
     },
     {
       "frame": 4497,
       "time": 74.95,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.255
+      "mouth_open": 1.0
     },
     {
       "frame": 4498,
       "time": 74.9667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.271
+      "mouth_open": 1.0
     },
     {
       "frame": 4499,
       "time": 74.9833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.271
+      "mouth_open": 1.0
     },
     {
       "frame": 4500,
       "time": 75.0,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.391
+      "mouth_open": 1.0
     },
     {
       "frame": 4501,
       "time": 75.0167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.437
+      "mouth_open": 1.0
     },
     {
       "frame": 4502,
       "time": 75.0333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.503
+      "mouth_open": 1.0
     },
     {
       "frame": 4503,
       "time": 75.05,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.405
+      "mouth_open": 0.486
     },
     {
       "frame": 4504,
       "time": 75.0667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.875
     },
     {
       "frame": 4505,
       "time": 75.0833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.552
     },
     {
       "frame": 4506,
       "time": 75.1,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.197
     },
     {
       "frame": 4507,
       "time": 75.1167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.188
     },
     {
       "frame": 4508,
       "time": 75.1333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.723
+      "mouth_open": 0.143
     },
     {
       "frame": 4509,
       "time": 75.15,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.882
+      "mouth_open": 0.193
     },
     {
       "frame": 4510,
       "time": 75.1667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.842
+      "mouth_open": 0.256
     },
     {
       "frame": 4511,
       "time": 75.1833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.788
+      "mouth_open": 0.476
     },
     {
       "frame": 4512,
@@ -31712,301 +31712,301 @@
       "time": 75.2333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.314
+      "mouth_open": 1.0
     },
     {
       "frame": 4515,
       "time": 75.25,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.262
+      "mouth_open": 1.0
     },
     {
       "frame": 4516,
       "time": 75.2667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.31
+      "mouth_open": 0.649
     },
     {
       "frame": 4517,
       "time": 75.2833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.388
+      "mouth_open": 0.522
     },
     {
       "frame": 4518,
       "time": 75.3,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.463
+      "mouth_open": 0.528
     },
     {
       "frame": 4519,
       "time": 75.3167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.52
+      "mouth_open": 1.0
     },
     {
       "frame": 4520,
       "time": 75.3333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.6
+      "mouth_open": 1.0
     },
     {
       "frame": 4521,
       "time": 75.35,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.697
+      "mouth_open": 1.0
     },
     {
       "frame": 4522,
       "time": 75.3667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.486
+      "mouth_open": 1.0
     },
     {
       "frame": 4523,
       "time": 75.3833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.197
+      "mouth_open": 0.587
     },
     {
       "frame": 4524,
       "time": 75.4,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.45
+      "mouth_open": 0.444
     },
     {
       "frame": 4525,
       "time": 75.4167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.588
+      "mouth_open": 0.558
     },
     {
       "frame": 4526,
       "time": 75.4333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.956
+      "mouth_open": 0.57
     },
     {
       "frame": 4527,
       "time": 75.45,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.865
+      "mouth_open": 0.627
     },
     {
       "frame": 4528,
       "time": 75.4667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.912
+      "mouth_open": 0.579
     },
     {
       "frame": 4529,
       "time": 75.4833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.848
+      "mouth_open": 0.367
     },
     {
       "frame": 4530,
       "time": 75.5,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.797
+      "mouth_open": 0.333
     },
     {
       "frame": 4531,
       "time": 75.5167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.538
+      "mouth_open": 0.381
     },
     {
       "frame": 4532,
       "time": 75.5333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.413
+      "mouth_open": 0.31
     },
     {
       "frame": 4533,
       "time": 75.55,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.419
+      "mouth_open": 0.425
     },
     {
       "frame": 4534,
       "time": 75.5667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.159
+      "mouth_open": 1.0
     },
     {
       "frame": 4535,
       "time": 75.5833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4536,
       "time": 75.6,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4537,
       "time": 75.6167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4538,
       "time": 75.6333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4539,
       "time": 75.65,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.64
+      "mouth_open": 0.921
     },
     {
       "frame": 4540,
       "time": 75.6667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.562
     },
     {
       "frame": 4541,
       "time": 75.6833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.967
+      "mouth_open": 0.672
     },
     {
       "frame": 4542,
       "time": 75.7,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.476
+      "mouth_open": 0.588
     },
     {
       "frame": 4543,
       "time": 75.7167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.391
+      "mouth_open": 0.074
     },
     {
       "frame": 4544,
       "time": 75.7333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.244
+      "mouth_open": 0.0
     },
     {
       "frame": 4545,
       "time": 75.75,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.365
+      "mouth_open": 0.0
     },
     {
       "frame": 4546,
       "time": 75.7667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.458
+      "mouth_open": 0.238
     },
     {
       "frame": 4547,
       "time": 75.7833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.841
+      "mouth_open": 1.0
     },
     {
       "frame": 4548,
       "time": 75.8,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.838
+      "mouth_open": 1.0
     },
     {
       "frame": 4549,
       "time": 75.8167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.703
+      "mouth_open": 1.0
     },
     {
       "frame": 4550,
       "time": 75.8333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.729
+      "mouth_open": 0.526
     },
     {
       "frame": 4551,
       "time": 75.85,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.994
+      "mouth_open": 0.39
     },
     {
       "frame": 4552,
       "time": 75.8667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.553
     },
     {
       "frame": 4553,
       "time": 75.8833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.642
     },
     {
       "frame": 4554,
       "time": 75.9,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.415
+      "mouth_open": 1.0
     },
     {
       "frame": 4555,
       "time": 75.9167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.063
+      "mouth_open": 1.0
     },
     {
       "frame": 4556,
       "time": 75.9333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.592
     },
     {
       "frame": 4557,
@@ -32020,21 +32020,21 @@
       "time": 75.9667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.128
+      "mouth_open": 0.0
     },
     {
       "frame": 4559,
       "time": 75.9833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.608
+      "mouth_open": 0.0
     },
     {
       "frame": 4560,
       "time": 76.0,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.055
     },
     {
       "frame": 4561,
@@ -32062,42 +32062,42 @@
       "time": 76.0667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.718
+      "mouth_open": 1.0
     },
     {
       "frame": 4565,
       "time": 76.0833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.632
+      "mouth_open": 0.526
     },
     {
       "frame": 4566,
       "time": 76.1,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.636
+      "mouth_open": 0.556
     },
     {
       "frame": 4567,
       "time": 76.1167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.185
+      "mouth_open": 0.342
     },
     {
       "frame": 4568,
       "time": 76.1333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.124
     },
     {
       "frame": 4569,
       "time": 76.15,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.1
+      "mouth_open": 0.365
     },
     {
       "frame": 4570,
@@ -32118,14 +32118,14 @@
       "time": 76.2,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.698
     },
     {
       "frame": 4573,
       "time": 76.2167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.305
+      "mouth_open": 0.055
     },
     {
       "frame": 4574,
@@ -32146,224 +32146,224 @@
       "time": 76.2667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.48
     },
     {
       "frame": 4577,
       "time": 76.2833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.359
+      "mouth_open": 0.951
     },
     {
       "frame": 4578,
       "time": 76.3,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.701
     },
     {
       "frame": 4579,
       "time": 76.3167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.393
     },
     {
       "frame": 4580,
       "time": 76.3333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.594
+      "mouth_open": 0.537
     },
     {
       "frame": 4581,
       "time": 76.35,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.366
+      "mouth_open": 0.431
     },
     {
       "frame": 4582,
       "time": 76.3667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.468
+      "mouth_open": 0.561
     },
     {
       "frame": 4583,
       "time": 76.3833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.548
+      "mouth_open": 0.487
     },
     {
       "frame": 4584,
       "time": 76.4,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.665
+      "mouth_open": 0.476
     },
     {
       "frame": 4585,
       "time": 76.4167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.758
+      "mouth_open": 0.87
     },
     {
       "frame": 4586,
       "time": 76.4333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.816
     },
     {
       "frame": 4587,
       "time": 76.45,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.461
     },
     {
       "frame": 4588,
       "time": 76.4667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.082
     },
     {
       "frame": 4589,
       "time": 76.4833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.046
     },
     {
       "frame": 4590,
       "time": 76.5,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.0
     },
     {
       "frame": 4591,
       "time": 76.5167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.296
+      "mouth_open": 0.0
     },
     {
       "frame": 4592,
       "time": 76.5333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.047
+      "mouth_open": 0.629
     },
     {
       "frame": 4593,
       "time": 76.55,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.747
     },
     {
       "frame": 4594,
       "time": 76.5667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.501
     },
     {
       "frame": 4595,
       "time": 76.5833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.0
+      "mouth_open": 0.445
     },
     {
       "frame": 4596,
       "time": 76.6,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.829
+      "mouth_open": 0.406
     },
     {
       "frame": 4597,
       "time": 76.6167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.302
     },
     {
       "frame": 4598,
       "time": 76.6333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.297
     },
     {
       "frame": 4599,
       "time": 76.65,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 1.0
+      "mouth_open": 0.31
     },
     {
       "frame": 4600,
       "time": 76.6667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.74
+      "mouth_open": 0.194
     },
     {
       "frame": 4601,
       "time": 76.6833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.409
+      "mouth_open": 0.076
     },
     {
       "frame": 4602,
       "time": 76.7,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.253
+      "mouth_open": 0.0
     },
     {
       "frame": 4603,
       "time": 76.7167,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.283
+      "mouth_open": 0.0
     },
     {
       "frame": 4604,
       "time": 76.7333,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.349
+      "mouth_open": 0.0
     },
     {
       "frame": 4605,
       "time": 76.75,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.333
+      "mouth_open": 0.0
     },
     {
       "frame": 4606,
       "time": 76.7667,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.285
+      "mouth_open": 0.0
     },
     {
       "frame": 4607,
       "time": 76.7833,
       "scene_id": "sc5_juancho_vivo",
       "character": "juancho_vivo",
-      "mouth_open": 0.113
+      "mouth_open": 0.0
     },
     {
       "frame": 4608,
@@ -32571,71 +32571,71 @@
     {
       "frame": 4637,
       "time": 77.2833,
-      "scene_id": "sc5_juancho_vivo",
-      "character": "juancho_vivo",
+      "scene_id": "sc6_locutora_cierre",
+      "character": "locutora_cierre",
       "mouth_open": 0.0
     },
     {
       "frame": 4638,
       "time": 77.3,
-      "scene_id": "sc5_juancho_vivo",
-      "character": "juancho_vivo",
+      "scene_id": "sc6_locutora_cierre",
+      "character": "locutora_cierre",
       "mouth_open": 0.0
     },
     {
       "frame": 4639,
       "time": 77.3167,
-      "scene_id": "sc5_juancho_vivo",
-      "character": "juancho_vivo",
+      "scene_id": "sc6_locutora_cierre",
+      "character": "locutora_cierre",
       "mouth_open": 0.0
     },
     {
       "frame": 4640,
       "time": 77.3333,
-      "scene_id": "sc5_juancho_vivo",
-      "character": "juancho_vivo",
+      "scene_id": "sc6_locutora_cierre",
+      "character": "locutora_cierre",
       "mouth_open": 0.0
     },
     {
       "frame": 4641,
       "time": 77.35,
-      "scene_id": "sc5_juancho_vivo",
-      "character": "juancho_vivo",
+      "scene_id": "sc6_locutora_cierre",
+      "character": "locutora_cierre",
       "mouth_open": 0.0
     },
     {
       "frame": 4642,
       "time": 77.3667,
-      "scene_id": "sc5_juancho_vivo",
-      "character": "juancho_vivo",
+      "scene_id": "sc6_locutora_cierre",
+      "character": "locutora_cierre",
       "mouth_open": 0.0
     },
     {
       "frame": 4643,
       "time": 77.3833,
-      "scene_id": "sc5_juancho_vivo",
-      "character": "juancho_vivo",
+      "scene_id": "sc6_locutora_cierre",
+      "character": "locutora_cierre",
       "mouth_open": 0.0
     },
     {
       "frame": 4644,
       "time": 77.4,
-      "scene_id": "sc5_juancho_vivo",
-      "character": "juancho_vivo",
+      "scene_id": "sc6_locutora_cierre",
+      "character": "locutora_cierre",
       "mouth_open": 0.0
     },
     {
       "frame": 4645,
       "time": 77.4167,
-      "scene_id": "sc5_juancho_vivo",
-      "character": "juancho_vivo",
+      "scene_id": "sc6_locutora_cierre",
+      "character": "locutora_cierre",
       "mouth_open": 0.0
     },
     {
       "frame": 4646,
       "time": 77.4333,
-      "scene_id": "sc5_juancho_vivo",
-      "character": "juancho_vivo",
+      "scene_id": "sc6_locutora_cierre",
+      "character": "locutora_cierre",
       "mouth_open": 0.0
     },
     {
@@ -32657,56 +32657,56 @@
       "time": 77.4833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.488
     },
     {
       "frame": 4650,
       "time": 77.5,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.677
     },
     {
       "frame": 4651,
       "time": 77.5167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.691
     },
     {
       "frame": 4652,
       "time": 77.5333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.709
     },
     {
       "frame": 4653,
       "time": 77.55,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.7
     },
     {
       "frame": 4654,
       "time": 77.5667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.534
     },
     {
       "frame": 4655,
       "time": 77.5833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.356
     },
     {
       "frame": 4656,
       "time": 77.6,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.086
     },
     {
       "frame": 4657,
@@ -32727,434 +32727,434 @@
       "time": 77.65,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.696
+      "mouth_open": 0.419
     },
     {
       "frame": 4660,
       "time": 77.6667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.628
+      "mouth_open": 0.826
     },
     {
       "frame": 4661,
       "time": 77.6833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.774
+      "mouth_open": 0.827
     },
     {
       "frame": 4662,
       "time": 77.7,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.655
+      "mouth_open": 0.845
     },
     {
       "frame": 4663,
       "time": 77.7167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.561
+      "mouth_open": 0.728
     },
     {
       "frame": 4664,
       "time": 77.7333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.43
+      "mouth_open": 0.39
     },
     {
       "frame": 4665,
       "time": 77.75,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.123
+      "mouth_open": 0.11
     },
     {
       "frame": 4666,
       "time": 77.7667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.272
     },
     {
       "frame": 4667,
       "time": 77.7833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.266
     },
     {
       "frame": 4668,
       "time": 77.8,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.343
+      "mouth_open": 0.406
     },
     {
       "frame": 4669,
       "time": 77.8167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.757
+      "mouth_open": 0.48
     },
     {
       "frame": 4670,
       "time": 77.8333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.828
+      "mouth_open": 0.549
     },
     {
       "frame": 4671,
       "time": 77.85,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.857
+      "mouth_open": 0.238
     },
     {
       "frame": 4672,
       "time": 77.8667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.782
+      "mouth_open": 0.306
     },
     {
       "frame": 4673,
       "time": 77.8833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.465
+      "mouth_open": 0.546
     },
     {
       "frame": 4674,
       "time": 77.9,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.05
+      "mouth_open": 0.555
     },
     {
       "frame": 4675,
       "time": 77.9167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.281
+      "mouth_open": 0.558
     },
     {
       "frame": 4676,
       "time": 77.9333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.209
+      "mouth_open": 0.61
     },
     {
       "frame": 4677,
       "time": 77.95,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.421
+      "mouth_open": 0.431
     },
     {
       "frame": 4678,
       "time": 77.9667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.446
+      "mouth_open": 0.121
     },
     {
       "frame": 4679,
       "time": 77.9833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.563
+      "mouth_open": 0.057
     },
     {
       "frame": 4680,
       "time": 78.0,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.313
+      "mouth_open": 0.25
     },
     {
       "frame": 4681,
       "time": 78.0167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.26
+      "mouth_open": 0.635
     },
     {
       "frame": 4682,
       "time": 78.0333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.499
+      "mouth_open": 0.614
     },
     {
       "frame": 4683,
       "time": 78.05,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.546
+      "mouth_open": 0.51
     },
     {
       "frame": 4684,
       "time": 78.0667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.607
+      "mouth_open": 0.346
     },
     {
       "frame": 4685,
       "time": 78.0833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.564
+      "mouth_open": 0.051
     },
     {
       "frame": 4686,
       "time": 78.1,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.512
+      "mouth_open": 0.0
     },
     {
       "frame": 4687,
       "time": 78.1167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.135
+      "mouth_open": 0.0
     },
     {
       "frame": 4688,
       "time": 78.1333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.072
+      "mouth_open": 0.0
     },
     {
       "frame": 4689,
       "time": 78.15,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.197
+      "mouth_open": 0.0
     },
     {
       "frame": 4690,
       "time": 78.1667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.583
+      "mouth_open": 0.348
     },
     {
       "frame": 4691,
       "time": 78.1833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.665
+      "mouth_open": 0.264
     },
     {
       "frame": 4692,
       "time": 78.2,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.479
+      "mouth_open": 0.109
     },
     {
       "frame": 4693,
       "time": 78.2167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.388
+      "mouth_open": 0.391
     },
     {
       "frame": 4694,
       "time": 78.2333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.138
+      "mouth_open": 0.524
     },
     {
       "frame": 4695,
       "time": 78.25,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.386
     },
     {
       "frame": 4696,
       "time": 78.2667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.364
     },
     {
       "frame": 4697,
       "time": 78.2833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.464
     },
     {
       "frame": 4698,
       "time": 78.3,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.489
     },
     {
       "frame": 4699,
       "time": 78.3167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.317
+      "mouth_open": 0.73
     },
     {
       "frame": 4700,
       "time": 78.3333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.293
+      "mouth_open": 0.827
     },
     {
       "frame": 4701,
       "time": 78.35,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.136
+      "mouth_open": 0.744
     },
     {
       "frame": 4702,
       "time": 78.3667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.323
+      "mouth_open": 0.657
     },
     {
       "frame": 4703,
       "time": 78.3833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.516
+      "mouth_open": 0.586
     },
     {
       "frame": 4704,
       "time": 78.4,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.438
+      "mouth_open": 0.713
     },
     {
       "frame": 4705,
       "time": 78.4167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.342
+      "mouth_open": 0.572
     },
     {
       "frame": 4706,
       "time": 78.4333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.428
+      "mouth_open": 0.222
     },
     {
       "frame": 4707,
       "time": 78.45,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.518
+      "mouth_open": 0.493
     },
     {
       "frame": 4708,
       "time": 78.4667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.652
+      "mouth_open": 0.501
     },
     {
       "frame": 4709,
       "time": 78.4833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.849
+      "mouth_open": 0.453
     },
     {
       "frame": 4710,
       "time": 78.5,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.73
+      "mouth_open": 0.303
     },
     {
       "frame": 4711,
       "time": 78.5167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.702
+      "mouth_open": 0.137
     },
     {
       "frame": 4712,
       "time": 78.5333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.579
+      "mouth_open": 0.0
     },
     {
       "frame": 4713,
       "time": 78.55,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.67
+      "mouth_open": 0.0
     },
     {
       "frame": 4714,
       "time": 78.5667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.675
+      "mouth_open": 0.0
     },
     {
       "frame": 4715,
       "time": 78.5833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.178
+      "mouth_open": 0.0
     },
     {
       "frame": 4716,
       "time": 78.6,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.485
+      "mouth_open": 0.0
     },
     {
       "frame": 4717,
       "time": 78.6167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.52
+      "mouth_open": 0.0
     },
     {
       "frame": 4718,
       "time": 78.6333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.402
+      "mouth_open": 0.0
     },
     {
       "frame": 4719,
       "time": 78.65,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.381
+      "mouth_open": 0.0
     },
     {
       "frame": 4720,
       "time": 78.6667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.143
+      "mouth_open": 0.0
     },
     {
       "frame": 4721,
@@ -33483,119 +33483,119 @@
       "time": 79.45,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.086
     },
     {
       "frame": 4768,
       "time": 79.4667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.222
     },
     {
       "frame": 4769,
       "time": 79.4833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.557
     },
     {
       "frame": 4770,
       "time": 79.5,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.725
     },
     {
       "frame": 4771,
       "time": 79.5167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.885
     },
     {
       "frame": 4772,
       "time": 79.5333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.778
     },
     {
       "frame": 4773,
       "time": 79.55,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.369
     },
     {
       "frame": 4774,
       "time": 79.5667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.838
     },
     {
       "frame": 4775,
       "time": 79.5833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4776,
       "time": 79.6,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.051
+      "mouth_open": 1.0
     },
     {
       "frame": 4777,
       "time": 79.6167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.198
+      "mouth_open": 1.0
     },
     {
       "frame": 4778,
       "time": 79.6333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.537
+      "mouth_open": 1.0
     },
     {
       "frame": 4779,
       "time": 79.65,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.644
+      "mouth_open": 0.83
     },
     {
       "frame": 4780,
       "time": 79.6667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.9
+      "mouth_open": 0.421
     },
     {
       "frame": 4781,
       "time": 79.6833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.799
+      "mouth_open": 0.639
     },
     {
       "frame": 4782,
       "time": 79.7,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.466
+      "mouth_open": 1.0
     },
     {
       "frame": 4783,
       "time": 79.7167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.718
+      "mouth_open": 1.0
     },
     {
       "frame": 4784,
@@ -33609,280 +33609,280 @@
       "time": 79.75,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.435
     },
     {
       "frame": 4786,
       "time": 79.7667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.056
     },
     {
       "frame": 4787,
       "time": 79.7833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.474
     },
     {
       "frame": 4788,
       "time": 79.8,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.914
+      "mouth_open": 0.907
     },
     {
       "frame": 4789,
       "time": 79.8167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.416
+      "mouth_open": 0.792
     },
     {
       "frame": 4790,
       "time": 79.8333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.551
+      "mouth_open": 0.723
     },
     {
       "frame": 4791,
       "time": 79.85,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.535
     },
     {
       "frame": 4792,
       "time": 79.8667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.392
     },
     {
       "frame": 4793,
       "time": 79.8833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.435
     },
     {
       "frame": 4794,
       "time": 79.9,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.617
+      "mouth_open": 0.604
     },
     {
       "frame": 4795,
       "time": 79.9167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.061
+      "mouth_open": 0.635
     },
     {
       "frame": 4796,
       "time": 79.9333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.367
+      "mouth_open": 0.727
     },
     {
       "frame": 4797,
       "time": 79.95,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.887
+      "mouth_open": 0.295
     },
     {
       "frame": 4798,
       "time": 79.9667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.827
+      "mouth_open": 0.083
     },
     {
       "frame": 4799,
       "time": 79.9833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.711
+      "mouth_open": 0.296
     },
     {
       "frame": 4800,
       "time": 80.0,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.594
+      "mouth_open": 0.919
     },
     {
       "frame": 4801,
       "time": 80.0167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.394
+      "mouth_open": 0.981
     },
     {
       "frame": 4802,
       "time": 80.0333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.372
+      "mouth_open": 0.587
     },
     {
       "frame": 4803,
       "time": 80.05,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.61
+      "mouth_open": 0.225
     },
     {
       "frame": 4804,
       "time": 80.0667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.583
+      "mouth_open": 0.269
     },
     {
       "frame": 4805,
       "time": 80.0833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.791
+      "mouth_open": 0.837
     },
     {
       "frame": 4806,
       "time": 80.1,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.341
+      "mouth_open": 0.816
     },
     {
       "frame": 4807,
       "time": 80.1167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.112
+      "mouth_open": 0.759
     },
     {
       "frame": 4808,
       "time": 80.1333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.179
+      "mouth_open": 0.512
     },
     {
       "frame": 4809,
       "time": 80.15,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.849
+      "mouth_open": 0.565
     },
     {
       "frame": 4810,
       "time": 80.1667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.967
+      "mouth_open": 0.648
     },
     {
       "frame": 4811,
       "time": 80.1833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.74
+      "mouth_open": 0.711
     },
     {
       "frame": 4812,
       "time": 80.2,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.238
+      "mouth_open": 0.836
     },
     {
       "frame": 4813,
       "time": 80.2167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.259
+      "mouth_open": 1.0
     },
     {
       "frame": 4814,
       "time": 80.2333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.789
+      "mouth_open": 1.0
     },
     {
       "frame": 4815,
       "time": 80.25,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.818
+      "mouth_open": 1.0
     },
     {
       "frame": 4816,
       "time": 80.2667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.778
+      "mouth_open": 1.0
     },
     {
       "frame": 4817,
       "time": 80.2833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.54
+      "mouth_open": 1.0
     },
     {
       "frame": 4818,
       "time": 80.3,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.49
+      "mouth_open": 1.0
     },
     {
       "frame": 4819,
       "time": 80.3167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.638
+      "mouth_open": 1.0
     },
     {
       "frame": 4820,
       "time": 80.3333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.715
+      "mouth_open": 1.0
     },
     {
       "frame": 4821,
       "time": 80.35,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.789
+      "mouth_open": 1.0
     },
     {
       "frame": 4822,
       "time": 80.3667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.945
+      "mouth_open": 0.674
     },
     {
       "frame": 4823,
       "time": 80.3833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.414
     },
     {
       "frame": 4824,
       "time": 80.4,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.895
     },
     {
       "frame": 4825,
@@ -33896,175 +33896,175 @@
       "time": 80.4333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.918
     },
     {
       "frame": 4827,
       "time": 80.45,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.707
     },
     {
       "frame": 4828,
       "time": 80.4667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.251
     },
     {
       "frame": 4829,
       "time": 80.4833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.439
     },
     {
       "frame": 4830,
       "time": 80.5,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.678
     },
     {
       "frame": 4831,
       "time": 80.5167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.769
+      "mouth_open": 0.654
     },
     {
       "frame": 4832,
       "time": 80.5333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.367
+      "mouth_open": 0.333
     },
     {
       "frame": 4833,
       "time": 80.55,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.783
+      "mouth_open": 0.047
     },
     {
       "frame": 4834,
       "time": 80.5667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.565
     },
     {
       "frame": 4835,
       "time": 80.5833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.975
+      "mouth_open": 0.529
     },
     {
       "frame": 4836,
       "time": 80.6,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.737
+      "mouth_open": 0.489
     },
     {
       "frame": 4837,
       "time": 80.6167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.281
+      "mouth_open": 0.518
     },
     {
       "frame": 4838,
       "time": 80.6333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.408
+      "mouth_open": 0.445
     },
     {
       "frame": 4839,
       "time": 80.65,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.653
+      "mouth_open": 0.445
     },
     {
       "frame": 4840,
       "time": 80.6667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.674
+      "mouth_open": 0.092
     },
     {
       "frame": 4841,
       "time": 80.6833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.399
+      "mouth_open": 0.0
     },
     {
       "frame": 4842,
       "time": 80.7,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.055
+      "mouth_open": 0.0
     },
     {
       "frame": 4843,
       "time": 80.7167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.475
+      "mouth_open": 0.372
     },
     {
       "frame": 4844,
       "time": 80.7333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.548
+      "mouth_open": 0.497
     },
     {
       "frame": 4845,
       "time": 80.75,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.513
+      "mouth_open": 0.523
     },
     {
       "frame": 4846,
       "time": 80.7667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.473
+      "mouth_open": 0.332
     },
     {
       "frame": 4847,
       "time": 80.7833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.516
+      "mouth_open": 0.484
     },
     {
       "frame": 4848,
       "time": 80.8,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.456
+      "mouth_open": 0.467
     },
     {
       "frame": 4849,
       "time": 80.8167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.137
+      "mouth_open": 0.416
     },
     {
       "frame": 4850,
       "time": 80.8333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.258
     },
     {
       "frame": 4851,
@@ -34078,56 +34078,56 @@
       "time": 80.8667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.13
+      "mouth_open": 0.0
     },
     {
       "frame": 4853,
       "time": 80.8833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.61
+      "mouth_open": 0.0
     },
     {
       "frame": 4854,
       "time": 80.9,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.477
+      "mouth_open": 0.0
     },
     {
       "frame": 4855,
       "time": 80.9167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.392
+      "mouth_open": 0.574
     },
     {
       "frame": 4856,
       "time": 80.9333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.411
+      "mouth_open": 1.0
     },
     {
       "frame": 4857,
       "time": 80.95,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.515
+      "mouth_open": 1.0
     },
     {
       "frame": 4858,
       "time": 80.9667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.44
+      "mouth_open": 0.935
     },
     {
       "frame": 4859,
       "time": 80.9833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.275
+      "mouth_open": 0.331
     },
     {
       "frame": 4860,
@@ -34162,21 +34162,21 @@
       "time": 81.0667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.467
+      "mouth_open": 0.0
     },
     {
       "frame": 4865,
       "time": 81.0833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.987
+      "mouth_open": 0.0
     },
     {
       "frame": 4866,
       "time": 81.1,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.803
     },
     {
       "frame": 4867,
@@ -34190,217 +34190,217 @@
       "time": 81.1333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.448
+      "mouth_open": 0.982
     },
     {
       "frame": 4869,
       "time": 81.15,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4870,
       "time": 81.1667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4871,
       "time": 81.1833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4872,
       "time": 81.2,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4873,
       "time": 81.2167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4874,
       "time": 81.2333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.989
     },
     {
       "frame": 4875,
       "time": 81.25,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.681
+      "mouth_open": 0.866
     },
     {
       "frame": 4876,
       "time": 81.2667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.619
     },
     {
       "frame": 4877,
       "time": 81.2833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.587
     },
     {
       "frame": 4878,
       "time": 81.3,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.585
     },
     {
       "frame": 4879,
       "time": 81.3167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.547
     },
     {
       "frame": 4880,
       "time": 81.3333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.328
     },
     {
       "frame": 4881,
       "time": 81.35,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.167
     },
     {
       "frame": 4882,
       "time": 81.3667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.181
     },
     {
       "frame": 4883,
       "time": 81.3833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.935
     },
     {
       "frame": 4884,
       "time": 81.4,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.917
+      "mouth_open": 1.0
     },
     {
       "frame": 4885,
       "time": 81.4167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.69
+      "mouth_open": 0.961
     },
     {
       "frame": 4886,
       "time": 81.4333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.591
+      "mouth_open": 0.906
     },
     {
       "frame": 4887,
       "time": 81.45,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.583
+      "mouth_open": 0.948
     },
     {
       "frame": 4888,
       "time": 81.4667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.555
+      "mouth_open": 0.527
     },
     {
       "frame": 4889,
       "time": 81.4833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.322
+      "mouth_open": 0.259
     },
     {
       "frame": 4890,
       "time": 81.5,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.178
+      "mouth_open": 0.0
     },
     {
       "frame": 4891,
       "time": 81.5167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.179
+      "mouth_open": 0.0
     },
     {
       "frame": 4892,
       "time": 81.5333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.808
+      "mouth_open": 0.136
     },
     {
       "frame": 4893,
       "time": 81.55,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.109
     },
     {
       "frame": 4894,
       "time": 81.5667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.963
+      "mouth_open": 0.0
     },
     {
       "frame": 4895,
       "time": 81.5833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.0
     },
     {
       "frame": 4896,
       "time": 81.6,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.902
+      "mouth_open": 0.0
     },
     {
       "frame": 4897,
       "time": 81.6167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.644
+      "mouth_open": 0.0
     },
     {
       "frame": 4898,
       "time": 81.6333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.299
+      "mouth_open": 0.0
     },
     {
       "frame": 4899,
@@ -34421,21 +34421,21 @@
       "time": 81.6833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.144
+      "mouth_open": 0.0
     },
     {
       "frame": 4902,
       "time": 81.7,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.075
+      "mouth_open": 0.0
     },
     {
       "frame": 4903,
       "time": 81.7167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.062
+      "mouth_open": 0.0
     },
     {
       "frame": 4904,
@@ -34757,280 +34757,280 @@
       "time": 82.4833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.095
     },
     {
       "frame": 4950,
       "time": 82.5,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.518
     },
     {
       "frame": 4951,
       "time": 82.5167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.951
     },
     {
       "frame": 4952,
       "time": 82.5333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4953,
       "time": 82.55,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4954,
       "time": 82.5667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 4955,
       "time": 82.5833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.949
     },
     {
       "frame": 4956,
       "time": 82.6,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.888
     },
     {
       "frame": 4957,
       "time": 82.6167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.799
     },
     {
       "frame": 4958,
       "time": 82.6333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.612
     },
     {
       "frame": 4959,
       "time": 82.65,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.441
+      "mouth_open": 0.573
     },
     {
       "frame": 4960,
       "time": 82.6667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.889
+      "mouth_open": 0.664
     },
     {
       "frame": 4961,
       "time": 82.6833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.694
     },
     {
       "frame": 4962,
       "time": 82.7,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.661
     },
     {
       "frame": 4963,
       "time": 82.7167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.667
     },
     {
       "frame": 4964,
       "time": 82.7333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.986
+      "mouth_open": 0.884
     },
     {
       "frame": 4965,
       "time": 82.75,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.893
+      "mouth_open": 0.904
     },
     {
       "frame": 4966,
       "time": 82.7667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.83
+      "mouth_open": 0.751
     },
     {
       "frame": 4967,
       "time": 82.7833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.672
+      "mouth_open": 0.56
     },
     {
       "frame": 4968,
       "time": 82.8,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.535
+      "mouth_open": 0.282
     },
     {
       "frame": 4969,
       "time": 82.8167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.65
+      "mouth_open": 0.2
     },
     {
       "frame": 4970,
       "time": 82.8333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.697
+      "mouth_open": 0.171
     },
     {
       "frame": 4971,
       "time": 82.85,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.668
+      "mouth_open": 0.471
     },
     {
       "frame": 4972,
       "time": 82.8667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.644
+      "mouth_open": 1.0
     },
     {
       "frame": 4973,
       "time": 82.8833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.857
+      "mouth_open": 1.0
     },
     {
       "frame": 4974,
       "time": 82.9,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.904
+      "mouth_open": 1.0
     },
     {
       "frame": 4975,
       "time": 82.9167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.791
+      "mouth_open": 1.0
     },
     {
       "frame": 4976,
       "time": 82.9333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.596
+      "mouth_open": 0.848
     },
     {
       "frame": 4977,
       "time": 82.95,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.357
+      "mouth_open": 0.826
     },
     {
       "frame": 4978,
       "time": 82.9667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.188
+      "mouth_open": 0.534
     },
     {
       "frame": 4979,
       "time": 82.9833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.184
+      "mouth_open": 0.0
     },
     {
       "frame": 4980,
       "time": 83.0,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.38
+      "mouth_open": 0.0
     },
     {
       "frame": 4981,
       "time": 83.0167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.0
     },
     {
       "frame": 4982,
       "time": 83.0333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.2
     },
     {
       "frame": 4983,
       "time": 83.05,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.322
     },
     {
       "frame": 4984,
       "time": 83.0667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.285
     },
     {
       "frame": 4985,
       "time": 83.0833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.916
+      "mouth_open": 0.2
     },
     {
       "frame": 4986,
       "time": 83.1,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.776
+      "mouth_open": 0.666
     },
     {
       "frame": 4987,
       "time": 83.1167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.647
+      "mouth_open": 0.672
     },
     {
       "frame": 4988,
       "time": 83.1333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.465
     },
     {
       "frame": 4989,
@@ -35051,154 +35051,154 @@
       "time": 83.1833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.157
+      "mouth_open": 0.0
     },
     {
       "frame": 4992,
       "time": 83.2,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.303
+      "mouth_open": 0.0
     },
     {
       "frame": 4993,
       "time": 83.2167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.334
+      "mouth_open": 0.344
     },
     {
       "frame": 4994,
       "time": 83.2333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.093
+      "mouth_open": 0.701
     },
     {
       "frame": 4995,
       "time": 83.25,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.614
+      "mouth_open": 0.591
     },
     {
       "frame": 4996,
       "time": 83.2667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.716
+      "mouth_open": 0.465
     },
     {
       "frame": 4997,
       "time": 83.2833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.515
+      "mouth_open": 0.481
     },
     {
       "frame": 4998,
       "time": 83.3,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.429
     },
     {
       "frame": 4999,
       "time": 83.3167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.477
     },
     {
       "frame": 5000,
       "time": 83.3333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.674
     },
     {
       "frame": 5001,
       "time": 83.35,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.675
     },
     {
       "frame": 5002,
       "time": 83.3667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.324
+      "mouth_open": 0.699
     },
     {
       "frame": 5003,
       "time": 83.3833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.641
+      "mouth_open": 0.349
     },
     {
       "frame": 5004,
       "time": 83.4,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.594
+      "mouth_open": 0.0
     },
     {
       "frame": 5005,
       "time": 83.4167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.503
+      "mouth_open": 0.0
     },
     {
       "frame": 5006,
       "time": 83.4333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.517
+      "mouth_open": 0.0
     },
     {
       "frame": 5007,
       "time": 83.45,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.441
+      "mouth_open": 0.417
     },
     {
       "frame": 5008,
       "time": 83.4667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.373
+      "mouth_open": 0.221
     },
     {
       "frame": 5009,
       "time": 83.4833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.726
+      "mouth_open": 0.301
     },
     {
       "frame": 5010,
       "time": 83.5,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.601
+      "mouth_open": 0.738
     },
     {
       "frame": 5011,
       "time": 83.5167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.754
+      "mouth_open": 0.695
     },
     {
       "frame": 5012,
       "time": 83.5333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.407
+      "mouth_open": 0.074
     },
     {
       "frame": 5013,
@@ -35226,140 +35226,140 @@
       "time": 83.6,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.357
+      "mouth_open": 0.192
     },
     {
       "frame": 5017,
       "time": 83.6167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.3
+      "mouth_open": 0.683
     },
     {
       "frame": 5018,
       "time": 83.6333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.24
+      "mouth_open": 0.144
     },
     {
       "frame": 5019,
       "time": 83.65,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.719
+      "mouth_open": 0.689
     },
     {
       "frame": 5020,
       "time": 83.6667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.712
+      "mouth_open": 0.667
     },
     {
       "frame": 5021,
       "time": 83.6833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.185
+      "mouth_open": 0.639
     },
     {
       "frame": 5022,
       "time": 83.7,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.616
     },
     {
       "frame": 5023,
       "time": 83.7167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.527
     },
     {
       "frame": 5024,
       "time": 83.7333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.486
     },
     {
       "frame": 5025,
       "time": 83.75,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.085
+      "mouth_open": 0.295
     },
     {
       "frame": 5026,
       "time": 83.7667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.663
+      "mouth_open": 0.0
     },
     {
       "frame": 5027,
       "time": 83.7833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.251
+      "mouth_open": 0.0
     },
     {
       "frame": 5028,
       "time": 83.8,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.568
+      "mouth_open": 0.173
     },
     {
       "frame": 5029,
       "time": 83.8167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.729
+      "mouth_open": 0.446
     },
     {
       "frame": 5030,
       "time": 83.8333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.663
+      "mouth_open": 0.394
     },
     {
       "frame": 5031,
       "time": 83.85,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.568
+      "mouth_open": 0.448
     },
     {
       "frame": 5032,
       "time": 83.8667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.56
+      "mouth_open": 0.48
     },
     {
       "frame": 5033,
       "time": 83.8833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.495
+      "mouth_open": 0.188
     },
     {
       "frame": 5034,
       "time": 83.9,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.364
+      "mouth_open": 0.0
     },
     {
       "frame": 5035,
       "time": 83.9167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.069
+      "mouth_open": 0.0
     },
     {
       "frame": 5036,
@@ -35373,182 +35373,182 @@
       "time": 83.95,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.136
+      "mouth_open": 0.0
     },
     {
       "frame": 5038,
       "time": 83.9667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.453
+      "mouth_open": 0.046
     },
     {
       "frame": 5039,
       "time": 83.9833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.328
+      "mouth_open": 0.647
     },
     {
       "frame": 5040,
       "time": 84.0,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.455
+      "mouth_open": 0.254
     },
     {
       "frame": 5041,
       "time": 84.0167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.497
+      "mouth_open": 0.638
     },
     {
       "frame": 5042,
       "time": 84.0333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.253
+      "mouth_open": 0.995
     },
     {
       "frame": 5043,
       "time": 84.05,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.782
     },
     {
       "frame": 5044,
       "time": 84.0667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.621
     },
     {
       "frame": 5045,
       "time": 84.0833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.468
     },
     {
       "frame": 5046,
       "time": 84.1,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.277
     },
     {
       "frame": 5047,
       "time": 84.1167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.088
     },
     {
       "frame": 5048,
       "time": 84.1333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.608
+      "mouth_open": 0.131
     },
     {
       "frame": 5049,
       "time": 84.15,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.333
+      "mouth_open": 0.3
     },
     {
       "frame": 5050,
       "time": 84.1667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.53
+      "mouth_open": 0.298
     },
     {
       "frame": 5051,
       "time": 84.1833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.995
+      "mouth_open": 0.299
     },
     {
       "frame": 5052,
       "time": 84.2,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.849
+      "mouth_open": 0.212
     },
     {
       "frame": 5053,
       "time": 84.2167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.576
+      "mouth_open": 0.109
     },
     {
       "frame": 5054,
       "time": 84.2333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.527
+      "mouth_open": 0.0
     },
     {
       "frame": 5055,
       "time": 84.25,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.283
+      "mouth_open": 0.0
     },
     {
       "frame": 5056,
       "time": 84.2667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.116
+      "mouth_open": 0.0
     },
     {
       "frame": 5057,
       "time": 84.2833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.097
+      "mouth_open": 0.0
     },
     {
       "frame": 5058,
       "time": 84.3,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.268
+      "mouth_open": 0.0
     },
     {
       "frame": 5059,
       "time": 84.3167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.329
+      "mouth_open": 0.0
     },
     {
       "frame": 5060,
       "time": 84.3333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.28
+      "mouth_open": 0.0
     },
     {
       "frame": 5061,
       "time": 84.35,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.238
+      "mouth_open": 0.0
     },
     {
       "frame": 5062,
       "time": 84.3667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.139
+      "mouth_open": 0.0
     },
     {
       "frame": 5063,
@@ -35611,7 +35611,7 @@
       "time": 84.5167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.068
     },
     {
       "frame": 5072,
@@ -35625,350 +35625,350 @@
       "time": 84.55,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.488
     },
     {
       "frame": 5074,
       "time": 84.5667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 5075,
       "time": 84.5833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 5076,
       "time": 84.6,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.981
     },
     {
       "frame": 5077,
       "time": 84.6167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.719
     },
     {
       "frame": 5078,
       "time": 84.6333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.386
     },
     {
       "frame": 5079,
       "time": 84.65,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.409
     },
     {
       "frame": 5080,
       "time": 84.6667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.072
+      "mouth_open": 0.55
     },
     {
       "frame": 5081,
       "time": 84.6833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.56
     },
     {
       "frame": 5082,
       "time": 84.7,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.35
+      "mouth_open": 0.472
     },
     {
       "frame": 5083,
       "time": 84.7167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.302
     },
     {
       "frame": 5084,
       "time": 84.7333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.322
     },
     {
       "frame": 5085,
       "time": 84.75,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.919
+      "mouth_open": 0.826
     },
     {
       "frame": 5086,
       "time": 84.7667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.832
+      "mouth_open": 0.871
     },
     {
       "frame": 5087,
       "time": 84.7833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.394
+      "mouth_open": 0.847
     },
     {
       "frame": 5088,
       "time": 84.8,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.377
+      "mouth_open": 0.853
     },
     {
       "frame": 5089,
       "time": 84.8167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.538
+      "mouth_open": 0.614
     },
     {
       "frame": 5090,
       "time": 84.8333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.562
+      "mouth_open": 0.103
     },
     {
       "frame": 5091,
       "time": 84.85,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.494
+      "mouth_open": 0.048
     },
     {
       "frame": 5092,
       "time": 84.8667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.339
+      "mouth_open": 0.071
     },
     {
       "frame": 5093,
       "time": 84.8833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.275
+      "mouth_open": 0.626
     },
     {
       "frame": 5094,
       "time": 84.9,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.751
+      "mouth_open": 0.722
     },
     {
       "frame": 5095,
       "time": 84.9167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.86
+      "mouth_open": 0.675
     },
     {
       "frame": 5096,
       "time": 84.9333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.9
+      "mouth_open": 0.301
     },
     {
       "frame": 5097,
       "time": 84.95,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.822
+      "mouth_open": 0.102
     },
     {
       "frame": 5098,
       "time": 84.9667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.697
+      "mouth_open": 0.156
     },
     {
       "frame": 5099,
       "time": 84.9833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.183
+      "mouth_open": 0.801
     },
     {
       "frame": 5100,
       "time": 85.0,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.964
     },
     {
       "frame": 5101,
       "time": 85.0167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.062
+      "mouth_open": 0.997
     },
     {
       "frame": 5102,
       "time": 85.0333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.582
+      "mouth_open": 0.833
     },
     {
       "frame": 5103,
       "time": 85.05,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.648
+      "mouth_open": 0.548
     },
     {
       "frame": 5104,
       "time": 85.0667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.741
+      "mouth_open": 0.228
     },
     {
       "frame": 5105,
       "time": 85.0833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.383
+      "mouth_open": 0.115
     },
     {
       "frame": 5106,
       "time": 85.1,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.116
+      "mouth_open": 0.042
     },
     {
       "frame": 5107,
       "time": 85.1167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.121
+      "mouth_open": 0.11
     },
     {
       "frame": 5108,
       "time": 85.1333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.686
+      "mouth_open": 0.253
     },
     {
       "frame": 5109,
       "time": 85.15,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.93
+      "mouth_open": 0.322
     },
     {
       "frame": 5110,
       "time": 85.1667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.351
     },
     {
       "frame": 5111,
       "time": 85.1833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.887
+      "mouth_open": 0.308
     },
     {
       "frame": 5112,
       "time": 85.2,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.628
+      "mouth_open": 0.197
     },
     {
       "frame": 5113,
       "time": 85.2167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.24
+      "mouth_open": 0.0
     },
     {
       "frame": 5114,
       "time": 85.2333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.184
+      "mouth_open": 0.0
     },
     {
       "frame": 5115,
       "time": 85.25,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.047
+      "mouth_open": 0.0
     },
     {
       "frame": 5116,
       "time": 85.2667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.084
+      "mouth_open": 0.0
     },
     {
       "frame": 5117,
       "time": 85.2833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.245
+      "mouth_open": 0.0
     },
     {
       "frame": 5118,
       "time": 85.3,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.308
+      "mouth_open": 0.0
     },
     {
       "frame": 5119,
       "time": 85.3167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.33
+      "mouth_open": 0.0
     },
     {
       "frame": 5120,
       "time": 85.3333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.339
+      "mouth_open": 0.0
     },
     {
       "frame": 5121,
       "time": 85.35,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.202
+      "mouth_open": 0.0
     },
     {
       "frame": 5122,
       "time": 85.3667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.094
+      "mouth_open": 0.0
     },
     {
       "frame": 5123,
@@ -36024,308 +36024,308 @@
       "time": 85.5,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.244
     },
     {
       "frame": 5131,
       "time": 85.5167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.381
     },
     {
       "frame": 5132,
       "time": 85.5333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.675
     },
     {
       "frame": 5133,
       "time": 85.55,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.561
     },
     {
       "frame": 5134,
       "time": 85.5667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.546
     },
     {
       "frame": 5135,
       "time": 85.5833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.321
     },
     {
       "frame": 5136,
       "time": 85.6,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.982
     },
     {
       "frame": 5137,
       "time": 85.6167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.832
     },
     {
       "frame": 5138,
       "time": 85.6333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.887
     },
     {
       "frame": 5139,
       "time": 85.65,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.191
+      "mouth_open": 0.427
     },
     {
       "frame": 5140,
       "time": 85.6667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.357
+      "mouth_open": 0.602
     },
     {
       "frame": 5141,
       "time": 85.6833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.648
+      "mouth_open": 0.699
     },
     {
       "frame": 5142,
       "time": 85.7,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.594
+      "mouth_open": 0.678
     },
     {
       "frame": 5143,
       "time": 85.7167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.579
+      "mouth_open": 0.609
     },
     {
       "frame": 5144,
       "time": 85.7333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.201
+      "mouth_open": 0.423
     },
     {
       "frame": 5145,
       "time": 85.75,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.91
+      "mouth_open": 0.549
     },
     {
       "frame": 5146,
       "time": 85.7667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.908
+      "mouth_open": 0.638
     },
     {
       "frame": 5147,
       "time": 85.7833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.828
+      "mouth_open": 0.632
     },
     {
       "frame": 5148,
       "time": 85.8,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.573
+      "mouth_open": 0.668
     },
     {
       "frame": 5149,
       "time": 85.8167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.525
+      "mouth_open": 0.767
     },
     {
       "frame": 5150,
       "time": 85.8333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.694
+      "mouth_open": 0.758
     },
     {
       "frame": 5151,
       "time": 85.85,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.741
+      "mouth_open": 0.866
     },
     {
       "frame": 5152,
       "time": 85.8667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.613
+      "mouth_open": 0.973
     },
     {
       "frame": 5153,
       "time": 85.8833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.433
+      "mouth_open": 0.952
     },
     {
       "frame": 5154,
       "time": 85.9,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.514
+      "mouth_open": 0.893
     },
     {
       "frame": 5155,
       "time": 85.9167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.592
+      "mouth_open": 0.871
     },
     {
       "frame": 5156,
       "time": 85.9333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.64
+      "mouth_open": 0.843
     },
     {
       "frame": 5157,
       "time": 85.95,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.71
+      "mouth_open": 0.639
     },
     {
       "frame": 5158,
       "time": 85.9667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.692
+      "mouth_open": 0.138
     },
     {
       "frame": 5159,
       "time": 85.9833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.795
+      "mouth_open": 0.044
     },
     {
       "frame": 5160,
       "time": 86.0,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.874
+      "mouth_open": 0.271
     },
     {
       "frame": 5161,
       "time": 86.0167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.964
+      "mouth_open": 0.6
     },
     {
       "frame": 5162,
       "time": 86.0333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.961
+      "mouth_open": 0.537
     },
     {
       "frame": 5163,
       "time": 86.05,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.903
+      "mouth_open": 0.292
     },
     {
       "frame": 5164,
       "time": 86.0667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.876
+      "mouth_open": 0.079
     },
     {
       "frame": 5165,
       "time": 86.0833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.841
+      "mouth_open": 0.0
     },
     {
       "frame": 5166,
       "time": 86.1,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.675
+      "mouth_open": 0.0
     },
     {
       "frame": 5167,
       "time": 86.1167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.179
+      "mouth_open": 0.0
     },
     {
       "frame": 5168,
       "time": 86.1333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.051
+      "mouth_open": 0.0
     },
     {
       "frame": 5169,
       "time": 86.15,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.138
+      "mouth_open": 0.0
     },
     {
       "frame": 5170,
       "time": 86.1667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.586
+      "mouth_open": 0.0
     },
     {
       "frame": 5171,
       "time": 86.1833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.587
+      "mouth_open": 0.0
     },
     {
       "frame": 5172,
       "time": 86.2,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.319
+      "mouth_open": 0.0
     },
     {
       "frame": 5173,
       "time": 86.2167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.112
+      "mouth_open": 0.0
     },
     {
       "frame": 5174,
@@ -36395,49 +36395,49 @@
       "time": 86.3833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.196
     },
     {
       "frame": 5184,
       "time": 86.4,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.483
     },
     {
       "frame": 5185,
       "time": 86.4167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 5186,
       "time": 86.4333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 5187,
       "time": 86.45,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 5188,
       "time": 86.4667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.961
     },
     {
       "frame": 5189,
       "time": 86.4833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.392
     },
     {
       "frame": 5190,
@@ -36465,448 +36465,448 @@
       "time": 86.55,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.395
+      "mouth_open": 0.0
     },
     {
       "frame": 5194,
       "time": 86.5667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.489
     },
     {
       "frame": 5195,
       "time": 86.5833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.292
     },
     {
       "frame": 5196,
       "time": 86.6,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.092
     },
     {
       "frame": 5197,
       "time": 86.6167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.632
     },
     {
       "frame": 5198,
       "time": 86.6333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.54
+      "mouth_open": 0.659
     },
     {
       "frame": 5199,
       "time": 86.65,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.528
     },
     {
       "frame": 5200,
       "time": 86.6667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.644
     },
     {
       "frame": 5201,
       "time": 86.6833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.637
     },
     {
       "frame": 5202,
       "time": 86.7,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.648
     },
     {
       "frame": 5203,
       "time": 86.7167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.433
+      "mouth_open": 0.696
     },
     {
       "frame": 5204,
       "time": 86.7333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.368
+      "mouth_open": 0.71
     },
     {
       "frame": 5205,
       "time": 86.75,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.074
+      "mouth_open": 0.821
     },
     {
       "frame": 5206,
       "time": 86.7667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.597
+      "mouth_open": 0.866
     },
     {
       "frame": 5207,
       "time": 86.7833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.646
+      "mouth_open": 1.0
     },
     {
       "frame": 5208,
       "time": 86.8,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.557
+      "mouth_open": 0.91
     },
     {
       "frame": 5209,
       "time": 86.8167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.589
+      "mouth_open": 0.634
     },
     {
       "frame": 5210,
       "time": 86.8333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.675
+      "mouth_open": 0.183
     },
     {
       "frame": 5211,
       "time": 86.85,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.613
+      "mouth_open": 0.0
     },
     {
       "frame": 5212,
       "time": 86.8667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.68
+      "mouth_open": 0.0
     },
     {
       "frame": 5213,
       "time": 86.8833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.753
+      "mouth_open": 0.0
     },
     {
       "frame": 5214,
       "time": 86.9,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.782
+      "mouth_open": 0.0
     },
     {
       "frame": 5215,
       "time": 86.9167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.886
+      "mouth_open": 0.43
     },
     {
       "frame": 5216,
       "time": 86.9333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.239
     },
     {
       "frame": 5217,
       "time": 86.95,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.992
+      "mouth_open": 0.0
     },
     {
       "frame": 5218,
       "time": 86.9667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.674
+      "mouth_open": 0.569
     },
     {
       "frame": 5219,
       "time": 86.9833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.288
+      "mouth_open": 0.629
     },
     {
       "frame": 5220,
       "time": 87.0,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.667
     },
     {
       "frame": 5221,
       "time": 87.0167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.678
     },
     {
       "frame": 5222,
       "time": 87.0333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.655
     },
     {
       "frame": 5223,
       "time": 87.05,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.668
     },
     {
       "frame": 5224,
       "time": 87.0667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.394
+      "mouth_open": 0.564
     },
     {
       "frame": 5225,
       "time": 87.0833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.296
+      "mouth_open": 0.764
     },
     {
       "frame": 5226,
       "time": 87.1,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.68
     },
     {
       "frame": 5227,
       "time": 87.1167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.495
+      "mouth_open": 0.526
     },
     {
       "frame": 5228,
       "time": 87.1333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.633
+      "mouth_open": 0.266
     },
     {
       "frame": 5229,
       "time": 87.15,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.659
+      "mouth_open": 0.056
     },
     {
       "frame": 5230,
       "time": 87.1667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.682
+      "mouth_open": 0.0
     },
     {
       "frame": 5231,
       "time": 87.1833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.654
+      "mouth_open": 0.0
     },
     {
       "frame": 5232,
       "time": 87.2,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.67
+      "mouth_open": 0.0
     },
     {
       "frame": 5233,
       "time": 87.2167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.579
+      "mouth_open": 0.0
     },
     {
       "frame": 5234,
       "time": 87.2333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.747
+      "mouth_open": 0.0
     },
     {
       "frame": 5235,
       "time": 87.25,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.685
+      "mouth_open": 0.115
     },
     {
       "frame": 5236,
       "time": 87.2667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.563
+      "mouth_open": 0.581
     },
     {
       "frame": 5237,
       "time": 87.2833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.328
+      "mouth_open": 0.668
     },
     {
       "frame": 5238,
       "time": 87.3,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.066
+      "mouth_open": 0.743
     },
     {
       "frame": 5239,
       "time": 87.3167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.759
     },
     {
       "frame": 5240,
       "time": 87.3333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.67
     },
     {
       "frame": 5241,
       "time": 87.35,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.249
     },
     {
       "frame": 5242,
       "time": 87.3667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.178
     },
     {
       "frame": 5243,
       "time": 87.3833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.744
     },
     {
       "frame": 5244,
       "time": 87.4,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 5245,
       "time": 87.4167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.548
+      "mouth_open": 1.0
     },
     {
       "frame": 5246,
       "time": 87.4333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.643
+      "mouth_open": 1.0
     },
     {
       "frame": 5247,
       "time": 87.45,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.733
+      "mouth_open": 0.428
     },
     {
       "frame": 5248,
       "time": 87.4667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.756
+      "mouth_open": 0.0
     },
     {
       "frame": 5249,
       "time": 87.4833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.705
+      "mouth_open": 0.0
     },
     {
       "frame": 5250,
       "time": 87.5,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.334
+      "mouth_open": 0.0
     },
     {
       "frame": 5251,
       "time": 87.5167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.169
+      "mouth_open": 0.0
     },
     {
       "frame": 5252,
       "time": 87.5333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.548
+      "mouth_open": 0.631
     },
     {
       "frame": 5253,
       "time": 87.55,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.602
     },
     {
       "frame": 5254,
       "time": 87.5667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.424
     },
     {
       "frame": 5255,
       "time": 87.5833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.07
     },
     {
       "frame": 5256,
       "time": 87.6,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.631
+      "mouth_open": 0.0
     },
     {
       "frame": 5257,
@@ -36941,161 +36941,161 @@
       "time": 87.6833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.53
+      "mouth_open": 0.115
     },
     {
       "frame": 5262,
       "time": 87.7,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.666
+      "mouth_open": 0.544
     },
     {
       "frame": 5263,
       "time": 87.7167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.458
+      "mouth_open": 0.814
     },
     {
       "frame": 5264,
       "time": 87.7333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.092
+      "mouth_open": 1.0
     },
     {
       "frame": 5265,
       "time": 87.75,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 1.0
     },
     {
       "frame": 5266,
       "time": 87.7667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.623
     },
     {
       "frame": 5267,
       "time": 87.7833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.515
     },
     {
       "frame": 5268,
       "time": 87.8,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.796
     },
     {
       "frame": 5269,
       "time": 87.8167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.56
     },
     {
       "frame": 5270,
       "time": 87.8333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.553
     },
     {
       "frame": 5271,
       "time": 87.85,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.51
+      "mouth_open": 0.467
     },
     {
       "frame": 5272,
       "time": 87.8667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.777
+      "mouth_open": 0.364
     },
     {
       "frame": 5273,
       "time": 87.8833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.08
     },
     {
       "frame": 5274,
       "time": 87.9,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 1.0
+      "mouth_open": 0.0
     },
     {
       "frame": 5275,
       "time": 87.9167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.729
+      "mouth_open": 0.0
     },
     {
       "frame": 5276,
       "time": 87.9333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.498
+      "mouth_open": 0.0
     },
     {
       "frame": 5277,
       "time": 87.95,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.768
+      "mouth_open": 0.259
     },
     {
       "frame": 5278,
       "time": 87.9667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.607
+      "mouth_open": 0.774
     },
     {
       "frame": 5279,
       "time": 87.9833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.53
+      "mouth_open": 0.644
     },
     {
       "frame": 5280,
       "time": 88.0,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.458
+      "mouth_open": 0.588
     },
     {
       "frame": 5281,
       "time": 88.0167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.448
+      "mouth_open": 0.658
     },
     {
       "frame": 5282,
       "time": 88.0333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.085
+      "mouth_open": 0.4
     },
     {
       "frame": 5283,
       "time": 88.05,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.0
+      "mouth_open": 0.111
     },
     {
       "frame": 5284,
@@ -37116,56 +37116,56 @@
       "time": 88.1,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.101
+      "mouth_open": 0.0
     },
     {
       "frame": 5287,
       "time": 88.1167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.784
+      "mouth_open": 0.0
     },
     {
       "frame": 5288,
       "time": 88.1333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.641
+      "mouth_open": 0.0
     },
     {
       "frame": 5289,
       "time": 88.15,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.626
+      "mouth_open": 0.0
     },
     {
       "frame": 5290,
       "time": 88.1667,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.617
+      "mouth_open": 0.0
     },
     {
       "frame": 5291,
       "time": 88.1833,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.446
+      "mouth_open": 0.0
     },
     {
       "frame": 5292,
       "time": 88.2,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.177
+      "mouth_open": 0.0
     },
     {
       "frame": 5293,
       "time": 88.2167,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
-      "mouth_open": 0.044
+      "mouth_open": 0.0
     },
     {
       "frame": 5294,
@@ -37821,69 +37821,6 @@
     {
       "frame": 5387,
       "time": 89.7833,
-      "scene_id": "sc6_locutora_cierre",
-      "character": "locutora_cierre",
-      "mouth_open": 0.0
-    },
-    {
-      "frame": 5388,
-      "time": 89.8,
-      "scene_id": "sc6_locutora_cierre",
-      "character": "locutora_cierre",
-      "mouth_open": 0.0
-    },
-    {
-      "frame": 5389,
-      "time": 89.8167,
-      "scene_id": "sc6_locutora_cierre",
-      "character": "locutora_cierre",
-      "mouth_open": 0.0
-    },
-    {
-      "frame": 5390,
-      "time": 89.8333,
-      "scene_id": "sc6_locutora_cierre",
-      "character": "locutora_cierre",
-      "mouth_open": 0.0
-    },
-    {
-      "frame": 5391,
-      "time": 89.85,
-      "scene_id": "sc6_locutora_cierre",
-      "character": "locutora_cierre",
-      "mouth_open": 0.0
-    },
-    {
-      "frame": 5392,
-      "time": 89.8667,
-      "scene_id": "sc6_locutora_cierre",
-      "character": "locutora_cierre",
-      "mouth_open": 0.0
-    },
-    {
-      "frame": 5393,
-      "time": 89.8833,
-      "scene_id": "sc6_locutora_cierre",
-      "character": "locutora_cierre",
-      "mouth_open": 0.0
-    },
-    {
-      "frame": 5394,
-      "time": 89.9,
-      "scene_id": "sc6_locutora_cierre",
-      "character": "locutora_cierre",
-      "mouth_open": 0.0
-    },
-    {
-      "frame": 5395,
-      "time": 89.9167,
-      "scene_id": "sc6_locutora_cierre",
-      "character": "locutora_cierre",
-      "mouth_open": 0.0
-    },
-    {
-      "frame": 5396,
-      "time": 89.9333,
       "scene_id": "sc6_locutora_cierre",
       "character": "locutora_cierre",
       "mouth_open": 0.0

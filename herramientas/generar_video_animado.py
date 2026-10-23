@@ -123,7 +123,7 @@ SCENES = [
     {
         "id": 4,
         "name": "scene4",
-        "title": "Clímax del Crunch y Resurrección Tostiaguachile Verde Tradicional $150 MXN",
+        "title": "Clímax del Crunch y Resurrección Tostiaguachile Verde Tradicional $170 MXN",
         "first_frame": str(FRAMES_DIR / "scene4_start.png"),
         "last_frame": str(FRAMES_DIR / "scene4_end.png"),
         "output": str(CLIPS_DIR / "scene4.mp4"),
@@ -157,7 +157,7 @@ SCENES = [
     {
         "id": 6,
         "name": "scene6",
-        "title": "Cierre Comercial Sáb-Dom 1-5 PM, Col. Flores, WhatsApp 833 252 09 88, $150 MXN",
+        "title": "Cierre Comercial Sáb-Dom 1-5 PM, Col. Flores, WhatsApp 833 252 09 88, $170 MXN",
         "first_frame": str(FRAMES_DIR / "scene6_start.png"),
         "last_frame": str(FRAMES_DIR / "scene6_end.png"),
         "output": str(CLIPS_DIR / "scene6.mp4"),
@@ -167,7 +167,7 @@ SCENES = [
         "prompt": (
             "Smooth 2D Cartoon Network commercial closing title card animation. "
             "Tropical beach kiosk of La Garza Aguachilera with fresh ingredients prepared live in front of customers. "
-            "Displaying the official commercial details: Sábados y Domingos 1:00 PM a 5:00 PM, Col. Flores Tampico, WhatsApp 833 252 09 88, and price $150 MXN. "
+            "Displaying the official commercial details: Sábados y Domingos 1:00 PM a 5:00 PM, Col. Flores Tampico, WhatsApp 833 252 09 88, and price $170 MXN. "
             "Bouncing cartoon shrimp, spinning Colima lime slices, and clean commercial title card graphics."
         ),
     },
@@ -466,7 +466,7 @@ def render_scene_clip_studio(scene: dict, fps: int = 60) -> bool:
                     draw_star(draw, eye_x, eye_y, eye_r, int(eye_r * 0.45), fill=(255, 245, 50, 255), outline=(0, 0, 0, 255), width=2)
 
             elif scene_id == 6:
-                # Escena 6: Cierre Comercial $150 MXN - Destello de precio dorado, camarones flotantes
+                # Escena 6: Cierre Comercial $170 MXN - Destello de precio dorado, camarones flotantes
                 # Camarones y limones decorativos flotando suavemente en esquinas
                 cam_bob = int(math.sin(p * 8.0) * 15)
                 # Badge flotante superior izquierda
@@ -477,7 +477,7 @@ def render_scene_clip_studio(scene: dict, fps: int = 60) -> bool:
                 draw.ellipse([860, 280 - cam_bob, 1000, 420 - cam_bob], fill=(50, 200, 30, 220), outline=(255, 255, 255, 255), width=3)
                 draw.text((930, 350 - cam_bob), "🍋", fill=(255, 255, 255, 255), anchor="mm")
 
-                # Barrido de brillo diagonal dorado sobre el precio $150 MXN (área y=1400..1600)
+                # Barrido de brillo diagonal dorado sobre el precio $170 MXN (área y=1400..1600)
                 sheen_x = int((p * 2.0 % 1.0) * 1600) - 300
                 sheen_poly = [
                     (sheen_x, 1380),
@@ -526,7 +526,7 @@ def generate_single_scene(scene: dict, force: bool = False, engine: str = "auto"
         if api_available:
             print(f"🚀 Enviando Escena {scene['id']} a Gemini Omni 1.1 Flash...")
             cmd = [
-                "py", str(OFFICIAL_GENERATOR),
+                sys.executable, str(OFFICIAL_GENERATOR),
                 scene["prompt"],
                 "--first-frame", scene["first_frame"],
                 "--last-frame", scene["last_frame"],
@@ -558,7 +558,7 @@ def main():
     parser.add_argument("--force", action="store_true", help="Forzar re-generación de clips existentes")
     args = parser.parse_args()
 
-    print(f"🎬 Iniciando Generación de Animación La Garza Aguachilera ($150 MXN)")
+    print(f"🎬 Iniciando Generación de Animación La Garza Aguachilera ($170 MXN)")
     print(f"📂 Directorio de salida: {CLIPS_DIR}")
     print(f"🎞️ Cuadros clave base: {FRAMES_DIR}")
     print(f"⚙️ Motor configurado: {args.engine}")

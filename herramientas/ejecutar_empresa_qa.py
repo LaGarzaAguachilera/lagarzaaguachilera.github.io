@@ -43,13 +43,19 @@ for hf in html_files:
     with open(abs_hf, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Validar assets en src="..."
-    src_matches = re.findall(r'src=["\']([^"\']+\.(?:png|jpg|jpeg|mp4|webm|svg))["\']', content)
+    # Validar assets en src="..." (soportando cache-busting ?v=170)
+    import urllib.parse
+    src_matches = re.findall(r'src=["\']([^"\'?#]+\.(?:png|jpg|jpeg|mp4|webm|svg)(?:\?[^"\']*)?)["\']', content)
     for src in src_matches:
         if not src.startswith("http"):
-            asset_abs = os.path.join(project_root, src.replace("/", os.sep))
+            clean_src = urllib.parse.unquote(src.split("?")[0])
+            asset_abs = os.path.join(project_root, clean_src.replace("/", os.sep))
             if os.path.exists(asset_abs):
-                a1_results.append(f"[OK] Asset verificado en {hf}: {src}")
+                if clean_src.lower().endswith((".png", ".jpg", ".jpeg", ".mp4")) and "v=170" not in src:
+                    deficiencias.append(f"Asset local sin cache-busting ?v=170 en {hf}: {src}")
+                    a1_results.append(f"[FALLO] Falta ?v=170 en {hf}: {src}")
+                else:
+                    a1_results.append(f"[OK] Asset verificado con cache-busting en {hf}: {src}")
             else:
                 deficiencias.append(f"Asset roto (404) en {hf}: {src}")
                 a1_results.append(f"[FALLO] Asset roto en {hf}: {src}")
@@ -285,6 +291,42 @@ if os.path.exists(zip_path):
 else:
     deficiencias.append("paquete_redes_la_garza.zip no existe")
     a4_results.append("[FALLO] ZIP ausente")
+
+# Verificación de regeneración física en disco (LastWriteTime >= 2026-10-23) y Timeline $170 MXN
+min_regen_ts = datetime(2026, 10, 23, 0, 0, 0).timestamp()
+fresh_assets_required = [
+    "flyer_portada_verde.png",
+    "flyer_post_verde.png",
+    "flyer_historia_verde.png",
+    r"contenido_redes\posts_periodicos\post1_antojo_lunes.png",
+    r"contenido_redes\catalogo_mes\semana1\post01_abduccion_miramar.png",
+    r"contenido_redes\catalogo_mes\spooky\spooky_post01_juancho_resurreccion.png",
+    r"FRAMES\scene4_start.png",
+    r"FRAMES\scene6_end.png",
+    r"VIDEOS\promo_aguachile_verde_final.mp4",
+    r"VIDEOS\aguachile_video_1_tiktok_hd.mp4",
+    r"VIDEOS\animacion_la_garza_episodio_crudos_60fps.mp4",
+    r"VIDEOS\promo_halloween_zombies_crudos.mp4",
+]
+for rel_asset in fresh_assets_required:
+    p_asset = os.path.join(project_root, rel_asset)
+    if not os.path.exists(p_asset):
+        deficiencias.append(f"Activo regenerado ausente: {rel_asset}")
+        a4_results.append(f"[FALLO] Ausente: {rel_asset}")
+    elif os.path.getmtime(p_asset) < min_regen_ts:
+        deficiencias.append(f"Activo desactualizado en disco (< 2026-10-23): {rel_asset}")
+        a4_results.append(f"[FALLO] Timestamp antiguo en {rel_asset}")
+    else:
+        a4_results.append(f"[OK] Regeneración física verificada en disco ($170 MXN): {rel_asset}")
+
+tl_path = os.path.join(project_root, r"herramientas\timeline_animacion_60fps.json")
+if os.path.exists(tl_path):
+    tl_raw = open(tl_path, "r", encoding="utf-8").read()
+    if "$170 MXN" in tl_raw and "ciento setenta" in tl_raw and not re.search(r"(\$150|ciento\s*cincuenta)", tl_raw, re.I):
+        a4_results.append("[OK] Timeline de animación y audio 60fps verificado con '$170 MXN' y 'ciento setenta pesitos'")
+    else:
+        deficiencias.append("Timeline de animación no refleja '$170 MXN' / 'ciento setenta'")
+        a4_results.append("[FALLO] Timeline de animación desactualizado")
 
 
 # =============================================================================

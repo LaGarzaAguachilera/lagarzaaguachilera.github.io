@@ -282,13 +282,13 @@ def draw_hud_and_equalizer(frame, draw, logo_img, speaker_label, mouth_open, t_s
         color = (163, 230, 53, 255) if mouth_open > 0.04 else (90, 110, 130, 180)
         draw.rounded_rectangle([bx, by_mid - wave_h // 2, bx + 9, by_mid + wave_h // 2], radius=4, fill=color)
 
-    # Footer comercial fijo con precio $150 MXN y garantía de frescura
+    # Footer comercial fijo con precio $170 MXN y garantía de frescura
     draw.rounded_rectangle([55, 1650, 1025, 1855], radius=26, fill=(7, 18, 28, 240), outline=(255, 214, 10, 235), width=3)
-    # Medallón de precio $150 MXN pulsante
+    # Medallón de precio $170 MXN pulsante
     pulse_p = int(4 * math.sin(t_sec * 8))
     draw.rounded_rectangle([75 - pulse_p, 1670 - pulse_p, 335 + pulse_p, 1835 + pulse_p], radius=20, fill=(163, 230, 53, 255))
     draw.text((98, 1682), "SOLO", font=FONT_SPEAKER, fill=(8, 24, 14, 255))
-    draw.text((92, 1718), "$150", font=FONT_PRICE, fill=(8, 24, 14, 255))
+    draw.text((92, 1718), "$170", font=FONT_PRICE, fill=(8, 24, 14, 255))
     draw.text((250, 1742), "MXN", font=FONT_SPEAKER, fill=(8, 24, 14, 255))
     draw.text((94, 1792), "~100g Camarón", font=FONT_FOOTER, fill=(8, 24, 14, 255))
 
@@ -555,7 +555,7 @@ def main():
             frame.paste(c_side, (530, 880), c_side)
 
             draw.rounded_rectangle([75, 235, 1005, 345], radius=22, fill=(10, 30, 20, 235), outline=(255, 214, 10, 255), width=4)
-            draw.text((110, 265), "🐊 ¡REVIVÍ AL 100% POR SOLO $150 PESITOS!", font=FONT_BADGE, fill=(163, 230, 53, 255))
+            draw.text((110, 265), "🐊 ¡REVIVÍ AL 100% POR SOLO $170 PESITOS!", font=FONT_BADGE, fill=(163, 230, 53, 255))
 
         else:
             # Escena 6: Gran Remate Comercial con toda la pandilla jaiba bailando

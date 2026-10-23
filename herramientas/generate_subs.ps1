@@ -1,3 +1,4 @@
+﻿# Generador de subtitulos dinamicos
 Add-Type -AssemblyName System.Drawing
 
 function CreateSubtitleBanner([string]$path, [string]$line1, [string]$line2, [string]$colorHex1 = "#FFFFFF", [string]$colorHex2 = "#00E699") {
@@ -52,6 +53,7 @@ CreateSubtitleBanner "$tools\sub1.png" "¡EL TOSTIAGUACHILE MÁS REPORTADO!" "Sa
 CreateSubtitleBanner "$tools\sub2.png" "CAMARÓN FRESCO EN CORTE MARIPOSA" "Cebolla morada, pepino y receta clásica artesanal" "#FFFFFF" "#00E699"
 CreateSubtitleBanner "$tools\sub3.png" "AUTÉNTICOS TOSTITOS SALSA VERDE" "Bien copeteados, crujientes y con mucho limón" "#FFFFFF" "#FEF08A"
 CreateSubtitleBanner "$tools\sub4.png" "EL PRODUCTO ES PREPARADO FRENTE A USTED" "Para corroborar su máxima frescura ✨" "#FEF08A" "#FFFFFF"
-CreateSubtitleBanner "$tools\sub5.png" "🤤 ¡PURA CALIDAD EN CADA BOLSA! 🤤" "Pide el tuyo por WhatsApp: 833 252 09 88 ($170)" "#00E699" "#FFFFFF"
+CreateSubtitleBanner "$tools\sub5.png" "★ ¡PURA CALIDAD EN CADA BOLSA! ★" "Pide el tuyo por WhatsApp: 833 252 09 88 (`$170 MXN)" "#00E699" "#FFFFFF"
 
 Write-Host "5 SUBTITULOS GENERADOS CON EXITO EN PNG!"
+

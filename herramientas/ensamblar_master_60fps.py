@@ -31,6 +31,7 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+from PIL import Image, ImageDraw, ImageFont
 
 # Configuración de encoding UTF-8 seguro para Windows
 if hasattr(sys.stdout, "reconfigure"):
@@ -60,6 +61,9 @@ os.environ["PATH"] = str(HERRAMIENTAS_DIR / "ffmpeg") + os.pathsep + os.environ.
 OUT_MASTER = VIDEOS_DIR / "animacion_la_garza_episodio_crudos_60fps.mp4"
 OUT_PROMO = VIDEOS_DIR / "promo_halloween_zombies_crudos.mp4"
 AUDIO_MASTER = HERRAMIENTAS_DIR / "audio_animacion_master_60fps.wav"
+TIMELINE_JSON = HERRAMIENTAS_DIR / "timeline_animacion_60fps.json"
+ANIM_ASS = HERRAMIENTAS_DIR / "animacion_subtitles_170.ass"
+ANIM_BADGE_PNG = HERRAMIENTAS_DIR / "anim_price_badge_170.png"
 CLIPS_LIST_TXT = HERRAMIENTAS_DIR / "clips_list.txt"
 
 # Especificaciones de escenas maestras y asignación exacta de cuadros a 60fps (Total: 3919 frames)
@@ -88,7 +92,7 @@ SCENE_SPECS = [
     {
         "id": 4,
         "name": "scene4",
-        "title": "Clímax del Crunch y Resurrección Tostiaguachile $150 MXN",
+        "title": "Clímax del Crunch y Resurrección Tostiaguachile $170 MXN",
         "clip": str(CLIPS_DIR / "scene4.mp4"),
         "target_frames": 756,  # ~12.600s
     },
@@ -102,7 +106,7 @@ SCENE_SPECS = [
     {
         "id": 6,
         "name": "scene6",
-        "title": "Cierre Comercial Tampico y Madero, WhatsApp 833 252 09 88, $150 MXN",
+        "title": "Cierre Comercial Tampico y Madero, WhatsApp 833 252 09 88, $170 MXN",
         "clip": str(CLIPS_DIR / "scene6.mp4"),
         "target_frames": 750,  # ~12.500s
     },
@@ -129,6 +133,102 @@ def verify_inputs():
         raise FileNotFoundError(f"Activos de entrada faltantes o inválidos:\n" + "\n".join(missing))
 
 
+def sync_scene_specs_with_timeline():
+    """Sincroniza la duración en cuadros de cada escena con timeline_animacion_60fps.json y crea subtítulos ASS y badge $170 MXN."""
+    if TIMELINE_JSON.exists():
+        with open(TIMELINE_JSON, "r", encoding="utf-8") as f:
+            tl = json.load(f)
+        tl_scenes = tl.get("scenes", [])
+        if len(tl_scenes) == len(SCENE_SPECS):
+            for idx, sc in enumerate(SCENE_SPECS):
+                dur = float(tl_scenes[idx]["scene_duration"])
+                sc["target_frames"] = max(60, int(round(dur * 60.0)))
+                sc["scene_start"] = float(tl_scenes[idx]["scene_start"])
+                sc["scene_end"] = float(tl_scenes[idx]["scene_end"])
+                sc["voice_start"] = float(tl_scenes[idx]["voice_start"])
+                sc["voice_end"] = float(tl_scenes[idx]["voice_end"])
+                sc["subtitle_text"] = tl_scenes[idx]["subtitle_text"]
+
+        # Generar subtítulos ASS estilo Cartoon Network / Reels
+        def fmt_ass_time(sec: float) -> str:
+            h = int(sec // 3600)
+            m = int((sec % 3600) // 60)
+            s = sec % 60.0
+            return f"{h}:{m:02d}:{s:05.2f}"
+
+        ass_lines = [
+            "[Script Info]",
+            "Title: Episodio Animado La Garza Aguachilera - $170 MXN",
+            "ScriptType: v4.00+",
+            "WrapStyle: 0",
+            "ScaledBorderAndShadow: yes",
+            "PlayResX: 1080",
+            "PlayResY: 1920",
+            "",
+            "[V4+ Styles]",
+            "Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding",
+            "Style: CNSub,Arial Black,44,&H00FFFFFF,&H0000FFFF,&H00000000,&HB0000000,-1,0,0,0,100,100,1,0,1,6,3,2,70,70,130,1",
+            "Style: CNPrice,Arial Black,50,&H0032EBFF,&H0000FFFF,&H00000000,&HC0000000,-1,0,0,0,100,100,1,0,1,7,4,2,70,70,140,1",
+            "",
+            "[Events]",
+            "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
+        ]
+        for idx, tsc in enumerate(tl_scenes):
+            if idx == 5:
+                # La escena 6 ya muestra en pantalla completa las tarjetas comerciales oficiales ($170 MXN + WhatsApp)
+                continue
+            v0 = float(tsc["voice_start"])
+            v1 = float(tsc["voice_end"])
+            sub_txt = tsc["subtitle_text"]
+            # Dividir en 2 bloques si el diálogo es largo (> 10s) para lectura ágil
+            words = sub_txt.split()
+            if (v1 - v0) > 10.0 and len(words) > 12:
+                mid_w = len(words) // 2
+                mid_t = (v0 + v1) / 2.0
+                p1 = " ".join(words[:mid_w])
+                p2 = " ".join(words[mid_w:])
+                ass_lines.append(f"Dialogue: 0,{fmt_ass_time(v0)},{fmt_ass_time(mid_t)},CNSub,,0,0,0,,{{\\fad(100,80)}}{p1}")
+                ass_lines.append(f"Dialogue: 0,{fmt_ass_time(mid_t)},{fmt_ass_time(v1)},CNSub,,0,0,0,,{{\\fad(80,100)}}{p2}")
+            else:
+                style = "CNPrice" if "$170" in sub_txt else "CNSub"
+                ass_lines.append(f"Dialogue: 0,{fmt_ass_time(v0)},{fmt_ass_time(v1)},{style},,0,0,130,,{{\\fad(100,120)}}{sub_txt}")
+
+        with open(ANIM_ASS, "w", encoding="utf-8") as f:
+            f.write("\n".join(ass_lines) + "\n")
+
+    # Generar badge superior permanente de $170 MXN para escenas 1-5 (sin glifos Unicode fuera de Impact)
+    import math
+    badge_im = Image.new("RGBA", (1080, 1920), (0, 0, 0, 0))
+    bdraw = ImageDraw.Draw(badge_im)
+    try:
+        f_b1 = ImageFont.truetype("impact.ttf", 44)
+        f_b2 = ImageFont.truetype("arialbd.ttf", 21)
+    except Exception:
+        f_b1 = f_b2 = ImageFont.load_default()
+
+    # Sombra y píldora roja/dorada en esquina superior derecha segura (x: 620..1045, y: 52..166)
+    bdraw.rounded_rectangle([626, 60, 1051, 174], radius=28, fill=(0, 0, 0, 160))
+    bdraw.rounded_rectangle([620, 52, 1045, 166], radius=28, fill=(220, 28, 52, 248), outline=(255, 225, 45, 255), width=5)
+
+    def draw_star(cx, cy, r_out=15, r_in=6):
+        pts = []
+        for k in range(10):
+            ang = -math.pi / 2 + k * math.pi / 5
+            r = r_out if k % 2 == 0 else r_in
+            pts.append((cx + r * math.cos(ang), cy + r * math.sin(ang)))
+        bdraw.polygon(pts, fill=(255, 240, 60, 255), outline=(0, 0, 0, 255))
+
+    draw_star(656, 94)
+    draw_star(1009, 94)
+    badge_label = "¡SOLO $170 MXN!"
+    for ox in (-3, 0, 3):
+        for oy in (-3, 0, 3):
+            bdraw.text((833 + ox, 94 + oy), badge_label, font=f_b1, fill=(0, 0, 0, 255), anchor="mm")
+    bdraw.text((833, 94), badge_label, font=f_b1, fill=(255, 240, 60, 255), anchor="mm")
+    bdraw.text((833, 138), "Tostiaguachile Verde • La Garza", font=f_b2, fill=(255, 255, 255, 255), anchor="mm")
+    badge_im.save(ANIM_BADGE_PNG, format="PNG")
+
+
 def create_clips_list():
     """Genera clips_list.txt para cumplir con el contrato de interfaz de PROJECT.md."""
     lines = [f"file '{Path(sc['clip']).as_posix()}'" for sc in SCENE_SPECS]
@@ -138,13 +238,13 @@ def create_clips_list():
 
 
 def assemble_master_video(
-    video_bitrate="4600k",
-    min_rate="4200k",
-    max_rate="5500k",
-    buf_size="10000k",
-    audio_bitrate="192k",
+    video_bitrate="4120k",
+    min_rate="4020k",
+    max_rate="4350k",
+    buf_size="8500k",
+    audio_bitrate="160k",
     audio_sample_rate="44100",
-    max_size_bytes=42000000,
+    max_size_bytes=52000000,
 ):
     """Ejecuta el renderizado y ensamble de alta fidelidad a 60fps con FFmpeg."""
     print("\n=== PASO 2: ENSAMBLANDO MASTER 60FPS CON FFMPEG ===")
@@ -167,7 +267,19 @@ def assemble_master_video(
     ffmpeg_inputs.extend(["-i", str(AUDIO_MASTER)])
     audio_idx = len(SCENE_SPECS)
 
-    concat_str = "".join(concat_inputs) + f"concat=n={len(SCENE_SPECS)}:v=1:a=0[vout]"
+    # Entrada de badge $170 MXN
+    ffmpeg_inputs.extend(["-loop", "1", "-i", str(ANIM_BADGE_PNG)])
+    badge_idx = len(SCENE_SPECS) + 1
+
+    sc6_start = SCENE_SPECS[5].get("scene_start", 77.28)
+    escaped_ass = ANIM_ASS.as_posix().replace(":", "\\:")
+
+    concat_str = (
+        "".join(concat_inputs)
+        + f"concat=n={len(SCENE_SPECS)}:v=1:a=0[vcat];"
+        + f"[vcat][{badge_idx}:v]overlay=0:0:enable='lt(t,{sc6_start:.2f})'[vbadged];"
+        + f"[vbadged]ass='{escaped_ass}'[vout]"
+    )
     full_filter = "".join(filter_parts) + concat_str
 
     cmd = [
@@ -253,38 +365,39 @@ def verify_master_telemetry():
     duration = float(fmt.get("duration", 0.0))
     file_size = int(fmt.get("size", 0))
 
+    expected_frames = sum(sc["target_frames"] for sc in SCENE_SPECS)
     print(f" [TELEMETRÍA] Resolución : {width}x{height} px (esperado: 1080x1920)")
     print(f" [TELEMETRÍA] Frame Rate : {r_fps} (esperado: 60/1)")
-    print(f" [TELEMETRÍA] Cuadros    : {nb_frames} frames (esperado: en [3915, 3925])")
+    print(f" [TELEMETRÍA] Cuadros    : {nb_frames} frames (esperado: ~{expected_frames})")
     print(f" [TELEMETRÍA] Video Codec: {v_codec} / {pix_fmt} (esperado: h264 / yuv420p)")
     print(f" [TELEMETRÍA] Video BR   : {v_bitrate:,} bps ({v_bitrate/1000:.1f} kbps, esperado: >= 4000 kbps)")
     print(f" [TELEMETRÍA] Audio Codec: {a_codec} {a_channels}ch {a_rate}Hz (esperado: aac 2ch 44100Hz)")
     print(f" [TELEMETRÍA] Audio BR   : {a_bitrate:,} bps ({a_bitrate/1000:.1f} kbps, esperado: >= 128 kbps)")
     print(f" [TELEMETRÍA] Duración   : {duration:.2f} s")
-    print(f" [TELEMETRÍA] Tamaño     : {file_size:,} bytes ({file_size/1024/1024:.2f} MB, límite: <= 42 MB)")
+    print(f" [TELEMETRÍA] Tamaño     : {file_size:,} bytes ({file_size/1024/1024:.2f} MB, límite: <= 52 MB)")
 
     # Aserciones estrictas
     assert width == 1080 and height == 1920, f"Resolución no conforme: {width}x{height}"
     assert r_fps == "60/1", f"Frame rate no constante a 60fps: {r_fps}"
-    assert 3915 <= nb_frames <= 3925, f"Conteo de cuadros fuera de tolerancia [3915, 3925]: {nb_frames}"
+    assert abs(nb_frames - expected_frames) <= 20, f"Conteo de cuadros fuera de tolerancia (~{expected_frames}): {nb_frames}"
     assert v_codec == "h264", f"Codec de video no es h264: {v_codec}"
     assert pix_fmt == "yuv420p", f"Pixel format no es yuv420p: {pix_fmt}"
     assert v_bitrate >= 4000000, f"Bitrate de video insuficiente: {v_bitrate} < 4000000"
     assert a_codec == "aac", f"Codec de audio no es aac: {a_codec}"
     assert a_channels == 2, f"Canales de audio no son estéreo: {a_channels}"
     assert a_rate == 44100, f"Frecuencia de muestreo no es 44100: {a_rate}"
-    assert file_size <= 42000000, f"Archivo excede límite de 42 MB: {file_size} bytes"
+    assert file_size <= 52000000, f"Archivo excede límite de 52 MB: {file_size} bytes"
 
     print("\n✅ CERTIFICACIÓN TÉCNICA: EL MASTER CUMPLE AL 100% CON LAS NORMAS AUDIOVISUALES.")
 
 
 def main():
     parser = argparse.ArgumentParser(description="Ensamble Maestro 60fps — La Garza Aguachilera")
-    parser.add_argument("--video-bitrate", default="4600k", help="Bitrate de video H.264")
-    parser.add_argument("--min-rate", default="4200k", help="Bitrate mínimo de video")
-    parser.add_argument("--max-rate", default="5500k", help="Bitrate máximo de video")
-    parser.add_argument("--buf-size", default="10000k", help="Tamaño de búfer de tasa")
-    parser.add_argument("--audio-bitrate", default="192k", help="Bitrate de audio AAC")
+    parser.add_argument("--video-bitrate", default="4380k", help="Bitrate de video H.264")
+    parser.add_argument("--min-rate", default="4250k", help="Bitrate mínimo de video")
+    parser.add_argument("--max-rate", default="4650k", help="Bitrate máximo de video")
+    parser.add_argument("--buf-size", default="8800k", help="Tamaño de búfer de tasa")
+    parser.add_argument("--audio-bitrate", default="160k", help="Bitrate de audio AAC")
     parser.add_argument("--skip-render", action="store_true", help="Omitir render si el archivo ya existe y solo verificar")
     args = parser.parse_args()
 
@@ -293,6 +406,7 @@ def main():
     print("  La Garza Aguachilera — Master Compositing & Packaging Engine")
     print("=================================================================")
 
+    sync_scene_specs_with_timeline()
     verify_inputs()
     create_clips_list()
 

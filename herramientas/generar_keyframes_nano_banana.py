@@ -3,7 +3,7 @@
 herramientas/generar_keyframes_nano_banana.py
 ---------------------------------------------
 Generador y Gestor de Keyframes 2D Cel-Shaded Estilo Cartoon Network
-para el Episodio Animado de La Garza Aguachilera ($150 MXN).
+para el Episodio Animado de La Garza Aguachilera ($170 MXN).
 
 Genera y normaliza los 12 cuadros clave (start y end de Escenas 1 a 6)
 en formato vertical 9:16 (1080x1920 PNG), condicionados en el arte oficial
@@ -13,8 +13,9 @@ y los modelos de personajes de Tampico / Playa Miramar.
 import os
 import sys
 import glob
+import math
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont, ImageStat
+from PIL import Image, ImageDraw, ImageFont, ImageStat, ImageFilter
 
 # Configuración de rutas
 WORKSPACE_DIR = Path(__file__).resolve().parent.parent
@@ -84,8 +85,8 @@ KEYFRAME_SPECS = [
         "name": "scene4_start",
         "scene": 4,
         "type": "start",
-        "title": "Climax del Crunch - Tostiaguachile Verde Tradicional $150 MXN",
-        "desc": "Bolsa abierta de Tostitos Salsa Verde con camaron mariposa (~100g), pepino, cebolla morada, aguachile verde y estallido CRUNCH! a $150 MXN.",
+        "title": "Climax del Crunch - Tostiaguachile Verde Tradicional $170 MXN",
+        "desc": "Bolsa abierta de Tostitos Salsa Verde con camaron mariposa (~100g), pepino, cebolla morada, aguachile verde y estallido CRUNCH! a $170 MXN.",
         "cache_pattern": "scene4_start_*.jpg",
         "ref": "clean_comida.png"
     },
@@ -129,8 +130,8 @@ KEYFRAME_SPECS = [
         "name": "scene6_end",
         "scene": 6,
         "type": "end",
-        "title": "Cierre Comercial - Ficha Tecnica Comercial $150 MXN",
-        "desc": "Ficha comercial televisiva estilo Cartoon Network con horarios (Sab-Dom 1-5 PM), Col. Flores Tampico, WhatsApp 833 252 09 88 y precio $150 MXN.",
+        "title": "Cierre Comercial - Ficha Tecnica Comercial $170 MXN",
+        "desc": "Ficha comercial televisiva estilo Cartoon Network con horarios (Sab-Dom 1-5 PM), Col. Flores Tampico, WhatsApp 833 252 09 88 y precio $170 MXN.",
         "cache_pattern": "scene6_end_*.jpg",
         "ref": "card_real_food.png"
     }
@@ -143,6 +144,77 @@ def draw_text_stroke(d, text, pos, font, fill, stroke_fill=(0, 0, 0), stroke_w=4
             if dx * dx + dy * dy <= stroke_w * stroke_w:
                 d.text((x + dx, y + dy), text, font=font, fill=stroke_fill, anchor=anchor)
     d.text((x, y), text, font=font, fill=fill, anchor=anchor)
+
+def generar_scene4_start_170(base_image_path: Path, output_png_path: Path):
+    """
+    Re-pinta el estallido cómico inferior derecho de scene4_start con '$170 MXN'
+    en estilo Cartoon Network 2D cel-shaded cubriendo al 100% cualquier rastro previo.
+    """
+    print(f"Generando estallido comico $170 MXN en 1080x1920: {output_png_path.name}...")
+    base = Image.open(base_image_path).convert("RGBA").resize((TARGET_WIDTH, TARGET_HEIGHT), Image.Resampling.LANCZOS)
+    overlay = Image.new("RGBA", (TARGET_WIDTH, TARGET_HEIGHT), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+
+    cx, cy = 778, 1605
+    num_spikes = 16
+
+    def make_star_poly(center_x, center_y, r_outer, r_inner, phase_deg=-11.0):
+        pts = []
+        for i in range(num_spikes * 2):
+            ang = math.radians(phase_deg + i * (180.0 / num_spikes))
+            # Ligera asimetría dinámica estilo cómic
+            jitter = 1.06 if (i % 4 == 0) else (0.96 if (i % 4 == 2) else 1.0)
+            r = (r_outer * jitter) if (i % 2 == 0) else (r_inner * (2.0 - jitter))
+            pts.append((center_x + r * math.cos(ang), center_y + r * math.sin(ang)))
+        return pts
+
+    # Resplandor cálido exterior para cubrir por completo las puntas previas
+    glow_layer = Image.new("RGBA", (TARGET_WIDTH, TARGET_HEIGHT), (0, 0, 0, 0))
+    gdraw = ImageDraw.Draw(glow_layer)
+    gdraw.polygon(make_star_poly(cx, cy, 342, 228), fill=(255, 240, 150, 235))
+    glow_layer = glow_layer.filter(ImageFilter.GaussianBlur(radius=14))
+    overlay = Image.alpha_composite(overlay, glow_layer)
+    draw = ImageDraw.Draw(overlay)
+
+    # Capas cel-shaded de la estrella cómica (borde negro grueso -> rojo/naranja -> amarillo brillante)
+    draw.polygon(make_star_poly(cx + 8, cy + 10, 332, 212), fill=(0, 0, 0, 220))
+    draw.polygon(make_star_poly(cx, cy, 332, 212), fill=(15, 10, 10, 255))
+    draw.polygon(make_star_poly(cx, cy, 316, 198), fill=(230, 52, 18, 255))
+    draw.polygon(make_star_poly(cx, cy, 294, 182), fill=(255, 145, 15, 255))
+    draw.polygon(make_star_poly(cx, cy, 268, 165), fill=(255, 238, 55, 255))
+
+    # Texto cómico inclinado "$170" y "MXN" con gradiente naranja-amarillo y contorno 3D negro
+    txt_canvas = Image.new("RGBA", (700, 500), (0, 0, 0, 0))
+    tdraw = ImageDraw.Draw(txt_canvas)
+    try:
+        font_big = ImageFont.truetype("impact.ttf", 162)
+        font_sub = ImageFont.truetype("impact.ttf", 86)
+    except Exception:
+        font_big = font_sub = ImageFont.load_default()
+
+    # Sombra 3D cómica + contorno negro grueso para "$170"
+    for ox in range(-10, 15):
+        for oy in range(-10, 18):
+            if ox * ox + oy * oy <= 110 or (0 <= ox <= 12 and 0 <= oy <= 14):
+                tdraw.text((350 + ox, 195 + oy), "$170", font=font_big, fill=(10, 10, 10, 255), anchor="mm")
+    tdraw.text((350, 195), "$170", font=font_big, fill=(255, 195, 20, 255), anchor="mm")
+
+    # Sombra 3D cómica + contorno negro grueso para "MXN"
+    for ox in range(-8, 12):
+        for oy in range(-8, 14):
+            if ox * ox + oy * oy <= 72 or (0 <= ox <= 9 and 0 <= oy <= 11):
+                tdraw.text((365 + ox, 330 + oy), "MXN", font=font_sub, fill=(10, 10, 10, 255), anchor="mm")
+    tdraw.text((365, 330), "MXN", font=font_sub, fill=(255, 140, 20, 255), anchor="mm")
+
+    txt_rotated = txt_canvas.rotate(10, resample=Image.Resampling.BICUBIC, expand=True)
+    tx = cx - txt_rotated.width // 2
+    ty = cy - txt_rotated.height // 2 + 8
+    overlay.alpha_composite(txt_rotated, (tx, ty))
+
+    final_img = Image.alpha_composite(base, overlay).convert("RGB")
+    final_img.save(output_png_path, format="PNG")
+    print(f"-> {output_png_path.name} actualizado con $170 MXN ({output_png_path.stat().st_size} bytes).")
+
 
 def generar_scene6_end_comercial(base_image_path: Path, output_png_path: Path):
     """
@@ -177,7 +249,7 @@ def generar_scene6_end_comercial(base_image_path: Path, output_png_path: Path):
     star_cx, star_cy = 230, 1160
     draw.ellipse([star_cx - 165, star_cy - 120, star_cx + 165, star_cy + 120], fill=(230, 35, 35, 245), outline=(255, 230, 40, 255), width=8)
     draw_text_stroke(draw, "PRECIO ESPECIAL", (star_cx, star_cy - 50), font_sm, (255, 255, 255), stroke_w=4)
-    draw_text_stroke(draw, "$150 MXN", (star_cx, star_cy + 15), font_xl, (255, 235, 50), stroke_w=6)
+    draw_text_stroke(draw, "$170 MXN", (star_cx, star_cy + 15), font_xl, (255, 235, 50), stroke_w=6)
     draw_text_stroke(draw, "~100g Camaron Mariposa", (star_cx, star_cy + 75), font_reg, (255, 255, 255), stroke_w=3)
 
     # Mascota Juancho en lateral derecho
@@ -223,24 +295,30 @@ def procesar_y_validar_keyframes():
 
         # Si es scene6_end, componemos el cierre comercial a partir de scene6_start
         if name == "scene6_end":
-            s6_start_cache = sorted(BRAIN_DIR.glob("scene6_start_*.jpg"))
-            if s6_start_cache:
-                generar_scene6_end_comercial(s6_start_cache[-1], out_png)
+            s6_start_cache = sorted(BRAIN_DIR.glob("scene6_start_*.jpg")) if BRAIN_DIR.exists() else []
+            s6_base = s6_start_cache[-1] if s6_start_cache else (FRAMES_DIR / "scene6_start.png")
+            if s6_base.exists():
+                generar_scene6_end_comercial(s6_base, out_png)
             else:
-                raise FileNotFoundError("No se encontro la imagen base para scene6_start en cache.")
+                raise FileNotFoundError("No se encontro la imagen base para scene6_start.")
+        elif name == "scene4_start":
+            s4_cache = sorted(BRAIN_DIR.glob("scene4_start_*.jpg")) if BRAIN_DIR.exists() else []
+            s4_base = s4_cache[-1] if s4_cache else out_png
+            if s4_base.exists():
+                generar_scene4_start_170(s4_base, out_png)
+            else:
+                raise FileNotFoundError("No se encontro la imagen base para scene4_start.")
         else:
-            # Buscar la imagen en el directorio de cache del modelo
-            matches = sorted(BRAIN_DIR.glob(spec["cache_pattern"]))
-            if not matches:
-                # Si no encuentra por patrón, buscar alternativas
+            # Buscar la imagen en el directorio de cache del modelo o usar existente en FRAMES/
+            matches = sorted(BRAIN_DIR.glob(spec["cache_pattern"])) if BRAIN_DIR.exists() else []
+            if not matches and BRAIN_DIR.exists():
                 alt_matches = sorted(BRAIN_DIR.glob(f"*{name}*.jpg"))
                 if alt_matches:
                     matches = alt_matches
             
-            if not matches:
-                raise FileNotFoundError(f"No se encontro imagen generada para {name} en {BRAIN_DIR}")
-
-            src_file = matches[-1] # Tomar la mas reciente
+            src_file = matches[-1] if matches else out_png
+            if not src_file.exists():
+                raise FileNotFoundError(f"No se encontro imagen generada para {name}")
             print(f"Cargando origen: {src_file.name}")
             img = Image.open(src_file).convert("RGB")
 

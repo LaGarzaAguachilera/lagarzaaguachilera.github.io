@@ -135,8 +135,8 @@ DIALOGUES = [
         "gemini_voice": "Puck",
         "gemini_speaker": "Juancho",
         "gemini_style": "joyful, cheerful, ecstatic, cured of hangover, energetic Mexican crocodile celebrating",
-        "text": "<laugh> ¡Noooombre, qué delicia! ¡Reviví al cien por solo ciento cincuenta pesitos!",
-        "subtitle_text": "¡Noooombre, qué delicia! ¡Reviví al 100% por solo $150 MXN!",
+        "text": "<laugh> ¡Noooombre, qué delicia! ¡Reviví al cien por solo ciento setenta pesitos!",
+        "subtitle_text": "¡Noooombre, qué delicia! ¡Reviví al 100% por solo $170 MXN!",
         "voice": "es-MX-JorgeNeural",
         "rate": "+8%",
         "pitch": "-4Hz",
@@ -517,7 +517,7 @@ async def main():
     mix_at(sfx_master, make_sfx_resurrection_chime(0.95), scenes_meta[3]["scene_start"] + 0.02, gain=0.80)
     mix_at(sfx_master, make_sfx_crunch_asmr(0.55), scenes_meta[3]["scene_start"] + 1.35, gain=0.95)
     mix_at(sfx_master, make_sfx_crunch_asmr(0.50), scenes_meta[3]["scene_start"] + 2.10, gain=0.75)
-    # Escena 5: Campana de resurrección al 100% ($150 MXN)
+    # Escena 5: Campana de resurrección al 100% ($170 MXN)
     mix_at(sfx_master, make_sfx_resurrection_chime(0.75), scenes_meta[4]["scene_start"] + 0.05, gain=0.65)
     # Escena 6: Whoosh final + Chime comercial
     mix_at(sfx_master, make_sfx_whoosh(0.30), scenes_meta[5]["scene_start"], gain=0.60)

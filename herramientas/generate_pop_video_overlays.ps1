@@ -122,6 +122,27 @@ $brushNeonH = [System.Drawing.Drawing2D.LinearGradientBrush]::new(
 )
 $gFrame.FillRectangle($brushNeonH, $rectNeonH)
 
+# --- PERMANENT HIGH-CONTRAST PRICE BADGE (Y: 430 to 514) ---
+$rectPermBadgeShadow = [System.Drawing.Rectangle]::new(146, 438, 800, 84)
+$brushPermShadow = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(140, 0, 0, 0))
+DrawRoundedRectangle $gFrame $brushPermShadow $null $rectPermBadgeShadow 42
+
+$rectPermBadge = [System.Drawing.Rectangle]::new(140, 430, 800, 84)
+$brushPermBadge = [System.Drawing.Drawing2D.LinearGradientBrush]::new(
+    $rectPermBadge,
+    [System.Drawing.Color]::FromArgb(248, 220, 24, 60),
+    [System.Drawing.Color]::FromArgb(248, 185, 16, 48),
+    [System.Drawing.Drawing2D.LinearGradientMode]::Vertical
+)
+$penPermGold = [System.Drawing.Pen]::new([System.Drawing.Color]::FromArgb(250, 204, 21), 5)
+DrawRoundedRectangle $gFrame $brushPermBadge $penPermGold $rectPermBadge 42
+
+$fontPermPrice = MakeFont "Arial" 31 ([System.Drawing.FontStyle]::Bold)
+$brushBrightGold = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(255, 244, 90))
+$starChar = [char]0x2605
+$invExcl = [char]0x00A1
+DrawStickerText $gFrame "$starChar ${invExcl}A SOLO `$170 PESOS! (`$170 MXN) $starChar" $fontPermPrice $brushBrightGold $penBlackStroke 540 472 $sfCenter
+
 # --- FOOTER (Y: 1540 to 1920) - Translucent Coastal Navy Footer ---
 $rectFooter = [System.Drawing.Rectangle]::new(0, 1540, 1080, 380)
 $brushFooter = [System.Drawing.Drawing2D.LinearGradientBrush]::new(
@@ -174,7 +195,7 @@ $gFrame.DrawString("para corroborar su maxima frescura", $fontFreshText2, $brush
 # Bottom Location Info - Weekend service & delivery routes
 $fontFooterLoc = MakeFont "Arial" 18 ([System.Drawing.FontStyle]::Regular)
 $brushGray = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(203, 213, 225))
-$gFrame.DrawString("Entregas a domicilio fines de semana * Base: Col. Flores", $fontFooterLoc, $brushGray, [float]540, [float]1855, $sfCenter)
+$gFrame.DrawString("Entregas fines de semana * Colonia Flores, Tampico, Tamaulipas", $fontFooterLoc, $brushGray, [float]540, [float]1855, $sfCenter)
 
 $bmpFrame.Save("d:\AG\la garza aguachilera\herramientas\branding_pop_overlay.png", [System.Drawing.Imaging.ImageFormat]::Png)
 $gFrame.Dispose()
@@ -209,7 +230,7 @@ DrawRoundedRectangle $gS1 $brushHook $penHook $rectHook 30
 $fontHook1 = MakeFont "Arial" 29 ([System.Drawing.FontStyle]::Bold)
 $fontHook2 = MakeFont "Arial" 24 ([System.Drawing.FontStyle]::Bold)
 DrawStickerText $gS1 "EL TOSTIAGUACHILE MAS REPORTADO!" $fontHook1 $brushYellow $penBlackStroke 540 1385 $sfCenter
-DrawStickerText $gS1 "¡Ya en servicio sabados y domingos!" $fontHook2 $brushWhite $penBlackStroke 540 1442 $sfCenter
+DrawStickerText $gS1 "${invExcl}Ya en servicio sabados y domingos!" $fontHook2 $brushWhite $penBlackStroke 540 1442 $sfCenter
 
 $bmpS1.Save("d:\AG\la garza aguachilera\herramientas\pop_sub1.png", [System.Drawing.Imaging.ImageFormat]::Png)
 $gS1.Dispose()

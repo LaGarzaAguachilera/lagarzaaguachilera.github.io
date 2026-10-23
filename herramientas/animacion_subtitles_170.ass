@@ -1,0 +1,24 @@
+[Script Info]
+Title: Episodio Animado La Garza Aguachilera - $170 MXN
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: CNSub,Arial Black,44,&H00FFFFFF,&H0000FFFF,&H00000000,&HB0000000,-1,0,0,0,100,100,1,0,1,6,3,2,70,70,130,1
+Style: CNPrice,Arial Black,50,&H0032EBFF,&H0000FFFF,&H00000000,&HC0000000,-1,0,0,0,100,100,1,0,1,7,4,2,70,70,140,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.35,0:00:10.42,CNSub,,0,0,0,,{\fad(100,80)}¡Aaaay mamá! ¡Noooombre compadre, qué trancazo! No estoy
+Dialogue: 0,0:00:10.42,0:00:20.48,CNSub,,0,0,0,,{\fad(80,100)}muerto... ¡ando bien crudo en la Laguna del Carpintero!
+Dialogue: 0,0:00:21.13,0:00:26.78,CNSub,,0,0,0,,{\fad(100,80)}¡Pérate tantito Juancho, que yo ando peor! ¡Tráiganme
+Dialogue: 0,0:00:26.78,0:00:32.42,CNSub,,0,0,0,,{\fad(80,100)}unos Tostitos Salsa Verde que me muero de antojo!
+Dialogue: 0,0:00:33.07,0:00:44.12,CNSub,,0,0,0,,{\fad(100,80)}¡Tsss, tranquilos jaibos crudos! Desde la base de Miramar
+Dialogue: 0,0:00:44.12,0:00:55.17,CNSub,,0,0,0,,{\fad(80,100)}trajimos el antídoto a 2°C con limón Colima recién exprimido.
+Dialogue: 0,0:00:55.92,0:01:02.65,CNSub,,0,0,0,,{\fad(100,80)}¡Y PUM, PAPÁ! Al primer CRUNCH con ~100g de camarón
+Dialogue: 0,0:01:02.65,0:01:09.39,CNSub,,0,0,0,,{\fad(80,100)}mariposa... ¡no estaban muertos, solo andaban crudos! Preparado frente a usted.
+Dialogue: 0,0:01:09.99,0:01:16.98,CNPrice,,0,0,130,,{\fad(100,120)}¡Noooombre, qué delicia! ¡Reviví al 100% por solo $170 MXN!

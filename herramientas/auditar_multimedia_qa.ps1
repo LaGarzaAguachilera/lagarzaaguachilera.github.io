@@ -566,12 +566,14 @@ $projectRoot = 'd:\AG\la garza aguachilera'
 $thisScriptPath = if ($PSCommandPath) { (Resolve-Path $PSCommandPath).Path } else { (Resolve-Path 'd:\AG\la garza aguachilera\herramientas\auditar_multimedia_qa.ps1' -ErrorAction SilentlyContinue).Path }
 
 # Exclusion limpia de este script, del test suite y del directorio de metadatos .agents y tests
-$filesToScan = Get-ChildItem -Path $projectRoot -Recurse -Include *.ps1, *.html, *.md, *.txt | Where-Object {
+$filesToScan = Get-ChildItem -Path $projectRoot -Recurse -Include *.ps1, *.html, *.md, *.txt, *.py, *.json, *.ass | Where-Object {
     $_.FullName -notmatch '\\\.agents\\' -and
     $_.FullName -notmatch '\\\.git\\' -and
     $_.FullName -notmatch '\\tests\\' -and
     $_.FullName -notmatch '\\control_calidad\\' -and
     $_.FullName -ne $thisScriptPath -and
+    $_.Name -notlike 'test_*' -and
+    $_.Name -ne 'ejecutar_empresa_qa.py' -and
     $_.Name -ne 'auditar_multimedia_qa.ps1' -and
     $_.Name -ne 'proposed_auditar_multimedia_qa.ps1' -and
     $_.Name -ne 'empresa_control_calidad_qa.ps1' -and
@@ -707,6 +709,56 @@ if ($indexContent -match '(salsas?\s+de\s+la\s+casa|combinaci[oó]n\s+especial)'
 } else {
     Write-Host " [ERROR GASTRONOMIA] index.html no contiene menciones de salsas de la casa o combinacion especial" -ForegroundColor Red
     $script:fallasTotales++
+}
+
+# -----------------------------------------------------------------------------
+# 5.5 VERIFICACION DE CACHE-BUSTING (?v=170) Y REGENERACION FISICA EN DISCO
+# -----------------------------------------------------------------------------
+Write-Host "`n5.5 VERIFICACION DE CACHE-BUSTING (?v=170) Y REGENERACION FISICA (`$170 MXN):" -ForegroundColor Green
+
+foreach ($hf in $htmlFilesWithVideo) {
+    if (Test-Path $hf.Path) {
+        $hc = Get-Content -Path $hf.Path -Raw -Encoding UTF8
+        $cbMatches = [regex]::Matches($hc, '\?v=170')
+        if ($cbMatches.Count -ge 8) {
+            Write-Host " [OK] Cache-busting ?v=170 activo en $($hf.Name) ($($cbMatches.Count) referencias actualizadas)" -ForegroundColor Green
+        } else {
+            Write-Host " [ERROR CACHE] $($hf.Name) no cuenta con cache-busting ?v=170 suficiente ($($cbMatches.Count))" -ForegroundColor Red
+            $script:fallasTotales++
+        }
+    }
+}
+
+$minRegenDate = [datetime]"2026-10-23"
+$regenTargets = @(
+    'flyer_portada_verde.png',
+    'flyer_post_verde.png',
+    'flyer_historia_verde.png',
+    'contenido_redes\posts_periodicos\post1_antojo_lunes.png',
+    'contenido_redes\catalogo_mes\semana1\post01_abduccion_miramar.png',
+    'contenido_redes\catalogo_mes\spooky\spooky_post01_juancho_resurreccion.png',
+    'FRAMES\scene4_start.png',
+    'FRAMES\scene6_end.png',
+    'VIDEOS\promo_aguachile_verde_final.mp4',
+    'VIDEOS\aguachile_video_1_tiktok_hd.mp4',
+    'VIDEOS\animacion_la_garza_episodio_crudos_60fps.mp4',
+    'VIDEOS\promo_halloween_zombies_crudos.mp4'
+)
+
+foreach ($rt in $regenTargets) {
+    $rtFull = Join-Path $projectRoot $rt
+    if (-not (Test-Path -LiteralPath $rtFull)) {
+        Write-Host " [ERROR NO EXISTE] Activo regenerado ausente: $rt" -ForegroundColor Red
+        $script:fallasTotales++
+    } else {
+        $lwt = (Get-Item -LiteralPath $rtFull).LastWriteTime
+        if ($lwt -ge $minRegenDate) {
+            Write-Host " [OK] Regenerado fisicamente en disco ($($lwt.ToString('yyyy-MM-dd HH:mm'))): $rt" -ForegroundColor Green
+        } else {
+            Write-Host " [ERROR DESACTUALIZADO] Activo no regenerado hoy ($($lwt.ToString('yyyy-MM-dd HH:mm'))): $rt" -ForegroundColor Red
+            $script:fallasTotales++
+        }
+    }
 }
 
 # -----------------------------------------------------------------------------

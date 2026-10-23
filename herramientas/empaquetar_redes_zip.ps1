@@ -1,4 +1,4 @@
-# =============================================================================
+﻿# =============================================================================
 # EMPAQUETADOR MAESTRO DE ACTIVOS PARA REDES SOCIALES (.ZIP)
 # La Garza Aguachilera - Tampico y Ciudad Madero, Tamaulipas
 # Milestone 8: Control Panel Integration and Master ZIP Packaging
@@ -52,6 +52,23 @@ try {
     Write-Host "`n2. Agregando Video Promocional Arreglado Full HD (VIDEOS/promo_aguachile_verde_final.mp4)..." -ForegroundColor Green
     $promoVideo = Join-Path $projectRoot "VIDEOS\promo_aguachile_verde_final.mp4"
     Add-FileToZip $promoVideo "VIDEOS/promo_aguachile_verde_final.mp4"
+
+    # 2.5 Campana Periodica (Posts 1 al 7 actualizados a $170 MXN)
+    Write-Host "`n2.5 Agregando Campana Periodica (`$170 MXN)..." -ForegroundColor Green
+    $periodicFiles = @(
+        "post1_antojo_lunes.png",
+        "post2_meme_ovni.png",
+        "post4_cura_domingo.png",
+        "post5_frescura_en_vivo.png",
+        "post6_mapache_crunch.png",
+        "post7_rutas_activas.png"
+    )
+    foreach ($pf in $periodicFiles) {
+        $pfPath = Join-Path $projectRoot "contenido_redes\posts_periodicos\$pf"
+        if (Test-Path -LiteralPath $pfPath) {
+            Add-FileToZip $pfPath "Campana_Periodica/$pf"
+        }
+    }
 
     # 3. Catalogo Completo de 1 Mes Organizado por Carpetas Semanales (Semana_1 a Semana_4)
     Write-Host "`n3. Agregando Catalogo Mensual (16 Piezas: Feed + Story + Copy)..." -ForegroundColor Green
@@ -183,7 +200,10 @@ $forbiddenPatterns = @(
     (B64Dec 'dG9zdGl0b3M/XHMrcmVkb25kb3M/'),
     (B64Dec 'dG90b3Bvcz9ccytyZWRvbmRvcz8='),
     (B64Dec 'ZGFya1xzKmtpdGNoZW4='),
-    (B64Dec 'Um9zYVxzKjIxMA==')
+    (B64Dec 'Um9zYVxzKjIxMA=='),
+    (B64Dec 'XCQxNTA='),
+    (B64Dec 'MTUwXHMqTVhO'),
+    (B64Dec 'MTUwXHMqcGVzb3M=')
 )
 $violations = @()
 $entryCount = 0
