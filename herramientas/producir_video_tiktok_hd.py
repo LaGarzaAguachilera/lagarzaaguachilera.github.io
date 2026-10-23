@@ -21,6 +21,7 @@ FFPROBE = os.path.join(BASE_DIR, "herramientas", "ffmpeg", "ffprobe.exe")
 VIDEO_SRC = os.path.join(BASE_DIR, "VIDEOS", "aguachile video 1.mp4")
 MUSIC_SRC = os.path.join(BASE_DIR, "herramientas", "Beachfront_Celebration.mp3")
 STAGE_PNG = os.path.join(BASE_DIR, "herramientas", "studio_stage_1080x1920.png")
+DYNAMIC_MASK_MP4 = os.path.join(BASE_DIR, "herramientas", "pan_dynamic_mask_720x1280.mp4")
 MATTE_PNG = os.path.join(BASE_DIR, "herramientas", "pan_alpha_matte_720x1280.png")
 OVERLAY_PNG = os.path.join(BASE_DIR, "herramientas", "branding_pop_overlay.png")
 ASS_SUBTITLES = os.path.join(BASE_DIR, "herramientas", "tiktok_subtitles_170.ass")
@@ -38,17 +39,68 @@ SCRIPT_TEXT = (
 )
 
 
-def create_pan_alpha_matte():
-    """Generates the feathered elliptical alpha matte (cx=360, cy=595, rx=310, ry=370, sigma=14)."""
-    print("[1/6] Generando pan_alpha_matte_720x1280.png...")
-    matte = Image.new("L", (720, 1280), 0)
-    draw = ImageDraw.Draw(matte)
-    cx, cy = 360, 595
-    rx, ry = 310, 370
-    draw.ellipse([cx - rx, cy - ry, cx + rx, cy + ry], fill=255)
-    matte_feathered = matte.filter(ImageFilter.GaussianBlur(radius=14))
-    matte_feathered.save(MATTE_PNG)
-    print(f"      [OK] Máscara elíptica difuminada guardada en: {MATTE_PNG}")
+def create_pan_dynamic_mask():
+    """Generates the dynamic video alpha matte (pan_dynamic_mask_720x1280.mp4) tracking camera tilt."""
+    print("[1/6] Generando máscara dinámica animada pan_dynamic_mask_720x1280.mp4...")
+    fps = 25.0
+    duration = 29.04
+    total_frames = int(round(fps * duration))
+
+    knots = [
+        ( 0.00, 360.0, 620.0, 290.0, 315.0),
+        (24.50, 360.0, 620.0, 290.0, 315.0),
+        (25.25, 365.0, 655.0, 285.0, 295.0),
+        (26.00, 370.0, 705.0, 280.0, 265.0),
+        (26.75, 370.0, 730.0, 275.0, 265.0),
+        (27.50, 370.0, 735.0, 275.0, 265.0),
+        (28.25, 365.0, 725.0, 280.0, 270.0),
+        (29.04, 360.0, 710.0, 285.0, 280.0),
+    ]
+    t_knots = [k[0] for k in knots]
+
+    cmd = [
+        FFMPEG, "-y",
+        "-f", "rawvideo",
+        "-vcodec", "rawvideo",
+        "-s", "720x1280",
+        "-pix_fmt", "gray",
+        "-r", str(fps),
+        "-i", "-",
+        "-c:v", "libx264",
+        "-pix_fmt", "yuv420p",
+        "-preset", "ultrafast",
+        "-crf", "18",
+        DYNAMIC_MASK_MP4,
+    ]
+
+    proc = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+    # Pre-render base frame for t <= 24.5s
+    base_matte = Image.new("L", (720, 1280), 0)
+    bdraw = ImageDraw.Draw(base_matte)
+    bdraw.ellipse([360 - 290, 620 - 315, 360 + 290, 620 + 315], fill=255)
+    base_blurred = base_matte.filter(ImageFilter.GaussianBlur(radius=14))
+    base_bytes = base_blurred.tobytes()
+    base_blurred.save(MATTE_PNG)
+
+    for idx in range(total_frames):
+        t = idx / fps
+        if t <= 24.5:
+            proc.stdin.write(base_bytes)
+        else:
+            cx = float(np.interp(t, t_knots, [k[1] for k in knots]))
+            cy = float(np.interp(t, t_knots, [k[2] for k in knots]))
+            rx = float(np.interp(t, t_knots, [k[3] for k in knots]))
+            ry = float(np.interp(t, t_knots, [k[4] for k in knots]))
+            m = Image.new("L", (720, 1280), 0)
+            d = ImageDraw.Draw(m)
+            d.ellipse([cx - rx, cy - ry, cx + rx, cy + ry], fill=255)
+            mf = m.filter(ImageFilter.GaussianBlur(radius=14))
+            proc.stdin.write(mf.tobytes())
+
+    proc.stdin.close()
+    proc.wait()
+    print(f"      [OK] Máscara dinámica generada en: {DYNAMIC_MASK_MP4}")
 
 
 def create_studio_stage():
@@ -121,27 +173,33 @@ Dialogue: 0,0:00:11.20,0:00:28.00,TikTokPrice,,0,0,0,,{\\an2\\fad(150,250)}PEDID
 async def synthesize_voiceover():
     """Synthesizes the energetic Mexican TikTok voiceover with edge-tts and masters audio."""
     print("[4/6] Sintetizando locución TikTok (es-MX-DaliaNeural, rate=+12%, pitch=+2Hz)...")
-    comm = edge_tts.Communicate(SCRIPT_TEXT, "es-MX-DaliaNeural", rate="+12%", pitch="+2Hz")
-    await comm.save(RAW_VOICE_MP3)
-    print(f"      [OK] Audio crudo sintetizado: {RAW_VOICE_MP3}")
+    try:
+        comm = edge_tts.Communicate(SCRIPT_TEXT, "es-MX-DaliaNeural", rate="+12%", pitch="+2Hz")
+        await comm.save(RAW_VOICE_MP3)
+        print(f"      [OK] Audio crudo sintetizado: {RAW_VOICE_MP3}")
 
-    # Master with broadcast EQ and peak limiter
-    eq_filter = (
-        "equalizer=f=250:width_type=h:width=150:g=2,"
-        "equalizer=f=3500:width_type=h:width=1000:g=1.5,"
-        "alimiter=limit=0.95"
-    )
-    cmd_wav = [
-        FFMPEG, "-y",
-        "-i", RAW_VOICE_MP3,
-        "-ar", "44100",
-        "-ac", "2",
-        "-c:a", "pcm_s16le",
-        "-af", eq_filter,
-        MASTER_VOICE_WAV,
-    ]
-    subprocess.run(cmd_wav, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    print(f"      [OK] Pista vocal masterizada en: {MASTER_VOICE_WAV}")
+        # Master with broadcast EQ and peak limiter
+        eq_filter = (
+            "equalizer=f=250:width_type=h:width=150:g=2,"
+            "equalizer=f=3500:width_type=h:width=1000:g=1.5,"
+            "alimiter=limit=0.95"
+        )
+        cmd_wav = [
+            FFMPEG, "-y",
+            "-i", RAW_VOICE_MP3,
+            "-ar", "44100",
+            "-ac", "2",
+            "-c:a", "pcm_s16le",
+            "-af", eq_filter,
+            MASTER_VOICE_WAV,
+        ]
+        subprocess.run(cmd_wav, check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        print(f"      [OK] Pista vocal masterizada en: {MASTER_VOICE_WAV}")
+    except Exception as e:
+        if os.path.exists(MASTER_VOICE_WAV):
+            print(f"      [AVISO] edge-tts error ({e}), utilizando pista vocal existente: {MASTER_VOICE_WAV}")
+        else:
+            raise
 
 
 def render_composite_video():
@@ -152,7 +210,7 @@ def render_composite_video():
 
     filter_complex = (
         # 1. Color grading, Green saturation boost, Lanczos upscale and Unsharp
-        "[1:v]eq=contrast=1.12:brightness=0.01:saturation=1.35,"
+        "[1:v]fps=25,eq=contrast=1.12:brightness=0.01:saturation=1.35,"
         "colorbalance=rs=0.03:gs=0.06:bs=-0.04:rm=0.02:gm=0.05:bm=-0.03,"
         "unsharp=5:5:1.2:5:5:0.0[vg];"
         # 2. Feathered elliptical alpha matte masking and scaling to 1020x1813
@@ -176,7 +234,7 @@ def render_composite_video():
         FFMPEG, "-y",
         "-loop", "1", "-i", STAGE_PNG,           # Input 0: Studio stage (1080x1920)
         "-i", VIDEO_SRC,                         # Input 1: Original video (720x1280)
-        "-loop", "1", "-i", MATTE_PNG,           # Input 2: Alpha matte (720x1280)
+        "-i", DYNAMIC_MASK_MP4,                  # Input 2: Dynamic animated alpha mask (720x1280)
         "-loop", "1", "-i", OVERLAY_PNG,         # Input 3: Branding overlay (1080x1920)
         "-i", MUSIC_SRC,                         # Input 4: Beachfront Celebration music
         "-i", MASTER_VOICE_WAV,                  # Input 5: Mastered Dalia voiceover
@@ -268,7 +326,7 @@ async def main():
     print("=================================================================")
     print(" INICIANDO PIPELINE DE PRODUCCIÓN M13 (LA GARZA AGUACHILERA)")
     print("=================================================================")
-    create_pan_alpha_matte()
+    create_pan_dynamic_mask()
     create_studio_stage()
     create_ass_subtitles()
     await synthesize_voiceover()
