@@ -15,7 +15,7 @@ Este documento contiene la información lista para copiar y pegar al dar de alta
 * **Biografía (Lista para copiar y pegar):**
 ```text
 🦐 Los tostiaguachiles más reportados de Tampico y Madero
-🌊 Camarón fresco de costa curado al momento ($150 MXN)
+🌊 Camarón fresco de costa curado al momento ($170 MXN)
 🥑 Aguacate cremoso garantizado + Baño de salsas de la casa
 🥨 4 complementos a elegir | Preparado frente a ti o por separado
 🛵 Entregas a domicilio fines de semana (Sáb y Dom)
@@ -26,7 +26,7 @@ Este documento contiene la información lista para copiar y pegar al dar de alta
 * **Enlace en el perfil (Link in Bio):**  
   `https://wa.me/528332520988` *(o el enlace de la página web que creamos).*
 * **Estructura de Historias Destacadas (Highlights):**
-  1. **🦐 Menú:** Foto y video del Tostiaguachile Verde Tradicional ($150 MXN) con aguacate cremoso, salsas de la casa y 4 complementos.
+  1. **🦐 Menú:** Foto y video del Tostiaguachile Verde Tradicional ($170 MXN) con aguacate cremoso, salsas de la casa y 4 complementos.
   2. **🛵 Envíos:** Mapa y zonas de cobertura con salida desde Colonia Flores ($25-$70 según colonia).
   3. **📦 Cómo se Sirve:** Video de 10 segundos mostrando las 2 modalidades: preparado al momento frente a ti o con complemento por separado.
   4. **⭐ Reseñas:** Capturas de pantalla de clientes felices en WhatsApp elogiando la frescura, el aguacate y el crunch.
@@ -41,7 +41,7 @@ Este documento contiene la información lista para copiar y pegar al dar de alta
 * **Biografía (Máximo 80 caracteres):**
 ```text
 🦐 Tostiaguachiles con camarón fresco, aguacate y salsas de la casa 🔥
-🛵 Envíos Sáb & Dom • Tampico ($150)
+🛵 Envíos Sáb & Dom • Tampico ($170)
 👇 Haz tu pedido:
 ```
 * **Enlace en Bio:** Enlace a WhatsApp `https://wa.me/528332520988` (habilitado con cuenta de creador/empresa).
@@ -73,7 +73,7 @@ Nacemos con la misión de traerte el verdadero sabor del aguachile costeño en s
 ✅ En preparación en bolsa las chips se bañan con una rica combinación especial de salsas de la casa antes de recibir el marisco helado.
 ✅ 4 complementos oficiales a elegir: Tostitos Salsa Verde, Tostitos Flamin' Hot, Chips o Totopos Artesanales, Galletas Saladas.
 ✅ 2 modalidades de servicio: preparado al momento frente a ti en ruta o con complemento por separado para delivery/crocancia.
-✅ Precio oficial único: $150 MXN la orden bien reportada.
+✅ Precio oficial único: $170 MXN la orden bien reportada.
 🛵 Servicio a domicilio: Sábados y Domingos en Tampico y Cd. Madero.
 📍 Colonia Flores, Tampico, Tamaulipas
 📲 Pedidos y Preventa: WhatsApp 833-252-09-88
@@ -91,7 +91,7 @@ En La Garza Aguachilera preparamos el auténtico Tostiaguachile Verde Tradiciona
 🥨 TUS 4 COMPLEMENTOS A ELEGIR: Tostitos Salsa Verde, Tostitos Flamin' Hot, Chips o Totopos Artesanales, Galletas Saladas.
 🛵 2 MODALIDADES: Preparado al momento frente a ti en ruta o con complemento por separado.
 
-💰 Solo $150 MXN la orden
+💰 Solo $170 MXN la orden
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS
 ⚠️ El camarón se compra fresco y se cura al momento, ¡así que los cupos son limitados cada fin de semana!
 

@@ -1,0 +1,24 @@
+[Script Info]
+Title: TikTok Safe Zone Dynamic Subtitles - La Garza Aguachilera
+ScriptType: v4.00+
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: TikTokNorm,Arial Black,56,&H00FFFFFF,&H000000FF,&H00000000,&HA0000000,-1,0,0,0,100,100,1,0,1,6,3,2,60,60,470,1
+Style: TikTokHook,Arial Black,60,&H0024E0FF,&H000000FF,&H00000000,&HA0000000,-1,0,0,0,100,100,2,0,1,7,4,2,60,60,470,1
+Style: TikTokPrice,Arial Black,70,&H0000F5FF,&H000000FF,&H00000000,&HB0000000,-1,0,0,0,105,105,2,0,1,8,5,2,60,60,460,1
+Style: TikTokCTA,Arial Black,58,&H0080FF70,&H000000FF,&H00000000,&HA0000000,-1,0,0,0,100,100,1,0,1,7,4,2,60,60,470,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.80,0:00:02.60,TikTokHook,,0,0,0,,{\an2\fad(100,80)}¡AGUACHILE PREPARADO!
+Dialogue: 0,0:00:02.60,0:00:04.57,TikTokNorm,,0,0,0,,{\an2\fad(80,80)}¡CON TOSTITOS HASTA TU HOGAR!
+Dialogue: 0,0:00:04.57,0:00:07.00,TikTokPrice,,0,0,0,,{\an2\fad(80,80)}¡A SOLO {\c&H0000FFFF}170 PESOS{\c&H0000F5FF}!
+Dialogue: 0,0:00:07.00,0:00:09.00,TikTokCTA,,0,0,0,,{\an2\fad(80,80)}¡HAZ TU PEDIDO CON NOSOTROS!
+Dialogue: 0,0:00:09.00,0:00:11.00,TikTokNorm,,0,0,0,,{\an2\fad(80,100)}¡TE LO LLEVAMOS A TU PUERTA!
+Dialogue: 0,0:00:11.20,0:00:28.00,TikTokPrice,,0,0,0,,{\an2\fad(150,250)}PEDIDOS WHATSAPP: 833 252 09 88\N{\fs48\c&H00FFFFFF}$170 MXN • LA GARZA AGUACHILERA

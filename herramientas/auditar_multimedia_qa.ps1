@@ -116,7 +116,7 @@ $portadaTexts = @(
     @{ Text = 'TAMPICO Y MADERO * SABADOS Y DOMINGOS'; Font='Segoe UI Black'; Size=[float]8; BoxW=[float]295 },
     @{ Text = 'LA GARZA AGUACHILERA'; Font='Segoe UI Black'; Size=[float]19; BoxW=[float]410 },
     @{ Text = 'TOSTIAGUACHILE VERDE TRADICIONAL'; Font='Segoe UI Black'; Size=[float]12.5; BoxW=[float]410 },
-    @{ Text = '150 MXN * ~100g CAMARON'; Font='Segoe UI Black'; Size=[float]10.5; BoxW=[float]295 },
+    @{ Text = '170 MXN * ~100g CAMARON'; Font='Segoe UI Black'; Size=[float]10.5; BoxW=[float]295 },
     @{ Text = 'El producto es preparado frente a usted'; Font='Segoe UI Black'; Size=[float]12; BoxW=[float]410 },
     @{ Text = 'para corroborar su frescura'; Font='Segoe UI Black'; Size=[float]12; BoxW=[float]410 },
     @{ Text = 'PEDIDOS Y APARTADOS POR WHATSAPP'; Font='Segoe UI Black'; Size=[float]10; BoxW=[float]410 },
@@ -145,7 +145,7 @@ $postFeedTexts = @(
     @{ Text = 'LA GARZA AGUACHILERA'; Font='Arial'; Size=[float]22; MarginLeft=[float]390 },
     @{ Text = 'TOSTIAGUACHILE'; Font='Arial'; Size=[float]38; MarginLeft=[float]390 },
     @{ Text = 'VERDE TRADICIONAL'; Font='Arial'; Size=[float]32; MarginLeft=[float]390 },
-    @{ Text = '150 MXN'; Font='Arial'; Size=[float]40; MarginLeft=[float]390 },
+    @{ Text = '170 MXN'; Font='Arial'; Size=[float]40; MarginLeft=[float]390 },
     @{ Text = 'Con Tostitos Salsa Verde'; Font='Arial'; Size=[float]21; MarginLeft=[float]390 },
     @{ Text = 'El producto es preparado frente a usted'; Font='Arial'; Size=[float]25; BoxW=[float]940 },
     @{ Text = 'para corroborar su maxima frescura'; Font='Arial'; Size=[float]23; BoxW=[float]940 },
@@ -173,7 +173,7 @@ $periodicTexts = @(
     @{ Post = 'Post 1 (Jungla/Mango)'; Text = 'El producto es preparado frente a usted para corroborar su frescura'; Font='Segoe UI Black'; Size=[float]17.0 },
     @{ Post = 'Post 2 (Violeta Alien)'; Text = 'EXPEDIENTE SECRETO * BASE ALIENIGENA DE PLAYA MIRAMAR'; Font='Segoe UI Black'; Size=[float]13.0 },
     @{ Post = 'Post 2 (Violeta Alien)'; Text = '?PROTEGEN A TAMPICO DE HURACANES'; Font='Segoe UI Black'; Size=[float]20.5 },
-    @{ Post = 'Post 2 (Violeta Alien)'; Text = 'SABOR DE OTRA GALAXIA * $150 MXN LA BOLSA BIEN REPORTADA'; Font='Segoe UI Black'; Size=[float]17.0 },
+    @{ Post = 'Post 2 (Violeta Alien)'; Text = 'SABOR DE OTRA GALAXIA * $170 MXN LA BOLSA BIEN REPORTADA'; Font='Segoe UI Black'; Size=[float]17.0 },
     @{ Post = 'Post 4 (Atardecer Fuego)'; Text = '!LA CURA SAGRADA DE LA CRUDA!'; Font='Segoe UI Black'; Size=[float]24.5 },
     @{ Post = 'Post 4 (Atardecer Fuego)'; Text = 'LIMON RECIEN EXPRIMIDO * CHILE SERRANO * ~100g CAMARON * TOSTITOS SALSA VERDE'; Font='Segoe UI Black'; Size=[float]11.5 },
     @{ Post = 'Post 5 (Hielo Artico)'; Text = 'HIELERA GIGANTE + 2 CUBETAS CON TERMOMETRO'; Font='Segoe UI Black'; Size=[float]12.2; MarginLeft=[float]178; LimitRight=[float]720 },
@@ -236,7 +236,7 @@ $catalogSafeZoneTexts = @(
     @{ Piece = 'Post 16'; Text = 'ORGULLO Y COMUNIDAD 100% JAIBA * GRACIAS POR TU PREFERENCIA'; Font = 'Segoe UI Black'; Size = [float]12.5 },
     # Story Invariants
     @{ Piece = 'Story Shared'; Text = 'LA GARZA AGUACHILERA'; Font = 'Segoe UI Black'; Size = [float]30.0 },
-    @{ Piece = 'Story Shared'; Text = "150 MXN LA BOLSA * ~100g CAMAR$($uO)N"; Font = 'Segoe UI Black'; Size = [float]21.0 },
+    @{ Piece = 'Story Shared'; Text = "170 MXN LA BOLSA * ~100g CAMAR$($uO)N"; Font = 'Segoe UI Black'; Size = [float]21.0 },
     @{ Piece = 'Story Shared'; Text = 'PEDIDOS Y APARTADOS POR WHATSAPP'; Font = 'Segoe UI Black'; Size = [float]16.0 },
     @{ Piece = 'Story Shared'; Text = '833 252 09 88'; Font = 'Segoe UI Black'; Size = [float]34.0 }
 )
@@ -259,7 +259,7 @@ $videoTexts = @(
     @{ Name='Header'; Text='LA GARZA AGUACHILERA'; Font='Arial'; Size=[float]36 },
     @{ Name='Header'; Text='TOSTIAGUACHILE VERDE TRADICIONAL'; Font='Arial'; Size=[float]22 },
     @{ Name='Footer'; Text='PEDIDOS WHATSAPP: 833 252 09 88'; Font='Arial'; Size=[float]28 },
-    @{ Name='Footer'; Text='VERDE TRADICIONAL * 150 MXN * ~100g CAMARON'; Font='Arial'; Size=[float]22 },
+    @{ Name='Footer'; Text='VERDE TRADICIONAL * 170 MXN * ~100g CAMARON'; Font='Arial'; Size=[float]22 },
     @{ Name='Footer'; Text='El producto es preparado frente a usted'; Font='Arial'; Size=[float]20 },
     @{ Name='Footer'; Text='para corroborar su maxima frescura'; Font='Arial'; Size=[float]18 },
     @{ Name='Sub1'; Text='EL TOSTIAGUACHILE MAS REPORTADO!'; Font='Arial'; Size=[float]29; BoxW=[float]960 },
@@ -304,78 +304,84 @@ if (-not $ffprobeBin) {
     $script:fallasTotales++
 } else {
     Write-Host " [INFO] Utilizando binario FFprobe: $ffprobeBin" -ForegroundColor Gray
-    $videoFile = 'd:\AG\la garza aguachilera\VIDEOS\promo_aguachile_verde_final.mp4'
+    $promoVideosToAudit = @(
+        @{ Name = 'Video Promocional Final'; Path = 'd:\AG\la garza aguachilera\VIDEOS\promo_aguachile_verde_final.mp4' },
+        @{ Name = 'Video TikTok HD Aislado'; Path = 'd:\AG\la garza aguachilera\VIDEOS\aguachile_video_1_tiktok_hd.mp4' }
+    )
 
-    if (-not (Test-Path $videoFile)) {
-        Write-Host " [ERROR NO EXISTE] Video promocional ausente: $videoFile" -ForegroundColor Red
-        $script:fallasTotales++
-    } else {
-        try {
-            $jsonOutput = & $ffprobeBin -v error -print_format json -show_format -show_streams $videoFile | Out-String
-            $probeData = $jsonOutput | ConvertFrom-Json
-
-            $videoStream = $probeData.streams | Where-Object { $_.codec_type -eq 'video' } | Select-Object -First 1
-            $audioStream = $probeData.streams | Where-Object { $_.codec_type -eq 'audio' } | Select-Object -First 1
-
-            # A. Verificacion de Resolucion (1080 x 1920 Full HD 9:16)
-            if ($videoStream) {
-                $vw = [int]$videoStream.width
-                $vh = [int]$videoStream.height
-                if ($vw -eq 1080 -and $vh -eq 1920) {
-                    Write-Host " [OK] Resolucion de video: $vw x $vh px (Full HD 9:16 vertical correcto)" -ForegroundColor Green
-                } else {
-                    Write-Host " [ERROR RESOLUCION] Video mide $vw x $vh px (Esperado: 1080 x 1920 px)" -ForegroundColor Red
-                    $script:fallasTotales++
-                }
-
-                # B. Verificacion de Codec y Pixel Format
-                $codec = $videoStream.codec_name
-                $pixFmt = $videoStream.pix_fmt
-                if ($codec -eq 'h264' -and $pixFmt -eq 'yuv420p') {
-                    Write-Host " [OK] Codec de video: $codec ($pixFmt) compatible universalmente" -ForegroundColor Green
-                } else {
-                    Write-Host " [ERROR CODEC] Video codec=$codec, pix_fmt=$pixFmt (Esperado: h264 / yuv420p)" -ForegroundColor Red
-                    $script:fallasTotales++
-                }
-
-                # C. Verificacion de Bitrate (>= 4000 kbps)
-                $bitrateBps = 0
-                if ($videoStream.bit_rate) {
-                    $bitrateBps = [int64]$videoStream.bit_rate
-                } elseif ($probeData.format.bit_rate) {
-                    $bitrateBps = [int64]$probeData.format.bit_rate
-                }
-
-                $bitrateKbps = [math]::Round($bitrateBps / 1000, 0)
-                if ($bitrateBps -ge 4000000) {
-                    Write-Host " [OK] Bitrate de video: $bitrateKbps kbps (>= 4000 kbps requerido)" -ForegroundColor Green
-                } else {
-                    Write-Host " [ERROR BITRATE] Bitrate insuficiente: $bitrateKbps kbps (< 4000 kbps requerido)" -ForegroundColor Red
-                    $script:fallasTotales++
-                }
-            } else {
-                Write-Host " [ERROR STREAM] El archivo no contiene ningun stream de video." -ForegroundColor Red
-                $script:fallasTotales++
-            }
-
-            # D. Verificacion de Audio (AAC Stereo)
-            if ($audioStream) {
-                $aCodec = $audioStream.codec_name
-                $aChannels = [int]$audioStream.channels
-                if ($aCodec -eq 'aac' -and $aChannels -eq 2) {
-                    Write-Host " [OK] Pista de audio: $aCodec stereo ($aChannels canales)" -ForegroundColor Green
-                } else {
-                    Write-Host " [ERROR AUDIO] Audio codec=$aCodec, canales=$aChannels (Esperado: aac / 2 canales)" -ForegroundColor Red
-                    $script:fallasTotales++
-                }
-            } else {
-                Write-Host " [ERROR STREAM] El archivo no contiene ningun stream de audio." -ForegroundColor Red
-                $script:fallasTotales++
-            }
-
-        } catch {
-            Write-Host " [ERROR FFPROBE] Excepcion al analizar streams con FFprobe: $_" -ForegroundColor Red
+    foreach ($pv in $promoVideosToAudit) {
+        Write-Host "`n--- $($pv.Name) ($($pv.Path)) ---" -ForegroundColor Cyan
+        if (-not (Test-Path $pv.Path)) {
+            Write-Host " [ERROR NO EXISTE] $($pv.Name) ausente: $($pv.Path)" -ForegroundColor Red
             $script:fallasTotales++
+        } else {
+            try {
+                $jsonOutput = & $ffprobeBin -v error -print_format json -show_format -show_streams $pv.Path | Out-String
+                $probeData = $jsonOutput | ConvertFrom-Json
+
+                $videoStream = $probeData.streams | Where-Object { $_.codec_type -eq 'video' } | Select-Object -First 1
+                $audioStream = $probeData.streams | Where-Object { $_.codec_type -eq 'audio' } | Select-Object -First 1
+
+                # A. Verificacion de Resolucion (1080 x 1920 Full HD 9:16)
+                if ($videoStream) {
+                    $vw = [int]$videoStream.width
+                    $vh = [int]$videoStream.height
+                    if ($vw -eq 1080 -and $vh -eq 1920) {
+                        Write-Host " [OK] Resolucion de $($pv.Name): $vw x $vh px (Full HD 9:16 vertical correcto)" -ForegroundColor Green
+                    } else {
+                        Write-Host " [ERROR RESOLUCION] $($pv.Name) mide $vw x $vh px (Esperado: 1080 x 1920 px)" -ForegroundColor Red
+                        $script:fallasTotales++
+                    }
+
+                    # B. Verificacion de Codec y Pixel Format
+                    $codec = $videoStream.codec_name
+                    $pixFmt = $videoStream.pix_fmt
+                    if ($codec -eq 'h264' -and $pixFmt -eq 'yuv420p') {
+                        Write-Host " [OK] Codec de $($pv.Name): $codec ($pixFmt) compatible universalmente" -ForegroundColor Green
+                    } else {
+                        Write-Host " [ERROR CODEC] $($pv.Name) codec=$codec, pix_fmt=$pixFmt (Esperado: h264 / yuv420p)" -ForegroundColor Red
+                        $script:fallasTotales++
+                    }
+
+                    # C. Verificacion de Bitrate (>= 4000 kbps)
+                    $bitrateBps = 0
+                    if ($videoStream.bit_rate) {
+                        $bitrateBps = [int64]$videoStream.bit_rate
+                    } elseif ($probeData.format.bit_rate) {
+                        $bitrateBps = [int64]$probeData.format.bit_rate
+                    }
+
+                    $bitrateKbps = [math]::Round($bitrateBps / 1000, 0)
+                    if ($bitrateBps -ge 4000000) {
+                        Write-Host " [OK] Bitrate de $($pv.Name): $bitrateKbps kbps (>= 4000 kbps requerido)" -ForegroundColor Green
+                    } else {
+                        Write-Host " [ERROR BITRATE] Bitrate insuficiente en $($pv.Name): $bitrateKbps kbps (< 4000 kbps requerido)" -ForegroundColor Red
+                        $script:fallasTotales++
+                    }
+                } else {
+                    Write-Host " [ERROR STREAM] $($pv.Name) no contiene ningun stream de video." -ForegroundColor Red
+                    $script:fallasTotales++
+                }
+
+                # D. Verificacion de Audio (AAC Stereo)
+                if ($audioStream) {
+                    $aCodec = $audioStream.codec_name
+                    $aChannels = [int]$audioStream.channels
+                    if ($aCodec -eq 'aac' -and $aChannels -eq 2) {
+                        Write-Host " [OK] Pista de audio de $($pv.Name): $aCodec stereo ($aChannels canales)" -ForegroundColor Green
+                    } else {
+                        Write-Host " [ERROR AUDIO] Audio de $($pv.Name): codec=$aCodec, canales=$aChannels (Esperado: aac / 2 canales)" -ForegroundColor Red
+                        $script:fallasTotales++
+                    }
+                } else {
+                    Write-Host " [ERROR STREAM] $($pv.Name) no contiene ningun stream de audio." -ForegroundColor Red
+                    $script:fallasTotales++
+                }
+
+            } catch {
+                Write-Host " [ERROR FFPROBE] Excepcion al analizar streams con FFprobe en $($pv.Name): $_" -ForegroundColor Red
+                $script:fallasTotales++
+            }
         }
     }
 
@@ -549,11 +555,11 @@ $patterns = @(
     'dark\s*kitchen',
     'Rosa\s*210',
     'base\s*de\s*operaciones',
-    '\$170',
-    '170\s*MXN',
-    '170\s*pesos',
-    '170%20',
-    'ciento\s*setenta'
+    '\$150',
+    '150\s*MXN',
+    '150\s*pesos',
+    '150%20',
+    'ciento\s*cincuenta'
 )
 
 $projectRoot = 'd:\AG\la garza aguachilera'
@@ -586,13 +592,13 @@ if ($forbiddenMatches -and $forbiddenMatches.Count -gt 0) {
     }
     $script:fallasTotales += $forbiddenMatches.Count
 } else {
-    Write-Host " [LIMPIO] Cero menciones de palabras prohibidas ('jumbo', 'tostitos redondos', 'dark kitchen', 'Rosa 210', 'nacho', '$170', '170 MXN', '170 pesos', 'ciento setenta')." -ForegroundColor Green
+    Write-Host " [LIMPIO] Cero menciones de palabras prohibidas ('jumbo', 'tostitos redondos', 'dark kitchen', 'Rosa 210', 'nacho', '`$150', '150 MXN', '150 pesos', 'ciento cincuenta')." -ForegroundColor Green
 }
 
 # -----------------------------------------------------------------------------
-# 5.1 VERIFICACION POSITIVA DE PRECIO OFICIAL $150 MXN (KEY FILES)
+# 5.1 VERIFICACION POSITIVA DE PRECIO OFICIAL $170 MXN (KEY FILES)
 # -----------------------------------------------------------------------------
-Write-Host "`n5.1 VERIFICACION POSITIVA DE PRECIO OFICIAL `$150 MXN (KEY FILES):" -ForegroundColor Green
+Write-Host "`n5.1 VERIFICACION POSITIVA DE PRECIO OFICIAL `$170 MXN (KEY FILES):" -ForegroundColor Green
 
 $keyFilesToValidate = @(
     @{ Name = 'index.html'; Path = Join-Path $projectRoot 'index.html'; MinOccurrences = 5 },
@@ -602,11 +608,11 @@ $keyFilesToValidate = @(
 foreach ($kf in $keyFilesToValidate) {
     if (Test-Path $kf.Path) {
         $content = Get-Content -Path $kf.Path -Raw -Encoding UTF8
-        $matches150 = [regex]::Matches($content, '(\$150|150\s*MXN|150\s*pesos)')
-        if ($matches150.Count -ge $kf.MinOccurrences) {
-            Write-Host " [OK] $($kf.Name) contiene el precio oficial `$150 MXN ($($matches150.Count) menciones detectadas, min esperado: $($kf.MinOccurrences))" -ForegroundColor Green
+        $matches170 = [regex]::Matches($content, '(\$170|170\s*MXN|170\s*pesos)')
+        if ($matches170.Count -ge $kf.MinOccurrences) {
+            Write-Host " [OK] $($kf.Name) contiene el precio oficial `$170 MXN ($($matches170.Count) menciones detectadas, min esperado: $($kf.MinOccurrences))" -ForegroundColor Green
         } else {
-            Write-Host " [ERROR BLINDAJE] $($kf.Name) no cuenta con suficientes menciones del precio oficial `$150 MXN (Encontradas: $($matches150.Count), Esperadas: >= $($kf.MinOccurrences))" -ForegroundColor Red
+            Write-Host " [ERROR BLINDAJE] $($kf.Name) no cuenta con suficientes menciones del precio oficial `$170 MXN (Encontradas: $($matches170.Count), Esperadas: >= $($kf.MinOccurrences))" -ForegroundColor Red
             $script:fallasTotales++
         }
     } else {

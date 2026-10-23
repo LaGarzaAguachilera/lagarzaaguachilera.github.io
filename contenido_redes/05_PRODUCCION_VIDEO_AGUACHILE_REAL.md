@@ -22,7 +22,7 @@ El video grabado por el equipo contiene **oro puro gastronómico**:
 ## 2. DIRECTRICES ESTRATÉGICAS DE NEGOCIO VIGENTES
 
 A partir de las definiciones estratégicas de la marca:
-1. 🟢 **Enfoque Único:** 100% concentrados en el **TOSTIAGUACHILE VERDE TRADICIONAL ($150 MXN)**. *(Se elimina temporalmente la opción roja para simplificar la operación y maximizar la rotación de producto).*
+1. 🟢 **Enfoque Único:** 100% concentrados en el **TOSTIAGUACHILE VERDE TRADICIONAL ($170 MXN)**. *(Se elimina temporalmente la opción roja para simplificar la operación y maximizar la rotación de producto).*
 2. 🚫 **Eliminación de la frase:** Se retira la leyenda *"el aguachile va separado para no remojar"*. La comunicación se enfoca en el antojo, la frescura y la abundancia del platillo.
 3. 🎯 **Sabor Perfecto Estandarizado:** Se elimina el selector de picor. Se comunica con orgullo que el aguachile viene en su **"punto perfecto tradicional"** (equilibrio maestro de limón Colima, chile serrano y sazón costeño).
 
@@ -73,7 +73,7 @@ Si deseas conservar el encuadre completo del sartén sin recortar los bordes:
      * Texto en tipografía blanca negrita: `TOSTIAGUACHILES TAMPICO & MADERO 🦐`.
 2. **Pleca Inferior (Llamado a la Acción):**
    * Cintillo verde esmeralda o azul con el texto:
-     `🟢 Preventa Abierta Fines de Semana | WhatsApp: 833-252-09-88 | $150 MXN`.
+     `🟢 Preventa Abierta Fines de Semana | WhatsApp: 833-252-09-88 | $170 MXN`.
 
 ---
 
@@ -125,7 +125,7 @@ Para usar en pauta publicitaria en Meta Ads, Instagram Reels comerciales y TikTo
 | Segundo | Video (Tomas de `aguachile video 1.mp4`) | Audio / Diálogos |
 | :--- | :--- | :--- |
 | **00:00 - 00:04** | **Hook:** Zoom 135% al sartén mezclándose con el tenedor. Salsa verde burbujeando.<br>📌 *Texto:* **"El verdadero aguachile tampiqueño no se explica... se antoja 🤤"** | **Música tropical suave al 30%**.<br>Voz en off de ella: *"Si eres de Tampico o Madero y andas buscando marisco de adeveras..."* |
-| **00:04 - 00:14** | Toma de los camarones mariposa bañados en limón y cebolla morada crujiente. | Voz en off de ella: *"...aquí no te pichicateamos el camarón. Puro Tostiaguachile Verde bien reportado en su punto perfecto por solo $150 pesos."* |
+| **00:04 - 00:14** | Toma de los camarones mariposa bañados en limón y cebolla morada crujiente. | Voz en off de ella: *"...aquí no te pichicateamos el camarón. Puro Tostiaguachile Verde bien reportado en su punto perfecto por solo $170 pesos."* |
 | **00:14 - 00:18** | Ella acomodando los camarones.<br>📌 *Texto:* **"¡Próximamente entregas a domicilio!"** | **Se corta la música y entra el AUDIO ORIGINAL:**<br>Voz de ella: *"¡Próximamente venderemos!"*<br>Voz de él: *"¡Ahí es primo, esa es!"* |
 | **00:18 - 00:22** | El tenedor levantando el camarón gigante jugoso directo a cámara.<br>📌 *Texto:* **"🛵 Preventa activa WhatsApp: 833-252-09-88"** | **AUDIO ORIGINAL AL 100%:**<br>Voz de él con sabor costeño:<br>***"¡AGUA FRESCA MI PAPÁ!"*** |
 
@@ -141,7 +141,7 @@ Para usar en pauta publicitaria en Meta Ads, Instagram Reels comerciales y TikTo
 | :--- | :--- | :--- |
 | **00:00 - 00:03** | Primer plano al tenedor sumergiéndose en el aguachile verde brillante.<br>📌 *Texto:* **"Ni muy bravo que no sepa, ni desabrido: EL PUNTO EXACTO 🟢🔥"** | **Ella:** *"La pregunta que todos me hacen: 'Oye, ¿y qué tan picoso viene el tostiaguachile?'"* |
 | **00:03 - 00:12** | Plano detalle de los camarones mariposa y la lluvia de cebolla morada. | **Ella:** *"Aquí no tienes que batallar eligiendo niveles. Lo preparamos en su punto perfecto tradicional: limón Colima fresco, serrano seleccionado y sazón costeño."* |
-| **00:12 - 00:20** | Levantamiento del camarón al final del video.<br>📌 *Texto:* **"$150 MXN la bolsa | Sábados y Domingos a domicilio"** | **Ella:** *"Camarón del Golfo limpio y jugoso por $150 la bolsa. Mándanos un WhatsApp al 833-252-09-88 y aparta el tuyo para este fin de semana."* |
+| **00:12 - 00:20** | Levantamiento del camarón al final del video.<br>📌 *Texto:* **"$170 MXN la bolsa | Sábados y Domingos a domicilio"** | **Ella:** *"Camarón del Golfo limpio y jugoso por $170 la bolsa. Mándanos un WhatsApp al 833-252-09-88 y aparta el tuyo para este fin de semana."* |
 
 * **Hashtags:** `#PuntoPerfecto #AguachileTradicional #TampicoHermoso #MariscosTampico #TostiaguachileVerde`
 
@@ -168,7 +168,7 @@ Para usar en pauta publicitaria en Meta Ads, Instagram Reels comerciales y TikTo
 | Segundo | Video | Audio / Voz de Ella |
 | :--- | :--- | :--- |
 | **00:00 - 00:03** | Clip en cámara rápida del sartén de aguachile verde esmeralda.<br>📌 *Texto:* **"¡Alerta de antojo en Tampico y Ciudad Madero! 🦐📍"** | **Ella:** *"Si estás viendo esto en jueves o viernes... tu fin de semana ya tiene menú oficial."* |
-| **00:03 - 00:11** | Toma cerrada de los camarones sumergidos en salsa con cebolla morada. | **Ella:** *"Tostiaguachile Verde tradicional con camarón del Golfo fresco curado al momento por solo $150 pesitos."* |
+| **00:03 - 00:11** | Toma cerrada de los camarones sumergidos en salsa con cebolla morada. | **Ella:** *"Tostiaguachile Verde tradicional con camarón del Golfo fresco curado al momento por solo $170 pesitos."* |
 | **00:11 - 00:18** | Tenedor levantando el camarón + botón verde animado de WhatsApp.<br>📌 *Texto:* **"Pide al WhatsApp 833-252-09-88 | Cupos Limitados"** | **Ella:** *"Entregas a domicilio sábados y domingos. Escríbenos a WhatsApp ahorita mismo y asegura tu entrega antes de que cerremos ruta."* |
 
 * **Hashtags:** `#TampicoMadero #PreventaFinDeSemana #TostiaguachileADomicilio #LaGarza`

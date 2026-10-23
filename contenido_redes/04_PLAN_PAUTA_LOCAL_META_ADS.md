@@ -20,11 +20,11 @@ Para una servicio exclusivo a domicilio de fin de semana, **pautar de lunes a mi
 | Jueves                   | $50 - $75 MXN         | Apertura de Preventa  |
 | Viernes                  | $50 - $75 MXN         | Cierre de Cupos       |
 | Sábado y Domingo         | $0 MXN (Opcional $50) | Si quedan bolsas      |
-| **TOTAL SEMANAL**        | **$100 - $150 MXN**   | **Llenar la cocina**  |
+| **TOTAL SEMANAL**        | **$100 - $170 MXN**   | **Llenar la cocina**  |
 +--------------------------+-----------------------+-----------------------+
 ```
 
-Con una inversión semanal de solo **$100 a $150 pesos mexicanos**, generamos entre **12 y 25 conversaciones directas de WhatsApp**. Si cerramos el 30%-40% de esos chats (4 a 8 pedidos de 1 o 2 bolsas), generamos entre **$1,020 y $2,720 MXN en ventas**, logrando un **ROAS (Retorno de Inversión) de más de 10x**.
+Con una inversión semanal de solo **$100 a $170 pesos mexicanos**, generamos entre **12 y 25 conversaciones directas de WhatsApp**. Si cerramos el 30%-40% de esos chats (4 a 8 pedidos de 1 o 2 bolsas), generamos entre **$1,020 y $2,720 MXN en ventas**, logrando un **ROAS (Retorno de Inversión) de más de 10x**.
 
 ---
 
@@ -98,7 +98,7 @@ flowchart TD
 ✅ Camarón 100% fresco del Golfo curado al momento.
 ✅ Empaque especial: Te mandamos el aguachile en contenedor hermético aparte para que tus Tostitos lleguen 100% crujientes hasta tu puerta.
 
-💰 Solo $150 MXN la bolsa bien servida.
+💰 Solo $170 MXN la bolsa bien servida.
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS.
 📍 Salida desde Col. Flores (Tampico y Madero).
 
@@ -107,7 +107,7 @@ flowchart TD
 Toca el botón de aquí abajo y aparta tu lugar por WhatsApp en 1 minuto 👇
 ```
 
-* **Título (Headline):** `🦐 Tostiaguachiles con Camarón Fresco ($150) | Pide x WhatsApp`
+* **Título (Headline):** `🦐 Tostiaguachiles con Camarón Fresco ($170) | Pide x WhatsApp`
 * **Descripción:** `🛵 Entregas en Tampico y Cd. Madero este fin de semana`
 * **Llamada a la Acción (Botón):** `Enviar mensaje de WhatsApp`
 * **Mensaje Predefinido de WhatsApp:**
@@ -117,7 +117,7 @@ Toca el botón de aquí abajo y aparta tu lugar por WhatsApp en 1 minuto 👇
 
 ### 🖼️ ANUNCIO 2: EL DUELO DE SABORES (Imagen Cuadrada 1:1 o 4:5 — Feed)
 * **Formato:** Imagen de alta resolución (1080x1350 px o 1080x1080 px).
-* **Visual:** Fotografía dividida en diagonal o mitad y mitad: a la izquierda la bolsa verde rebosante de camarones y limón; a la derecha la bolsa roja Flamin con salsas negras y chiles secos. Arriba el logo de La Garza y un badge: **"$150 MXN | Camarón de adeveras"**.
+* **Visual:** Fotografía dividida en diagonal o mitad y mitad: a la izquierda la bolsa verde rebosante de camarones y limón; a la derecha la bolsa roja Flamin con salsas negras y chiles secos. Arriba el logo de La Garza y un badge: **"$170 MXN | Camarón de adeveras"**.
 
 #### 📋 Ficha de Configuración del Anuncio:
 * **Texto Principal (Copy):**
@@ -131,12 +131,12 @@ En La Garza Aguachilera no andamos con camarón chiquito ni congelado. Te mandam
 ✨ El producto es preparado frente a usted para corroborar su frescura.
 
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS en Tampico y Cd. Madero.
-💰 $150 la bolsa bien reportada.
+💰 $170 la bolsa bien reportada.
 
 👉 ¡Preventa abierta para este fin de semana! Toca el botón para armar tu pedido antes de que se agoten los cupos.
 ```
 
-* **Título:** `🟢 Tostiaguachile Verde Tradicional | $150 MXN`
+* **Título:** `🟢 Tostiaguachile Verde Tradicional | $170 MXN`
 * **Descripción:** `Envío a domicilio en Tampico y Madero 🛵`
 * **Llamada a la Acción (Botón):** `Enviar mensaje de WhatsApp`
 * **Mensaje Predefinido de WhatsApp:**

@@ -36,10 +36,10 @@ El escaneo métrico ejecutado mediante el módulo `auditar_multimedia_qa.ps1` ut
 +----+----------------------+--------------------------------------------------+-----------+----------+----------+----------+
 | ID | Activo / Archivo     | Texto Auditado                                   | Ancho Tx  | Ancho Cj | Balance  | Estatus  |
 +----+----------------------+--------------------------------------------------+-----------+----------+----------+----------+
-| 01 | Portada Facebook     | "$150 MXN • TOSTITOS SALSA VERDE"                   | 355.5 px  | 335.0 px | +20.5 px | DESBORDE |
+| 01 | Portada Facebook     | "$170 MXN • TOSTITOS SALSA VERDE"                   | 355.5 px  | 335.0 px | +20.5 px | DESBORDE |
 | 02 | Portada Facebook     | "¡ABDUCIDOS POR EL SABOR!"                       | 224.1 px  | 222.0 px | +2.1 px  | DESBORDE |
 | 03 | Post 1 (1080x1080)   | "EL VERDADERO ANTOJO COSTEÑO" (Font 42pt)        | 1034.5 px | 1080 px  | Marg: 22 | CORTE UI |
-| 04 | Post 4 (1080x1080)   | "Tostiaguachile Verde Tradicional • $150 MXN..." | 1025.4 px | 920.0 px | +105.4px | DESBORDE |
+| 04 | Post 4 (1080x1080)   | "Tostiaguachile Verde Tradicional • $170 MXN..." | 1025.4 px | 920.0 px | +105.4px | DESBORDE |
 | 05 | Post 6 (1080x1080)   | "Tostiaguachile Verde Tradicional • Auténticos.."| 1028.9 px | 920.0 px | +108.9px | DESBORDE |
 | 06 | Post 7 (1080x1080)   | "HIELERAS CARGADAS Y EN RUTA!" (Font 42pt)       | 1005.6 px | 1080 px  | Marg: 37 | CRÍTICO  |
 | 07 | Video Scene 1 (Hook) | "EL TOSTIAGUACHILE MÁS REPORTADO!" (Font 36pt)   | 1002.0 px | 960.0 px | +42.0 px | DESBORDE |
@@ -66,7 +66,7 @@ El escaneo métrico ejecutado mediante el módulo `auditar_multimedia_qa.ps1` ut
 #### A.1 Portada Oficial de Facebook (`render_cover_master.ps1` / `compose_final.ps1`):
 1. **Pastilla de Precio y Producto:**
    * *Acción:* Ampliar el ancho del rectángulo contenedor `$pillPriceRect` de 335 px a **380 px**, o bien calibrar la tipografía de 15.5pt a **13.5pt** (`Segoe UI Black`).
-   * *Estándar QA:* El texto `★ $150 MXN • TOSTITOS SALSA VERDE ★` debe contar con un **padding horizontal mínimo de 20 px a cada extremo interior** de la pastilla redondeada.
+   * *Estándar QA:* El texto `★ $170 MXN • TOSTITOS SALSA VERDE ★` debe contar con un **padding horizontal mínimo de 20 px a cada extremo interior** de la pastilla redondeada.
 2. **Globo de Cómic del OVNI de Miramar:**
    * *Acción:* Ampliar el ancho de `$ufoBadgeRect` de 220 px a **245 px**, y ajustar la fuente de 11.5pt a **10.5pt**.
    * *Estándar QA:* La frase `¡ABDUCIDOS POR EL SABOR!` debe quedar perfectamente centrada con al menos 15 px de aire lateral respecto al borde exterior negro.
@@ -76,10 +76,10 @@ El escaneo métrico ejecutado mediante el módulo `auditar_multimedia_qa.ps1` ut
    * *Acción:* Reducir la fuente del titular `"EL VERDADERO ANTOJO COSTEÑO"` de 42pt a **36pt**.
    * *Resultado Métrico:* El ancho bajará de 1034.5 px a aprox. 885 px, elevando el margen libre lateral de 22.7 px a **97.5 px** (Safe Zone 100% garantizada).
 2. **Post 4 (La Cura Sagrada de la Cruda):**
-   * *Acción:* En la tarjeta de detalles (`$rectCardP4`, ancho 920 px), reducir la fuente del texto descriptivo `"Tostiaguachile Verde Tradicional • $150 MXN • TOSTITOS SALSA VERDE"` de 24pt a **20pt**, o dividirlo en dos líneas armoniosas.
+   * *Acción:* En la tarjeta de detalles (`$rectCardP4`, ancho 920 px), reducir la fuente del texto descriptivo `"Tostiaguachile Verde Tradicional • $170 MXN • TOSTITOS SALSA VERDE"` de 24pt a **20pt**, o dividirlo en dos líneas armoniosas.
    * *Resultado Métrico:* El texto medirá aprox. 855 px, quedando holgadamente contenido dentro de la tarjeta de 920 px con 32 px de margen interno por lado.
 3. **Post 6 (El Mapache y el Crunch):**
-   * *Acción:* En la tarjeta inferior (`$rectCardP6`, ancho 920 px), reducir la fuente del texto `"Tostiaguachile Verde Tradicional • Auténticos TOSTITOS SALSA VERDE • $150"` de 22pt a **19pt**.
+   * *Acción:* En la tarjeta inferior (`$rectCardP6`, ancho 920 px), reducir la fuente del texto `"Tostiaguachile Verde Tradicional • Auténticos TOSTITOS SALSA VERDE • $170"` de 22pt a **19pt**.
    * *Resultado Métrico:* El texto medirá aprox. 880 px, garantizando contención absoluta dentro del contenedor sin tocar las líneas doradas.
 4. **Post 7 (Hieleras Cargadas y en Ruta):**
    * *Acción:* Reducir el titular `"HIELERAS CARGADAS Y EN RUTA!"` de 42pt a **36pt**.
@@ -118,7 +118,7 @@ Para otorgar el **Sello Oficial de Certificación QA**, el material corregido de
 1. ✅ **Cero Desbordes:** Cero alertas de `[OVERFLOW PELIGROSO]` en cajas de precio, badges o pastillas de portada.
 2. ✅ **Safe Zones Cumplidas:** Todo texto en postes 1080x1080 px debe contar con un **margen libre lateral mínimo de 60 px** respecto al borde del canvas.
 3. ✅ **Subtítulos de Video Centrados:** Todo subtítulo en video 1080x1920 px debe tener un margen de respiro interno de al menos **25 px** respecto a las paredes de su caja contenedora.
-4. ✅ **Blindaje de Marca:** 100% de consistencia con el producto oficial: **Tostiaguachile Verde Tradicional a $150 MXN**, Tostitos Salsa Verde oficiales, mención íntegra de la promesa *"El producto es preparado frente a usted para corroborar su frescura"*, y cero menciones de términos de tamaño no autorizados o variantes rojas.
+4. ✅ **Blindaje de Marca:** 100% de consistencia con el producto oficial: **Tostiaguachile Verde Tradicional a $170 MXN**, Tostitos Salsa Verde oficiales, mención íntegra de la promesa *"El producto es preparado frente a usted para corroborar su frescura"*, y cero menciones de términos de tamaño no autorizados o variantes rojas.
 
 ---
 
@@ -131,7 +131,7 @@ Habiéndose ejecutado las correcciones por parte del Diseñador Gráfico Senior 
 1. **Portada Facebook (`flyer_portada_verde.png`):** La pastilla de precio, el título principal y todos los badges de personajes cuentan ahora con margen interno holgado (> 18 px) y no colisionan con el OVNI. Estatus: **APROBADO**.
 2. **Posts Periódicos 1080x1080 px (`post1` a `post7`):** Todos los titulares y tarjetas cuentan con márgenes laterales libres de 45 px a 195 px, garantizando legibilidad perfecta en cualquier pantalla móvil y sin riesgo de corte por esquinas redondeadas. Estatus: **APROBADO**.
 3. **Video Reels / TikTok 1080p (`promo_aguachile_verde_final.mp4`):** Todas las 5 escenas de subtítulos pop tienen márgenes interiores de 32 px a 152 px dentro de sus respectivas cajas de color. Estatus: **APROBADO**.
-4. **Blindaje de Marca:** 0 menciones de términos restringidos de tamaño, precio oficial $150 MXN unificado, promesa de frescura intacta y TOSTITOS SALSA VERDE garantizados.
+4. **Blindaje de Marca:** 0 menciones de términos restringidos de tamaño, precio oficial $170 MXN unificado, promesa de frescura intacta y TOSTITOS SALSA VERDE garantizados.
 
 **DICTAMEN FINAL:** Se otorga el **SELLO OFICIAL DE EXCELENCIA QA** y se autoriza la pauta y publicación inmediata de todo el material multimedia.
 

@@ -14,7 +14,7 @@ Por mandato de la Dirección General y la Propiedad de **La Garza Aguachilera**,
 
 ### Principios Fundamentales del Ecosistema IA:
 1. **Unidad de Doctrina de Marca:**
-   - Monoproducto Insignia: **Tostiaguachile Verde Tradicional a $150 MXN**.
+   - Monoproducto Insignia: **Tostiaguachile Verde Tradicional a $170 MXN**.
    - Ingrediente Base: 100% Tostitos Salsa Verde originales (prohibidos totopos triangulares o sustitutos).
    - Sin desviaciones: Queda prohibida la mención de términos de tamaño no autorizados o presentaciones no oficiales.
    - Garantía Sagrada: *"El producto es preparado frente a usted para corroborar su frescura"*.
@@ -33,7 +33,7 @@ Por directiva expresa e inmutable del dueño del negocio, toda la flota de agent
    - 2 cubetas grandes de grado alimenticio equipadas con **termómetro digital integrado (0°C a 4°C)** para el resguardo de camarón y vegetales.
    - **Mesa plegable de preparación en sitio** para realizar el ensamble higiénico frente a la puerta del cliente.
 2. **Porción Estandarizada de Camarón:**
-   - **~100g neto aprox.** de camarón fresco en corte mariposa por cada bolsa servida ($150 MXN).
+   - **~100g neto aprox.** de camarón fresco en corte mariposa por cada bolsa servida ($170 MXN).
    - Factor bruto de compra en La Puntilla: **115g (0.115 kg)** por orden (absorbe el 15% de merma por descabezado, pelado y desvenado).
 3. **Protocolo Operativo de Lluvia:**
    - El servicio **se mantiene 100% activo bajo lluvia**.
@@ -43,7 +43,7 @@ Por directiva expresa e inmutable del dueño del negocio, toda la flota de agent
    - **Cero alteraciones:** No se diluye la salsa, no se reduce el picor a petición, ni se crean variaciones apócrifas; la experiencia original se respeta al 100%.
 5. **Capacidad Productiva por Tanda:**
    - **75 bolsas por tanda estándar** (ajustable hacia arriba o abajo según disponibilidad de camarón fresco en La Puntilla).
-   - Con reserva táctica del +15% ($P = 87$ bolsas), representa **$13,050 MXN de proyección bruta** y exactamente **10.0 kg de camarón fresco**.
+   - Con reserva táctica del +15% ($P = 87$ bolsas), representa **$13,790 MXN de proyección bruta** y exactamente **10.0 kg de camarón fresco**.
 
 ---
 
@@ -52,12 +52,12 @@ Por directiva expresa e inmutable del dueño del negocio, toda la flota de agent
 ### 2.1 Auditoría Inteligente de Agentes (Directiva Maestra de Producción Audiovisual)
 1. **REUTILIZADOS / MANTENIDOS (Activos Visuales, Identidad y Conversión):**
    - `disenador_grafico_senior`: Conservado por sus activos recortados transparentes (`clean_juancho.png`, `clean_mapache.png`, `clean_ovni.png`, `clean_comida.png` y versiones Spooky) e identidad Neo-Brutalista Tropical.
-   - `food_photography_specialist`: Conservado (instancia única) para fotografías reales de Tostiaguachile Verde Tradicional ($150 MXN).
+   - `food_photography_specialist`: Conservado (instancia única) para fotografías reales de Tostiaguachile Verde Tradicional ($170 MXN).
    - `copywriter_gastronomico_hooks`, `especialista_integracion_meta`, `estratega_pauta_local_ads`, `especialista_conversion_whatsapp`, `mentor_tecnico_principiantes`.
 2. **RECALIBRADOS / MEJORADOS (Enfoque en Animación Cómica Mexicana y Render Técnico):**
    - `marketing_food_specialist` y `cazador_tendencias_trendjacking`: Recalibrados para alimentar comedia situacional en español mexicano/tampiqueño y narrativa animada.
    - `editor_video_garza`: Recalibrado de edición tradicional a pipeline híbrido con secuencias animadas a 60fps.
-   - `control_calidad_empresarial`: Elevado a `Director_Control_Calidad_Autonomo` con auditoría de prosodia mexicana, lip-sync, 60fps y blindaje de precio ($150 MXN).
+   - `control_calidad_empresarial`: Elevado a `Director_Control_Calidad_Autonomo` con auditoría de prosodia mexicana, lip-sync, 60fps y blindaje de precio ($170 MXN).
 3. **CREADOS E INSTANCIADOS (Escuadrón Especialista de Animación y Voz):**
    - `Agente_Showrunner_y_Adaptacion`: Guion técnico segundo a segundo y *timing* de comedia tampiqueña.
    - `Agente_Voces_y_Prosodia_TTS`: Casting vocal neuronal `es-MX` multi-personaje con ortografía fonética expresiva y modulación de `pitch`/`rate`.
@@ -157,7 +157,7 @@ Para asegurar la frescura marina absoluta del fin de semana, el inventario de ma
 - **Capacidad Estándar:** **75 bolsas por tanda** (ajustable hacia arriba o abajo según producto y demanda).
 - **Política de Sabor:** El producto viene **picante por naturaleza** (receta única con chile serrano fresco).
 
-### 5.1 Ficha Técnica de Consumo por Unidad (1 Bolsa de Tostiaguachile Verde = $150 MXN):
+### 5.1 Ficha Técnica de Consumo por Unidad (1 Bolsa de Tostiaguachile Verde = $170 MXN):
 - **Camarón Fresco (Golfo / La Puntilla):** **100 g neto limpio en corte mariposa** (requiere **115 g en bruto** considerando merma de limpieza/desvenado).
 - **Limón Colima (Agrio y Jugoso):** 60 ml de jugo puro (~4 a 5 limones medianos, peso bruto equivalente: **180 g a 240 g de limón fresco**).
 - **Tostitos Salsa Verde:** 1 bolsa individual oficial (presentación de aprox. 65 g). Las cajas máster contienen **24 unidades**.
@@ -193,11 +193,11 @@ A partir de $P_{\text{táctico}}$, el algoritmo calcula de forma exacta:
 
 ### 5.3 Tabla de Escenarios Típicos de Fin de Semana (Calibrado a 100g neto / 115g con merma)
 
-| Preventa ($N$) | Objetivo ($P$) | Camarón Crudo (115g/u) | Limón Colima | Cajas Tostitos (24u) | Pepino | Cebolla Morada | Hielo (Bolsas) | Inversión Estimada | Venta Proyectada ($150/u) | Utilidad Bruta Est. |
+| Preventa ($N$) | Objetivo ($P$) | Camarón Crudo (115g/u) | Limón Colima | Cajas Tostitos (24u) | Pepino | Cebolla Morada | Hielo (Bolsas) | Inversión Estimada | Venta Proyectada ($170/u) | Utilidad Bruta Est. |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **30 bolsas** | **35** | **4.0 kg** | **8.5 kg** | **2 cajas** (48 u) | 4.6 kg | 1.6 kg | 7 bolsas | ~$1,950 MXN | $5,250 MXN | **$3,300 MXN (63%)** |
 | **50 bolsas** | **58** | **6.7 kg** | **14.0 kg** | **3 cajas** (72 u) | 7.5 kg | 2.6 kg | 8 bolsas | ~$3,200 MXN | $8,700 MXN | **$5,500 MXN (63%)** |
-| **75 bolsas (ESTÁNDAR)** | **87** | **10.0 kg** | **21.1 kg** | **4 cajas** (96 u) | **11.3 kg** | **3.9 kg** | **10 bolsas** | **~$4,800 MXN** | **$13,050 MXN** | **$8,250 MXN (63%)** |
+| **75 bolsas (ESTÁNDAR)** | **87** | **10.0 kg** | **21.1 kg** | **4 cajas** (96 u) | **11.3 kg** | **3.9 kg** | **10 bolsas** | **~$4,800 MXN** | **$13,790 MXN** | **$8,250 MXN (63%)** |
 | **100 bolsas**| **115**| **13.2 kg** | **27.8 kg** | **5 cajas** (120 u)| 15.0 kg | 5.2 kg | 12 bolsas | ~$6,350 MXN | $17,250 MXN | **$10,900 MXN (63%)**|
 
 ---
@@ -221,7 +221,7 @@ $BolsasTostitos = $CajasTostitos * 24
 $PepinoKg = [Math]::Round(($P * 0.130), 2)
 $CebollaKg = [Math]::Round(($P * 0.045), 2)
 $HieloBolsas = 4 + [Math]::Ceiling($P / 15)
-$VentaEstimada = $P * 150
+$VentaEstimada = $P * 170
 
 Write-Host "================================================================" -ForegroundColor DarkGreen
 Write-Host "  🦐 LA GARZA AGUACHILERA — ALGORITMO DE COMPRAS DE VIERNES" -ForegroundColor Yellow
@@ -238,7 +238,7 @@ Write-Host "4. Pepino Criollo Fresco             : $PepinoKg kg" -ForegroundColo
 Write-Host "5. Cebolla Morada                    : $CebollaKg kg (para pluma desflemada)" -ForegroundColor Cyan
 Write-Host "6. Bolsas de Hielo en Escama         : $HieloBolsas bolsas para hielera y cubetas con termómetro" -ForegroundColor Cyan
 Write-Host "----------------------------------------------------------------" -ForegroundColor DarkGray
-Write-Host "💰 Proyección de Venta Bruta ($150 MXN/bolsa): `$ $VentaEstimada MXN" -ForegroundColor Green
+Write-Host "💰 Proyección de Venta Bruta ($170 MXN/bolsa): `$ $VentaEstimada MXN" -ForegroundColor Green
 Write-Host "================================================================" -ForegroundColor DarkGreen
 ```
 
@@ -249,7 +249,7 @@ Write-Host "================================================================" -F
 1. **Auditoría Diaria:** Cada sesión del orquestador revisará que no existan subagentes colgados ni scripts de render consumiendo CPU en segundo plano.
 2. **Cumplimiento Invariable:** Toda pieza publicitaria, video, o actualización de sitio debe validarse contra las 4 directrices sagradas:
    - Receta única Verde Tradicional
-   - Precio oficial $150 MXN
+   - Precio oficial $170 MXN
    - Tostitos Salsa Verde oficiales
    - Slogan de garantía en vivo: *"El producto es preparado frente a usted para corroborar su frescura"*
 3. **Mesa de Ayuda WhatsApp:** 833 252 09 88. Colonia Flores, Tampico, Tamaulipas.

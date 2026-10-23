@@ -6,7 +6,7 @@
 ### 1. Resumen Ejecutivo de la Campaña
 La campaña **"Especial Spooky: Halloween & Día de Muertos"** de **La Garza Aguachilera** capitaliza la temporada festiva de fin de octubre y principios de noviembre mediante la fusión de terror pop divertido, mitología urbana jaiba y gastronomía marina de alta gama. 
 
-Bajo la narrativa central **"¡No estaban muertos... solo estaban crudos!"**, la campaña posiciona al **Tostiaguachile Verde Tradicional ($150 MXN, ~100g de camarón mariposa, con Tostitos Salsa Verde)** como el restaurador definitivo de energía dominical en la zona conurbada de Tampico y Ciudad Madero, con servicio exclusivo fines de semana (sábados y domingos de 1:00 PM a 5:00 PM) saliendo desde **Colonia Flores, Tampico, Tamaulipas**.
+Bajo la narrativa central **"¡No estaban muertos... solo estaban crudos!"**, la campaña posiciona al **Tostiaguachile Verde Tradicional ($170 MXN, ~100g de camarón mariposa, con Tostitos Salsa Verde)** como el restaurador definitivo de energía dominical en la zona conurbada de Tampico y Ciudad Madero, con servicio exclusivo fines de semana (sábados y domingos de 1:00 PM a 5:00 PM) saliendo desde **Colonia Flores, Tampico, Tamaulipas**.
 
 ---
 
@@ -55,7 +55,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_01.txt
 > 
 > Aquí no hay trucos ni sustos: ves el hielo, ves el marisco de primera y sientes el frío de la hielera antes del primer bocado. 
 > 
-> 💰 Precio oficial: Solo $150 MXN la bolsa bien reportada.  
+> 💰 Precio oficial: Solo $170 MXN la bolsa bien reportada.  
 > 🛵 Servicio a domicilio: SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).  
 > 📍 Salimos desde: Colonia Flores, Tampico, Tamaulipas (rutas activas anunciadas en redes).  
 > 
@@ -63,7 +63,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_01.txt
 
 #### Guión Corto TikTok:
 - `(00:00 - 00:03)` Texto: "¿Zombies en Tampico? 🧟‍♂️👀" | VO: "¿Zombies en la laguna? No compadre, es tu compa el domingo a mediodía después de la fiesta..."
-- `(00:03 - 00:08)` Texto: "EL ANTÍDOTO: TOSTIAGUACHILE VERDE ($150 MXN)" | VO: "Pero huele el limón Colima, ve ese camarón mariposa a 2°C..."
+- `(00:03 - 00:08)` Texto: "EL ANTÍDOTO: TOSTIAGUACHILE VERDE ($170 MXN)" | VO: "Pero huele el limón Colima, ve ese camarón mariposa a 2°C..."
 - `(00:08 - 00:15)` Texto: "¡NO ESTABAN MUERTOS... ESTABAN CRUDOS! 🦐⚡" | VO: "¡Y pum! Al primer crunch regresas a la vida. Preparado al instante frente a ti."
 - `(00:15 - 00:20)` Texto: "PIDE AL WHATSAPP 833 252 09 88 | SÁB Y DOM" | VO: "Entregas en Tampico y Madero sábados y domingos. ¡Manda WhatsApp al 833 252 09 88 y aparta el tuyo ya!"
 
@@ -103,7 +103,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_02.txt
 > 
 > No dejes que tu fin de semana se convierta en película de terror comiendo cualquier cosa aguada. Pide calidad de franquicia con orgullo 100% jaibo.
 > 
-> 💰 Precio: $150 MXN la bolsa bien reportada.  
+> 💰 Precio: $170 MXN la bolsa bien reportada.  
 > 🛵 Entregas: SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM) en Tampico y Ciudad Madero.  
 > 📍 Salida oficial: Colonia Flores, Tampico, Tamaulipas (rutas activas publicadas en redes).  
 > 
@@ -111,7 +111,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_02.txt
 
 #### Guión Corto TikTok:
 - `(00:00 - 00:03)` Texto: "1, 2... el mapache viene por ti 🦝😱" | VO: "Uno, dos... el mapache viene por ti. Tres, cuatro... cierra bien la puerta..."
-- `(00:03 - 00:08)` Texto: "PERO VIENE POR TUS TOSTITOS SALSA VERDE 🦐💥" | VO: "¡Porque hasta Freddy Krueger suelta las garras por este tostiaguachile verde de 150 pesos!"
+- `(00:03 - 00:08)` Texto: "PERO VIENE POR TUS TOSTITOS SALSA VERDE 🦐💥" | VO: "¡Porque hasta Freddy Krueger suelta las garras por este tostiaguachile verde de 170 pesos!"
 - `(00:08 - 00:15)` Texto: "CRUNCH BRUTAL | PREPARADO FRENTE A TI" | VO: "Escucha ese crujido... ~100g de camarón mariposa montados frente a ti para comprobar la frescura."
 - `(00:15 - 00:20)` Texto: "NO TE QUEDES EN PESADILLA 📲 833 252 09 88" | VO: "Servicio sábados y domingos en Tampico y Madero. ¡Manda WhatsApp al 833 252 09 88 antes de que vuelen los cupos!"
 
@@ -150,7 +150,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_03.txt
 > 
 > Sin misterios ocultos: preparamos cada bolsa en el momento, directo de la hielera a tu mesa, garantizando que el crunch permanezca perfecto de principio a fin.
 > 
-> 💰 Precio tradicional: $150 MXN la bolsa bien reportada.  
+> 💰 Precio tradicional: $170 MXN la bolsa bien reportada.  
 > 🛵 Rutas de entrega: SÁBADOS y DOMINGOS de 1:00 PM a 5:00 PM.  
 > 📍 Salida desde: Colonia Flores, Tampico, Tamaulipas (rutas activas anunciadas en nuestras redes).  
 > 
@@ -159,7 +159,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_03.txt
 #### Guión Corto TikTok:
 - `(00:00 - 00:03)` Texto: "¡NO VIENEN POR HUMANOS! 🛸👽" | VO: "Científicos de Miramar revelan la verdad: los aliens no vienen por nosotros..."
 - `(00:03 - 00:08)` Texto: "VIENEN POR EL LIMÓN Y EL CAMARÓN 🍋🦐" | VO: "¡Vienen por los limones de Colima y el camarón mariposa de La Garza Aguachilera!"
-- `(00:08 - 00:15)` Texto: "PREPARADO FRENTE A TI | $150 MXN" | VO: "La ofrenda perfecta para este Día de Muertos: fresco, helado a 2°C y preparado al instante frente a tus ojos."
+- `(00:08 - 00:15)` Texto: "PREPARADO FRENTE A TI | $170 MXN" | VO: "La ofrenda perfecta para este Día de Muertos: fresco, helado a 2°C y preparado al instante frente a tus ojos."
 - `(00:15 - 00:20)` Texto: "PIDE POR WHATSAPP 📲 833 252 09 88" | VO: "Entregas en Tampico y Madero sábados y domingos. ¡Manda mensaje al 833 252 09 88 antes del despegue!"
 
 #### Hashtags:
@@ -197,7 +197,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_04.txt
 > 
 > Pidan en combo: uno para ti, uno para tu compa el que juró que no volvía a salir, y otro para el que todavía anda con el disfraz puesto.
 > 
-> 💰 Precio: Solo $150 MXN por bolsa bien servida.  
+> 💰 Precio: Solo $170 MXN por bolsa bien servida.  
 > 🛵 Entregas a domicilio: SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).  
 > 📍 Base de salida: Colonia Flores, Tampico, Tamaulipas (rutas compartidas en redes sociales).  
 > 
@@ -205,7 +205,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_04.txt
 
 #### Guión Corto TikTok:
 - `(00:00 - 00:03)` Texto: "EL GRUPO DE AMIGOS EL DOMINGO: 🧟‍♂️🧟‍♀️" | VO: "¿Tu grupo de WhatsApp está en silencio total después de la fiesta de anoche? Es hora de mandar la señal..."
-- `(00:03 - 00:08)` Texto: "EL TRIDENTE RESUCITADOR ($150 C/U)" | VO: "¡El Tridente Spooky de La Garza Aguachilera! Juancho, Mapache y OVNI unidos para revivirlos a todos."
+- `(00:03 - 00:08)` Texto: "EL TRIDENTE RESUCITADOR ($170 C/U)" | VO: "¡El Tridente Spooky de La Garza Aguachilera! Juancho, Mapache y OVNI unidos para revivirlos a todos."
 - `(00:08 - 00:15)` Texto: "PREPARADO EN VIVO FRENTE A TI" | VO: "Camarón fresco del Golfo, Tostitos Salsa Verde súper crujientes y limón Colima recién exprimido."
 - `(00:15 - 00:20)` Texto: "ARMEN EL PEDIDO GRUPAL 📲 833 252 09 88" | VO: "Sábados y domingos en Tampico y Madero. ¡Manden WhatsApp al 833 252 09 88 y salven a la banda!"
 
@@ -244,7 +244,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_05.txt
 > 
 > Aquí no hay grabaciones falsas ni filtros engañosos. Cada bolsa se monta al momento para que disfrutes ese crunch legendario que solo La Garza te entrega en tu puerta.
 > 
-> 💰 Inversión en tu paladar: $150 MXN la bolsa bien servida.  
+> 💰 Inversión en tu paladar: $170 MXN la bolsa bien servida.  
 > 🛵 Rutas activas: SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).  
 > 📍 Origen: Colonia Flores, Tampico, Tamaulipas (cobertura en Tampico y Ciudad Madero anunciada en redes).  
 > 
@@ -253,7 +253,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_05.txt
 #### Guión Corto TikTok:
 - `(00:00 - 00:03)` Texto: "🎧 SUBE EL VOLUMEN (AUDIO 3D)" | VO: "(Susurro) Ponte audífonos... escucha cómo truena el marisco en Tampico..."
 - `(00:03 - 00:07)` Texto: "FRESCURA HELADA A 2°C ❄️" | VO: "Vapor frío de la hielera... camarón mariposa del día impecablemente limpio."
-- `(00:07 - 00:14)` Texto: "¡CRUNCH! TOSTITOS SALSA VERDE 🦐💥" | VO: "¡CRUUUNCH! Cero totopo aguado. Montado frente a ti por $150 pesos."
+- `(00:07 - 00:14)` Texto: "¡CRUNCH! TOSTITOS SALSA VERDE 🦐💥" | VO: "¡CRUUUNCH! Cero totopo aguado. Montado frente a ti por $170 pesos."
 - `(00:14 - 00:20)` Texto: "APARTA AL WHATSAPP 833 252 09 88" | VO: "Sábados y domingos de 1 a 5 PM. ¡Manda WhatsApp al 833 252 09 88 y vive la experiencia!"
 
 #### Hashtags:
@@ -291,7 +291,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_06.txt
 > 
 > Cuando la hielera se vacía, no hay truco que valga. ¡No te arriesgues a quedarte con el antojo o a sufrir la resaca del domingo sin tu cura favorita!
 > 
-> 💰 Precio oficial: $150 MXN la bolsa bien reportada.  
+> 💰 Precio oficial: $170 MXN la bolsa bien reportada.  
 > 🛵 Horario de entregas: SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).  
 > 📍 Salimos desde: Colonia Flores, Tampico, Tamaulipas (rutas activas publicadas en nuestras redes).  
 > 
@@ -300,7 +300,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_06.txt
 #### Guión Corto TikTok:
 - `(00:00 - 00:03)` Texto: "¡ALERTA DE CUPOS SPOOKY! 🎃⏳" | VO: "¡Alerta en Tampico y Madero! Los cupos de este fin vuelan más rápido que bruja en escoba..."
 - `(00:03 - 00:08)` Texto: "MARISCO FRESCO DEL DÍA (~100g CAMARÓN)" | VO: "Trabajamos solo marisco fresco del día. Cuando se vacía la hielera, se cerró el servicio."
-- `(00:08 - 00:15)` Texto: "TOSTIAGUACHILE VERDE ($150 MXN) | SÁB Y DOM" | VO: "Tostitos Salsa Verde, camarón mariposa y limón Colima preparado al instante frente a ti."
+- `(00:08 - 00:15)` Texto: "TOSTIAGUACHILE VERDE ($170 MXN) | SÁB Y DOM" | VO: "Tostitos Salsa Verde, camarón mariposa y limón Colima preparado al instante frente a ti."
 - `(00:15 - 00:20)` Texto: "¡APARTA YA! 📲 WHATSAPP: 833 252 09 88" | VO: "¡No andes llorando el domingo! Manda WhatsApp al 833 252 09 88 y aparta tus bolsas antes de que se acaben."
 
 #### Hashtags:
@@ -317,7 +317,7 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_06.txt
 | **Promesa Central de Frescura** | *"El producto es preparado frente a usted para corroborar su frescura"* | ✅ Presente en todas las piezas |
 | **Totopo Oficial** | **Tostitos Salsa Verde** (único totopo autorizado, siempre crujiente) | ✅ 100% Conforme |
 | **Gramaje y Corte** | **~100g de camarón mariposa** limpio del Golfo | ✅ 100% Conforme |
-| **Precio Oficial** | **$150 MXN** la bolsa bien reportada | ✅ 100% Conforme |
+| **Precio Oficial** | **$170 MXN** la bolsa bien reportada | ✅ 100% Conforme |
 | **Horario de Operación** | **Sábados y Domingos (1:00 PM a 5:00 PM)** | ✅ 100% Conforme |
 | **Canal de Pedidos** | **WhatsApp 833 252 09 88** con enlace `wa.me` preconfigurado | ✅ 100% Conforme |
 

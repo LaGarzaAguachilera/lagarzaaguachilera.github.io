@@ -12,7 +12,7 @@
 
 ## 🛡️ CRITERIOS DE REVISIÓN Y APROBACIÓN DE CONTROL DE CALIDAD (QA)
 Ninguna pieza puede publicarse si no cumple con el **100% de esta lista de chequeo**:
-1. [x] **Producto Oficial Único:** Únicamente Tostiaguachile Verde Tradicional a **$150 MXN**.
+1. [x] **Producto Oficial Único:** Únicamente Tostiaguachile Verde Tradicional a **$170 MXN**.
 2. [x] **Formato Oficial de Totopos:** Se especifica y muestra exclusivamente TOSTITOS SALSA VERDE (cero totopos triangulares).
 3. [x] **Prohibición de Términos No Autorizados:** Prohibido cualquier término no autorizado de tamaño; se utiliza estrictamente *"bolsa bien reportada"* o *"~100g camarón"* con TOSTITOS SALSA VERDE.
 4. [x] **Garantía Obligatoria de Frescura:** Siempre debe incluirse la promesa:  
@@ -39,14 +39,14 @@ En La Garza Aguachilera preparamos el tostiaguachile más reportado de la zona c
 ✨ El producto es preparado frente a usted para corroborar su frescura.
 
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS en Tampico y Cd. Madero.
-💰 Solo $150 MXN la bolsa bien reportada.
+💰 Solo $170 MXN la bolsa bien reportada.
 
 📲 ¡La preventa ya está abierta para que no te quedes sin tus bolsas!
 👉 Escríbenos por WhatsApp directo al 833 252 09 88 o toca el enlace de nuestro perfil.
 
 #Tampico #CiudadMadero #LaGarzaAguachilera #Tostiaguachiles #MariscosTampico #PlayaMiramar #Juancho
 ```
-* **Sello QA:** ✅ **APROBADO POR CONTROL DE CALIDAD** (Terminología autorizada, precio $150, TOSTITOS SALSA VERDE verificados).
+* **Sello QA:** ✅ **APROBADO POR CONTROL DE CALIDAD** (Terminología autorizada, precio $170, TOSTITOS SALSA VERDE verificados).
 
 ---
 
@@ -64,7 +64,7 @@ En La Garza Aguachilera no andamos con pequeñeces:
 🟢 Auténticos TOSTITOS SALSA VERDE bien crujientes.
 ✨ El producto es preparado frente a usted para corroborar su frescura.
 
-💰 $150 MXN la bolsa.
+💰 $170 MXN la bolsa.
 🛵 Entregas este fin de semana en Tampico y Madero.
 
 📲 Aparta tu pedido por WhatsApp antes de que los aliens se lleven los cupos: 833 252 09 88.
@@ -85,7 +85,7 @@ En La Garza Aguachilera no andamos con pequeñeces:
 
 El camarón se compra fresco en la costa para las entregas de este fin de semana, por eso nuestros cupos son limitados.
 
-🟢 Tostiaguachile Verde Tradicional: $150 MXN
+🟢 Tostiaguachile Verde Tradicional: $170 MXN
 ✨ El producto es preparado frente a usted para corroborar su frescura.
 🛵 Entregas a domicilio SÁBADO y DOMINGO (1:00 PM a 5:00 PM)
 📍 Base de salida: Colonia Flores, Tampico, Tamaulipas
@@ -113,14 +113,14 @@ La cura oficial de la zona conurbada no tiene fallas:
 4️⃣ TOSTITOS SALSA VERDE con el crunch que le faltaba a tu día.
 
 ✨ El producto es preparado frente a usted para corroborar su frescura.
-💰 $150 MXN la bolsa.
+💰 $170 MXN la bolsa.
 
 🛵 Estamos en ruta hoy en Tampico y Madero hasta agotar existencias del día.
 📲 Pide directo a tu puerta por WhatsApp: 833 252 09 88.
 
 #DomingoDeAguachile #LaCuraDeLaCruda #TampicoHermoso #CiudadMadero #LaGarzaAguachilera #TostitosSalsaVerde
 ```
-* **Sello QA:** ✅ **APROBADO POR CONTROL DE CALIDAD** (Enfoque en frescura, especificación de TOSTITOS SALSA VERDE, $150).
+* **Sello QA:** ✅ **APROBADO POR CONTROL DE CALIDAD** (Enfoque en frescura, especificación de TOSTITOS SALSA VERDE, $170).
 
 ---
 
@@ -142,7 +142,7 @@ Cuando nuestro repartidor llega a tu domicilio en Tampico o Madero:
 Resultado: Tostitos 100% crujientes (jamás aguados ni remojados) y la certeza absoluta de que estás comiendo marisco de primera calidad.
 
 ✨ El producto es preparado frente a usted para corroborar su frescura.
-💰 $150 MXN | Entregas fines de semana.
+💰 $170 MXN | Entregas fines de semana.
 
 📲 Preventa activa por WhatsApp: 833 252 09 88.
 
@@ -166,7 +166,7 @@ Si alguien te dice que no le gusta el aguachile verde, es porque no ha probado e
 🍋 Mucho limón y receta artesanal costeña.
 ✨ El producto es preparado frente a usted para corroborar su frescura.
 
-💰 $150 MXN la bolsa bien reportada.
+💰 $170 MXN la bolsa bien reportada.
 🛵 Entregas Sábado y Domingo en Tampico y Madero.
 
 📲 ¡Mañana cerramos la lista de compras del fin de semana! Aparta el tuyo por WhatsApp al 833 252 09 88.
@@ -191,7 +191,7 @@ Nuestros repartidores ya están rodando por Tampico y Ciudad Madero llevando los
 🛵 Zonas cubiertas: Col. Flores, Altavista, Cascajal, Centro, Petrolera, Universidad, Unidad Nacional, Ampliación, Miramar y más.
 
 ✨ El producto es preparado frente a usted para corroborar su frescura.
-💰 $150 MXN la bolsa.
+💰 $170 MXN la bolsa.
 
 ⚠️ Quedan pocas bolsas disponibles para entrega el día de hoy.
 📲 Manda WhatsApp de inmediato al 833 252 09 88 para enganchar tu entrega en la siguiente parada.

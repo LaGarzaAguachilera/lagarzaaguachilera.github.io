@@ -37,7 +37,7 @@ Imagina que **GitHub Pages** es como tener un local comercial premium en la aven
 
 Al subir este proyecto a GitHub Pages, tu público disfrutará de:
 
-- **Página Web Pública Oficial (`index.html`):** Diseño tropical fresco y moderno con temática tampiqueña (**Mapaches de las Escolleras**, **OVNIs de Playa Miramar** y **Juancho el Cocodrilo**), fotografía en alta definición del **Tostiaguachile Verde Tradicional ($150 MXN, ~100g de camarón mariposa)**, y botón directo a **WhatsApp (833 252 09 88)** sin formularios que distraigan la venta.
+- **Página Web Pública Oficial (`index.html`):** Diseño tropical fresco y moderno con temática tampiqueña (**Mapaches de las Escolleras**, **OVNIs de Playa Miramar** y **Juancho el Cocodrilo**), fotografía en alta definición del **Tostiaguachile Verde Tradicional ($170 MXN, ~100g de camarón mariposa)**, y botón directo a **WhatsApp (833 252 09 88)** sin formularios que distraigan la venta.
 - **Centro de Descargas y Redes (`panel_control.html`):** Catálogo multimedia para copiar copys y descargar los flyers publicitarios (Facebook, Instagram, TikTok).
 - **Video Promocional Master (`VIDEOS/promo_aguachile_verde_final.mp4`):** Video vertical en Full HD (1080x1920) listo para reproducirse directo en el navegador.
 - **Paquete Completo de Redes (`paquete_redes_la_garza.zip`):** Archivo descargable de 36.8 MB con todas las piezas gráficas originales.

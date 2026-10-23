@@ -82,7 +82,8 @@ $gFrame.FillRectangle($brushHeader, $rectHeader)
 # Top Bar Tag
 $fontTag = MakeFont "Arial" 20 ([System.Drawing.FontStyle]::Bold)
 $brushCyan = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(56, 189, 248))
-$gFrame.DrawString("TAMPICO Y CIUDAD MADERO * SABOR COSTEÑO", $fontTag, $brushCyan, [float]540, [float]20, $sfCenter)
+$costeno = "TAMPICO Y CIUDAD MADERO * SABOR COSTE" + [char]0xD1 + "O"
+$gFrame.DrawString($costeno, $fontTag, $brushCyan, [float]540, [float]20, $sfCenter)
 
 # Logo in Header (Circular die-cut)
 $logoSize = 220
@@ -157,7 +158,7 @@ DrawRoundedRectangle $gFrame $brushDarkPill $penMintPill $rectPricePill 30
 
 $fontPriceText = MakeFont "Arial" 22 ([System.Drawing.FontStyle]::Bold)
 $brushYellow = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(254, 240, 138))
-$gFrame.DrawString("VERDE TRADICIONAL * `$150 MXN * ~100g CAMARON", $fontPriceText, $brushYellow, [float]540, [float]1695, $sfCenter)
+$gFrame.DrawString("VERDE TRADICIONAL * `$170 MXN * ~100g CAMARON", $fontPriceText, $brushYellow, [float]540, [float]1695, $sfCenter)
 
 # Freshness Statement
 $rectFresh = [System.Drawing.Rectangle]::new(60, 1740, 960, 80)
@@ -330,7 +331,7 @@ $penPriceBadge = [System.Drawing.Pen]::new([System.Drawing.Color]::FromArgb(250,
 DrawRoundedRectangle $gS5 $brushPriceBadge $penPriceBadge $rectPriceBadge 35
 $fontBigPrice = MakeFont "Arial" 48 ([System.Drawing.FontStyle]::Bold)
 $fontBigPriceSub = MakeFont "Arial" 20 ([System.Drawing.FontStyle]::Bold)
-DrawStickerText $gS5 "`$150" $fontBigPrice $brushWhite $penBlackStroke 880 1225 $sfCenter
+DrawStickerText $gS5 "`$170" $fontBigPrice $brushWhite $penBlackStroke 880 1225 $sfCenter
 DrawStickerText $gS5 "MXN LA BOLSA" $fontBigPriceSub $brushYellow $penBlackStroke 880 1285 $sfCenter
 
 # WhatsApp Call to Action Banner on Left (Y: 1340 to 1480)

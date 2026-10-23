@@ -248,7 +248,7 @@ function Draw-SpookyPricePill([System.Drawing.Graphics]$g, [System.Drawing.Recta
     $pDark = [System.Drawing.Pen]::new([System.Drawing.Color]::FromArgb(15, 23, 42), 4)
     $pDark.LineJoin = [System.Drawing.Drawing2D.LineJoin]::Round
 
-    $displayStr = "$($script:star) `$150 MXN LA BOLSA $($script:bul) ~100g CAMAR$($script:uO)N"
+    $displayStr = "$($script:star) `$170 MXN LA BOLSA $($script:bul) ~100g CAMAR$($script:uO)N"
     if ($extraText) { $displayStr += " $($script:bul) $extraText" }
     $displayStr += " $($script:star)"
 
@@ -436,7 +436,7 @@ function Render-SpookyFeed($item) {
     # Logo oficial de marca en esquina superior derecha
     Draw-OfficialLogoBadge $g 935 55 95 ([System.Drawing.Color]::FromArgb(249, 115, 22))
 
-    # 5. Price Pill Estandarizado $150 MXN (Y=755, X=80 a 1000, Margen lateral = 80px >= 70px)
+    # 5. Price Pill Estandarizado $170 MXN (Y=755, X=80 a 1000, Margen lateral = 80px >= 70px)
     Draw-SpookyPricePill $g ([System.Drawing.RectangleF]::new(80, 755, 920, 58)) $item.ExtraTag
 
     # 6. Tarjeta de Frescura Obligatoria (Y=825)
@@ -553,7 +553,7 @@ function Render-SpookyStory($item) {
     $g.DrawString("TOSTITOS SALSA VERDE", $fPatch, $bWhite, [float]540, [float]987, $sfCenter)
     $fPatch.Dispose()
 
-    # 6. Price Banner Estandarizado ($150 MXN) (Y=1025 a 1095)
+    # 6. Price Banner Estandarizado ($170 MXN) (Y=1025 a 1095)
     $priceStoryRect = [System.Drawing.RectangleF]::new(90, 1025, 900, 68)
     $bPriceS = [System.Drawing.Drawing2D.LinearGradientBrush]::new($priceStoryRect, [System.Drawing.Color]::FromArgb(249, 115, 22), [System.Drawing.Color]::FromArgb(234, 88, 12), 0.0)
     $pPriceS = [System.Drawing.Pen]::new([System.Drawing.Color]::FromArgb(254, 240, 138), 3.0)
@@ -561,7 +561,7 @@ function Render-SpookyStory($item) {
     $bPriceS.Dispose(); $pPriceS.Dispose()
 
     $fPriceS = [System.Drawing.Font]::new("Segoe UI Black", 19.5, [System.Drawing.FontStyle]::Bold)
-    $priceStr = "$($script:star) `$150 MXN LA BOLSA $($script:bul) ~100g CAMAR$($script:uO)N $($script:star)"
+    $priceStr = "$($script:star) `$170 MXN LA BOLSA $($script:bul) ~100g CAMAR$($script:uO)N $($script:star)"
     Draw-OutlinedText $g $priceStr $fPriceS $bWhite $pDark8 540 1059 $sfCenter
     $fPriceS.Dispose()
 

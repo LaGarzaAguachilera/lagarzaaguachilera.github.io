@@ -14,7 +14,7 @@
 * **Texto en pantalla (Hook en los primeros 2 seg):** *"Por favor no veas esto si tienes hambre..."*
 * **Visual:** Ella sosteniendo una bolsa de tostitos verdes ya abierta, con una cuchara levantando camarones bien marinados con pepino y cebollita.
 * **Lo que dice ella a cámara:**
-  > *"Si estás en Tampico o Madero y te salió este video, lo siento mucho... pero acabas de desbloquear tu nuevo antojo favorito. Esto es un Tostiaguachile de La Garza: camarón 100% fresco, limpio y curado al momento en puro limón y serrano, servido sobre Tostitos con pepino y cebollita morada. Y para que no te preocupes de que llegue aguado, el aguachile te lo mandamos en su contenedor aparte para que tú mismo lo bañes en tu casa. La bolsa cuesta $150 y entregamos únicamente los fines de semana. Ve al link de nuestro perfil para apartar el tuyo antes de que se acaben los cupos."*
+  > *"Si estás en Tampico o Madero y te salió este video, lo siento mucho... pero acabas de desbloquear tu nuevo antojo favorito. Esto es un Tostiaguachile de La Garza: camarón 100% fresco, limpio y curado al momento en puro limón y serrano, servido sobre Tostitos con pepino y cebollita morada. Y para que no te preocupes de que llegue aguado, el aguachile te lo mandamos en su contenedor aparte para que tú mismo lo bañes en tu casa. La bolsa cuesta $170 y entregamos únicamente los fines de semana. Ve al link de nuestro perfil para apartar el tuyo antes de que se acaben los cupos."*
 * **Hashtags:** `#Tampico #CdMadero #Tostiaguachiles #AguachileVerde #ComidaTampico #Antojos`
 
 ---
@@ -24,7 +24,7 @@
 * **Texto en pantalla:** *"¿Cuál te comerías tú primero?"*
 * **Visual:** Ella en la cocina con dos bolsas: una verde a la izquierda y una roja a la derecha. Va mostrando de cerca cada una.
 * **Lo que dice ella a cámara:**
-  > *"Aquí en La Garza Aguachilera tenemos un debate muy serio y necesito que me ayuden a decidirlo. Por un lado tenemos al consentido: Tostitos Verdes con aguachile clásico de serrano y mucho limón... fresco y acidito. Y por el otro lado, para los que les gusta el picante de verdad: Tostitos Rojos Flamin con aguachile de chiles tatemados y salsas negras. Los dos vienen retacados de camarón por $150 pesos. Comenta 'VERDE' o 'ROJO' y mándanos mensaje para apartar tu bolsa para este sábado."*
+  > *"Aquí en La Garza Aguachilera tenemos un debate muy serio y necesito que me ayuden a decidirlo. Por un lado tenemos al consentido: Tostitos Verdes con aguachile clásico de serrano y mucho limón... fresco y acidito. Y por el otro lado, para los que les gusta el picante de verdad: Tostitos Rojos Flamin con aguachile de chiles tatemados y salsas negras. Los dos vienen retacados de camarón por $170 pesos. Comenta 'VERDE' o 'ROJO' y mándanos mensaje para apartar tu bolsa para este sábado."*
 * **Hashtags:** `#Tostiaguachile #TampicoHermoso #AguachileRojo #Camarones #FoodPornMexico`
 
 ---
@@ -44,7 +44,7 @@
 * **Texto en pantalla:** *"¿Llegan aguados los tostitos? ¡Jamás! Te enseño cómo los enviamos 👀"*
 * **Visual:** Ella mostrando el proceso de empaque: la bolsa de tostitos impecable y el domo hermético con los camarones y el caldo.
 * **Lo que dice ella a cámara:**
-  > *"La pregunta que más nos hacen es: 'Oye, ¿pero con el viaje los tostitos no se aguadan?'. ¡Para nada! En La Garza cuidamos cada detalle: te entregamos tu bolsa de tostitos crujiente con sus pepinos y cebollita, y el aguachile con los camarones va en este contenedor sellado. Cuando llega a tu casa, tú solo haces esto... (ella vierte el caldito sobre la bolsa y se escucha el crujido)... ¡y listo! Crunch perfecto en cada bocado por solo $150 pesos. Pídelos al WhatsApp de nuestro perfil."*
+  > *"La pregunta que más nos hacen es: 'Oye, ¿pero con el viaje los tostitos no se aguadan?'. ¡Para nada! En La Garza cuidamos cada detalle: te entregamos tu bolsa de tostitos crujiente con sus pepinos y cebollita, y el aguachile con los camarones va en este contenedor sellado. Cuando llega a tu casa, tú solo haces esto... (ella vierte el caldito sobre la bolsa y se escucha el crujido)... ¡y listo! Crunch perfecto en cada bocado por solo $170 pesos. Pídelos al WhatsApp de nuestro perfil."*
 * **Hashtags:** `#Tostiaguachiles #HackDeComida #TampicoMadero #AguachileFresco #FoodiesTampico`
 
 ---
@@ -84,7 +84,7 @@
 * **Texto en pantalla:** *"Etiqueta a tu amigo para pedir juntos este domingo 🦐"*
 * **Visual:** Ella mostrando 3 o 4 bolsas formadas en una mesa: unas verdes y unas rojas.
 * **Lo que dice ella a cámara:**
-  > *"Si este fin de semana te vas a juntar con tus amigos, con la familia o a ver el partido... no te compliques cocinando. Por $150 cada bolsa, armen la botana perfecta. Piden unas verdes, unas rojas, y en pedidos a partir de 3 bolsas el envío en zonas cercanas va por nuestra cuenta. Mándale este video al grupo de WhatsApp y organicen su pedido ya."*
+  > *"Si este fin de semana te vas a juntar con tus amigos, con la familia o a ver el partido... no te compliques cocinando. Por $170 cada bolsa, armen la botana perfecta. Piden unas verdes, unas rojas, y en pedidos a partir de 3 bolsas el envío en zonas cercanas va por nuestra cuenta. Mándale este video al grupo de WhatsApp y organicen su pedido ya."*
 * **Hashtags:** `#BotanaFinDeSemana #TampicoTamps #Amigos #FutbolYComida #Tostiaguachiles`
 
 ---

@@ -39,7 +39,7 @@ Disfrútalo con tu complemento favorito:
 
 🛵 Dos modalidades de servicio: preparado en vivo frente a ti por nuestro staff o con complemento por separado para máxima crocancia.
 
-💰 $150 MXN la orden
+💰 $170 MXN la orden
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS
 📍 Salida: Colonia Flores, Tampico
 
@@ -64,7 +64,7 @@ Además cuentas con 2 modalidades de servicio:
 1. Preparado al momento frente a ti en tu puerta por nuestro staff en ruta.
 2. Con complemento por separado: el aguachile helado con camarón mariposa, aguacate y salsas viajan en empaque hermético independiente para que tus chips mantengan 100% su textura crujiente.
 
-Por solo $150 pesos tienes la botana más fresca y adictiva de la zona.
+Por solo $170 pesos tienes la botana más fresca y adictiva de la zona.
 🛵 Entregas este fin de semana en Tampico y Madero.
 
 Mándanos un WhatsApp al 833-252-09-88 y agenda tu ruta con salida desde Colonia Flores.
@@ -84,7 +84,7 @@ En La Garza Aguachilera tenemos todo listo para consentirte este SÁBADO y DOMIN
 ✅ Baño especial de salsas de la casa sobre tus chips
 ✅ Tus 4 complementos a elegir: Tostitos Salsa Verde, Flamin' Hot, Totopos Artesanales o Galletas Saladas
 ✅ Preparado al momento frente a ti o por separado
-✅ Porción bien reportada por solo $150 MXN
+✅ Porción bien reportada por solo $170 MXN
 
 📍 Cobertura en Tampico y Ciudad Madero con salida desde Colonia Flores.
 ⚠️ Recuerda que como compramos el camarón fresco el viernes por la mañana, nuestros cupos son limitados.
@@ -107,7 +107,7 @@ Te tenemos la solución definitiva en 3 pasos:
 
 🥑 Aguacate fresco en cada orden | 🔥 Salsas especiales de la casa
 🥨 Con Tostitos Salsa Verde, Flamin' Hot, Totopos o Galletas
-💰 $150 MXN la orden
+💰 $170 MXN la orden
 
 🛵 Rutas activas hoy en Tampico y Madero desde Colonia Flores.
 Escríbenos rápido al 833-252-09-88 antes de que cierre la última ruta de la tarde.

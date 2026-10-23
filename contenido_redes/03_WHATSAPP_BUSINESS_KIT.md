@@ -32,7 +32,7 @@ Preparamos el auténtico Tostiaguachile Verde Tradicional de Tampico y Madero co
 
 Nuestras entregas son los fines de semana (**Sábados y Domingos**).
 
-📋 *NUESTRO MENÚ ($150 MXN por orden):*
+📋 *NUESTRO MENÚ ($170 MXN por orden):*
 Tostiaguachile Verde Tradicional: ~100g de camarón en mariposa, emulsión verde de serrano con limón Colima, baño especial de salsas de la casa en tus chips y aguacate fresco y cremoso garantizado en cada orden.
 
 🥨 *ELIGE TU COMPLEMENTO FAVORITO (Incluido):*
@@ -67,21 +67,21 @@ Déjanos aquí:
 
 ### Producto 1: Tostiaguachile Verde Tradicional (Tostitos Salsa Verde)
 * **Nombre:** Tostiaguachile Verde Tradicional 🟢
-* **Precio:** $150.00 MXN
+* **Precio:** $170.00 MXN
 * **Descripción:**
   ~100g de camarón fresco de costa en corte mariposa, emulsión verde de chile serrano y limón Colima, pepino crujiente, cebolla morada, baño especial de salsas de la casa sobre las chips y aguacate fresco y cremoso garantizado en toda porción. Acompañado con Tostitos Salsa Verde. Elige servido preparado al momento frente a ti o con complemento por separado.
 * **Enlace:** [Link a landing page]
 
 ### Producto 2: Tostiaguachile Verde Tradicional (Tostitos Flamin' Hot)
 * **Nombre:** Tostiaguachile Verde Flamin' Hot 🔥
-* **Precio:** $150.00 MXN
+* **Precio:** $170.00 MXN
 * **Descripción:**
   La combinación más audaz y pedida: camarón fresco mariposa con emulsión verde de chile serrano y limón Colima, bañado con salsas de la casa sobre Tostitos Flamin' Hot crujientes, coronado con aguacate fresco y cremoso en cada orden.
 * **Enlace:** [Link a landing page]
 
 ### Producto 3: Tostiaguachile Verde con Totopos Artesanales o Galletas Saladas
 * **Nombre:** Tostiaguachile Verde Tradicional (Totopos / Galletas) 🌊
-* **Precio:** $150.00 MXN
+* **Precio:** $170.00 MXN
 * **Descripción:**
   Estilo tradicional marisquero costeño: camarón fresco mariposa, emulsión verde serrano con limón Colima, baño sazonador de salsas de la casa y aguacate fresco y cremoso garantizado. Con totopos dorados de maíz o galletas saladas clásicas.
 * **Enlace:** [Link a landing page]
@@ -90,7 +90,7 @@ Déjanos aquí:
 * **Nombre:** Combo Dúo Garza (2 Órdenes) 🦐🦐
 * **Precio:** $300.00 MXN
 * **Descripción:**
-  El paquete perfecto para compartir: 2 órdenes completas de Tostiaguachile Verde Tradicional con tus complementos favoritos a elegir, baño de salsas de la casa y aguacate fresco y cremoso garantizado en cada una ($150 x 2 = $300 MXN).
+  El paquete perfecto para compartir: 2 órdenes completas de Tostiaguachile Verde Tradicional con tus complementos favoritos a elegir, baño de salsas de la casa y aguacate fresco y cremoso garantizado en cada una ($170 x 2 = $300 MXN).
 * **Enlace:** [Link a landing page]
 
 ---
@@ -101,9 +101,9 @@ Configura estos atajos en los ajustes de WhatsApp Business:
 
 ### Atajo: `/menu`
 ```text
-🦐 *MENÚ LA GARZA AGUACHILERA ($150 MXN):*
+🦐 *MENÚ LA GARZA AGUACHILERA ($170 MXN):*
 
-🟢 *Tostiaguachile Verde Tradicional ($150 MXN):*
+🟢 *Tostiaguachile Verde Tradicional ($170 MXN):*
 ~100g de camarón fresco de costa en mariposa, emulsión verde de chile serrano y limón Colima, pepino crujiente, cebolla morada fileteada, baño especial de salsas de la casa sobre las chips y aguacate fresco y cremoso garantizado en cada orden.
 
 🥨 *Tus 4 Complementos Oficiales a Elegir:*
@@ -148,7 +148,7 @@ Configura estos atajos en los ajustes de WhatsApp Business:
 ✅ *¡PEDIDO CONFIRMADO CON ÉXITO!* 🦐
 
 📋 *Resumen de tu pedido:*
-• Producto: Tostiaguachile Verde Tradicional ($150 MXN c/u)
+• Producto: Tostiaguachile Verde Tradicional ($170 MXN c/u)
 • Complemento(s): [Tostitos Salsa Verde / Flamin' Hot / Totopos Artesanales / Galletas Saladas]
 • Modalidad de servicio: [Preparado al momento frente a ti / Por separado]
 • Aguacate fresco garantizado: [Incluido en cada orden 🥑]
@@ -161,7 +161,7 @@ Configura estos atajos en los ajustes de WhatsApp Business:
 [Calle, Número y Colonia]
 [Referencias]
 
-💰 *Total a pagar:* $[Total] MXN ($150 por orden + envío).
+💰 *Total a pagar:* $[Total] MXN ($170 por orden + envío).
 
 ¡Cualquier duda estamos a la orden! Te avisaremos en cuanto tu pedido vaya en camino desde Colonia Flores. 🛵💨
 ```

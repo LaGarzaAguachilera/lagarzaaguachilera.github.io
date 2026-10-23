@@ -44,8 +44,8 @@ Cuando un usuario comenta en un Reel o Post de Instagram/Facebook, el algoritmo 
 
 Aquí tienes nuestro menú de Tostiaguachiles con camarón fresco curado al momento:
 
-🟢 Tostitos Verdes ($150): Con serrano, pepino, cebolla y limón Colima.
-🔴 Tostitos Rojos ($150): Con Tostitos Flamin, chiles tatemados y salsas oscuras.
+🟢 Tostitos Verdes ($170): Con serrano, pepino, cebolla y limón Colima.
+🔴 Tostitos Rojos ($170): Con Tostitos Flamin, chiles tatemados y salsas oscuras.
 
 📦 *Recuerda:* El caldo de aguachile y los camarones van en su hielera térmica con preparación frente a ti para que tus tostitos lleguen 100% crujientes a tu casa en Tampico o Madero.
 
@@ -75,7 +75,7 @@ El mayor error de los negocios de comida es contestar con biblias de texto o hac
 
 Preparamos los tostiaguachiles más reportados de Tampico y Madero con camarón fresco curado al momento. 
 
-📋 *NUESTRAS OPCIONES ($150 MXN la bolsa):*
+📋 *NUESTRAS OPCIONES ($170 MXN la bolsa):*
 🟢 *Tostitos Verdes:* Aguachile clásico de serrano, pepino, cebolla morada y limón Colima.
 🔴 *Tostitos Rojos:* Aguachile bravo con chiles tatemados, salsas oscuras y Tostitos Flamin.
 
@@ -142,8 +142,8 @@ Guarda estos atajos con la barra inclinada `/` para contestar en 3 segundos:
 ### `/menu`
 ```text
 🦐 *MENÚ LA GARZA AGUACHILERA:*
-🟢 *Tostitos Verdes ($150):* Aguachile clásico con chile serrano, pepino, cebolla morada y limón Colima.
-🔴 *Tostitos Rojos ($150):* Aguachile bravo con chiles tatemados, salsas oscuras y Tostitos Flamin.
+🟢 *Tostitos Verdes ($170):* Aguachile clásico con chile serrano, pepino, cebolla morada y limón Colima.
+🔴 *Tostitos Rojos ($170):* Aguachile bravo con chiles tatemados, salsas oscuras y Tostitos Flamin.
 📦 *Empaque inteligente:* Camarones y caldo en contenedor hermético aparte para que la botana llegue crujiente.
 🛵 Entregas a domicilio Sábados y Domingos en Tampico y Cd. Madero.
 ```
@@ -185,7 +185,7 @@ Tú solo destapas el caldo, lo vacías sobre la bolsa... ¡y disfrutas el sonido
 
 ## 5. TÁCTICAS DE UPSELL (VENTA CRUZADA) & VALOR MEDIO DE TICKET
 
-Para pasar de un ticket promedio de $150 a $380+ MXN por cliente:
+Para pasar de un ticket promedio de $170 a $380+ MXN por cliente:
 
 ```
 +--------------------------------------------------------------------------+
@@ -193,7 +193,7 @@ Para pasar de un ticket promedio de $150 a $380+ MXN por cliente:
 +--------------------------+-----------------------+-----------------------+
 | PRODUCTO INICIAL         | PROPUESTA DE UPSELL   | BENEFICIO PERCIBIDO   |
 +--------------------------+-----------------------+-----------------------+
-| 1 Bolsa de $150          | Combo Dúo ($300)      | "1 Verde + 1 Rojo"    |
+| 1 Bolsa de $170          | Combo Dúo ($300)      | "1 Verde + 1 Rojo"    |
 | 2 Bolsas ($300)          | Trío Conurbada ($450) | "Envío Gratis Zona 1" |
 | Cualquier pedido         | Bebida Fría (+$25)    | Refresco helado listo |
 | Cualquier pedido         | Camarón Extra (+$50)  | "Doble proteína"      |

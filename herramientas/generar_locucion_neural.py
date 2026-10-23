@@ -16,14 +16,14 @@ FFMPEG = os.path.join(BASE_DIR, "herramientas", "ffmpeg", "ffmpeg.exe")
 PROMO_REGULAR_TEXT = (
     "¡Atención Tampico y Ciudad Madero! En La Garza Aguachilera ya estamos en servicio "
     "sábados y domingos. Disfruta el auténtico Tostiaguachile Verde con camarón fresco "
-    "en mariposa por solo ciento cincuenta pesos. El producto se prepara frente a ti "
+    "en mariposa por solo ciento setenta pesos. El producto se prepara frente a ti "
     "para corroborar su frescura. Anunciaremos las rutas de entrega en nuestras redes sociales. "
     "¡Aparta tu pedido por WhatsApp al 833 252 09 88!"
 )
 
 PROMO_HALLOWEEN_TEXT = (
     "¡No estaban muertos, solo andaban crudos! Llegó la verdadera cura de Tampico y Madero. "
-    "Tostiaguachile Verde Tradicional a solo ciento cincuenta pesos. Sábados y domingos "
+    "Tostiaguachile Verde Tradicional a solo ciento setenta pesos. Sábados y domingos "
     "de una a cinco de la tarde. El producto se prepara frente a ti al momento. "
     "¡Aparta tu pedido por WhatsApp al 833 252 09 88!"
 )
@@ -51,7 +51,7 @@ def convert_to_wav(mp3_path: str, wav_path: str, extra_filters: str = ""):
         os.remove(mp3_path)
 
 async def main():
-    print("1. Sintetizando locución comercial regular (DaliaNeural, $150 MXN)...")
+    print("1. Sintetizando locución comercial regular (DaliaNeural, $170 MXN)...")
     reg_mp3 = os.path.join(BASE_DIR, "herramientas", "temp_promo_reg.mp3")
     reg_wav = os.path.join(BASE_DIR, "herramientas", "locucion_comercial_sabina.wav")
     await generate_audio(PROMO_REGULAR_TEXT, "es-MX-DaliaNeural", rate="+10%", pitch="+0Hz", output_mp3=reg_mp3)
@@ -59,7 +59,7 @@ async def main():
     convert_to_wav(reg_mp3, reg_wav, "equalizer=f=250:width_type=h:width=150:g=2,equalizer=f=3500:width_type=h:width=1000:g=1.5,alimiter=limit=0.95")
     print(f" -> Generado: {reg_wav}")
 
-    print("2. Sintetizando locución comercial Halloween (DaliaNeural, $150 MXN)...")
+    print("2. Sintetizando locución comercial Halloween (DaliaNeural, $170 MXN)...")
     hal_mp3 = os.path.join(BASE_DIR, "herramientas", "temp_promo_hal.mp3")
     hal_wav = os.path.join(BASE_DIR, "herramientas", "locucion_halloween_sabina.wav")
     await generate_audio(PROMO_HALLOWEEN_TEXT, "es-MX-DaliaNeural", rate="+6%", pitch="+0Hz", output_mp3=hal_mp3)

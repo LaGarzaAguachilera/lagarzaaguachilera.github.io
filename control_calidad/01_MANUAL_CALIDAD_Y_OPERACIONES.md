@@ -13,7 +13,7 @@ En **La Garza Aguachilera**, la calidad no es un departamento ni una lista de de
 ### Los Tres Principios Innegociables de Calidad:
 1. **Inocuidad Cero Riesgos:** El camarón crudo es un alimento biológicamente vulnerable. La cadena de frío no se interrumpe jamás.
 2. **La Promesa Sagrada:** *"El producto es preparado frente a usted para corroborar su frescura"*. No enviamos alimentos pre-ensamblados ni totopos ablandados; llevamos el espectáculo higiénico y culinario hasta la puerta del comensal.
-3. **Consistencia Absoluta de Marca:** Una sola receta estelar ejecutada a la perfección: **Tostiaguachile Verde Tradicional a $150 MXN**, con Tostitos Salsa Verde oficiales, camarón mariposa de costa impecable y marinada tradicional en su punto exacto. Cero dispersiones operativas.
+3. **Consistencia Absoluta de Marca:** Una sola receta estelar ejecutada a la perfección: **Tostiaguachile Verde Tradicional a $170 MXN**, con Tostitos Salsa Verde oficiales, camarón mariposa de costa impecable y marinada tradicional en su punto exacto. Cero dispersiones operativas.
 
 ---
 
@@ -143,7 +143,7 @@ El personal en calle no es un repartidor común de plataforma; es un embajador g
 
 ---
 
-## 📏 4. ESTÁNDAR TÉCNICO DE PRODUCTO: TOSTIAGUACHILE VERDE TRADICIONAL ($150 MXN)
+## 📏 4. ESTÁNDAR TÉCNICO DE PRODUCTO: TOSTIAGUACHILE VERDE TRADICIONAL ($170 MXN)
 
 La sencillez operativa es la clave de la rentabilidad y la perfección culinaria. No existen variantes, no hay aguachile rojo ni selector de picor.
 
@@ -153,7 +153,7 @@ La sencillez operativa es la clave de la rentabilidad y la perfección culinaria
 +-------------------------------------+-------------------------------------------+
 | Parámetro                           | Especificación Oficial                    |
 +-------------------------------------+-------------------------------------------+
-| Precio Oficial al Público           | $150.00 MXN                               |
+| Precio Oficial al Público           | $170.00 MXN                               |
 | Base Botana                         | 1 Bolsa de Tostitos Salsa Verde Oficial    |
 |                                     | (Contenido neto comercial 60g - 65g)      |
 | Calibre de Camarón                  | Calibre 36/40 o 41/50 costa del Golfo     |
@@ -207,7 +207,7 @@ flowchart TD
 | **Auditor de Bromatología y Cadena de Frío** | `qa_bromatologia_frio` | Inspeccionar temperaturas de recepción en cocina (0°-3°C), higiene de vegetales, bitácoras de desinfección bajo NOM-251 y estado del camarón en La Puntilla. | Cada viernes y antes de iniciar turno de fin de semana. |
 | **Auditor de Logística Térmica y Tiempos de Ruta** | `qa_logistica_ruta` | Monitorear hieleras en ruta (0°-4°C), tiempos de traslado desde Col. Flores a colonias clave (Petrolera, Madero, etc.) y planes de contingencia por tráfico o calor extremo. | Durante la jornada de entregas (Sábados y Domingos 1:00 - 5:00 PM). |
 | **Auditor de Ensamble y Experiencia en Puerta** | `qa_ensamble_puerta` | Auditar la presencia del repartidor, pulcritud de polo/mandil, colocación de guantes de nitrilo negros frente al cliente, técnica de apertura de bolsa y respeto al tiempo límite de 2.5 min. | Monitoreo por muestreo semanal y retroalimentación de clientes. |
-| **Auditor de Consistencia de Marca y Contenidos** | `qa_branding_marketing` | Escaneo estricto de web (`index.html`), redes (TikTok, Instagram, Facebook) y flyers. Eliminar cualquier residuo de Tostitos Rojos, selector de picor o leyendas obsoletas. Verificar que siempre aparezca el Verde Tradicional ($150) y TOSTITOS SALSA VERDE. | Auditoría semanal permanente en archivos y publicaciones. |
+| **Auditor de Consistencia de Marca y Contenidos** | `qa_branding_marketing` | Escaneo estricto de web (`index.html`), redes (TikTok, Instagram, Facebook) y flyers. Eliminar cualquier residuo de Tostitos Rojos, selector de picor o leyendas obsoletas. Verificar que siempre aparezca el Verde Tradicional ($170) y TOSTITOS SALSA VERDE. | Auditoría semanal permanente en archivos y publicaciones. |
 | **Auditor de Satisfacción al Cliente y Retención** | `qa_satisfaccion_postventa` | Supervisar el envío del mensaje de post-venta a los 45 minutos vía WhatsApp, monitorear el Net Promoter Score (NPS), gestionar quejas y aplicar la política de garantía de satisfacción. | Sábados y Domingos a partir de las 2:00 PM y cierre semanal. |
 
 ---

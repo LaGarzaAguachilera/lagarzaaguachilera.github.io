@@ -3,7 +3,7 @@
 **Producción:** Escuadrón Audiovisual `/teamwork` — La Garza Aguachilera (Tampico y Ciudad Madero)  
 **Showrunner:** `Agente_Showrunner_y_Adaptacion`  
 **Especificaciones Técnicas:** 1080x1920 (Full HD 9:16 Vertical) | 60.00 fps | H.264 High Profile | Audio AAC 44.1 kHz Estéreo  
-**Precio Oficial Integrado:** **$150 MXN** (~100g camarón mariposa + Tostitos Salsa Verde)  
+**Precio Oficial Integrado:** **$170 MXN** (~100g camarón mariposa + Tostitos Salsa Verde)  
 **Ubicación Oficial:** Colonia Flores, Tampico, Tamaulipas | **WhatsApp:** `833 252 09 88`  
 
 ---
@@ -16,7 +16,7 @@
 | **🦝 Mapache de las Escolleras (Freddy Krueger)** | `es-MX-JorgeNeural` | `rate="+14%"`, `pitch="+24Hz"` + EQ brillante | Voz aguda, acelerada, traviesa y desesperada por el *crunch* de unos Tostitos Salsa Verde. |
 | **👽 Alien del OVNI de Miramar** | `es-MX-DaliaNeural` | `rate="+8%"`, `pitch="+18Hz"` + Chorus Cósmico | Voz aguda intergaláctica pero 100% clara y simpática con eco espacial sutil de la base submarina de Miramar. |
 | **🎙️ Locutora Oficial (La Garza Aguachilera)** | `es-MX-DaliaNeural` | `rate="+8%"`, `pitch="+2Hz"` + Mastering Broadcast | Voz femenina mexicana ultra carismática, energética, fresca y antojable que lidera el clímax y el cierre comercial. |
-| **🐊 Juancho Resucitado (Modo Playita)** | `es-MX-JorgeNeural` | `rate="+8%"`, `pitch="-4Hz"` + EQ limpia | Voz llena de vida, alegre y triunfal tras comer su Tostiaguachile Verde de $150 MXN. |
+| **🐊 Juancho Resucitado (Modo Playita)** | `es-MX-JorgeNeural` | `rate="+8%"`, `pitch="-4Hz"` + EQ limpia | Voz llena de vida, alegre y triunfal tras comer su Tostiaguachile Verde de $170 MXN. |
 
 ---
 
@@ -70,17 +70,17 @@
 
 ---
 
-### ESCENA 5 (00:25.2 - 00:28.8) — "TESTIMONIO JAIBO RESUCITADO ($150 MXN)"
+### ESCENA 5 (00:25.2 - 00:28.8) — "TESTIMONIO JAIBO RESUCITADO ($170 MXN)"
 - **Arte y Escenario:** Playa Miramar soleada y vibrante. Juancho Resucitado (`clean_juancho.png`) con gafas de sol y camisa hawaiana junto al Mapache Feliz (`clean_mapache.png`) devorando su totopo y el OVNI celebrando arriba.
-- **Animación de Personaje:** Lip-sync alegre de Juancho con rebote rítmico al compás de la música tropical y explosión de medallón dorado: **¡SOLO $150 MXN!**.
+- **Animación de Personaje:** Lip-sync alegre de Juancho con rebote rítmico al compás de la música tropical y explosión de medallón dorado: **¡SOLO $170 MXN!**.
 - **Diálogo (Juancho Vivo):**
-  > *"¡Noooombre, qué delicia! ¡Reviví al cien por solo ciento cincuenta pesitos!"*
+  > *"¡Noooombre, qué delicia! ¡Reviví al cien por solo ciento setenta pesitos!"*
 - **Diseño Sonoro:** Fanfarria corta de victoria (*ding-ding!*) y risa/festejo costeño.
 
 ---
 
 ### ESCENA 6 (00:28.8 - 00:34.0) — "GRAN CIERRE COMERCIAL Y LLAMADO A LA ACCIÓN"
-- **Arte y Escenario:** Tarjeta maestra animada de franquicia con el logo oficial de **La Garza Aguachilera**, el Tostiaguachile Verde Tradicional ($150 MXN), los 3 personajes animados saludando, sello de garantía (*"El producto es preparado frente a usted para corroborar su frescura"*), ubicación (**Colonia Flores, Tampico, Tamaulipas | Sábados y Domingos 1:00 PM a 5:00 PM**) y botón de WhatsApp pulsante (`833 252 09 88`).
+- **Arte y Escenario:** Tarjeta maestra animada de franquicia con el logo oficial de **La Garza Aguachilera**, el Tostiaguachile Verde Tradicional ($170 MXN), los 3 personajes animados saludando, sello de garantía (*"El producto es preparado frente a usted para corroborar su frescura"*), ubicación (**Colonia Flores, Tampico, Tamaulipas | Sábados y Domingos 1:00 PM a 5:00 PM**) y botón de WhatsApp pulsante (`833 252 09 88`).
 - **Diálogo (Locutora Oficial):**
   > *"¡La Garza Aguachilera! Sábados y domingos en Tampico y Madero. ¡Manda WhatsApp al 833 252 09 88 y pide tu cura ya!"*
 - **Diseño Sonoro:** Subida triunfal (*swell*) de `Beachfront_Celebration.mp3` + efecto de notificación de WhatsApp y cierre limpio.

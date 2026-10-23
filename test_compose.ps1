@@ -195,7 +195,7 @@ $brushPriceBg = [System.Drawing.Drawing2D.LinearGradientBrush]::new($pillPriceRe
 $penPriceBorder = [System.Drawing.Pen]::new([System.Drawing.Color]::White, 2.5)
 Draw-RoundedBox $g $brushPriceBg $penPriceBorder $pillPriceRect 21
 $fontPrice = [System.Drawing.Font]::new("Segoe UI Black", 16, [System.Drawing.FontStyle]::Bold)
-$g.DrawString("`$150 MXN  •  TOSTITOS SALSA VERDE", $fontPrice, $brushWhite, [float]($textX + 170), [float]176, $sfCenter)
+$g.DrawString("`$170 MXN  •  TOSTITOS SALSA VERDE", $fontPrice, $brushWhite, [float]($textX + 170), [float]176, $sfCenter)
 
 # 6. MANDATORY FRESHNESS STATEMENT CARD
 $cardRect = [System.Drawing.RectangleF]::new(35, 215, 490, 115)

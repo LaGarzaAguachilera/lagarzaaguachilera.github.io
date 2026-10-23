@@ -15,7 +15,7 @@ $BolsasTostitos = $CajasTostitos * 24
 $PepinoKg = [Math]::Round(($P * 0.130), 2)
 $CebollaKg = [Math]::Round(($P * 0.045), 2)
 $HieloBolsas = 4 + [Math]::Ceiling($P / 15)
-$VentaEstimada = $P * 150
+$VentaEstimada = $P * 170
 
 Write-Host "================================================================" -ForegroundColor DarkGreen
 Write-Host "  🦐 LA GARZA AGUACHILERA — ALGORITMO DE COMPRAS DE VIERNES" -ForegroundColor Yellow
@@ -32,5 +32,5 @@ Write-Host "4. Pepino Criollo Fresco             : $PepinoKg kg" -ForegroundColo
 Write-Host "5. Cebolla Morada                    : $CebollaKg kg (para pluma desflemada)" -ForegroundColor Cyan
 Write-Host "6. Bolsas de Hielo en Escama         : $HieloBolsas bolsas para hielera y cubetas con termómetro" -ForegroundColor Cyan
 Write-Host "----------------------------------------------------------------" -ForegroundColor DarkGray
-Write-Host "💰 Proyección de Venta Bruta ($150 MXN/bolsa): `$ $VentaEstimada MXN" -ForegroundColor Green
+Write-Host "💰 Proyección de Venta Bruta ($170 MXN/bolsa): `$ $VentaEstimada MXN" -ForegroundColor Green
 Write-Host "================================================================" -ForegroundColor DarkGreen

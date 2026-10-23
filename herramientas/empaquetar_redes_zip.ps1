@@ -48,10 +48,10 @@ try {
     Add-FileToZip (Join-Path $projectRoot "tostiaguachile_verde_redondo.jpg") "tostiaguachile_verde_redondo.jpg"
     Add-FileToZip (Join-Path $projectRoot "aguachile_verde_hero.jpg") "aguachile_verde_hero.jpg"
 
-    # 2. Master Episodio Animado Full HD 60fps en carpeta VIDEOS/
-    Write-Host "`n2. Agregando Master Episodio Animado 60fps Full HD (VIDEOS/animacion_la_garza_episodio_crudos_60fps.mp4)..." -ForegroundColor Green
-    $masterVideo = Join-Path $projectRoot "VIDEOS\animacion_la_garza_episodio_crudos_60fps.mp4"
-    Add-FileToZip $masterVideo "VIDEOS/animacion_la_garza_episodio_crudos_60fps.mp4"
+    # 2. Master Video Promocional Full HD (VIDEOS/promo_aguachile_verde_final.mp4)
+    Write-Host "`n2. Agregando Video Promocional Arreglado Full HD (VIDEOS/promo_aguachile_verde_final.mp4)..." -ForegroundColor Green
+    $promoVideo = Join-Path $projectRoot "VIDEOS\promo_aguachile_verde_final.mp4"
+    Add-FileToZip $promoVideo "VIDEOS/promo_aguachile_verde_final.mp4"
 
     # 3. Catalogo Completo de 1 Mes Organizado por Carpetas Semanales (Semana_1 a Semana_4)
     Write-Host "`n3. Agregando Catalogo Mensual (16 Piezas: Feed + Story + Copy)..." -ForegroundColor Green
@@ -122,7 +122,7 @@ try {
         "CONTENIDO DEL PAQUETE:",
         "- Portada Facebook Safe Zone (1200x630 px)",
         "- Flyers de Marca Feed (1080x1080 px) e Historias (1080x1920 px)",
-        "- Master Episodio Animado Full HD 60fps (VIDEOS/animacion_la_garza_episodio_crudos_60fps.mp4)",
+        "- Master Video Promocional Full HD (VIDEOS/promo_aguachile_verde_final.mp4)",
         "- Semana_1/: Mitologia Costena y Cultura Jaiba (4 piezas Feed 1:1, Stories 9:16 y copys)",
         "- Semana_2/: El Poder de la Frescura en Vivo (4 piezas Feed 1:1, Stories 9:16 y copys)",
         "- Semana_3/: La Cura Sagrada del Domingo (4 piezas Feed 1:1, Stories 9:16 y copys)",
@@ -133,7 +133,7 @@ try {
         "",
         "PARAMETROS OFICIALES DE MARCA (2026):",
         "- Producto: Tostiaguachile Verde Tradicional",
-        "- Precio Oficial: `$150 MXN",
+        "- Precio Oficial: `$170 MXN",
         "- Aguacate Fresco Garantizado: Toda porción incluye aguacate fresco y cremoso en cada orden.",
         "- El Toque Secreto en Bolsa: En preparación en bolsa las chips se bañan con una combinación especial y rica de salsas de la casa.",
         "- 4 Complementos a Elegir: 1. Tostitos Salsa Verde, 2. Tostitos Flamin' Hot, 3. Chips o Totopos artesanales, 4. Galletas Saladas",

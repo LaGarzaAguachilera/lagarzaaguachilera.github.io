@@ -300,7 +300,7 @@ function Draw-PricePillComponent([System.Drawing.Graphics]$g, [System.Drawing.Re
     $pDark = [System.Drawing.Pen]::new([System.Drawing.Color]::FromArgb(15, 23, 42), 4)
     $pDark.LineJoin = [System.Drawing.Drawing2D.LineJoin]::Round
 
-    $displayStr = "$($script:star) `$150 MXN LA BOLSA $($script:bul) ~100g CAMAR$($script:uO)N"
+    $displayStr = "$($script:star) `$170 MXN LA BOLSA $($script:bul) ~100g CAMAR$($script:uO)N"
     if ($extraText) { $displayStr += " $($script:bul) $extraText" }
     $displayStr += " $($script:star)"
 
@@ -657,7 +657,7 @@ function Render-FeedPiece($item) {
         Draw-StickerWithShadow $g $ovniPath 840 50 180 180 6
     }
 
-    # 5. Price Pill Estandarizado $150 MXN (Y=760)
+    # 5. Price Pill Estandarizado $170 MXN (Y=760)
     Draw-PricePillComponent $g ([System.Drawing.RectangleF]::new(80, 760, 920, 60)) $item.ExtraTag
 
     # 6. Tarjeta de Frescura Obligatoria (Y=835)
@@ -770,7 +770,7 @@ function Render-StoryPiece($item) {
     $g.DrawString("TOSTITOS SALSA VERDE", $fPatch, $bWhite, [float]540, [float]1049, $sfCenter)
     $fPatch.Dispose()
 
-    # 3. Price Banner Estandarizado ($150 MXN) (Y=1095 a 1175)
+    # 3. Price Banner Estandarizado ($170 MXN) (Y=1095 a 1175)
     $priceStoryRect = [System.Drawing.RectangleF]::new(90, 1095, 900, 76)
     $bPriceS = [System.Drawing.Drawing2D.LinearGradientBrush]::new($priceStoryRect, [System.Drawing.Color]::FromArgb(249, 115, 22), [System.Drawing.Color]::FromArgb(234, 88, 12), 0.0)
     $pPriceS = [System.Drawing.Pen]::new([System.Drawing.Color]::White, 3.5)
@@ -778,7 +778,7 @@ function Render-StoryPiece($item) {
     $bPriceS.Dispose(); $pPriceS.Dispose()
 
     $fPriceS = [System.Drawing.Font]::new("Segoe UI Black", 21.0, [System.Drawing.FontStyle]::Bold)
-    $priceStr = "$($script:star) `$150 MXN LA BOLSA $($script:bul) ~100g CAMAR$($script:uO)N $($script:star)"
+    $priceStr = "$($script:star) `$170 MXN LA BOLSA $($script:bul) ~100g CAMAR$($script:uO)N $($script:star)"
     Draw-OutlinedText $g $priceStr $fPriceS $bWhite $pDark8 540 1133 $sfCenter
     $fPriceS.Dispose()
 

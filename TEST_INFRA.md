@@ -2,7 +2,7 @@
 
 ## Test Philosophy
 - Requirement-driven, opaque-box and forensic verification.
-- Validates brand shield ($150 MXN strictly, Colonia Flores, 0 forbidden words).
+- Validates brand shield ($170 MXN strictly, Colonia Flores, 0 forbidden words).
 - Validates new gastronomy attributes (aguacate fresco cremoso en toda porción, baño de salsas de la casa en bolsa).
 - Validates visual presentation, 4 complements, 2 modalities, ZIP integrity (< 100 MB), and GitHub Pages live response (200 OK).
 
@@ -11,7 +11,7 @@
 |---|---------|--------|:----------------------:|:---------------------------:|:----------------------:|:-------------------:|
 | 1 | Aguacate Fresco en Toda Porción | ORIGINAL_REQUEST R1 | Regex in `index.html` & copies | Case-insensitive & formatting | Sabor Jaibo 4-pillar balance | Web presentation & QA script |
 | 2 | Baño de Salsas de la Casa en Bolsa | ORIGINAL_REQUEST R1 | Regex in `index.html` & copies | Exact phrase matching | Ensamble en bolsa interaction | Web presentation & QA script |
-| 3 | Precio Único $150 MXN | ORIGINAL_REQUEST R1, R4 | >=5 in index, >=20 in panel | 0 mentions of $170 / other | Combos scale ($300 duo) | Brand shield in QA suites |
+| 3 | Precio Único $170 MXN | ORIGINAL_REQUEST R1, R4 | >=5 in index, >=20 in panel | 0 mentions of $150 / other | Combos scale ($340 duo) | Brand shield in QA suites |
 | 4 | Ubicación Colonia Flores | ORIGINAL_REQUEST R4 | Literal check in footer/hero | 0 mentions of Rosa 210 | Delivery zone validation | Brand shield in QA suites |
 | 5 | Cero Palabras Prohibidas | ORIGINAL_REQUEST R1, R4 | Global scan for 13 patterns | No unencoded literals in tools | Content & metadata clean | Exit code 0 in audit scripts |
 | 6 | 4 Complementos & 2 Modalidades | ORIGINAL_REQUEST R1, R2 | Selectors and text check | Default active choices | WhatsApp URL generation | Interactive selector testing |

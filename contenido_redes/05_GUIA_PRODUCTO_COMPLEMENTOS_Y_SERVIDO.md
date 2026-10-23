@@ -11,7 +11,7 @@
 
 ### 2. Especificaciones de Producto
 - **Nombre Oficial:** Tostiaguachile Verde Tradicional
-- **Precio Oficial Único:** **$150 MXN**
+- **Precio Oficial Único:** **$170 MXN**
 - **Ubicación Base:** Colonia Flores, Tampico, Tamaulipas
 - **Proteína:** ~100g de camarón fresco de costa rigurosamente seleccionado, limpio y abierto en corte mariposa.
 - **Aguacate Garantizado:** Toda porción incluye aguacate fresco y cremoso (garantizado en cada orden, aporta suntuosidad sedosa que templa el limón Colima y el picante serrano).
@@ -43,10 +43,10 @@ Diseñados para captar el apetito sensorial inmediato en redes sociales (Instagr
 
 | # | Pilar Creativo | Gancho de Apertura (Primeros 3 seg) | Concepto Visual / B-Roll | Copy / Bajada Persuasiva |
 |---|---|---|---|---|
-| **H1** | **El Toque de Aguacate (Suntuosidad)** | *"¿Quién te dijo que el aguachile callejero no lleva aguacate? En La Garza cada porción viene coronada con aguacate fresco y cremoso 🥑✨"* | Macro en cámara lenta: rebanadas gruesas de aguacate Hass cayendo sobre los camarones rosados bañados en salsa verde. | *"El balance maestro que tu paladar pedía: la acidez vibrante del limón Colima y el toque picante del serrano se funden con la cremosidad del aguacate fresco. Todo por solo $150 MXN."* |
+| **H1** | **El Toque de Aguacate (Suntuosidad)** | *"¿Quién te dijo que el aguachile callejero no lleva aguacate? En La Garza cada porción viene coronada con aguacate fresco y cremoso 🥑✨"* | Macro en cámara lenta: rebanadas gruesas de aguacate Hass cayendo sobre los camarones rosados bañados en salsa verde. | *"El balance maestro que tu paladar pedía: la acidez vibrante del limón Colima y el toque picante del serrano se funden con la cremosidad del aguacate fresco. Todo por solo $170 MXN."* |
 | **H2** | **El Baño Secreto en Bolsa** | *"El secreto no está solo arriba... está en el fondo de la bolsa con nuestra rica combinación especial de salsas de la casa 🤤🔥"* | Primer plano cenital: tijera abriendo los tostitos y salsera vertiendo el baño de salsas especiales sobre las chips crujientes. | *"Cero botanas desabridas. En preparación en bolsa las chips se bañan con una rica combinación especial de salsas de la casa antes de recibir el marisco helado para que el último bocado tenga el mismo sabor explosivo que el primero."* |
 | **H3** | **La Textura Perfecta (Crunch + Crema)** | *"Aguacate mantequilloso, camarón mariposa jugoso y el crunch más adictivo de Tampico en un solo bocado 🍤🥑💥"* | Mordida en plano cerrado con sonido crujiente nítido mostrando la combinación de chip dorada, salsas de la casa, camarón y aguacate. | *"No te quedes con ganas de una botana de verdad. ~100g de camarón limpio, salsas de la casa y aguacate fresco y cremoso garantizado. Elige tu botana favorita y pide por WhatsApp."* |
-| **H4** | **Personalización en 4 Complementos** | *"¿Verdes, Flamin' Hot, Totopos de maíz o Galletas Saladas? En La Garza el antojo se arma exactamente como a ti te gusta."* | Mosaico dinámico de las 4 opciones de base crujiente siendo abiertas y preparadas al momento. | *"Mismo precio estricto ($150 MXN), misma frescura marina y aguacate fresco y cremoso garantizado en cada orden. Tú solo decides qué crujido le pones a tu fin de semana."* |
+| **H4** | **Personalización en 4 Complementos** | *"¿Verdes, Flamin' Hot, Totopos de maíz o Galletas Saladas? En La Garza el antojo se arma exactamente como a ti te gusta."* | Mosaico dinámico de las 4 opciones de base crujiente siendo abiertas y preparadas al momento. | *"Mismo precio estricto ($170 MXN), misma frescura marina y aguacate fresco y cremoso garantizado en cada orden. Tú solo decides qué crujido le pones a tu fin de semana."* |
 | **H5** | **Servicio Premium a tu Elección** | *"¿Te lo preparamos al instante en tu puerta o prefieres tu complemento por separado para comerlo más tarde 100% crujiente?"* | Comparativa elegante: a la izquierda ensamble en vivo con el staff; a la derecha empaque hermético individual impecable. | *"Máxima frescura, cero enredos y cero esperas. Servicio exclusivo a domicilio sábados y domingos de 1:00 PM a 5:00 PM con salida desde Colonia Flores, Tampico."* |
 | **H6** | **El Antojo Dominical Sin Fricción** | *"Domingo con clima encendido, serie favorita y el mejor tostiaguachile de Tampico a tu puerta en un solo clic 📲🛋️"* | Escena acogedora en sala climatizada recibiendo la orden sin tener que cocinar ni salir al calor. | *"Olvídate de cocinar o hacer filas. Escríbenos a WhatsApp (833 252 09 88), dinos tu colonia y recibe tu porción bien reportada con camarón, salsas de la casa y aguacate fresco y cremoso."* |
 
@@ -54,5 +54,5 @@ Diseñados para captar el apetito sensorial inmediato en redes sociales (Instagr
 
 ### 6. Guía de Respuestas y Conversión Rápida por WhatsApp (833 252 09 88)
 *Mensaje pre-llenado de alta conversión:*
-> "¡Hola La Garza Aguachilera! 🍤 Quiero pedir mi Tostiaguachile Verde Tradicional ($150 MXN) con [Complemento: Tostitos Salsa Verde / Flamin' Hot / Totopos Artesanales / Galletas Saladas], aguacate fresco y cremoso garantizado, y servido [Preparado al momento frente a mí / Con complemento por separado]. Mi dirección es en [Colonia / Tampico o Madero]. ¿Me confirman horario para este fin de semana?"
+> "¡Hola La Garza Aguachilera! 🍤 Quiero pedir mi Tostiaguachile Verde Tradicional ($170 MXN) con [Complemento: Tostitos Salsa Verde / Flamin' Hot / Totopos Artesanales / Galletas Saladas], aguacate fresco y cremoso garantizado, y servido [Preparado al momento frente a mí / Con complemento por separado]. Mi dirección es en [Colonia / Tampico o Madero]. ¿Me confirman horario para este fin de semana?"
 

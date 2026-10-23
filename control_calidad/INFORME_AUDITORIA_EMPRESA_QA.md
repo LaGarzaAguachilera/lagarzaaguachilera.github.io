@@ -1,7 +1,7 @@
 # Dictamen Pericial de Calidad Total e Infraestructura Digital
 ## Empresa Auditora de Control de Calidad — La Garza Aguachilera
 
-> **Fecha de Auditoría:** 2026-10-20 03:21:04
+> **Fecha de Auditoría:** 2026-10-23 13:35:54
 > **Ámbito de Inspección:** Ecosistema Web, Panel de Control, Contenido Audiovisual, Segmentación Socioeconómica y Repositorio Digital.
 > **Estado de Deficiencias:** 0 encontradas.
 
@@ -85,8 +85,8 @@
 - [OK] Salsas de la casa / combinación especial verificadas en contenido_redes/05_GUIA_PRODUCTO_COMPLEMENTOS_Y_SERVIDO.md
 
 ### 3. Auditoría de Blindaje de Marca, Precios y Legalidad
-- [OK] Cero residuos del precio antiguo ($170) en index.html
-- [OK] Precio oficial $150 MXN ratificado (18 menciones en index.html)
+- [OK] Cero residuos del precio antiguo ($150) en index.html
+- [OK] Precio oficial $170 MXN ratificado (18 menciones en index.html)
 - [OK] Ubicación oficial ratificada: 'Colonia Flores, Tampico, Tamaulipas' (0 menciones de Rosa 210)
 - [OK] Enlace oficial de Facebook verificado con mibextid
 
@@ -94,7 +94,10 @@
 - [OK] Resolución de video animado: 1080x1920 Full HD (9:16 vertical)
 - [OK] Tasa de cuadros: 60.0 FPS constantes verificados por telemetría
 - [OK] Audio master: AAC estéreo con diseño sonoro y auto-ducking
-- [OK] Paquete maestro ZIP: 92.45 MB (Dentro de los límites de GitHub < 100 MB)
+- [OK] Resolución video promocional: 1080x1920 Full HD (9:16 vertical)
+- [OK] Bitrate de video promocional: 4636 kbps (>= 4000 kbps verificado)
+- [OK] Audio de video promocional: AAC estéreo verificado
+- [OK] Paquete maestro ZIP: 73.2 MB (Dentro de los límites de GitHub < 100 MB)
 
 ---
 

@@ -11,6 +11,9 @@ import json
 import subprocess
 from datetime import datetime
 
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
 project_root = r"d:\AG\la garza aguachilera"
 report_dir = os.path.join(project_root, "control_calidad")
 os.makedirs(report_dir, exist_ok=True)
@@ -155,21 +158,21 @@ for doc_name, doc_path in gastronomy_docs:
 print("\n--- AUDITOR 3: BLINDAJE DE MARCA Y PRECIOS ---")
 a3_results = []
 
-# Cero $170
-matches_170 = re.findall(r'(\$170|170\s*MXN|170\s*pesos|ciento\s*setenta)', index_content, re.IGNORECASE)
-if not matches_170:
-    a3_results.append("[OK] Cero residuos del precio antiguo ($170) en index.html")
+# Cero $150
+matches_150 = re.findall(r'(\$150|150\s*MXN|150\s*pesos|150%20|ciento\s*cincuenta)', index_content, re.IGNORECASE)
+if not matches_150:
+    a3_results.append("[OK] Cero residuos del precio antiguo ($150) en index.html")
 else:
-    deficiencias.append(f"Se detectaron {len(matches_170)} menciones de $170 en index.html")
-    a3_results.append("[FALLO] Precio antiguo detectado ($170)")
+    deficiencias.append(f"Se detectaron {len(matches_150)} menciones de $150 en index.html")
+    a3_results.append("[FALLO] Precio antiguo detectado ($150)")
 
-# Validar $150
-matches_150 = re.findall(r'(\$150|150\s*MXN)', index_content, re.IGNORECASE)
-if len(matches_150) >= 5:
-    a3_results.append(f"[OK] Precio oficial $150 MXN ratificado ({len(matches_150)} menciones en index.html)")
+# Validar $170
+matches_170 = re.findall(r'(\$170|170\s*MXN)', index_content, re.IGNORECASE)
+if len(matches_170) >= 5:
+    a3_results.append(f"[OK] Precio oficial $170 MXN ratificado ({len(matches_170)} menciones en index.html)")
 else:
-    deficiencias.append("Insuficientes menciones de $150 MXN en index.html")
-    a3_results.append("[FALLO] Menciones insuficientes de $150")
+    deficiencias.append("Insuficientes menciones de $170 MXN en index.html")
+    a3_results.append("[FALLO] Menciones insuficientes de $170")
 
 # Ubicación Oficial
 if "Colonia Flores, Tampico" in index_content and not re.search(r'Rosa\s*210', index_content, re.IGNORECASE):
@@ -195,6 +198,7 @@ a4_results = []
 
 ffprobe_bin = os.path.join(project_root, r"herramientas\ffmpeg\ffprobe.exe")
 master_video = os.path.join(project_root, r"VIDEOS\animacion_la_garza_episodio_crudos_60fps.mp4")
+promo_video = os.path.join(project_root, r"VIDEOS\promo_aguachile_verde_final.mp4")
 
 if os.path.exists(ffprobe_bin) and os.path.exists(master_video):
     cmd = [ffprobe_bin, "-v", "error", "-print_format", "json", "-show_format", "-show_streams", master_video]
@@ -231,6 +235,42 @@ if os.path.exists(ffprobe_bin) and os.path.exists(master_video):
 else:
     deficiencias.append("ffprobe.exe o master de video ausente")
     a4_results.append("[FALLO] Archivos ausentes para telemetría")
+
+# Telemetría ffprobe para Video Promocional Final
+if os.path.exists(ffprobe_bin) and os.path.exists(promo_video):
+    cmd_promo = [ffprobe_bin, "-v", "error", "-print_format", "json", "-show_format", "-show_streams", promo_video]
+    res_promo = subprocess.run(cmd_promo, capture_output=True, text=True, encoding="utf-8")
+    if res_promo.returncode == 0:
+        data_p = json.loads(res_promo.stdout)
+        v_stream_p = next((s for s in data_p.get("streams", []) if s.get("codec_type") == "video"), None)
+        a_stream_p = next((s for s in data_p.get("streams", []) if s.get("codec_type") == "audio"), None)
+
+        if v_stream_p and v_stream_p.get("width") == 1080 and v_stream_p.get("height") == 1920:
+            a4_results.append("[OK] Resolución video promocional: 1080x1920 Full HD (9:16 vertical)")
+        else:
+            w_p = v_stream_p.get("width") if v_stream_p else "N/A"
+            h_p = v_stream_p.get("height") if v_stream_p else "N/A"
+            deficiencias.append(f"Resolución de video promocional no conforme: {w_p}x{h_p}")
+            a4_results.append("[FALLO] Resolución de video promocional incorrecta")
+
+        b_rate_p = int(v_stream_p.get("bit_rate", 0)) if v_stream_p and v_stream_p.get("bit_rate") else int(data_p.get("format", {}).get("bit_rate", 0))
+        if b_rate_p >= 4000000:
+            a4_results.append(f"[OK] Bitrate de video promocional: {round(b_rate_p/1000)} kbps (>= 4000 kbps verificado)")
+        else:
+            deficiencias.append(f"Bitrate de video promocional insuficiente: {round(b_rate_p/1000)} kbps")
+            a4_results.append("[FALLO] Bitrate promocional insuficiente")
+
+        if a_stream_p and a_stream_p.get("codec_name") == "aac" and a_stream_p.get("channels") == 2:
+            a4_results.append("[OK] Audio de video promocional: AAC estéreo verificado")
+        else:
+            deficiencias.append("Pista de audio promocional no es AAC estéreo")
+            a4_results.append("[FALLO] Audio promocional no conforme")
+    else:
+        deficiencias.append("Fallo al ejecutar telemetría ffprobe en video promocional")
+        a4_results.append("[FALLO] Error en telemetría ffprobe video promocional")
+else:
+    deficiencias.append("ffprobe.exe o video promocional ausente")
+    a4_results.append("[FALLO] Video promocional ausente para telemetría")
 
 # ZIP
 zip_path = os.path.join(project_root, "paquete_redes_la_garza.zip")
@@ -292,6 +332,7 @@ if def_count == 0:
         "`✅ Auditado y aprobado por Control de Calidad: Cumple con los estándares de La Garza Aguachilera`"
     ])
     print(" VEREDICTO: APROBADO AL 100% (0 DEFICIENCIAS)")
+    print(" ✅ Auditado y aprobado por Control de Calidad: Cumple con los estándares de La Garza Aguachilera")
     exit_code = 0
 else:
     def_list = "\n".join(f"- [CRÍTICO] {d}" for d in deficiencias)

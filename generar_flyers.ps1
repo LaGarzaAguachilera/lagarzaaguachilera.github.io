@@ -319,13 +319,13 @@ $gPost.DrawString("MAPACHE: ${iE}100% CRUJIENTE!", $fontMPost, $bWhite, [float]8
 # ==============================================================================
 # COMMERCIAL VALUE CARDS & PRICING
 # ==============================================================================
-# High-Voltage Radiant Price Pill ($150 MXN)
+# High-Voltage Radiant Price Pill ($170 MXN)
 $pricePillPost = [System.Drawing.RectangleF]::new(70, 595, 940, 58)
 $bPricePost = [System.Drawing.Drawing2D.LinearGradientBrush]::new($pricePillPost, [System.Drawing.Color]::FromArgb(249, 115, 22), [System.Drawing.Color]::FromArgb(234, 88, 12), 0.0)
 $pPricePost = [System.Drawing.Pen]::new([System.Drawing.Color]::White, 3)
 Draw-RoundedBox $gPost $bPricePost $pPricePost $pricePillPost 24 $true
 $fontPricePost = [System.Drawing.Font]::new("Segoe UI Black", 13.5, [System.Drawing.FontStyle]::Bold)
-$priceStrPost = "$star `$150 MXN LA BOLSA $bul ~100g CAMAR${uO}N MARIPOSA $bul TOSTITOS SALSA VERDE $star"
+$priceStrPost = "$star `$170 MXN LA BOLSA $bul ~100g CAMAR${uO}N MARIPOSA $bul TOSTITOS SALSA VERDE $star"
 $gPost.DrawString($priceStrPost, $fontPricePost, $bWhite, [float]540, [float]624, $sfCenter)
 
 # Mandatory Freshness Guarantee Card (Frosted Glassmorphism Finish)
@@ -520,13 +520,13 @@ $gStory.DrawString("MAPACHE: ${iE}100% CRUJIENTE!", $fontMStory, $bWhite, [float
 # ==============================================================================
 # COMMERCIAL VALUE CARDS & PRICING
 # ==============================================================================
-# High-Voltage Radiant Price Pill ($150 MXN)
+# High-Voltage Radiant Price Pill ($170 MXN)
 $pricePillStory = [System.Drawing.RectangleF]::new(90, 1095, 900, 76)
 $bPriceStory = [System.Drawing.Drawing2D.LinearGradientBrush]::new($pricePillStory, [System.Drawing.Color]::FromArgb(249, 115, 22), [System.Drawing.Color]::FromArgb(234, 88, 12), 0.0)
 $pPriceStory = [System.Drawing.Pen]::new([System.Drawing.Color]::White, 3.5)
 Draw-RoundedBox $gStory $bPriceStory $pPriceStory $pricePillStory 38 $true
 $fontPriceStory = [System.Drawing.Font]::new("Segoe UI Black", 23, [System.Drawing.FontStyle]::Bold)
-$priceStrStory = "$star `$150 MXN LA BOLSA $bul ~100g CAMAR${uO}N $star"
+$priceStrStory = "$star `$170 MXN LA BOLSA $bul ~100g CAMAR${uO}N $star"
 $gStory.DrawString($priceStrStory, $fontPriceStory, $bWhite, [float]540, [float]1133, $sfCenter)
 
 # Mandatory Freshness Guarantee Card (Frosted Glassmorphism Finish)

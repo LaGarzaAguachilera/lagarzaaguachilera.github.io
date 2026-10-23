@@ -46,7 +46,7 @@
 - Official phrasing: `"Toda porción incluye aguacate fresco y cremoso"`, `"En preparación en bolsa las chips se bañan con una combinación especial y rica de salsas de la casa"`.
 - 4 Complements: `"Tostitos Salsa Verde"`, `"Tostitos Flamin' Hot"`, `"Chips o Totopos Artesanales"`, `"Galletas Saladas"`.
 - 2 Modalities: `"Preparado al momento frente a ti"`, `"Con complemento por separado"`.
-- Price: Strictly `$150 MXN`.
+- Price: Strictly `$170 MXN`.
 - Location: `"Colonia Flores, Tampico, Tamaulipas"`.
 
 ### M2 ↔ M3 (Web Design to Packaging)
