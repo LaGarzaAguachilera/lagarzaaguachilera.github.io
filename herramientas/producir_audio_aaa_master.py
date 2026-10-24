@@ -16,7 +16,7 @@ Componentes:
    - Masterización a norma broadcast: -14 LUFS ± 2 LUFS, pico < -1 dBFS.
 4. Generación de subtítulos dinámicos en formato ASS (subtitulos_aaa_stories_170.ass)
    adheridos estrictamente a zonas seguras (X en [90, 990], Y ~1220 a 1350).
-5. Blindaje estricto de marca: precio oficial $170 MXN, base en Colonia Flores Tampico.
+5. Blindaje estricto de marca: precio oficial $170 MXN, pedidos por WhatsApp.
 """
 
 import os
@@ -83,10 +83,10 @@ SCRIPT_ACTS = [
     {
         "id": "act4_closing",
         "act": 4,
-        "name": "Precio Estricto $170 MXN, Horarios y WhatsApp CTA",
-        "text": "¡Por solo ciento setenta pesitos! Base Colonia Flores Tampico, sábados y domingos de una a cinco. ¡WhatsApp 833 252 09 88!",
+        "name": "Precio Estricto $170 MXN y WhatsApp CTA",
+        "text": "¡Por solo ciento setenta pesitos! Envíos en Tampico y Ciudad Madero. ¡Pide por WhatsApp al 833 252 09 88!",
         "target_start": 15.85,
-        "atempo": 1.35,
+        "atempo": 1.25,
         "eq": "equalizer=f=250:width_type=h:width=150:g=2.2,equalizer=f=3500:width_type=h:width=1000:g=1.8,alimiter=limit=0.92"
     }
 ]
@@ -449,11 +449,11 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         # Acto 3: 4 Complementos y Modalidades (~10.80s - 15.75s)
         f"Dialogue: 0,{format_ass_time(stems[2]['actual_start'])},{format_ass_time(stems[2]['actual_end'])},Sub2L,,0,0,0,,{{\\an2\\fad(100,100)}}{{\\c&H0032EBFF}}4 COMPLEMENTOS A TU ELECCIÓN{{\\c&H00FFFFFF}}\\N{{\\c&H0070FF80}}Tostitos • Chips • Saladas • ¡En Vivo o Separado!",
 
-        # Acto 4A: Precio Estricto $170 MXN y Ubicación (~15.85s - 19.50s)
-        f"Dialogue: 0,{format_ass_time(stems[3]['actual_start'])},0:00:19.50,Sub2L,,0,0,0,,{{\\an2\\fad(100,100)}}{{\\fs50\\c&H0032EBFF}}¡POR SOLO $170 MXN!{{\\c&H00FFFFFF}}\\NBase Colonia Flores, Tampico",
+        # Acto 4A: Precio Estricto $170 MXN (~15.85s - 19.50s)
+        f"Dialogue: 0,{format_ass_time(stems[3]['actual_start'])},0:00:19.50,Sub2L,,0,0,0,,{{\\an2\\fad(100,100)}}{{\\fs50\\c&H0032EBFF}}¡POR SOLO $170 MXN!{{\\c&H00FFFFFF}}\\NTampico y Ciudad Madero",
 
-        # Acto 4B: Horarios y WhatsApp CTA (~19.50s - 23.40s)
-        f"Dialogue: 0,0:00:19.50,0:00:23.40,Sub2L,,0,0,0,,{{\\an2\\fad(100,150)}}{{\\c&H0070FF80}}WHATSAPP: 833 252 09 88{{\\c&H00FFFFFF}}\\NSábados y Domingos de 1:00 a 5:00 PM"
+        # Acto 4B: WhatsApp CTA y Entregas (~19.50s - 23.40s)
+        f"Dialogue: 0,0:00:19.50,0:00:23.40,Sub2L,,0,0,0,,{{\\an2\\fad(100,150)}}{{\\c&H0070FF80}}WHATSAPP: 833 252 09 88{{\\c&H00FFFFFF}}\\NEnvíos y Entregas por Pedido"
     ]
 
     ass_content = ass_header + "\n".join(events) + "\n"
@@ -539,11 +539,15 @@ def verify_telemetry():
         "ciento" + " cincuenta",
         "Rosa" + " 210",
         "dark" + " kitchen",
+        "colonia" + " flores",
+        "1:00" + " a 5:00",
+        "1:00" + " pm",
+        "5:00" + " pm",
     ]
     for fb in forbidden:
         assert fb.lower() not in subs_text.lower(), f"Violación de blindaje: '{fb}' detectado en subtítulos."
 
-    required = ["$170 MXN", "Colonia Flores", "833 252 09 88", "aguacate", "salsas especiales", "1:00 a 5:00 PM"]
+    required = ["$170 MXN", "833 252 09 88", "aguacate", "salsas especiales", "Tampico y Ciudad Madero"]
     for req in required:
         assert req.lower() in subs_text.lower(), f"Falta término obligatorio en subtítulos: '{req}'"
 

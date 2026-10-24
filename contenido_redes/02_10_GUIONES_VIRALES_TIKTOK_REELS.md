@@ -30,7 +30,7 @@
 ---
 
 ### GUION 3: La Cura Definitiva para la Cruda (Viral de Viernes)
-* **Día ideal:** Viernes por la tarde/noche (1:00 PM o 7:00 PM).
+* **Día ideal:** Viernes por la tarde/noche (Servicio Activo o 7:00 PM).
 * **Texto en pantalla:** *"Guarda este video para tu 'yo' del domingo en la mañana 🍻"*
 * **Visual:** Ella sonriendo con tono cómplice, mostrando una bolsa y un vaso de aguachile helado con limones partidos.
 * **Lo que dice ella a cámara:**
@@ -64,7 +64,7 @@
 * **Texto en pantalla:** *"Preparando la lista de pedidos de este fin de semana 📋🛵"*
 * **Visual:** Ella anotando pedidos con su teléfono, sonriendo y mostrando bolsas listas y cajas de ingredientes.
 * **Lo que dice ella a cámara:**
-  > *"¡Oigan! Ya estamos organizando las rutas de entrega para este sábado y domingo. Nuestra base de salida es en la Colonia Flores en Tampico y cubrimos casi toda la zona conurbada. Como preparamos todo fresco, solo abrimos un número limitado de bolsas por día para garantizar que cada entrega llegue perfecta. Si no quieres quedarte sin tu tostiaguachile verde o rojo, mándanos WhatsApp ahorita mismo."*
+  > *"¡Oigan! Ya estamos organizando las rutas de entrega para este sábado y domingo. Nuestra base de salida es en la Tampico y Ciudad Madero en Tampico y cubrimos casi toda la zona conurbada. Como preparamos todo fresco, solo abrimos un número limitado de bolsas por día para garantizar que cada entrega llegue perfecta. Si no quieres quedarte sin tu tostiaguachile verde o rojo, mándanos WhatsApp ahorita mismo."*
 * **Hashtags:** `#NegocioLocal #Tampico #EmprendimientoMexicano #Tostiaguachile`
 
 ---

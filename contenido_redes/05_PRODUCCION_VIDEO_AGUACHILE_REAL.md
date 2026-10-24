@@ -155,7 +155,7 @@ Para usar en pauta publicitaria en Meta Ads, Instagram Reels comerciales y TikTo
 | :--- | :--- | :--- |
 | **00:00 - 00:03** | El tenedor sosteniendo el camarón mariposa en primer plano absoluto.<br>📌 *Texto:* **"Si tu aguachile no tiene este tamaño de camarón... ahí no es 🚩"** | **Ella:** *"Miren este camarón... esto no es camarón de pacotilla ni congelado."* |
 | **00:03 - 00:14** | Movimiento de vaivén en el sartén mostrando la cantidad masiva de camarones bajo la salsa verde. | **Ella:** *"En La Garza Aguachilera pelamos camarón fresco de costa en corte mariposa para que absorba todo el caldito verde con pepino y cebollita."* |
-| **00:14 - 00:24** | Remate con gráfica de WhatsApp y dirección de salida (Col. Flores). | **Ella:** *"Servido sobre tu bolsa favorita de Tostitos. Entregamos fines de semana en Tampico y Madero. Toca el botón de nuestro perfil y asegura tu pedido hoy mismo."* |
+| **00:14 - 00:24** | Remate con gráfica de WhatsApp y dirección de salida (Tampico). | **Ella:** *"Servido sobre tu bolsa favorita de Tostitos. Entregamos fines de semana en Tampico y Madero. Toca el botón de nuestro perfil y asegura tu pedido hoy mismo."* |
 
 * **Hashtags:** `#CamaronDeAdeveras #CalidadGarza #TostiaguachilesTampico #MariscosFrescos #ComidaLocal`
 

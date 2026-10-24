@@ -13,8 +13,8 @@ Style: Sub2L,Arial Black,42,&H00FFFFFF,&H000000FF,&H00000000,&HA0000000,-1,0,0,0
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.30,0:00:06.04,Sub2L,,0,0,0,,{\an2\fad(100,100)}{\c&H0032EBFF}TOSTIAGUACHILE VERDE TRADICIONAL{\c&H00FFFFFF}\N~100g Camarón Mariposa • Limón y Serrano
+Dialogue: 0,0:00:00.30,0:00:06.03,Sub2L,,0,0,0,,{\an2\fad(100,100)}{\c&H0032EBFF}TOSTIAGUACHILE VERDE TRADICIONAL{\c&H00FFFFFF}\N~100g Camarón Mariposa • Limón y Serrano
 Dialogue: 0,0:00:06.05,0:00:10.53,Sub2L,,0,0,0,,{\an2\fad(100,100)}{\c&H0070FF80}AGUACATE FRESCO Y CREMOSO{\c&H00FFFFFF}\N{\c&H0032EBFF}Bañado en Salsas Especiales de la Casa
-Dialogue: 0,0:00:10.80,0:00:15.75,Sub2L,,0,0,0,,{\an2\fad(100,100)}{\c&H0032EBFF}4 COMPLEMENTOS A TU ELECCIÓN{\c&H00FFFFFF}\N{\c&H0070FF80}Tostitos • Chips • Saladas • ¡En Vivo o Separado!
-Dialogue: 0,0:00:15.85,0:00:19.50,Sub2L,,0,0,0,,{\an2\fad(100,100)}{\fs50\c&H0032EBFF}¡POR SOLO $170 MXN!{\c&H00FFFFFF}\NBase Colonia Flores, Tampico
-Dialogue: 0,0:00:19.50,0:00:23.40,Sub2L,,0,0,0,,{\an2\fad(100,150)}{\c&H0070FF80}WHATSAPP: 833 252 09 88{\c&H00FFFFFF}\NSábados y Domingos de 1:00 a 5:00 PM
+Dialogue: 0,0:00:10.80,0:00:15.74,Sub2L,,0,0,0,,{\an2\fad(100,100)}{\c&H0032EBFF}4 COMPLEMENTOS A TU ELECCIÓN{\c&H00FFFFFF}\N{\c&H0070FF80}Tostitos • Chips • Saladas • ¡En Vivo o Separado!
+Dialogue: 0,0:00:15.85,0:00:19.50,Sub2L,,0,0,0,,{\an2\fad(100,100)}{\fs50\c&H0032EBFF}¡POR SOLO $170 MXN!{\c&H00FFFFFF}\NTampico y Ciudad Madero
+Dialogue: 0,0:00:19.50,0:00:23.40,Sub2L,,0,0,0,,{\an2\fad(100,150)}{\c&H0070FF80}WHATSAPP: 833 252 09 88{\c&H00FFFFFF}\NEnvíos y Entregas por Pedido

@@ -122,6 +122,13 @@ try {
         }
     }
 
+    # 5.5 Proyecto 3D Blender Oficial
+    Write-Host "`n5.5 Agregando Proyecto 3D Oficial Blender (BLENDER/la_garza_aaa_stories.blend)..." -ForegroundColor Green
+    $blendPath = Join-Path $projectRoot "BLENDER\la_garza_aaa_stories.blend"
+    if (Test-Path $blendPath) {
+        Add-FileToZip $blendPath "BLENDER/la_garza_aaa_stories.blend"
+    }
+
     # 6. Manual de Producto y 4 Complementos
     $guiaProducto = Join-Path $projectRoot "contenido_redes\05_GUIA_PRODUCTO_COMPLEMENTOS_Y_SERVIDO.md"
     if (Test-Path $guiaProducto) {
@@ -157,8 +164,8 @@ try {
         "- 2 Modalidades de Servicio: Preparado al momento frente a ti (staff en ruta directa) o Con complemento por separado (delivery/paquetería para 100% crocancia)",
         "- Porción: ~100g de camarón fresco limpio en corte mariposa",
         "- Promesa de Marca: El producto es preparado frente a usted para corroborar su frescura",
-        "- Horario de Operación: Sábados y Domingos de 1:00 PM a 5:00 PM",
-        "- Ubicación Oficial: Colonia Flores, Tampico, Tamaulipas",
+        "- Horario de Operación: Envíos y Entregas por Pedido",
+        "- Ubicación Oficial: Tampico y Ciudad Madero, Tamaulipas",
         "- WhatsApp Oficial de Pedidos: 833 252 09 88 (https://wa.me/528332520988)",
         "",
         "Auditado y aprobado por Control de Calidad: Cumple con los estándares de La Garza Aguachilera."

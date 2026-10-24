@@ -6,7 +6,7 @@
 ### 1. Resumen Ejecutivo de la Campaña
 La campaña **"Especial Spooky: Halloween & Día de Muertos"** de **La Garza Aguachilera** capitaliza la temporada festiva de fin de octubre y principios de noviembre mediante la fusión de terror pop divertido, mitología urbana jaiba y gastronomía marina de alta gama. 
 
-Bajo la narrativa central **"¡No estaban muertos... solo estaban crudos!"**, la campaña posiciona al **Tostiaguachile Verde Tradicional ($170 MXN, ~100g de camarón mariposa, con Tostitos Salsa Verde)** como el restaurador definitivo de energía dominical en la zona conurbada de Tampico y Ciudad Madero, con servicio exclusivo fines de semana (sábados y domingos de 1:00 PM a 5:00 PM) saliendo desde **Colonia Flores, Tampico, Tamaulipas**.
+Bajo la narrativa central **"¡No estaban muertos... solo estaban crudos!"**, la campaña posiciona al **Tostiaguachile Verde Tradicional ($170 MXN, ~100g de camarón mariposa, con Tostitos Salsa Verde)** como el restaurador definitivo de energía dominical en la zona conurbada de Tampico y Ciudad Madero, con servicio exclusivo fines de semana (Envíos y Entregas por Pedido) saliendo desde **Tampico y Ciudad Madero, Tamaulipas**.
 
 ---
 
@@ -56,8 +56,8 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_01.txt
 > Aquí no hay trucos ni sustos: ves el hielo, ves el marisco de primera y sientes el frío de la hielera antes del primer bocado. 
 > 
 > 💰 Precio oficial: Solo $170 MXN la bolsa bien reportada.  
-> 🛵 Servicio a domicilio: SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).  
-> 📍 Salimos desde: Colonia Flores, Tampico, Tamaulipas (rutas activas anunciadas en redes).  
+> 🛵 Servicio a domicilio: Envíos por WhatsApp.  
+> 📍 Salimos desde: Tampico y Ciudad Madero, Tamaulipas (rutas activas anunciadas en redes).  
 > 
 > 📲 ¡Revive antes de que te gane la tarde! Manda WhatsApp al 833 252 09 88 y aparta tus bolsas antes de que Juancho se las acabe todas.
 
@@ -104,8 +104,8 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_02.txt
 > No dejes que tu fin de semana se convierta en película de terror comiendo cualquier cosa aguada. Pide calidad de franquicia con orgullo 100% jaibo.
 > 
 > 💰 Precio: $170 MXN la bolsa bien reportada.  
-> 🛵 Entregas: SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM) en Tampico y Ciudad Madero.  
-> 📍 Salida oficial: Colonia Flores, Tampico, Tamaulipas (rutas activas publicadas en redes).  
+> 🛵 Entregas: Envíos por WhatsApp en Tampico y Ciudad Madero.  
+> 📍 Salida oficial: Tampico y Ciudad Madero, Tamaulipas (rutas activas publicadas en redes).  
 > 
 > 📲 ¡Despierta del letargo y asegura tu botana! Escríbenos por WhatsApp al 833 252 09 88 antes de que el mapache se lleve hasta el último camarón.
 
@@ -151,8 +151,8 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_03.txt
 > Sin misterios ocultos: preparamos cada bolsa en el momento, directo de la hielera a tu mesa, garantizando que el crunch permanezca perfecto de principio a fin.
 > 
 > 💰 Precio tradicional: $170 MXN la bolsa bien reportada.  
-> 🛵 Rutas de entrega: SÁBADOS y DOMINGOS de 1:00 PM a 5:00 PM.  
-> 📍 Salida desde: Colonia Flores, Tampico, Tamaulipas (rutas activas anunciadas en nuestras redes).  
+> 🛵 Rutas de entrega: Envíos y Entregas por Pedido.  
+> 📍 Salida desde: Tampico y Ciudad Madero, Tamaulipas (rutas activas anunciadas en nuestras redes).  
 > 
 > 📲 ¿Listo para ser abducido por el sabor? Manda un WhatsApp al 833 252 09 88 y reserva tus tostiaguachiles antes de que la nave espacial cierre compuertas.
 
@@ -198,8 +198,8 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_04.txt
 > Pidan en combo: uno para ti, uno para tu compa el que juró que no volvía a salir, y otro para el que todavía anda con el disfraz puesto.
 > 
 > 💰 Precio: Solo $170 MXN por bolsa bien servida.  
-> 🛵 Entregas a domicilio: SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).  
-> 📍 Base de salida: Colonia Flores, Tampico, Tamaulipas (rutas compartidas en redes sociales).  
+> 🛵 Entregas a domicilio: Envíos por WhatsApp.  
+> 📍 Base de salida: Tampico y Ciudad Madero, Tamaulipas (rutas compartidas en redes sociales).  
 > 
 > 📲 ¡Organicen el pedido grupal antes de que vuelen las rutas! Escríbannos directo al WhatsApp 833 252 09 88 y aseguren su botana para todo el grupito.
 
@@ -245,8 +245,8 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_05.txt
 > Aquí no hay grabaciones falsas ni filtros engañosos. Cada bolsa se monta al momento para que disfrutes ese crunch legendario que solo La Garza te entrega en tu puerta.
 > 
 > 💰 Inversión en tu paladar: $170 MXN la bolsa bien servida.  
-> 🛵 Rutas activas: SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).  
-> 📍 Origen: Colonia Flores, Tampico, Tamaulipas (cobertura en Tampico y Ciudad Madero anunciada en redes).  
+> 🛵 Rutas activas: Envíos por WhatsApp.  
+> 📍 Origen: Tampico y Ciudad Madero, Tamaulipas (cobertura en Tampico y Ciudad Madero anunciada en redes).  
 > 
 > 📲 ¿Se te hizo agua la boca con solo escucharlo? Mándanos WhatsApp al 833 252 09 88 y agenda tu tostiaguachile crujiente para este fin de semana.
 
@@ -292,8 +292,8 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_06.txt
 > Cuando la hielera se vacía, no hay truco que valga. ¡No te arriesgues a quedarte con el antojo o a sufrir la resaca del domingo sin tu cura favorita!
 > 
 > 💰 Precio oficial: $170 MXN la bolsa bien reportada.  
-> 🛵 Horario de entregas: SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).  
-> 📍 Salimos desde: Colonia Flores, Tampico, Tamaulipas (rutas activas publicadas en nuestras redes).  
+> 🛵 Horario de entregas: Envíos por WhatsApp.  
+> 📍 Salimos desde: Tampico y Ciudad Madero, Tamaulipas (rutas activas publicadas en nuestras redes).  
 > 
 > 📲 ¡Asegura tu lugar en la ruta antes del cierre de preventa! Envía un WhatsApp al 833 252 09 88 con tu nombre y colonia para apartar tus bolsas de una vez.
 
@@ -312,13 +312,13 @@ Archivo: contenido_redes/posts_periodicos/spooky_copy_06.txt
 
 | Parámetro Oficial de Marca | Regla de Oro | Estado en los 6 Paquetes |
 |:---|:---|:---:|
-| **Ubicación Oficial** | Únicamente **"Colonia Flores, Tampico, Tamaulipas"** | ✅ 100% Conforme |
+| **Ubicación Oficial** | Únicamente **"Tampico y Ciudad Madero, Tamaulipas"** | ✅ 100% Conforme |
 | **Blindaje de Marca** | Cero menciones de términos no autorizados o conceptos ajenos al estándar oficial de franquicia | ✅ 100% Limpio (0 coincidencias) |
 | **Promesa Central de Frescura** | *"El producto es preparado frente a usted para corroborar su frescura"* | ✅ Presente en todas las piezas |
 | **Totopo Oficial** | **Tostitos Salsa Verde** (único totopo autorizado, siempre crujiente) | ✅ 100% Conforme |
 | **Gramaje y Corte** | **~100g de camarón mariposa** limpio del Golfo | ✅ 100% Conforme |
 | **Precio Oficial** | **$170 MXN** la bolsa bien reportada | ✅ 100% Conforme |
-| **Horario de Operación** | **Sábados y Domingos (1:00 PM a 5:00 PM)** | ✅ 100% Conforme |
+| **Horario de Operación** | **Envíos por WhatsApp** | ✅ 100% Conforme |
 | **Canal de Pedidos** | **WhatsApp 833 252 09 88** con enlace `wa.me` preconfigurado | ✅ 100% Conforme |
 
 ---

@@ -10,7 +10,7 @@ Formato: Urgencia Visual 1:1 (1080x1080 px) + Story con Barra de Tiempo 9:16 (10
 • Hook 3 (Política del Día): "El precio de trabajar con marisco fresco del día: cuando se agota, se cerró el servicio."
 
 [DIRECCIÓN VISUAL Y TEXTO EN PANTALLA (B-ROLL)]
-Texto en Pantalla: "⏳ ÚLTIMOS CUPOS DE LA TARDE: CERRAMOS A LAS 5:00 PM"
+Texto en Pantalla: "⏳ ÚLTIMOS CUPOS DE LA TARDE: cupos limitados por pedido"
 Dirección Visual / B-Roll: Fondo de alto impacto en carmesí oscuro y dorado con partículas incandescentes y reloj de arena neón. Primer plano a la bolsa recién montada con camarones mariposa y salsa esmeralda brillante.
 Badges: «ÚLTIMAS BOLSAS DISPONIBLES HOY ⏳🔥» | «FRESCURA DEL DÍA * SIN SOBRAS»
 
@@ -25,8 +25,8 @@ Compramos el camarón fresco de costa exclusivamente para el fin de semana y no 
 💥 Auténticos TOSTITOS SALSA VERDE ultra crujientes.
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-🛵 Últimos recorridos de hoy en Tampico y Ciudad Madero (servicio hasta las 5:00 PM).
-📍 Salida desde Colonia Flores, Tampico, Tamaulipas.
+🛵 Últimos recorridos de hoy en Tampico y Ciudad Madero (servicio por pedido).
+📍 Salida desde Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡No te quedes viendo las fotos con el estómago vacío! Manda WhatsApp volando al 833 252 09 88 y asegura tu entrega antes de que se agote.
 
@@ -38,7 +38,7 @@ WhatsApp Oficial: 833 252 09 88
 Enlace directo: https://wa.me/528332520988?text=Hola%20La%20Garza!%20Apartame%20una%20de%20las%20ultimas%20bolsas%20por%20favor
 
 [PARÁMETROS OFICIALES DE MARCA]
-Ubicación: Colonia Flores, Tampico, Tamaulipas
-Horario: Sábados y Domingos de 1:00 PM a 5:00 PM
+Ubicación: Tampico y Ciudad Madero, Tamaulipas
+Horario: Envíos y Entregas por Pedido
 Producto: Tostiaguachile Verde Tradicional ($170 MXN, ~100g camarón mariposa, Tostitos Salsa Verde)
 Sello: ✨ El producto es preparado frente a usted para corroborar su frescura ✨

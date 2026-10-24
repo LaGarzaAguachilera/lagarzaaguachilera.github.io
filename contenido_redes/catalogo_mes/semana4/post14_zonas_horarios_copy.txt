@@ -11,7 +11,7 @@ Formato: Mapa Guía Visual 1:1 (1080x1080 px) + Story FAQ 9:16 (1080x1920 px)
 
 [DIRECCIÓN VISUAL Y TEXTO EN PANTALLA (B-ROLL)]
 Texto en Pantalla: "🗺️ GUÍA DE REPARTO: COBERTURA Y HORARIOS FINES DE SEMANA"
-Dirección Visual / B-Roll: Diseño visual limpio con tres paneles flotantes translúcidos estilo glassmorphism: Tarjeta 1: Días y Horarios (Sábados y Domingos de 1:00 PM a 5:00 PM con rutas anunciadas en redes); Tarjeta 2: Zonas de Cobertura (Tampico Centro/Sur, Tampico Norte/Universidad, Ciudad Madero y Playa Miramar); Tarjeta 3: Base de Salida (Colonia Flores, Tampico, Tamaulipas).
+Dirección Visual / B-Roll: Diseño visual limpio con tres paneles flotantes translúcidos estilo glassmorphism: Tarjeta 1: Días y Horarios (Envíos y Entregas por Pedido con rutas anunciadas en redes); Tarjeta 2: Zonas de Cobertura (Tampico Centro/Sur, Tampico Norte/Universidad, Ciudad Madero y Playa Miramar); Tarjeta 3: Base de Salida (Tampico y Ciudad Madero, Tamaulipas).
 Badges: «LOGÍSTICA OFICIAL LA GARZA ⏱️📍» | «COBERTURA TAMPICO & MADERO»
 
 [CAPTION COMPLETO PARA COPIAR EN REDES]
@@ -20,8 +20,8 @@ Badges: «LOGÍSTICA OFICIAL LA GARZA ⏱️📍» | «COBERTURA TAMPICO & MADER
 En La Garza Aguachilera cubrimos los puntos clave de Tampico y Ciudad Madero con la máxima puntualidad:
 
 🗓️ DÍAS DE ENTREGA: Sábados y Domingos exclusivamente.
-⏰ HORARIOS DE SERVICIO: De 1:00 PM a 5:00 PM (anunciamos las rutas activas en nuestras redes sociales).
-📍 BASE DE DISTRIBUCIÓN: Colonia Flores, Tampico, Tamaulipas.
+⏰ HORARIOS DE SERVICIO: De Servicio en Rutas Activas (anunciamos las rutas activas en nuestras redes sociales).
+📍 BASE DE DISTRIBUCIÓN: Tampico y Ciudad Madero, Tamaulipas.
 💰 PRECIO OFICIAL: $170 MXN por bolsa (~100g de camarón mariposa y TOSTITOS SALSA VERDE).
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
@@ -41,7 +41,7 @@ WhatsApp Oficial: 833 252 09 88
 Enlace directo: https://wa.me/528332520988?text=Hola%20La%20Garza!%20Quiero%20consultar%20mi%20colonia%20para%20la%20ruta%20de%20este%20fin
 
 [PARÁMETROS OFICIALES DE MARCA]
-Ubicación: Colonia Flores, Tampico, Tamaulipas
-Horario: Sábados y Domingos de 1:00 PM a 5:00 PM
+Ubicación: Tampico y Ciudad Madero, Tamaulipas
+Horario: Envíos y Entregas por Pedido
 Producto: Tostiaguachile Verde Tradicional ($170 MXN, ~100g camarón mariposa, Tostitos Salsa Verde)
 Sello: ✨ El producto es preparado frente a usted para corroborar su frescura ✨

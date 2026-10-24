@@ -4,7 +4,7 @@
 **Showrunner:** `Agente_Showrunner_y_Adaptacion`  
 **Especificaciones Técnicas:** 1080x1920 (Full HD 9:16 Vertical) | 60.00 fps | H.264 High Profile | Audio AAC 44.1 kHz Estéreo  
 **Precio Oficial Integrado:** **$170 MXN** (~100g camarón mariposa + Tostitos Salsa Verde)  
-**Ubicación Oficial:** Colonia Flores, Tampico, Tamaulipas | **WhatsApp:** `833 252 09 88`  
+**Ubicación Oficial:** Tampico y Ciudad Madero, Tamaulipas | **WhatsApp:** `833 252 09 88`  
 
 ---
 
@@ -80,7 +80,7 @@
 ---
 
 ### ESCENA 6 (00:28.8 - 00:34.0) — "GRAN CIERRE COMERCIAL Y LLAMADO A LA ACCIÓN"
-- **Arte y Escenario:** Tarjeta maestra animada de franquicia con el logo oficial de **La Garza Aguachilera**, el Tostiaguachile Verde Tradicional ($170 MXN), los 3 personajes animados saludando, sello de garantía (*"El producto es preparado frente a usted para corroborar su frescura"*), ubicación (**Colonia Flores, Tampico, Tamaulipas | Sábados y Domingos 1:00 PM a 5:00 PM**) y botón de WhatsApp pulsante (`833 252 09 88`).
+- **Arte y Escenario:** Tarjeta maestra animada de franquicia con el logo oficial de **La Garza Aguachilera**, el Tostiaguachile Verde Tradicional ($170 MXN), los 3 personajes animados saludando, sello de garantía (*"El producto es preparado frente a usted para corroborar su frescura"*), ubicación (**Tampico y Ciudad Madero, Tamaulipas | Sábados y Domingos Servicio en Rutas Activas**) y botón de WhatsApp pulsante (`833 252 09 88`).
 - **Diálogo (Locutora Oficial):**
   > *"¡La Garza Aguachilera! Sábados y domingos en Tampico y Madero. ¡Manda WhatsApp al 833 252 09 88 y pide tu cura ya!"*
 - **Diseño Sonoro:** Subida triunfal (*swell*) de `Beachfront_Celebration.mp3` + efecto de notificación de WhatsApp y cierre limpio.

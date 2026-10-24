@@ -11,9 +11,9 @@ Este documento contiene la configuración exacta de **mensajes automáticos, res
 * **Categoría:** Entrega de comida a domicilio / Marisquería
 * **Descripción de la Empresa:**
 ```text
-Tostiaguachiles preparados al momento con camarón fresco, aguacate cremoso, combinación especial de salsas de la casa y botana crujiente. Entregas a domicilio fines de semana en Tampico y Cd. Madero. Salida desde Col. Flores.
+Tostiaguachiles preparados al momento con camarón fresco, aguacate cremoso, combinación especial de salsas de la casa y botana crujiente. Entregas a domicilio fines de semana en Tampico y Cd. Madero. Salida desde Tampico.
 ```
-* **Dirección:** Colonia Flores, Tampico, Tamaulipas
+* **Dirección:** Tampico y Ciudad Madero, Tamaulipas
 * **Horario Comercial:**
   * Lunes a Jueves: 10:00 AM – 8:00 PM *(Atención y Preventa)*
   * Viernes: 10:00 AM – 9:00 PM *(Cierre de Preventa)*
@@ -55,7 +55,7 @@ Tostiaguachile Verde Tradicional: ~100g de camarón en mariposa, emulsión verde
 Déjanos aquí:
 1. Cuántas órdenes deseas y qué complemento eliges (Tostitos Salsa Verde, Flamin' Hot, Totopos o Galletas).
 2. Modalidad de servicio (Preparado al momento frente a ti o Con complemento por separado).
-3. Tu colonia y dirección (salida desde Colonia Flores, Tampico).
+3. Tu colonia y dirección (salida desde Tampico y Ciudad Madero).
 4. Si lo prefieres para Sábado o Domingo.
 
 ¡En breve te confirmamos tu apartado con aguacate fresco y salsas de la casa garantizados! 🦐✨
@@ -120,9 +120,9 @@ Configura estos atajos en los ajustes de WhatsApp Business:
 ### Atajo: `/zonas`
 ```text
 🛵 *TARIFAS DE ENVÍO A DOMICILIO:*
-(Salida desde Col. Flores, Tampico)
+(Salida desde Tampico y Madero)
 
-📍 *Zona 1 ($25 - $30 MXN):* Col. Flores, Guadalupe, Sierra Morena, Altavista, Petrolera, Lomas de Rosales, Jardín, Campbell.
+📍 *Zona 1 ($25 - $30 MXN):* Tampico, Guadalupe, Sierra Morena, Altavista, Petrolera, Lomas de Rosales, Jardín, Campbell.
 📍 *Zona 2 ($40 - $45 MXN):* Centro de Tampico, Cascajal, Tamaulipas, Ampliación Unidad Nacional, Unidad Nacional (Madero), Los Pinos.
 📍 *Zona 3 ($55 - $70 MXN):* Zona Norte (Tampico 2000, Arenal, Tancol), Centro Madero, Playa Miramar.
 
@@ -163,7 +163,7 @@ Configura estos atajos en los ajustes de WhatsApp Business:
 
 💰 *Total a pagar:* $[Total] MXN ($170 por orden + envío).
 
-¡Cualquier duda estamos a la orden! Te avisaremos en cuanto tu pedido vaya en camino desde Colonia Flores. 🛵💨
+¡Cualquier duda estamos a la orden! Te avisaremos en cuanto tu pedido vaya en camino desde Tampico y Ciudad Madero. 🛵💨
 ```
 
 ### Atajo: `/empaque`

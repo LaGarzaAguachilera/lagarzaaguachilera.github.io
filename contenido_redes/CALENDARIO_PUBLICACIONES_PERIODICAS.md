@@ -17,7 +17,7 @@ Ninguna pieza puede publicarse si no cumple con el **100% de esta lista de chequ
 3. [x] **Prohibición de Términos No Autorizados:** Prohibido cualquier término no autorizado de tamaño; se utiliza estrictamente *"bolsa bien reportada"* o *"~100g camarón"* con TOSTITOS SALSA VERDE.
 4. [x] **Garantía Obligatoria de Frescura:** Siempre debe incluirse la promesa:  
    > *"✨ El producto es preparado frente a usted para corroborar su frescura ✨"*
-5. [x] **Canal Único de Venta:** WhatsApp oficial **833 252 09 88** y base en **Colonia Flores, Tampico, Tamaulipas**.
+5. [x] **Canal Único de Venta:** WhatsApp oficial **833 252 09 88** y base en **Tampico y Ciudad Madero, Tamaulipas**.
 6. [x] **Días de Servicio:** Entregas a domicilio exclusivamente **Sábados y Domingos** (preventa activa entre semana).
 
 ---
@@ -87,8 +87,8 @@ El camarón se compra fresco en la costa para las entregas de este fin de semana
 
 🟢 Tostiaguachile Verde Tradicional: $170 MXN
 ✨ El producto es preparado frente a usted para corroborar su frescura.
-🛵 Entregas a domicilio SÁBADO y DOMINGO (1:00 PM a 5:00 PM)
-📍 Base de salida: Colonia Flores, Tampico, Tamaulipas
+🛵 Entregas a domicilio SÁBADO y DOMINGO (Servicio en Rutas Activas)
+📍 Base de salida: Tampico y Ciudad Madero, Tamaulipas
 
 📲 ¡Mándanos un WhatsApp al 833 252 09 88 y deja apartadas tus bolsas antes de que se agoten!
 
@@ -179,7 +179,7 @@ Si alguien te dice que no le gusta el aguachile verde, es porque no ha probado e
 
 ### 📌 PUBLICACIÓN 7 (DÍA 13 - SÁBADO)
 * **Formato:** Flyer de Rutas Activas / Cobertura en Vivo (1:1 / 1080 x 1080 px).
-* **Concepto Visual:** Mapa estilizado de Tampico y Madero con Juancho, el Ovni y el Mapache marcando las zonas de entrega desde la base en Col. Flores.
+* **Concepto Visual:** Mapa estilizado de Tampico y Madero con Juancho, el Ovni y el Mapache marcando las zonas de entrega desde la base en Tampico.
 * **Archivo Gráfico:** `contenido_redes/posts_periodicos/post7_rutas_activas.png`
 * **Caption de Marketing (Texto para Copiar):**
 ```text
@@ -187,8 +187,8 @@ Si alguien te dice que no le gusta el aguachile verde, es porque no ha probado e
 
 Nuestros repartidores ya están rodando por Tampico y Ciudad Madero llevando los Tostiaguachiles Verdes más reportados de la zona:
 
-📍 Base de salida: Colonia Flores, Tampico, Tamaulipas
-🛵 Zonas cubiertas: Col. Flores, Altavista, Cascajal, Centro, Petrolera, Universidad, Unidad Nacional, Ampliación, Miramar y más.
+📍 Base de salida: Tampico y Ciudad Madero, Tamaulipas
+🛵 Zonas cubiertas: Tampico, Altavista, Cascajal, Centro, Petrolera, Universidad, Unidad Nacional, Ampliación, Miramar y más.
 
 ✨ El producto es preparado frente a usted para corroborar su frescura.
 💰 $170 MXN la bolsa.

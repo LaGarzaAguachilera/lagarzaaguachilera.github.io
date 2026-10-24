@@ -383,7 +383,7 @@ $fontFootPost = [System.Drawing.Font]::new("Segoe UI Black", 12, [System.Drawing
 $footStrPost = "ENTREGAS FINES DE SEMANA (S${uA}BADOS Y DOMINGOS) $bul COBERTURA TAMPICO Y MADERO"
 $gPost.DrawString($footStrPost, $fontFootPost, $bYellow, [float]540, [float]1005, $sfCenter)
 $fontBasePost = [System.Drawing.Font]::new("Segoe UI", 11, [System.Drawing.FontStyle]::Bold)
-$gPost.DrawString("Colonia Flores, Tampico, Tamaulipas $bul Cupo limitado por tanda", $fontBasePost, $bGrayTxt, [float]540, [float]1032, $sfCenter)
+$gPost.DrawString("Tampico y Ciudad Madero, Tamaulipas $bul Cupo limitado por tanda", $fontBasePost, $bGrayTxt, [float]540, [float]1032, $sfCenter)
 
 # Save Master Feed Post
 $postOut1 = "$rootDir\flyer_post_verde.png"
@@ -594,7 +594,7 @@ $gStory.DrawString("ENTREGAS S${uA}BADOS Y DOMINGOS $bul RUTAS ANUNCIADAS EN RED
 
 # Bottom Safe Zone Subtext (Leaves >150px at bottom for Story UI)
 $fBaseStory = [System.Drawing.Font]::new("Segoe UI", 12, [System.Drawing.FontStyle]::Bold)
-$gStory.DrawString("Colonia Flores, Tampico, Tamaulipas $bul Cobertura Tampico y Cd. Madero", $fBaseStory, $bYellow, [float]540, [float]1745, $sfCenter)
+$gStory.DrawString("Tampico y Ciudad Madero, Tamaulipas $bul Cobertura Tampico y Cd. Madero", $fBaseStory, $bYellow, [float]540, [float]1745, $sfCenter)
 
 # Save Master Story Flyer
 $storyOut1 = "$rootDir\flyer_historia_verde.png"

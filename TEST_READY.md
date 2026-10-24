@@ -1,54 +1,82 @@
-# REPORTE OFICIAL: CERTIFICACIÓN DE PRUEBAS E2E Y CALIDAD TOTAL (TEST_READY)
-**Proyecto:** La Garza Aguachilera — Campaña Aguacate & Salsas Especiales (3 Departamentos Completos)  
-**Documento:** `TEST_READY.md`  
-**Fecha:** 2026-10-20T09:36:00Z  
-**Estado:** SUITE E2E IMPLEMENTADA, EJECUTADA Y CERTIFICADA AL 100% (PASS — EXIT CODE 0)
+# Test Execution Guide & Readiness Matrix — Spot Publicitario "La Garza Aguachilera"
+
+**Document:** `TEST_READY.md`  
+**Location:** Workspace Root (`d:\AG\la garza aguachilera\TEST_READY.md`)  
+**Suite Location:** `d:\AG\la garza aguachilera\tests\spot_commercial\`  
+**Primary Test Runners:**
+- PowerShell: `tests\spot_commercial\run_spot_e2e_tests.ps1`
+- Python: `tests\spot_commercial\test_spot_e2e_suite.py`
 
 ---
 
-## 1. Resumen de Disponibilidad y Certificación de la Suite
+## 1. Quick Start / How to Run the Tests
 
-Se ha implementado, ejecutado y certificado al 100% la infraestructura de pruebas de extremo a extremo (E2E) y auditoría forense para la campaña **"Aguacate & Salsas Especiales"** de **La Garza Aguachilera ($170 MXN)**, desplegando los 3 departamentos completos (Marketing Gastronómico, Diseño Gráfico y Empresa de Control de Calidad).
+### Option A: Unified Windows PowerShell Runner (Recommended)
+From PowerShell in the project root `d:\AG\la garza aguachilera`:
+```powershell
+powershell -ExecutionPolicy Bypass -File tests\spot_commercial\run_spot_e2e_tests.ps1
+```
+*Features:* Performs native pre-flight invariant checks (powercfg 99%, 9 source clip hashes, file presence), runs all 105 tests across all 4 tiers, displays colorized terminal output, exports JSON and Markdown reports, and exits with code 0 or 1.
 
-### Componentes de Infraestructura Verificados:
-1. **Especificación Técnica y Matriz de Pruebas:** `d:\AG\la garza aguachilera\TEST_INFRA.md`
-2. **Suite Empresarial de Calidad (Python):** `d:\AG\la garza aguachilera\herramientas\ejecutar_empresa_qa.py`
-3. **Suite Pericial Multimedia & Blindaje (PowerShell):** `d:\AG\la garza aguachilera\herramientas\auditar_multimedia_qa.ps1`
-4. **Batería de Pruebas Adversariales Automatizadas:**
-   - `tests/test_adversarial_m1_challenger.py` (50/50 PASS — 100%)
-   - `tests/test_adversarial_ux_persona_m1.py` (102/102 PASS — 100%)
-   - `tests/test_adversarial_m2_challenger.py` (32/32 PASS — 100%)
-   - `tests/test_adversarial_m4_challenger.py` (186/186 PASS — 100%)
-   - `herramientas/test_empirical_challenger_m2_interactive.py` (30/30 PASS — Headless Edge CDP)
-
----
-
-## 2. Resultados Consolidados de Verificación
-
-| Suite de Prueba / Auditoría | Comando / Método | Resultado | Salida | Dictamen |
-|---|---|---|---|---|
-| **Auditoría Empresarial QA** | `py herramientas/ejecutar_empresa_qa.py` | Exit Code 0 | APROBADO AL 100% (0 deficiencias) | **PASS** |
-| **Auditoría Multimedia & Blindaje** | `powershell -ExecutionPolicy Bypass -File herramientas/auditar_multimedia_qa.ps1` | Exit Code 0 | APROBADO AL 100% (0 inconformidades) | **PASS** |
-| **Arnés Adversarial E2E** | `py tests/test_adversarial_m4_challenger.py` | Exit Code 0 | 186/186 pruebas aprobadas | **PASS** |
-| **Verificación CDP Navegador** | `py herramientas/test_empirical_challenger_m2_interactive.py` | Exit Code 0 | 30/30 pruebas interactivas aprobadas | **PASS** |
-| **Empaque ZIP Maestro** | `herramientas/empaquetar_redes_zip.ps1` | Exit Code 0 | 92.45 MB (< 100 MB, 74 entradas con CRC válido) | **PASS** |
-| **Despliegue GitHub Pages** | `git push origin main` -> `https://lagarzaaguachilera.github.io/` | Commit 31f2149 | Sincronizado en origin/main con .nojekyll | **PASS** |
+### Option B: Standalone Python Runner
+Using Blender Python 3.11:
+```powershell
+& "C:\Program Files\Blender Foundation\Blender 4.3\4.3\python\bin\python.exe" tests\spot_commercial\test_spot_e2e_suite.py
+```
+Or using Packman Python 3.10:
+```powershell
+& "C:\packman-repo\python\3.10.5-1-windows-x86_64\python.exe" tests\spot_commercial\test_spot_e2e_suite.py
+```
 
 ---
 
-## 3. Resumen de Cobertura de Requerimientos
+## 2. Expected Exit Codes & Interpretation
 
-| Requerimiento | Descripción | Estado de Verificación |
-|---|---|:---:|
-| **R1. Marketing Gastronómico** | Aguacate garantizado en toda porción, baño de salsas de la casa en bolsa, 4 complementos, 2 modalidades, 6 ganchos sensoriales sin tecnicismos operativos en `contenido_redes/` | **100% CONFORME** |
-| **R2. Elevación Visual y Arte Web** | `index.html` con badges de aguacate, precio banner enriquecido, "Los 4 Pilares del Sabor Jaibo" en grid responsive (4 col, tag `</div>` corregido), `panel_control.html` con banner y captions actualizados, y fix de `copyCaption` | **100% CONFORME** |
-| **R3. Redes y Empaque ZIP** | `05_GUIA_PRODUCTO_COMPLEMENTOS_Y_SERVIDO.md` actualizada en raíz de ZIP, `LEEME_PAQUETE_REDES.txt` con copia exacta y precio escapado, `paquete_redes_la_garza.zip` en 92.45 MB (< 100 MB) | **100% CONFORME** |
-| **R4. Auditoría Forense y Despliegue** | `ejecutar_empresa_qa.py` y `auditar_multimedia_qa.ps1` actualizados, 10 falsos positivos resueltos por exclusión de auditorías, código de salida 0, push a `origin/main` en GitHub Pages verificado | **100% CONFORME** |
+| Exit Code | Status | Meaning & Next Action |
+|:---:|:---:|:---|
+| **`0`** | **PASS** | **100% of tests passed.** Hardware guardrails verified, source clips intact, master MP4 fulfills all technical and aesthetic criteria, DaVinci Resolve project has 100% online media. Deliverables approved for deployment. |
+| **`1`** | **PENDING / DEFICIENCY** | **One or more test assertions failed.** Details are logged to `tests\spot_commercial\spot_test_summary.md` and `spot_test_report.json`. Typically indicates master render is in-progress by `worker_spot_master_1` or a specific technical boundary (e.g., duration, luma clipping, offline media) requires refinement. |
 
 ---
 
-## 4. Dictamen Oficial y Sello de Calidad
+## 3. Four-Tier Coverage Matrix (105 Automated Test Cases)
 
-Todas las puertas de calidad (M1, M2, M3 y M4) han sido ratificadas unánimemente por los revisores, retadores adversariales y auditores forenses con veredictos **APPROVE** y **CLEAN**.
+| Feature / Invariant | Tier 1 (Feature) | Tier 2 (Boundary) | Tier 3 (Pairwise) | Tier 4 (Scenario) | Total Tests | Target Specification | Current Status |
+|:---|:---:|:---:|:---:|:---:|:---:|:---|:---:|
+| **F1: CPU Thermal Protection** | 5 | 5 | 1 | - | **11** | `powercfg` locked at 99% AC (`0x00000063`) | **PASS (11/11)** |
+| **F2: RTX 4060 GPU & NVENC** | 5 | - | 1 | - | **6** | RTX 4060 Laptop GPU, 8GB VRAM, `h264_nvenc` | **PASS (6/6)** |
+| **F3: 9 Source Clips Immutability** | 5 | 9 | - | - | **14** | Exact SHA-256 hashes preserved verbatim | **PASS (14/14)** |
+| **F4: Rec.709 Color Space Management** | 5 | - | 1 | - | **6** | SDR bt709, yuv420p, zero HDR metadata | *PENDING RENDER* |
+| **F5: Six-Beat Narrative Cut** | 5 | - | - | - | **5** | Hook → Creamy → Shrimp → Dark → Sesame → Models | *PENDING RENDER* |
+| **F6: 50% Slow-Motion Shrimp Hero** | 5 | - | 1 | - | **6** | Smooth optical flow 50% ramp, abundant shrimp | *PENDING RENDER* |
+| **F7: Silent Audio Master** | 5 | 5 | 1 | - | **11** | Mean & max volume <= -60.0 dBFS or muted track | *PENDING RENDER* |
+| **F8: Smart Reframing & Stabilization** | 5 | 5 | 1 | - | **11** | Full HD 1080x1920 (9:16), 0 letterbox, crop clutter | *PENDING RENDER* |
+| **F9: GPU Bokeh & Vignette** | 5 | - | 1 | - | **6** | Background lens blur + subtle dark vignette | *PENDING RENDER* |
+| **F10: Culinary & Beauty Color Grade** | 5 | 5 | 1 | 2 | **13** | Coral shrimp, lime green, white crema, natural skin | *PENDING RENDER* |
+| **F11: Master Video Deliverable** | 5 | 5 | - | 2 | **12** | Duration [15s, 30s], 60fps, >4000kbps, H.264 NVENC | *PENDING RENDER* |
+| **F12: DaVinci Resolve Timeline Package**| 5 | - | 1 | 1 | **7** | `spot_publicitario_la_garza.fcpxml` 100% online | *PENDING EXPORT* |
+| **TOTALS** | **60** | **34** | **6** | **5** | **105** | **100% Requirements Coverage** | **29 PASS / 76 PENDING** |
 
-`✅ Auditado y aprobado por Control de Calidad: Cumple con los estándares de La Garza Aguachilera`
+---
+
+## 4. Current Test Suite Execution Snapshot
+
+As of test run on `2026-10-24T01:25:16Z`:
+- **Hardware & Environment Guardrails (F1, F2):** `100% PASS`  
+  - Windows CPU throttle index confirmed `0x00000063` (99%).
+  - NVIDIA GeForce RTX 4060 Laptop GPU detected with 8188 MiB VRAM.
+  - Local FFmpeg binary compiled with `h264_nvenc`, `hevc_nvenc`, and CUVID decoders.
+- **Source Clips Cryptographic Immutability (F3):** `100% PASS`  
+  - All 9 clips verified against authoritative baseline hashes with zero bytes altered.
+- **Master Video & DaVinci Resolve Deliverables (F4 to F12):** `PENDING IMPLEMENTATION`  
+  - The test suite faithfully tracks `spot_publicitario_la_garza_master_nvenc.mp4` and `spot_publicitario_la_garza.fcpxml`.
+  - Once `worker_spot_master_1` completes the render and timeline generation, re-executing `run_spot_e2e_tests.ps1` will automatically evaluate all 76 remaining media, editorial, narrative, and Resolve assertions.
+
+---
+
+## 5. Artifact Inspection & Reporting
+
+When the test suite executes, it writes comprehensive telemetry reports:
+1. `tests\spot_commercial\spot_test_report.json`: Full machine-readable test records with individual pass/fail flags, timestamps, and error diagnostics.
+2. `tests\spot_commercial\spot_test_summary.md`: Human-readable summary table and detailed inventory.
+3. `tests\spot_commercial\sampled_frames\`: High-resolution frame samples extracted during narrative cut and luma clipping audits.

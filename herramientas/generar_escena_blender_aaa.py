@@ -216,25 +216,31 @@ def build_and_render():
     )
     mat_crimson = make_pbr_material(
         "Mat_Crimson_Ruby",
-        (0.82, 0.04, 0.12, 1.0),
-        metallic=0.88,
-        roughness=0.22,
-        emission_color=(0.85, 0.05, 0.15, 1.0),
-        emission_strength=0.35,
+        (0.42, 0.008, 0.022, 1.0),
+        metallic=0.35,
+        roughness=0.36,
+        emission_color=(0.48, 0.01, 0.025, 1.0),
+        emission_strength=0.14,
     )
     mat_obsidian = make_pbr_material(
         "Mat_Obsidian_Dark",
-        (0.015, 0.035, 0.06, 1.0),
-        metallic=0.92,
-        roughness=0.18,
+        (0.012, 0.028, 0.048, 1.0),
+        metallic=0.85,
+        roughness=0.24,
+    )
+    mat_shadow = make_pbr_material(
+        "Mat_Text_Shadow",
+        (0.005, 0.008, 0.012, 1.0),
+        metallic=0.10,
+        roughness=0.65,
     )
     mat_white = make_pbr_material(
         "Mat_White_Crisp",
         (1.0, 1.0, 1.0, 1.0),
-        metallic=0.2,
-        roughness=0.15,
+        metallic=0.15,
+        roughness=0.18,
         emission_color=(1.0, 1.0, 1.0, 1.0),
-        emission_strength=1.25,
+        emission_strength=1.35,
     )
 
     # Cámara Vertical 9:16 (Orthographic/Perspective híbrida limpia)
@@ -262,12 +268,14 @@ def build_and_render():
     # 1. CORONA SUPERIOR 3D PERMANENTE (SAFE ZONE Y en ~[230, 370])
     # =========================================================================
     add_rounded_3d_pill("Top_Header_Pill", (0.0, 0.0, 2.90), width=3.50, height=0.55, depth=0.12, mat_body=mat_obsidian, mat_rim=mat_gold, z_anchor="TOP")
-    add_3d_text("Txt3D_Brand_Title", "LA GARZA AGUACHILERA", (0.0, -0.10, 2.75), size=0.27, extrude=0.04, bevel=0.006, mat=mat_gold, font_Loaded=font_impact)
-    add_3d_text("Txt3D_Brand_Sub", "TOSTIAGUACHILE VERDE • TAMPICO Y MADERO", (0.0, -0.10, 2.49), size=0.12, extrude=0.02, bevel=0.003, mat=mat_emerald, font_Loaded=font_arialbd)
+    add_3d_text("Txt3D_Brand_Title", "LA GARZA AGUACHILERA", (0.0, -0.10, 2.75), size=0.27, extrude=0.04, bevel=0.004, mat=mat_gold, font_Loaded=font_impact)
+    t_bsub = add_3d_text("Txt3D_Brand_Sub", "TOSTIAGUACHILE VERDE • TAMPICO Y MADERO", (0.0, -0.10, 2.49), size=0.118, extrude=0.018, bevel=0.0008, mat=mat_emerald, font_Loaded=font_arialbd)
+    t_bsub.data.space_character = 1.05
 
     # Píldora Roja/Oro 3D de Precio Permanente ($170 MXN) (SAFE ZONE Y en ~[380, 470])
     add_rounded_3d_pill("Top_Price_Pill_170", (0.0, -0.05, 2.22), width=3.10, height=0.44, depth=0.14, mat_body=mat_crimson, mat_rim=mat_gold, z_anchor="CENTER")
-    add_3d_text("Txt3D_Price_170", "¡A SOLO $170 MXN!", (0.0, -0.18, 2.21), size=0.28, extrude=0.045, bevel=0.007, mat=mat_gold, font_Loaded=font_impact)
+    add_3d_text("Txt3D_Price_170_Shadow", "¡A SOLO $170 MXN!", (0.012, -0.155, 2.198), size=0.28, extrude=0.035, bevel=0.008, mat=mat_shadow, font_Loaded=font_impact)
+    add_3d_text("Txt3D_Price_170", "¡A SOLO $170 MXN!", (0.0, -0.185, 2.21), size=0.28, extrude=0.045, bevel=0.004, mat=mat_gold, font_Loaded=font_impact)
     add_3d_star("Star3D_Left", (-1.22, -0.16, 2.21), scale=0.13, mat=mat_gold)
     add_3d_star("Star3D_Right", (1.22, -0.16, 2.21), scale=0.13, mat=mat_gold)
 
@@ -280,13 +288,16 @@ def build_and_render():
         ("hud_act1.png", "¡ANTOJO DE OTRO PLANETA!", "ABDUCIDOS EN PLAYA MIRAMAR • $170 MXN"),
         ("hud_act2.png", "PREPARADO FRENTE A TI", "AGUACATE FRESCO + SALSAS DE LA CASA"),
         ("hud_act3.png", "¡EL CRUNCH MÁS VIRAL!", "~100G CAMARÓN MARIPOSA • $170 MXN"),
-        ("hud_act4.png", "WHATSAPP 833 252 09 88", "SÁB Y DOM 1-5 PM • COL. FLORES, TAMPICO"),
+        ("hud_act4.png", "WHATSAPP 833 252 09 88", "PEDIDOS Y ENTREGAS EN TAMPICO Y MADERO"),
     ]
 
-    txt_main = add_3d_text("Txt3D_Act_Main", acts_data[0][1], (0.0, -0.10, -1.88), size=0.28, extrude=0.045, bevel=0.007, mat=mat_gold, font_Loaded=font_impact)
-    txt_sub = add_3d_text("Txt3D_Act_Sub", acts_data[0][2], (0.0, -0.10, -2.18), size=0.125, extrude=0.025, bevel=0.004, mat=mat_white, font_Loaded=font_arialbd)
+    txt_main_sh = add_3d_text("Txt3D_Act_Main_Shadow", acts_data[0][1], (0.012, -0.08, -1.892), size=0.275, extrude=0.035, bevel=0.007, mat=mat_shadow, font_Loaded=font_impact)
+    txt_main = add_3d_text("Txt3D_Act_Main", acts_data[0][1], (0.0, -0.105, -1.88), size=0.275, extrude=0.045, bevel=0.004, mat=mat_gold, font_Loaded=font_impact)
+    txt_sub = add_3d_text("Txt3D_Act_Sub", acts_data[0][2], (0.0, -0.10, -2.18), size=0.122, extrude=0.020, bevel=0.0008, mat=mat_white, font_Loaded=font_arialbd)
+    txt_sub.data.space_character = 1.05
 
     for out_name, l1, l2 in acts_data:
+        txt_main_sh.data.body = l1
         txt_main.data.body = l1
         txt_sub.data.body = l2
         out_file = os.path.join(RENDERS_DIR, out_name)

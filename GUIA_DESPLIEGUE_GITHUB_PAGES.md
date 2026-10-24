@@ -1,7 +1,7 @@
 # 🚀 GUÍA VISUAL PASO A PASO: DESPLIEGUE EN GITHUB PAGES
 ### *El Manual con Peras y Manzanas de La Garza Aguachilera*
 **Elaborado por el Mentor Técnico para Principiantes**  
-**Dirección Oficial del Negocio:** Colonia Flores, Tampico, Tamaulipas  
+**Dirección Oficial del Negocio:** Tampico y Ciudad Madero, Tamaulipas  
 **WhatsApp Oficial:** 833 252 09 88
 
 ---
@@ -137,7 +137,7 @@ Una vez que tus archivos se subieron, solo falta encender el interruptor de publ
 - [x] **Fondo Tropical:** El fondo nocturno con el skyline de Tampico (`tampico_skyline_bg.jpg`) ambienta la pantalla con estilo cómic playero.
 - [x] **Stickers de Tampico:** El Cocodrilo Juancho, el OVNI de Miramar y el Mapache de las Escolleras aparecen transparentes y sin fondos blancos toscos.
 - [x] **Botón de WhatsApp:** Al hacer clic en cualquier botón de pedido, se abre WhatsApp con el mensaje prellenado listo para ordenar al **833 252 09 88**.
-- [x] **Ubicación Oficial:** En la sección de entregas y pie de página se indica claramente: **"Colonia Flores, Tampico, Tamaulipas"**.
+- [x] **Ubicación Oficial:** En la sección de entregas y pie de página se indica claramente: **"Tampico y Ciudad Madero, Tamaulipas"**.
 - [x] **Centro de Contenido (`panel_control.html`):** Puedes entrar a `https://<tu-usuario>.github.io/la-garza-aguachilera/panel_control.html` para ver el reproductor del video promocional, copiar copys de redes con 1 clic y descargar el paquete ZIP completo.
 
 ---

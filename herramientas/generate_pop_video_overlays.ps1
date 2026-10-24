@@ -195,7 +195,7 @@ $gFrame.DrawString("para corroborar su maxima frescura", $fontFreshText2, $brush
 # Bottom Location Info - Weekend service & delivery routes
 $fontFooterLoc = MakeFont "Arial" 18 ([System.Drawing.FontStyle]::Regular)
 $brushGray = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(203, 213, 225))
-$gFrame.DrawString("Entregas fines de semana * Colonia Flores, Tampico, Tamaulipas", $fontFooterLoc, $brushGray, [float]540, [float]1855, $sfCenter)
+$gFrame.DrawString("Entregas a domicilio * Tampico y Ciudad Madero, Tamaulipas", $fontFooterLoc, $brushGray, [float]540, [float]1855, $sfCenter)
 
 $bmpFrame.Save("d:\AG\la garza aguachilera\herramientas\branding_pop_overlay.png", [System.Drawing.Imaging.ImageFormat]::Png)
 $gFrame.Dispose()
@@ -230,7 +230,7 @@ DrawRoundedRectangle $gS1 $brushHook $penHook $rectHook 30
 $fontHook1 = MakeFont "Arial" 29 ([System.Drawing.FontStyle]::Bold)
 $fontHook2 = MakeFont "Arial" 24 ([System.Drawing.FontStyle]::Bold)
 DrawStickerText $gS1 "EL TOSTIAGUACHILE MAS REPORTADO!" $fontHook1 $brushYellow $penBlackStroke 540 1385 $sfCenter
-DrawStickerText $gS1 "${invExcl}Ya en servicio sabados y domingos!" $fontHook2 $brushWhite $penBlackStroke 540 1442 $sfCenter
+DrawStickerText $gS1 "${invExcl}¡Haz tu pedido hoy por WhatsApp!" $fontHook2 $brushWhite $penBlackStroke 540 1442 $sfCenter
 
 $bmpS1.Save("d:\AG\la garza aguachilera\herramientas\pop_sub1.png", [System.Drawing.Imaging.ImageFormat]::Png)
 $gS1.Dispose()

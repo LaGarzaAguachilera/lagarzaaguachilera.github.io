@@ -522,13 +522,13 @@ $catalogMeta = @(
         Color2 = [System.Drawing.Color]::FromArgb(15, 23, 42)       # Midnight Navy
         AccentColor = [System.Drawing.Color]::FromArgb(250, 204, 21) # Golden Neon
         StickerPrimary = "trio"; StickerSecondary = "comida"; StickerCorner = "logo"
-        FoodPhoto = ""; ExtraTag = "SALIDA DESDE COL. FLORES"
+        FoodPhoto = ""; ExtraTag = "SALIDA DESDE Tampico"
     },
     @{
         Id = 14; Week = 4; Slug = "post14_zonas_horarios"
         Badge = "GU$($uI)A OFICIAL DE REPARTO Y LOG$($uI)STICA"
         Headline = "ZONAS Y HORARIOS OFICIALES"
-        Subhead = "S$($uA)BADOS Y DOMINGOS DE 1:00 PM A 5:00 PM"
+        Subhead = "S$($uA)BADOS Y DOMINGOS DE Servicio en Rutas Activas"
         Color1 = [System.Drawing.Color]::FromArgb(10, 37, 64)       # Deep Marine Navy
         Color2 = [System.Drawing.Color]::FromArgb(30, 58, 138)      # Royal Indigo
         AccentColor = [System.Drawing.Color]::FromArgb(16, 185, 129) # Mint Emerald
@@ -544,7 +544,7 @@ $catalogMeta = @(
         Color2 = [System.Drawing.Color]::FromArgb(24, 24, 27)       # Studio Carbon
         AccentColor = [System.Drawing.Color]::FromArgb(253, 224, 71) # Gold Spark
         StickerPrimary = "ovni"; StickerSecondary = "comida"; StickerCorner = "logo"
-        FoodPhoto = $foodHero; ExtraTag = "CERRAMOS A LAS 5:00 PM"
+        FoodPhoto = $foodHero; ExtraTag = "cupos limitados por pedido"
     },
     @{
         Id = 16; Week = 4; Slug = "post16_comunidad_jaiba"
@@ -669,13 +669,13 @@ function Render-FeedPiece($item) {
     # 8. Pie de Pagina de Operaciones y Ubicacion Oficial (Y=990 a 1035)
     $fFootA = [System.Drawing.Font]::new("Segoe UI Black", 12.0, [System.Drawing.FontStyle]::Bold)
     $bFootYellow = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(254, 240, 138))
-    $footStrA = "ENTREGAS S$($uA)BADOS Y DOMINGOS (1:00 PM - 5:00 PM) $($bul) RUTAS ANUNCIADAS EN REDES"
+    $footStrA = "ENTREGAS S$($uA)BADOS Y DOMINGOS (Rutas Activas) $($bul) RUTAS ANUNCIADAS EN REDES"
     $g.DrawString($footStrA, $fFootA, $bFootYellow, [float]540, [float]994, $sfCenter)
     $fFootA.Dispose(); $bFootYellow.Dispose()
 
     $fFootB = [System.Drawing.Font]::new("Segoe UI", 11.0, [System.Drawing.FontStyle]::Bold)
     $bFootGray = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(226, 232, 240))
-    $footStrB = "Colonia Flores, Tampico, Tamaulipas $($bul) Preventa y apartados abiertos toda la semana"
+    $footStrB = "Tampico y Ciudad Madero, Tamaulipas $($bul) Preventa y apartados abiertos toda la semana"
     $g.DrawString($footStrB, $fFootB, $bFootGray, [float]540, [float]1022, $sfCenter)
     $fFootB.Dispose(); $bFootGray.Dispose()
 
@@ -834,12 +834,12 @@ function Render-StoryPiece($item) {
     # 7. Safe Footer (Y=1660 a 1705, seguro para TikTok/Stories)
     $fFootS1 = [System.Drawing.Font]::new("Segoe UI Black", 12.0, [System.Drawing.FontStyle]::Bold)
     $bYellowS = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(254, 240, 138))
-    $g.DrawString("S$($uA)BADOS Y DOMINGOS (1:00 PM - 5:00 PM) $($bul) RUTAS ANUNCIADAS EN REDES", $fFootS1, $bYellowS, [float]540, [float]1668, $sfCenter)
+    $g.DrawString("S$($uA)BADOS Y DOMINGOS (Rutas Activas) $($bul) RUTAS ANUNCIADAS EN REDES", $fFootS1, $bYellowS, [float]540, [float]1668, $sfCenter)
     $fFootS1.Dispose(); $bYellowS.Dispose()
 
     $fFootS2 = [System.Drawing.Font]::new("Segoe UI", 11.0, [System.Drawing.FontStyle]::Bold)
     $bGrayS = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(203, 213, 225))
-    $g.DrawString("Colonia Flores, Tampico, Tamaulipas $($bul) Cobertura Tampico y Ciudad Madero", $fFootS2, $bGrayS, [float]540, [float]1695, $sfCenter)
+    $g.DrawString("Tampico y Ciudad Madero, Tamaulipas $($bul) Cobertura Tampico y Ciudad Madero", $fFootS2, $bGrayS, [float]540, [float]1695, $sfCenter)
     $fFootS2.Dispose(); $bGrayS.Dispose()
 
     # Limpieza

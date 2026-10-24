@@ -345,7 +345,7 @@ $bWaG1 = [System.Drawing.Drawing2D.LinearGradientBrush]::new($waRect1, [System.D
 Draw-RoundedBox $g1 $bWaG1 $pWhite4 $waRect1 45 $true
 Draw-OutlinedText $g1 "APARTA TU BOLSA: 833 252 09 88" $fBlack24 $bWhite $pOutline6 540 938 $sfCenter
 
-$g1.DrawString("Colonia Flores, Tampico, Tamaulipas $bul Cupo m${lA}x: 75 bolsas por tanda", $fBlack12, $bYellow, [float]540, [float]1030, $sfCenter)
+$g1.DrawString("Tampico y Ciudad Madero, Tamaulipas $bul Cupo m${lA}x: 75 bolsas por tanda", $fBlack12, $bYellow, [float]540, [float]1030, $sfCenter)
 
 Save-MultiPath $bmp1 "post1_antojo_lunes.png"
 $g1.Dispose(); $bmp1.Dispose()
@@ -466,7 +466,7 @@ $bWaG4 = [System.Drawing.Drawing2D.LinearGradientBrush]::new($waRect4, [System.D
 Draw-RoundedBox $g4 $bWaG4 $pWhite4 $waRect4 46 $true
 Draw-OutlinedText $g4 "${iE}REVIVE HOY! PIDE AL: 833 252 09 88" $fBlack24 $bWhite $pOutline6 540 935 $sfCenter
 
-$g4.DrawString("Entregas activas a${lU}n con lluvia (cargo extra seg${lU}n distancia) $bul Colonia Flores, Tampico, Tamaulipas", $fBlack12, $bWhite, [float]540, [float]1030, $sfCenter)
+$g4.DrawString("Entregas activas a${lU}n con lluvia (cargo extra seg${lU}n distancia) $bul Tampico y Ciudad Madero, Tamaulipas", $fBlack12, $bWhite, [float]540, [float]1030, $sfCenter)
 
 Save-MultiPath $bmp4 "post4_cura_domingo.png"
 $g4.Dispose(); $bmp4.Dispose()
@@ -527,7 +527,7 @@ $bWaG5 = [System.Drawing.Drawing2D.LinearGradientBrush]::new($waRect5, [System.D
 Draw-RoundedBox $g5 $bWaG5 $pWhite4 $waRect5 46 $true
 Draw-OutlinedText $g5 "PREVENTA FIN DE SEMANA: 833 252 09 88" $fBlack22 $bWhite $pOutline6 540 927 $sfCenter
 
-$g5.DrawString("Tampico y Cd. Madero $bul Colonia Flores, Tampico, Tamaulipas $bul 75 bolsas m${lA}x. por tanda", $fBlack12, $bYellow, [float]540, [float]1030, $sfCenter)
+$g5.DrawString("Tampico y Cd. Madero $bul Tampico y Ciudad Madero, Tamaulipas $bul 75 bolsas m${lA}x. por tanda", $fBlack12, $bYellow, [float]540, [float]1030, $sfCenter)
 
 Save-MultiPath $bmp5 "post5_frescura_en_vivo.png"
 $g5.Dispose(); $bmp5.Dispose()
@@ -632,9 +632,9 @@ Draw-RoundedBox $g7 $bDarkCard7 $pYellow3 $routeCard7 28 $true
 $basePill7 = [System.Drawing.RectangleF]::new(140, 500, 800, 42)
 $bFuchsiaPill = [System.Drawing.Drawing2D.LinearGradientBrush]::new($basePill7, [System.Drawing.Color]::FromArgb(192, 38, 211), [System.Drawing.Color]::FromArgb(147, 22, 163), 0.0)
 Draw-RoundedBox $g7 $bFuchsiaPill $pWhite4 $basePill7 20 $false
-$g7.DrawString("Base de salida: Colonia Flores, Tampico, Tamaulipas", $fBlack14, $bWhite, [float]540, [float]521, $sfCenter)
+$g7.DrawString("Base de salida: Tampico y Ciudad Madero, Tamaulipas", $fBlack14, $bWhite, [float]540, [float]521, $sfCenter)
 
-$g7.DrawString("ZONA 1 (5-10 min): Col. Flores, Altavista, Cascajal, Centro Tampico", $fBlack14, $bLime, [float]95, [float]575, $sfLeft)
+$g7.DrawString("ZONA 1 (5-10 min): Tampico, Altavista, Cascajal, Centro Tampico", $fBlack14, $bLime, [float]95, [float]575, $sfLeft)
 $g7.DrawString("ZONA 2 (12-18 min): Petrolera, Universidad, Lomas del Chairel, Norte", $fBlack14, $bYellow, [float]95, [float]618, $sfLeft)
 $g7.DrawString("ZONA 3 (15-22 min): Cd. Madero, Unidad Nacional, Ampliaci${lO}n, Miramar", $fBlack14, $bCyan, [float]95, [float]661, $sfLeft)
 

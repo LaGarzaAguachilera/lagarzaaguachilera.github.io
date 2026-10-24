@@ -5,14 +5,14 @@
 - **Segmento:** Clase media y media-alta en Tampico y Ciudad Madero.
 - **Tono Visual y Verbal:** Gourmet street-food costero, pulcro, fresco, contemporáneo y divertido.
 - **Directriz Suprema del Cliente:** Comunicación directa, apetitosa y sin enredos. Al cliente se le dice claramente qué es, qué complementos puede elegir y cómo prefiere recibirlo, eliminando cualquier jerga técnica interna de la empresa.
-- **Ubicación Oficial:** Colonia Flores, Tampico, Tamaulipas.
+- **Ubicación Oficial:** Tampico y Ciudad Madero, Tamaulipas.
 
 ---
 
 ### 2. Especificaciones de Producto
 - **Nombre Oficial:** Tostiaguachile Verde Tradicional
 - **Precio Oficial Único:** **$170 MXN**
-- **Ubicación Base:** Colonia Flores, Tampico, Tamaulipas
+- **Ubicación Base:** Tampico y Ciudad Madero, Tamaulipas
 - **Proteína:** ~100g de camarón fresco de costa rigurosamente seleccionado, limpio y abierto en corte mariposa.
 - **Aguacate Garantizado:** Toda porción incluye aguacate fresco y cremoso (garantizado en cada orden, aporta suntuosidad sedosa que templa el limón Colima y el picante serrano).
 - **El Toque Secreto en Bolsa:** En preparación en bolsa las chips se bañan con una rica combinación especial de salsas de la casa antes de recibir el marisco helado.
@@ -47,7 +47,7 @@ Diseñados para captar el apetito sensorial inmediato en redes sociales (Instagr
 | **H2** | **El Baño Secreto en Bolsa** | *"El secreto no está solo arriba... está en el fondo de la bolsa con nuestra rica combinación especial de salsas de la casa 🤤🔥"* | Primer plano cenital: tijera abriendo los tostitos y salsera vertiendo el baño de salsas especiales sobre las chips crujientes. | *"Cero botanas desabridas. En preparación en bolsa las chips se bañan con una rica combinación especial de salsas de la casa antes de recibir el marisco helado para que el último bocado tenga el mismo sabor explosivo que el primero."* |
 | **H3** | **La Textura Perfecta (Crunch + Crema)** | *"Aguacate mantequilloso, camarón mariposa jugoso y el crunch más adictivo de Tampico en un solo bocado 🍤🥑💥"* | Mordida en plano cerrado con sonido crujiente nítido mostrando la combinación de chip dorada, salsas de la casa, camarón y aguacate. | *"No te quedes con ganas de una botana de verdad. ~100g de camarón limpio, salsas de la casa y aguacate fresco y cremoso garantizado. Elige tu botana favorita y pide por WhatsApp."* |
 | **H4** | **Personalización en 4 Complementos** | *"¿Verdes, Flamin' Hot, Totopos de maíz o Galletas Saladas? En La Garza el antojo se arma exactamente como a ti te gusta."* | Mosaico dinámico de las 4 opciones de base crujiente siendo abiertas y preparadas al momento. | *"Mismo precio estricto ($170 MXN), misma frescura marina y aguacate fresco y cremoso garantizado en cada orden. Tú solo decides qué crujido le pones a tu fin de semana."* |
-| **H5** | **Servicio Premium a tu Elección** | *"¿Te lo preparamos al instante en tu puerta o prefieres tu complemento por separado para comerlo más tarde 100% crujiente?"* | Comparativa elegante: a la izquierda ensamble en vivo con el staff; a la derecha empaque hermético individual impecable. | *"Máxima frescura, cero enredos y cero esperas. Servicio exclusivo a domicilio sábados y domingos de 1:00 PM a 5:00 PM con salida desde Colonia Flores, Tampico."* |
+| **H5** | **Servicio Premium a tu Elección** | *"¿Te lo preparamos al instante en tu puerta o prefieres tu complemento por separado para comerlo más tarde 100% crujiente?"* | Comparativa elegante: a la izquierda ensamble en vivo con el staff; a la derecha empaque hermético individual impecable. | *"Máxima frescura, cero enredos y cero esperas. Servicio exclusivo a domicilio Envíos y Entregas por Pedido con salida desde Tampico y Ciudad Madero."* |
 | **H6** | **El Antojo Dominical Sin Fricción** | *"Domingo con clima encendido, serie favorita y el mejor tostiaguachile de Tampico a tu puerta en un solo clic 📲🛋️"* | Escena acogedora en sala climatizada recibiendo la orden sin tener que cocinar ni salir al calor. | *"Olvídate de cocinar o hacer filas. Escríbenos a WhatsApp (833 252 09 88), dinos tu colonia y recibe tu porción bien reportada con camarón, salsas de la casa y aguacate fresco y cremoso."* |
 
 ---

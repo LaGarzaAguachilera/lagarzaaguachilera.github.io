@@ -329,7 +329,7 @@ function DrawProductInfoCard(
     }
 
     $fontSeal = MakeFont "Segoe UI" 14 ([System.Drawing.FontStyle]::Bold)
-    $footerText = "PALETA: $paletteHex  |  EDICION OFICIAL CERTIFICADA $script:bul COLONIA FLORES, TAMPICO"
+    $footerText = "PALETA: $paletteHex  |  EDICION OFICIAL CERTIFICADA $script:bul Tampico y Ciudad Madero"
     $g.DrawString($footerText, $fontSeal, $brushLime, [float]540, [float]1008, $script:sfCenter)
 
     $brushCard.Dispose()

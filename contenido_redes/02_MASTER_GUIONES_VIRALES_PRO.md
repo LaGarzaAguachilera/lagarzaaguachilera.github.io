@@ -189,7 +189,7 @@
 | Segundo | Video / Cámara | Audio / Diálogo de Ella |
 | :--- | :--- | :--- |
 | **00:00 - 00:03** | **HOOK:** Ella con una bolsa en mano y cronómetro regresivo animado en pantalla.<br>📌 *Texto en pantalla:* **"⚠️ AVISO URGENTE: Últimos 15 cupos para mañana sábado"** | **Ella a cámara:** *"¡Atención Tampico y Madero! Este es un aviso de servicio a la comunidad de los antojados..."* |
-| **00:03 - 00:12** | **B-Roll:** Bolsas formadas con sus contenedores de aguachile etiquetados y listos. | **Ella en off:** *"Ya estamos cerrando la lista de preventa para las rutas de este fin de semana. Base de salida en Col. Flores y cubrimos casi toda la zona conurbada."* |
+| **00:03 - 00:12** | **B-Roll:** Bolsas formadas con sus contenedores de aguachile etiquetados y listos. | **Ella en off:** *"Ya estamos cerrando la lista de preventa para las rutas de este fin de semana. Base de salida en Tampico y cubrimos casi toda la zona conurbada."* |
 | **00:12 - 00:19** | **B-Roll Macro:** Un primer plano tentador de camarón verde con cebolla morada. | **Ella en off:** *"Bolsa verde o bolsa roja, bien reportada de camarón por solo $170 pesos. Cuando se agote el stock, no hay más hasta la próxima semana."* |
 | **00:19 - 00:25** | **A-Roll + CTA:** Ella señala el botón de WhatsApp directo. | **Ella a cámara:** *"No te quedes viendo las historias de los demás. Mándanos WhatsApp ahorita mismo al número de la pantalla y asegura tu bolsa ya."* |
 
@@ -204,7 +204,7 @@
 | Segundo | Video / Cámara | Audio / Diálogo de Ella |
 | :--- | :--- | :--- |
 | **00:00 - 00:03** | **HOOK:** Ella sentada cómodamente en el sillón con el celular en la mano, voltea a la cámara con una sonrisa pícara.<br>📌 *Texto en pantalla:* **"Día oficial de NO cocinar en Tampico 🙅‍♀️🛋️"** | **Ella a cámara:** *"Es domingo, hace calor... ¿y de verdad te vas a poner a cocinar o a hacer fila en un restaurante?"* |
-| **00:03 - 00:12** | **B-Roll Dinámico:** Moto repartidora con mochila térmica saliendo de la Col. Flores, seguida del unboxing de la bolsa de Tostitos y el vertido de aguachile. | **Ella en off:** *"Mejor quédate viendo tu serie en clima. Nosotros te mandamos tu Tostiaguachile heladito, crujiente y bien reportado de camarón directo a la puerta."* |
+| **00:03 - 00:12** | **B-Roll Dinámico:** Moto repartidora con mochila térmica saliendo de la Tampico, seguida del unboxing de la bolsa de Tostitos y el vertido de aguachile. | **Ella en off:** *"Mejor quédate viendo tu serie en clima. Nosotros te mandamos tu Tostiaguachile heladito, crujiente y bien reportado de camarón directo a la puerta."* |
 | **00:12 - 00:18** | **A-Roll:** Ella en plano medio sosteniendo la bolsa humeante de frío y limón. | **Ella a cámara:** *"Verde refrescante o Rojo Flamin para despertar el alma. Solo $170 pesitos."* |
 | **00:18 - 00:24** | **A-Roll + CTA:** Ella pulsa la pantalla como enviando un mensaje. | **Ella a cámara:** *"Escríbenos a WhatsApp ahora mismo, dinos tu colonia y te lo mandamos en la siguiente ruta de hoy."* |
 

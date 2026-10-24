@@ -157,8 +157,8 @@ if ($matches150.Count -ge 5) {
 }
 
 # 3.2 Ubicacion Oficial y Cero 'Rosa 210'
-if ($indexContent -match 'Colonia Flores, Tampico' -and $indexContent -notmatch 'Rosa\s*210') {
-    $a3Results += "[OK] Ubicacion oficial verificada: 'Colonia Flores, Tampico, Tamaulipas' (0 menciones de Rosa 210)"
+if ($indexContent -match 'Tampico y Ciudad Madero' -and $indexContent -notmatch 'Rosa\s*210') {
+    $a3Results += "[OK] Ubicacion oficial verificada: 'Tampico y Ciudad Madero, Tamaulipas' (0 menciones de Rosa 210)"
 } else {
     $deficiencias += "Inconsistencia en la direccion oficial o presencia de 'Rosa 210'"
     $a3Results += "[FALLO] Direccion no conforme"

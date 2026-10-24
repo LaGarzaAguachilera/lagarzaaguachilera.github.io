@@ -149,7 +149,7 @@ DrawStickerText $gMaster "LA VERDADERA CURA DE LA CRUDA" $fontFootBrand $brushOr
 
 $fontFootLoc = MakeFont "Segoe UI" 17 ([System.Drawing.FontStyle]::Bold)
 $brushLimeNeon = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(74, 222, 128))
-$gMaster.DrawString("COLONIA FLORES, TAMPICO * PEDIDOS WHATSAPP: 833 252 09 88", $fontFootLoc, $brushLimeNeon, [float]540, [float]1840, $sfCenter)
+$gMaster.DrawString("TAMPICO Y CIUDAD MADERO * PEDIDOS WHATSAPP: 833 252 09 88", $fontFootLoc, $brushLimeNeon, [float]540, [float]1840, $sfCenter)
 
 $bmpMaster.Save("$baseDir\herramientas\spooky_branding_overlay.png", [System.Drawing.Imaging.ImageFormat]::Png)
 $gMaster.Dispose()
@@ -355,9 +355,9 @@ $brushComm = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(2
 $penComm = [System.Drawing.Pen]::new([System.Drawing.Color]::FromArgb(251, 191, 36), 4)
 DrawRoundedRectangle $gSub4 $brushComm $penComm $rectComm 28
 
-# Schedule
+# Delivery area
 $fontSchedule = MakeFont "Segoe UI Black" 27 ([System.Drawing.FontStyle]::Bold)
-DrawStickerText $gSub4 "SABADOS Y DOMINGOS * 1:00 PM A 5:00 PM" $fontSchedule $brushYellow $penOutlineDark 540 1315 $sfCenter
+DrawStickerText $gSub4 "TAMPICO Y CIUDAD MADERO * PEDIDOS POR WHATSAPP" $fontSchedule $brushYellow $penOutlineDark 540 1315 $sfCenter
 
 # Freshness Promise
 $fontPromise = MakeFont "Segoe UI" 19 ([System.Drawing.FontStyle]::Bold)
@@ -374,7 +374,7 @@ $fontWaNum = MakeFont "Segoe UI Black" 52 ([System.Drawing.FontStyle]::Bold)
 $fontWaLoc = MakeFont "Segoe UI" 19 ([System.Drawing.FontStyle]::Bold)
 DrawStickerText $gSub4 "!APARTA TU PEDIDO POR WHATSAPP!" $fontWaCall $brushWhite $penOutlineDark 540 1455 $sfCenter
 DrawStickerText $gSub4 "WA: 833 252 09 88" $fontWaNum $brushYellow $penOutlineDark 540 1528 $sfCenter
-$gSub4.DrawString("COLONIA FLORES, TAMPICO * !RUTAS ACTIVAS!", $fontWaLoc, $brushWhite, [float]540, [float]1595, $sfCenter)
+$gSub4.DrawString("ENVIOS EN TAMPICO Y MADERO * !RUTAS ACTIVAS!", $fontWaLoc, $brushWhite, [float]540, [float]1595, $sfCenter)
 
 $bmpSub4.Save("$baseDir\herramientas\spooky_sub4.png", [System.Drawing.Imaging.ImageFormat]::Png)
 $gSub4.Dispose()

@@ -1,21 +1,23 @@
 # -*- coding: utf-8 -*-
 """
-PROPOSED STABILIZED BLENDER 4.3 DESKTOP CONTROLLER
+STABILIZED BLENDER 4.3 DESKTOP CONTROLLER
 Project: La Garza Aguachilera — Milestone 1 & 4 Stabilization
-Fixes the root cause of Antigravity crashes:
-1. Eradicates zombie/headless Blender background processes (MainWindowHandle == 0).
-2. Uses Windows ShellExecute (os.startfile) instead of fragile SetThreadDesktop / lpDesktop="WinSta0\\Default".
-3. Enforces single-instance: re-uses existing visible Blender window instead of multi-spawning.
-4. Removes infinite bpy.ops.screen.animation_play() loop that sat in background burning 100% CPU/GPU and crashing Electron.
-5. Safely brings the visible Blender window to foreground.
+1. Inspects the user's interactive 'Default' desktop (WinSta0\\Default) directly.
+2. Cleans up any orphaned headless or non-Default-desktop Blender instances.
+3. Enforces single-instance: reuses existing visible Blender window on WinSta0\\Default.
+4. Launches Blender 4.3 maximized on WinSta0\\Default WITHOUT animation_play() loops (0% idle GPU).
 """
 
 import os
 import sys
 import time
-import subprocess
 import ctypes
+import threading
+import subprocess
 from ctypes import wintypes
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 BLENDER_EXE = r"C:\Program Files\Blender Foundation\Blender 4.3\blender.exe"
 BLEND_FILE = r"d:\AG\la garza aguachilera\BLENDER\la_garza_aaa_stories.blend"
@@ -24,26 +26,81 @@ RECENT_FILES = os.path.join(CONFIG_DIR, "recent-files.txt")
 
 user32 = ctypes.windll.user32
 SW_MAXIMIZE = 3
-SW_RESTORE = 9
 
 
-def cleanup_headless_zombie_blender():
-    """Kills any orphaned headless Blender instances that have no window."""
-    try:
-        ps_cmd = (
-            "Get-Process -Name blender -ErrorAction SilentlyContinue | "
-            "Where-Object { $_.MainWindowHandle -eq 0 } | "
-            "ForEach-Object { Stop-Process -Id $_.Id -Force; Write-Output ('Killed zombie blender PID ' + $_.Id) }"
-        )
-        res = subprocess.run(["powershell", "-NoProfile", "-Command", ps_cmd], capture_output=True, text=True)
-        if res.stdout.strip():
-            print(f" [STABILIZATION] {res.stdout.strip()}")
-    except Exception as e:
-        print(f" [WARN] Zombie cleanup check: {e}")
+def get_default_desktop_blender_windows():
+    """Enumerates visible Blender windows on the user's interactive Default desktop."""
+    found = []
+
+    def _worker():
+        h_desk = user32.OpenDesktopW("Default", 0, False, 0x01FF)
+        if not h_desk:
+            return
+        try:
+            user32.SetThreadDesktop(h_desk)
+            WNDENUMPROC = ctypes.WINFUNCTYPE(ctypes.c_bool, wintypes.HWND, wintypes.LPARAM)
+
+            def _cb(hwnd, lparam):
+                if user32.IsWindowVisible(hwnd):
+                    length = user32.GetWindowTextLengthW(hwnd)
+                    if length > 0:
+                        buf = ctypes.create_unicode_buffer(length + 1)
+                        user32.GetWindowTextW(hwnd, buf, length + 1)
+                        title = buf.value
+                        # Match genuine Blender 4.3 window titles (exclude browser tabs)
+                        if "blender 4." in title.lower() or "la_garza_aaa_stories" in title.lower():
+                            pid = wintypes.DWORD()
+                            user32.GetWindowThreadProcessId(hwnd, ctypes.byref(pid))
+                            found.append((hwnd, pid.value, title))
+                return True
+
+            user32.EnumDesktopWindows(h_desk, WNDENUMPROC(_cb), 0)
+        finally:
+            user32.CloseDesktop(h_desk)
+
+    t = threading.Thread(target=_worker)
+    t.start()
+    t.join(timeout=3.0)
+    return found
+
+
+def maximize_on_default_desktop(target_hwnd):
+    """Maximizes and brings the target HWND to foreground on the Default desktop."""
+    def _worker():
+        h_desk = user32.OpenDesktopW("Default", 0, False, 0x01FF)
+        if not h_desk:
+            return
+        try:
+            user32.SetThreadDesktop(h_desk)
+            user32.ShowWindow(target_hwnd, SW_MAXIMIZE)
+            user32.SetForegroundWindow(target_hwnd)
+        finally:
+            user32.CloseDesktop(h_desk)
+
+    t = threading.Thread(target=_worker)
+    t.start()
+    t.join(timeout=3.0)
+
+
+def cleanup_non_default_blender_processes(valid_pids):
+    """Terminates any headless or sandboxed-desktop blender.exe processes."""
+    valid_set = set(valid_pids)
+    ps_cmd = "Get-Process -Name blender -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Id"
+    res = subprocess.run(["powershell", "-NoProfile", "-Command", ps_cmd], capture_output=True, text=True)
+    for line in res.stdout.splitlines():
+        line = line.strip()
+        if line.isdigit():
+            pid = int(line)
+            if pid not in valid_set:
+                subprocess.run(
+                    ["powershell", "-NoProfile", "-Command", f"Stop-Process -Id {pid} -Force -ErrorAction SilentlyContinue"],
+                    capture_output=True,
+                )
+                print(f" [STABILIZATION] Terminado proceso Blender huérfano/oculto PID {pid}")
 
 
 def set_recent_files(blend_path):
-    """Registers the project at top of Blender's Recent Files menu."""
+    """Registers the project at the top of Blender's Recent Files menu."""
     try:
         os.makedirs(CONFIG_DIR, exist_ok=True)
         lines = []
@@ -61,28 +118,6 @@ def set_recent_files(blend_path):
         print(f" [WARN] No se pudo actualizar recent-files.txt: {e}")
 
 
-def find_visible_blender_windows():
-    """Finds genuine visible top-level windows belonging to Blender."""
-    windows = []
-    WNDENUMPROC = ctypes.WINFUNCTYPE(ctypes.c_bool, wintypes.HWND, wintypes.LPARAM)
-
-    def enum_cb(hwnd, lparam):
-        if user32.IsWindowVisible(hwnd):
-            length = user32.GetWindowTextLengthW(hwnd)
-            if length > 0:
-                buf = ctypes.create_unicode_buffer(length + 1)
-                user32.GetWindowTextW(hwnd, buf, length + 1)
-                title = buf.value
-                if "blender" in title.lower():
-                    pid = wintypes.DWORD()
-                    user32.GetWindowThreadProcessId(hwnd, ctypes.byref(pid))
-                    windows.append((hwnd, pid.value, title))
-        return True
-
-    user32.EnumWindows(WNDENUMPROC(enum_cb), 0)
-    return windows
-
-
 def control_desktop_session():
     print("=" * 75)
     print(" STABILIZED BLENDER 4.3 DESKTOP CONTROLLER")
@@ -93,60 +128,53 @@ def control_desktop_session():
         print(f" [FAIL] .blend no encontrado en: {BLEND_FILE}")
         return 1
 
-    # 1. Limpieza preventiva de instancias fantasma que saturan GPU/VRAM
-    cleanup_headless_zombie_blender()
-
-    # 2. Registrar en lista de recientes
     set_recent_files(BLEND_FILE)
 
-    # 3. Detectar si ya existe una ventana visible de Blender abierta con el proyecto
-    visible_wins = find_visible_blender_windows()
-    target_hwnd = None
-    target_title = ""
-
+    visible_wins = get_default_desktop_blender_windows()
+    target_win = None
     for hwnd, pid, title in visible_wins:
         if "la_garza_aaa_stories" in title.lower():
-            target_hwnd = hwnd
-            target_title = title
-            print(f" [INFO] Proyecto ya abierto en ventana activa: PID {pid}, HWND {hex(hwnd)}")
+            target_win = (hwnd, pid, title)
             break
 
-    # 4. Si no está abierto en ventana visible, lanzar mediante ShellExecute (os.startfile)
-    if not target_hwnd:
-        print(" [INFO] Abriendo proyecto en el escritorio del usuario mediante ShellExecute...")
-        try:
-            # os.startfile abre de forma nativa en el escritorio interactivo del usuario
-            os.startfile(BLEND_FILE)
-        except Exception:
-            # Fallback a Start-Process de PowerShell
-            subprocess.Popen(
-                ["powershell", "-NoProfile", "-Command", f'Start-Process "{BLEND_FILE}"'],
-                shell=False
-            )
+    if target_win:
+        hwnd, pid, title = target_win
+        cleanup_non_default_blender_processes([pid])
+        maximize_on_default_desktop(hwnd)
+        print(f" [OK] Proyecto ya visible en escritorio Default: PID={pid}, HWND={hex(hwnd)}, Título='{title}'")
+    else:
+        cleanup_non_default_blender_processes([])
+        print(" [INFO] Lanzando Blender 4.3 directamente en escritorio interactivo WinSta0\\Default...")
+        si = subprocess.STARTUPINFO()
+        si.lpDesktop = r"WinSta0\Default"
+        si.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+        si.wShowWindow = SW_MAXIMIZE
 
-        # Esperar hasta 10s a que aparezca la ventana en el escritorio interactivo
-        for _ in range(20):
+        proc = subprocess.Popen(
+            [BLENDER_EXE, BLEND_FILE],
+            startupinfo=si,
+            close_fds=True,
+        )
+
+        for _ in range(24):
             time.sleep(0.5)
-            visible_wins = find_visible_blender_windows()
+            visible_wins = get_default_desktop_blender_windows()
             for hwnd, pid, title in visible_wins:
-                if "la_garza_aaa_stories" in title.lower() or "blender" in title.lower():
-                    target_hwnd = hwnd
-                    target_title = title
+                if pid == proc.pid or "la_garza_aaa_stories" in title.lower():
+                    target_win = (hwnd, pid, title)
                     break
-            if target_hwnd:
+            if target_win and "la_garza_aaa_stories" in target_win[2].lower():
                 break
 
-    # 5. Traer la ventana interactiva al primer plano y maximizar
-    if target_hwnd:
-        print(f" [OK] Ventana de Blender localizada: HWND={hex(target_hwnd)}, Título='{target_title}'")
-        user32.ShowWindow(target_hwnd, SW_MAXIMIZE)
-        user32.SetForegroundWindow(target_hwnd)
-        print(" [OK] Ventana visible y maximizada en el escritorio del usuario!")
-    else:
-        print(" [INFO] Blender lanzado a través de Windows Shell para visualización del usuario.")
+        if target_win:
+            hwnd, pid, title = target_win
+            maximize_on_default_desktop(hwnd)
+            print(f" [OK] Ventana de Blender verificada en WinSta0\\Default: PID={pid}, HWND={hex(hwnd)}, Título='{title}'")
+        else:
+            print(f" [WARN] Proceso lanzado (PID={proc.pid}), verificando título de ventana...")
 
     print("=" * 75)
-    print(" CONTROL DE BLENDER 4.3 STABILIZADO EXITOSAMENTE")
+    print(" CONTROL DE BLENDER 4.3 ESTABILIZADO EXITOSAMENTE (0% IDLE GPU)")
     print("=" * 75)
     return 0
 

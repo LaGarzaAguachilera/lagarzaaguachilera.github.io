@@ -21,13 +21,13 @@ Este documento contiene la información lista para copiar y pegar al dar de alta
 🛵 Entregas a domicilio fines de semana (Sáb y Dom)
 📦 Preventa abierta entre semana 👇
 🔗 [Enlace a Landing Page / WhatsApp]
-📍 Colonia Flores, Tampico, Tamaulipas
+📍 Tampico y Ciudad Madero, Tamaulipas
 ```
 * **Enlace en el perfil (Link in Bio):**  
   `https://wa.me/528332520988` *(o el enlace de la página web que creamos).*
 * **Estructura de Historias Destacadas (Highlights):**
   1. **🦐 Menú:** Foto y video del Tostiaguachile Verde Tradicional ($170 MXN) con aguacate cremoso, salsas de la casa y 4 complementos.
-  2. **🛵 Envíos:** Mapa y zonas de cobertura con salida desde Colonia Flores ($25-$70 según colonia).
+  2. **🛵 Envíos:** Mapa y zonas de cobertura con Cobertura: Tampico y Ciudad Madero ($25-$70 según colonia).
   3. **📦 Cómo se Sirve:** Video de 10 segundos mostrando las 2 modalidades: preparado al momento frente a ti o con complemento por separado.
   4. **⭐ Reseñas:** Capturas de pantalla de clientes felices en WhatsApp elogiando la frescura, el aguacate y el crunch.
   5. **📍 Preventa:** Explicación de cómo apartar cupo entre semana.
@@ -61,7 +61,7 @@ Este documento contiene la información lista para copiar y pegar al dar de alta
 * **Botón Principal de la Página:** `Enviar mensaje de WhatsApp`
 * **Descripción Corta:**
 ```text
-Tostiaguachiles preparados al momento con camarón fresco, aguacate cremoso, salsas de la casa y botana crujiente. Entregas fines de semana en Tampico y Cd. Madero. Salida desde Col. Flores.
+Tostiaguachiles preparados al momento con camarón fresco, aguacate cremoso, salsas de la casa y botana crujiente. Entregas fines de semana en Tampico y Cd. Madero. Salida desde Tampico.
 ```
 * **Información Detallada (Sección Información):**
 ```text
@@ -75,7 +75,7 @@ Nacemos con la misión de traerte el verdadero sabor del aguachile costeño en s
 ✅ 2 modalidades de servicio: preparado al momento frente a ti en ruta o con complemento por separado para delivery/crocancia.
 ✅ Precio oficial único: $170 MXN la orden bien reportada.
 🛵 Servicio a domicilio: Sábados y Domingos en Tampico y Cd. Madero.
-📍 Colonia Flores, Tampico, Tamaulipas
+📍 Tampico y Ciudad Madero, Tamaulipas
 📲 Pedidos y Preventa: WhatsApp 833-252-09-88
 ```
 * **Post Fijado (Pinned Post) de Bienvenida:**
@@ -98,5 +98,5 @@ En La Garza Aguachilera preparamos el auténtico Tostiaguachile Verde Tradiciona
 👉 Haz clic aquí para armar tu pedido por WhatsApp: 
 https://wa.me/528332520988?text=Hola!%20Quiero%20apartar%20mi%20tostiaguachile%20para%20este%20fin%20de%20semana
 
-📍 Salida: Colonia Flores, Tampico.
+📍 Salida: Tampico y Ciudad Madero.
 ```

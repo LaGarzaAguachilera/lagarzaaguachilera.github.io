@@ -131,7 +131,7 @@ KEYFRAME_SPECS = [
         "scene": 6,
         "type": "end",
         "title": "Cierre Comercial - Ficha Tecnica Comercial $170 MXN",
-        "desc": "Ficha comercial televisiva estilo Cartoon Network con horarios (Sab-Dom 1-5 PM), Col. Flores Tampico, WhatsApp 833 252 09 88 y precio $170 MXN.",
+        "desc": "Ficha comercial televisiva estilo Cartoon Network con horarios (Sab-Dom 1-5 PM), Tampico Tampico, WhatsApp 833 252 09 88 y precio $170 MXN.",
         "cache_pattern": "scene6_end_*.jpg",
         "ref": "card_real_food.png"
     }
@@ -266,8 +266,8 @@ def generar_scene6_end_comercial(base_image_path: Path, output_png_path: Path):
     bot_h = 340
     draw.rounded_rectangle([35, bot_y, TARGET_WIDTH - 35, bot_y + bot_h], radius=30, fill=(18, 24, 38, 245), outline=(50, 220, 120, 255), width=6)
     draw_text_stroke(draw, "HORARIO Y UBICACION", (TARGET_WIDTH // 2, bot_y + 45), font_md, (255, 215, 0), stroke_w=4)
-    draw_text_stroke(draw, "Sabados y Domingos | 1:00 PM a 5:00 PM", (TARGET_WIDTH // 2, bot_y + 105), font_bd, (255, 255, 255), stroke_w=3)
-    draw_text_stroke(draw, "Ubicacion: Col. Flores, Tampico", (TARGET_WIDTH // 2, bot_y + 160), font_bd, (180, 240, 255), stroke_w=3)
+    draw_text_stroke(draw, "Sabados y Domingos | Servicio en Rutas Activas", (TARGET_WIDTH // 2, bot_y + 105), font_bd, (255, 255, 255), stroke_w=3)
+    draw_text_stroke(draw, "Ubicacion: Tampico y Madero", (TARGET_WIDTH // 2, bot_y + 160), font_bd, (180, 240, 255), stroke_w=3)
 
     # Boton WhatsApp
     wa_y = bot_y + 250

@@ -1,7 +1,7 @@
 # 🛡️ MANUAL MAESTRO DE CONTROL DE CALIDAD TOTAL, BROMATOLOGÍA Y EXCELENCIA OPERACIONAL
 ## LA GARZA AGUACHILERA — TAMPICO & CIUDAD MADERO
 **Versión:** 1.0 Oficial | **Fecha:** Octubre 2026 | **Área:** Dirección General de Calidad & Operaciones  
-**Base Operativa:** Colonia Flores, Tampico, Tamaulipas  
+**Base Operativa:** Tampico y Ciudad Madero, Tamaulipas  
 **Marco Normativo de Referencia:** NOM-251-SSA1-2009 / Sistema HACCP / Buenas Prácticas de Manufactura (BPM)
 
 ---
@@ -19,7 +19,7 @@ En **La Garza Aguachilera**, la calidad no es un departamento ni una lista de de
 
 ## ❄️ 2. PROTOCOLO DE INOCUIDAD, BROMATOLOGÍA Y CADENA DE FRÍO
 
-Conforme a la norma mexicana **NOM-251-SSA1-2009** (*Prácticas de higiene para el proceso de alimentos, bebidas o suplementos alimenticios*) y los principios del Análisis de Peligros y Puntos Críticos de Control (**HACCP**), se establecen los siguientes lineamientos obligatorios para la cocina de producción (Col. Flores) y el transporte a domicilio:
+Conforme a la norma mexicana **NOM-251-SSA1-2009** (*Prácticas de higiene para el proceso de alimentos, bebidas o suplementos alimenticios*) y los principios del Análisis de Peligros y Puntos Críticos de Control (**HACCP**), se establecen los siguientes lineamientos obligatorios para la cocina de producción (Tampico) y el transporte a domicilio:
 
 ```
 +---------------------------------------------------------------------------------+
@@ -205,7 +205,7 @@ flowchart TD
 | Subagente | Clave Interna | Misión Crítica y Alcance Operativo | Frecuencia de Auditoría |
 | :--- | :--- | :--- | :--- |
 | **Auditor de Bromatología y Cadena de Frío** | `qa_bromatologia_frio` | Inspeccionar temperaturas de recepción en cocina (0°-3°C), higiene de vegetales, bitácoras de desinfección bajo NOM-251 y estado del camarón en La Puntilla. | Cada viernes y antes de iniciar turno de fin de semana. |
-| **Auditor de Logística Térmica y Tiempos de Ruta** | `qa_logistica_ruta` | Monitorear hieleras en ruta (0°-4°C), tiempos de traslado desde Col. Flores a colonias clave (Petrolera, Madero, etc.) y planes de contingencia por tráfico o calor extremo. | Durante la jornada de entregas (Sábados y Domingos 1:00 - 5:00 PM). |
+| **Auditor de Logística Térmica y Tiempos de Ruta** | `qa_logistica_ruta` | Monitorear hieleras en ruta (0°-4°C), tiempos de traslado desde Tampico a colonias clave (Petrolera, Madero, etc.) y planes de contingencia por tráfico o calor extremo. | Durante la jornada de entregas (Sábados y Domingos 1:00 - Por Pedido). |
 | **Auditor de Ensamble y Experiencia en Puerta** | `qa_ensamble_puerta` | Auditar la presencia del repartidor, pulcritud de polo/mandil, colocación de guantes de nitrilo negros frente al cliente, técnica de apertura de bolsa y respeto al tiempo límite de 2.5 min. | Monitoreo por muestreo semanal y retroalimentación de clientes. |
 | **Auditor de Consistencia de Marca y Contenidos** | `qa_branding_marketing` | Escaneo estricto de web (`index.html`), redes (TikTok, Instagram, Facebook) y flyers. Eliminar cualquier residuo de Tostitos Rojos, selector de picor o leyendas obsoletas. Verificar que siempre aparezca el Verde Tradicional ($170) y TOSTITOS SALSA VERDE. | Auditoría semanal permanente en archivos y publicaciones. |
 | **Auditor de Satisfacción al Cliente y Retención** | `qa_satisfaccion_postventa` | Supervisar el envío del mensaje de post-venta a los 45 minutos vía WhatsApp, monitorear el Net Promoter Score (NPS), gestionar quejas y aplicar la política de garantía de satisfacción. | Sábados y Domingos a partir de las 2:00 PM y cierre semanal. |

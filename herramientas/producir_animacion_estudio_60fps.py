@@ -294,7 +294,7 @@ def draw_hud_and_equalizer(frame, draw, logo_img, speaker_label, mouth_open, t_s
 
     draw.text((358, 1672), "El producto es preparado frente a usted", font=FONT_FOOTER, fill=(255, 255, 255, 255))
     draw.text((358, 1706), "para corroborar su frescura • Tostitos Salsa Verde", font=FONT_FOOTER, fill=(163, 230, 53, 255))
-    draw.text((358, 1748), "SÁB Y DOM 1:00 A 5:00 PM | Col. Flores, Tampico", font=FONT_FOOTER, fill=(255, 214, 10, 255))
+    draw.text((358, 1748), "PEDIDOS Y ENTREGAS | Tampico y Ciudad Madero", font=FONT_FOOTER, fill=(255, 214, 10, 255))
     draw.text((358, 1790), "📲 PEDIDOS WHATSAPP: 833 252 09 88", font=FONT_SPEAKER, fill=(56, 189, 248, 255))
 
 

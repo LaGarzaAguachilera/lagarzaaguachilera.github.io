@@ -151,7 +151,7 @@ $postFeedTexts = @(
     @{ Text = 'para corroborar su maxima frescura'; Font='Arial'; Size=[float]23; BoxW=[float]940 },
     @{ Text = 'CAMARON FRESCO * SERRANO * PEPINO * LIMON'; Font='Arial'; Size=[float]24 },
     @{ Text = 'ENTREGAS SABADOS Y DOMINGOS A DOMICILIO'; Font='Arial'; Size=[float]22 },
-    @{ Text = 'Colonia Flores, Tampico, Tamaulipas * Cobertura Tampico y Madero'; Font='Arial'; Size=[float]20 }
+    @{ Text = 'Tampico y Ciudad Madero, Tamaulipas * Cobertura Tampico y Madero'; Font='Arial'; Size=[float]20 }
 )
 
 foreach ($t in $postFeedTexts) {
@@ -182,7 +182,7 @@ $periodicTexts = @(
     @{ Post = 'Post 6 (Arena Escolleras)'; Text = 'CUANDO DICEN QUE NO LES GUSTA'; Font='Segoe UI Black'; Size=[float]20.5 },
     @{ Post = 'Post 6 (Arena Escolleras)'; Text = '!HASTA EL MAPACHE SABE CUAL ES EL MAS REPORTADO!'; Font='Segoe UI Black'; Size=[float]17.0 },
     @{ Post = 'Post 7 (Neon Puente)'; Text = '!HIELERAS CARGADAS Y EN RUTA!'; Font='Segoe UI Black'; Size=[float]24.5 },
-    @{ Post = 'Post 7 (Neon Puente)'; Text = 'ZONA 1 (5-10 min): Col. Flores, Altavista, Cascajal, Centro Tampico'; Font='Segoe UI Black'; Size=[float]13.0; MarginLeft=[float]95; LimitRight=[float]1025 },
+    @{ Post = 'Post 7 (Neon Puente)'; Text = 'ZONA 1 (5-10 min): Tampico, Altavista, Cascajal, Centro Tampico'; Font='Segoe UI Black'; Size=[float]13.0; MarginLeft=[float]95; LimitRight=[float]1025 },
     @{ Post = 'Post 7 (Neon Puente)'; Text = 'ZONA 2 (12-18 min): Petrolera, Universidad, Lomas del Chairel, Norte'; Font='Segoe UI Black'; Size=[float]13.0; MarginLeft=[float]95; LimitRight=[float]1025 },
     @{ Post = 'Post 7 (Neon Puente)'; Text = 'ZONA 3 (15-22 min): Cd. Madero, Unidad Nacional, Ampliacion, Miramar'; Font='Segoe UI Black'; Size=[float]13.0; MarginLeft=[float]95; LimitRight=[float]1025 }
 )
@@ -229,7 +229,7 @@ $catalogSafeZoneTexts = @(
     @{ Piece = 'Post 13'; Text = "$($iE)HIELERAS CARGADAS Y EN RUTA!"; Font = 'Segoe UI Black'; Size = [float]21.0 },
     @{ Piece = 'Post 13'; Text = 'COBERTURA TOTAL TAMPICO Y CIUDAD MADERO'; Font = 'Segoe UI Black'; Size = [float]12.5 },
     @{ Piece = 'Post 14'; Text = 'ZONAS Y HORARIOS OFICIALES'; Font = 'Segoe UI Black'; Size = [float]21.0 },
-    @{ Piece = 'Post 14'; Text = "S$($uA)BADOS Y DOMINGOS DE 1:00 PM A 5:00 PM"; Font = 'Segoe UI Black'; Size = [float]12.5 },
+    @{ Piece = 'Post 14'; Text = "S$($uA)BADOS Y DOMINGOS DE Servicio en Rutas Activas"; Font = 'Segoe UI Black'; Size = [float]12.5 },
     @{ Piece = 'Post 15'; Text = "$($iE)$($uU)LTIMOS CUPOS DE LA TARDE!"; Font = 'Segoe UI Black'; Size = [float]21.0 },
     @{ Piece = 'Post 15'; Text = "MARISCO FRESCO DEL D$($uI)A * CUANDO SE ACABA SE CERR$($uO)"; Font = 'Segoe UI Black'; Size = [float]12.5 },
     @{ Piece = 'Post 16'; Text = "EL TOSTIAGUACHILE M$($uA)S REPORTADO"; Font = 'Segoe UI Black'; Size = [float]21.0 },
@@ -559,7 +559,11 @@ $patterns = @(
     '150\s*MXN',
     '150\s*pesos',
     '150%20',
-    'ciento\s*cincuenta'
+    'ciento\s*cincuenta',
+    'colonia\s*flores',
+    'col\.\s*flores',
+    '1:00\s*(?:pm|p\.m\.)\s*a\s*5:00\s*(?:pm|p\.m\.)',
+    'de\s*una\s*a\s*cinco'
 )
 
 $projectRoot = 'd:\AG\la garza aguachilera'

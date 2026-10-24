@@ -181,8 +181,8 @@ else:
     a3_results.append("[FALLO] Menciones insuficientes de $170")
 
 # Ubicación Oficial
-if "Colonia Flores, Tampico" in index_content and not re.search(r'Rosa\s*210', index_content, re.IGNORECASE):
-    a3_results.append("[OK] Ubicación oficial ratificada: 'Colonia Flores, Tampico, Tamaulipas' (0 menciones de Rosa 210)")
+if "Tampico y Ciudad Madero" in index_content and not re.search(r'Rosa\s*210', index_content, re.IGNORECASE) and not re.search(r'Colonia\s*Flores', index_content, re.IGNORECASE):
+    a3_results.append("[OK] Ubicación oficial ratificada: 'Tampico y Ciudad Madero, Tamaulipas' (0 menciones de Rosa 210)")
 else:
     deficiencias.append("Inconsistencia en la dirección oficial o mención de Rosa 210")
     a3_results.append("[FALLO] Dirección no conforme")

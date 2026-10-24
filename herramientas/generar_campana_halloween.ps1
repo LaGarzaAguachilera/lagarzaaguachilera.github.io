@@ -448,13 +448,13 @@ function Render-SpookyFeed($item) {
     # 8. Pie de Página Seguro (Y=968 a 1010, termina antes de Y=1010px, margen inferior >= 70px)
     $fFootA = [System.Drawing.Font]::new("Segoe UI Black", 11.5, [System.Drawing.FontStyle]::Bold)
     $bFootYellow = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(254, 240, 138))
-    $footStrA = "ENTREGAS S$($uA)BADOS Y DOMINGOS (1:00 PM - 5:00 PM) $($bul) RUTAS ANUNCIADAS EN REDES"
+    $footStrA = "ENTREGAS S$($uA)BADOS Y DOMINGOS (Rutas Activas) $($bul) RUTAS ANUNCIADAS EN REDES"
     $g.DrawString($footStrA, $fFootA, $bFootYellow, [float]540, [float]974, $sfCenter)
     $fFootA.Dispose(); $bFootYellow.Dispose()
 
     $fFootB = [System.Drawing.Font]::new("Segoe UI", 10.5, [System.Drawing.FontStyle]::Bold)
     $bFootGray = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(226, 232, 240))
-    $footStrB = "Colonia Flores, Tampico, Tamaulipas $($bul) Preventa y apartados por WhatsApp"
+    $footStrB = "Tampico y Ciudad Madero, Tamaulipas $($bul) Preventa y apartados por WhatsApp"
     $g.DrawString($footStrB, $fFootB, $bFootGray, [float]540, [float]998, $sfCenter)
     $fFootB.Dispose(); $bFootGray.Dispose()
 
@@ -609,12 +609,12 @@ function Render-SpookyStory($item) {
     # 10. Safe Footer (Y=1480 a 1530 — estrictamente antes de Y: 1570px)
     $fFootS1 = [System.Drawing.Font]::new("Segoe UI Black", 11.5, [System.Drawing.FontStyle]::Bold)
     $bYellowS = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(254, 240, 138))
-    $g.DrawString("S$($uA)BADOS Y DOMINGOS (1:00 PM - 5:00 PM) $($bul) RUTAS ANUNCIADAS EN REDES", $fFootS1, $bYellowS, [float]540, [float]1488, $sfCenter)
+    $g.DrawString("S$($uA)BADOS Y DOMINGOS (Rutas Activas) $($bul) RUTAS ANUNCIADAS EN REDES", $fFootS1, $bYellowS, [float]540, [float]1488, $sfCenter)
     $fFootS1.Dispose(); $bYellowS.Dispose()
 
     $fFootS2 = [System.Drawing.Font]::new("Segoe UI", 10.5, [System.Drawing.FontStyle]::Bold)
     $bGrayS = [System.Drawing.SolidBrush]::new([System.Drawing.Color]::FromArgb(203, 213, 225))
-    $g.DrawString("Colonia Flores, Tampico, Tamaulipas $($bul) Cobertura Tampico y Ciudad Madero", $fFootS2, $bGrayS, [float]540, [float]1512, $sfCenter)
+    $g.DrawString("Tampico y Ciudad Madero, Tamaulipas $($bul) Cobertura Tampico y Ciudad Madero", $fFootS2, $bGrayS, [float]540, [float]1512, $sfCenter)
     $fFootS2.Dispose(); $bGrayS.Dispose()
 
     # ==========================================================================

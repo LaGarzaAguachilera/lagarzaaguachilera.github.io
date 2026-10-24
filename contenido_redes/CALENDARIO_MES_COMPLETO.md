@@ -3,8 +3,8 @@
 **Ciclo Completo:** 1 Mes (4 Semanas Temáticas / 16 Piezas Estratégicas)  
 **Canales:** Meta (Facebook & Instagram Feed/Stories/Reels) y TikTok  
 **Canal de Conversión Oficial:** WhatsApp directo **833 252 09 88**  
-**Base Oficial de Operaciones:** Colonia Flores, Tampico, Tamaulipas  
-**Horario Operativo:** Sábados y Domingos de 1:00 PM a 5:00 PM (Rutas anunciadas en redes sociales)
+**Base Oficial de Operaciones:** Tampico y Ciudad Madero, Tamaulipas  
+**Horario Operativo:** Envíos y Entregas por Pedido (Rutas anunciadas en redes sociales)
 
 ---
 
@@ -14,7 +14,7 @@ Todas las publicaciones, guiones, textos en pantalla y copys contenidos en este 
 
 | Parámetro de Marca | Regla Obligatoria | Criterio de Blindaje de Marca |
 | :--- | :--- | :--- |
-| **Ubicación Oficial** | `Colonia Flores, Tampico, Tamaulipas` | Exclusivamente Colonia Flores; prohibida cualquier otra dirección o nomenclatura. |
+| **Ubicación Oficial** | `Tampico y Ciudad Madero, Tamaulipas` | Exclusivamente Tampico y Ciudad Madero; prohibida cualquier otra dirección o nomenclatura. |
 | **Modelo Operativo** | Entrega a domicilio con ensamble en vivo al instante | Servicio directo al consumidor con preparación en tiempo real. |
 | **Método de Ensamble** | Ensamble en vivo en puerta para garantizar crunch | Prohibido enviar ingredientes premontados o líquidos desfasados; ensamble al segundo. |
 | **Variedad de Totopo** | Exclusivamente **Tostitos Salsa Verde** | Prohibida cualquier otra variedad o presentación genérica de totopo. |
@@ -41,7 +41,7 @@ Todas las publicaciones, guiones, textos en pantalla y copys contenidos en este 
 | **10** | Sem 3 | ASMR Crunch Extremo | Reel 9:16 + Teaser 1:1 | Estimulación Auditiva Pura | Miércoles (Sem 3) | Retención viral y antojo sensorial |
 | **11** | Sem 3 | El Oro Verde Esmeralda | Macro 1:1 + Clip 9:16 | Alquimia de Serrano y Limón Colima | Viernes (Sem 3) | Valor gastronómico artesanal |
 | **12** | Sem 3 | El Ritual Dominical Jaibo | Lifestyle 1:1 + Story 9:16 | Sofá, Clima/Abanico y Tostiaguachile | Domingo (Sem 3) | Confort hogareño sin cocinar |
-| **13** | Sem 4 | ¡Hieleras Cargadas! | Operativo 1:1 + Clip 9:16 | Salida de Ruta desde Colonia Flores | Sábado 12:30 PM | Activación en tiempo real, salida moto |
+| **13** | Sem 4 | ¡Hieleras Cargadas! | Operativo 1:1 + Clip 9:16 | Salida de Ruta desde Tampico y Ciudad Madero | Sábado 12:30 PM | Activación en tiempo real, salida moto |
 | **14** | Sem 4 | Zonas y Horarios Oficiales | Mapa Guía 1:1 + Story FAQ 9:16 | Cobertura Tampico & Ciudad Madero | Jueves (Sem 4) | Cero fricción logística, ruta clara |
 | **15** | Sem 4 | Alerta de Últimos Cupos | Urgencia 1:1 + Story Countdown | FOMO Ético / Producto del Día | Domingo 3:00 PM | Acelerador de compra antes de cierre |
 | **16** | Sem 4 | La Gran Familia Jaiba | Mosaico 1:1 + Reel Social | Comunidad, Reseñas y Agradecimiento | Lunes (Fin de Ciclo) | Prueba social, apertura de preventa |
@@ -78,8 +78,8 @@ En La Garza Aguachilera preparamos una auténtica chulada que parece de otra gal
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
 💰 Solo $170 MXN la bolsa bien reportada.
-🛵 Entregas a domicilio SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
-📍 Salimos desde Colonia Flores, Tampico, Tamaulipas.
+🛵 Entregas a domicilio Envíos por WhatsApp.
+📍 Salimos desde Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡Que no te abduzcan el antojo! Aparta tus bolsas por WhatsApp al 833 252 09 88 antes de que los aliens se lleven los cupos del fin.
 ```
@@ -116,8 +116,8 @@ Aquí no andamos con pequeñeces ni regateos:
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
 💰 $170 MXN la bolsa bien servida.
-🛵 Rutas activas SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM) en Tampico y Ciudad Madero.
-📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
+🛵 Rutas activas Envíos por WhatsApp en Tampico y Ciudad Madero.
+📍 Base de salida: Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡No te quedes con el antojo, jaibo! Manda WhatsApp al 833 252 09 88 y deja asegurado tu pedido para este fin de semana.
 ```
@@ -152,8 +152,8 @@ Y cuando se trata de botanear en serio con este calorón, ellos no aceptan imita
 Nada de totopos aguados ni promesas dudosas: puro sabor costeño crujiente en cada bocado, una auténtica chulada.
 
 💰 $170 MXN la bolsa bien reportada.
-🛵 Entregas en Tampico y Ciudad Madero sábados y domingos (1:00 PM a 5:00 PM).
-📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
+🛵 Entregas en Tampico y Ciudad Madero Envíos por WhatsApp.
+📍 Base de salida: Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡Mañana cerramos la lista de compras del fin! Mándanos mensajito por WhatsApp al 833 252 09 88 y asegura tus bolsas.
 ```
@@ -190,8 +190,8 @@ El OVNI de Miramar, Juancho de la Laguna del Carpintero y el Mapache de las Esco
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
 💰 Solo $170 MXN la bolsa bien reportada.
-🛵 Rutas activas SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
-📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
+🛵 Rutas activas Envíos por WhatsApp.
+📍 Base de salida: Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡Sé parte de la leyenda! Aparta tu orden por WhatsApp directo al 833 252 09 88.
 ```
@@ -233,8 +233,8 @@ Resultado: Tostitos 100% crujientes (jamás remojados ni batidos) y la certeza a
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
 💰 $170 MXN la bolsa bien reportada.
-🛵 Entregas a domicilio SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
-📍 Salimos desde Colonia Flores, Tampico, Tamaulipas.
+🛵 Entregas a domicilio Envíos por WhatsApp.
+📍 Salimos desde Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡La preventa de la semana ya está abierta! Escríbenos por WhatsApp al 833 252 09 88.
 ```
@@ -250,7 +250,7 @@ Resultado: Tostitos 100% crujientes (jamás remojados ni batidos) y la certeza a
 * **3 Hooks Virales de Apertura:**
   - *Hook 1 (Impacto Climático):* "Afuera estamos a 38 grados con humedad... pero adentro de esta hielera el camarón está como en el polo norte ❄️"
   - *Hook 2 (Ingeniería de Frío):* "El secreto para que el camarón llegue firme y tronador con el calorón de Tampico."
-  - *Hook 3 (Transparencia Total):* "Así cuidamos la inocuidad del marisco desde Colonia Flores hasta tu domicilio."
+  - *Hook 3 (Transparencia Total):* "Así cuidamos la inocuidad del marisco desde Tampico y Ciudad Madero hasta tu domicilio."
 * **Dirección Visual & B-Roll:**
   - *Fondo:* Azul hielo ártico con cristales de escarcha, vapor frío y degradado a negro profundo.
   - *Composición:* Esquema visual de la hielera hermética con termómetro digital marcando 2°C, hielo cristalino y recipientes grado alimenticio.
@@ -270,8 +270,8 @@ No usamos mochilas de tela caliente ni recipientes expuestos al sol: protegemos 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
 💰 $170 MXN la bolsa con TOSTITOS SALSA VERDE y ~100g de camarón.
-🛵 Entregas SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
-📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
+🛵 Entregas Envíos por WhatsApp.
+📍 Base de salida: Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡Pide con total confianza y seguridad! Escríbenos por WhatsApp al 833 252 09 88.
 ```
@@ -307,8 +307,8 @@ Carne firme, jugosa y abundante que se siente en cada mordida, acompañada de pe
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
 💰 Solo $170 MXN la bolsa bien reportada.
-🛵 Entregas SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM) en Tampico y Madero.
-📍 Salida desde Colonia Flores, Tampico, Tamaulipas.
+🛵 Entregas Envíos por WhatsApp en Tampico y Madero.
+📍 Salida desde Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡Asegura tu porción de marisco fresco de esta semana! Manda WhatsApp al 833 252 09 88.
 ```
@@ -343,8 +343,8 @@ Nuestro repartidor llega a tu domicilio en Tampico o Ciudad Madero, abre la bols
 ¿El resultado? Un crujido seco, potente y adictivo desde el primer bocado hasta el último camarón. ¡Una chulada de adeveras!
 
 💰 $170 MXN la bolsa bien reportada.
-🛵 Entregas a domicilio SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
-📍 Salimos desde Colonia Flores, Tampico, Tamaulipas.
+🛵 Entregas a domicilio Envíos por WhatsApp.
+📍 Salimos desde Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡Comprueba el verdadero crunch! Mándanos WhatsApp al 833 252 09 88 y reserva tus bolsas.
 ```
@@ -384,8 +384,8 @@ Jaibo que se respeta sabe que la resaca no se quita con pastillas: se cura con e
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
 💰 $170 MXN la bolsa bien servida y reportada, una chulada salvavidas.
-🛵 Estamos en ruta hoy en Tampico y Ciudad Madero (1:00 PM a 5:00 PM).
-📍 Salida desde Colonia Flores, Tampico, Tamaulipas.
+🛵 Estamos en ruta hoy en Tampico y Ciudad Madero (Servicio en Rutas Activas).
+📍 Salida desde Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡Pídelo directo a tu cama o tu sillón! Escríbenos por WhatsApp al 833 252 09 88 antes de que se agote la ruta del día.
 ```
@@ -421,8 +421,8 @@ Sin aditivos raros, sin congelados insípidos: pura frescura costeña lista para
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
 💰 Solo $170 MXN la bolsa bien reportada, qué chulada.
-🛵 Entregas a domicilio SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM) en Tampico y Madero.
-📍 Salida desde Colonia Flores, Tampico, Tamaulipas.
+🛵 Entregas a domicilio Envíos por WhatsApp en Tampico y Madero.
+📍 Salida desde Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡Haz sonar tu timbre con este manjar! Manda WhatsApp al 833 252 09 88.
 ```
@@ -458,8 +458,8 @@ Picante por naturaleza, acidito en su punto exacto y con el ADN costeño que ama
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
 💰 $170 MXN la bolsa bien reportada.
-🛵 Entregas SÁBADOS y DOMINGOS (1:00 PM a 5:00 PM).
-📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
+🛵 Entregas Envíos por WhatsApp.
+📍 Base de salida: Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡Aparta tu pedido antes de que se agote la molienda del fin de semana! Escríbenos por WhatsApp al 833 252 09 88.
 ```
@@ -495,8 +495,8 @@ Te llevamos el Tostiaguachile Verde Tradicional listo para disfrutar directo de 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
 💰 Solo $170 MXN la bolsa bien reportada, qué chulada.
-🛵 Rutas activas hoy en Tampico y Ciudad Madero hasta las 5:00 PM.
-📍 Salida desde Colonia Flores, Tampico, Tamaulipas.
+🛵 Rutas activas hoy en Tampico y Ciudad Madero por pedido.
+📍 Salida desde Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡Manda mensaje por WhatsApp al 833 252 09 88 y te lo llevamos volando hasta tu puerta!
 ```
@@ -511,36 +511,36 @@ Te llevamos el Tostiaguachile Verde Tradicional listo para disfrutar directo de 
 
 ---
 
-### 📌 PIEZA 13 — ¡Hieleras Cargadas!: Salida de Ruta desde Colonia Flores
+### 📌 PIEZA 13 — ¡Hieleras Cargadas!: Salida de Ruta desde Tampico y Ciudad Madero
 * **Formato:** Flyer Operativo Cuadrado (1:1 / 1080 x 1080 px) y Vertical Clip Dinámico (9:16 / 1080 x 1920 px)
 * **Objetivo de Marketing:** Anunciar el banderazo de salida de las motos generando sensación de inmediatez y apetito en tiempo real.
 * **3 Hooks Virales de Apertura:**
-  - *Hook 1 (En Vivo / Acción):* "¡Arrancan motores! Las hieleras ya van saliendo de Colonia Flores 🛵💨"
+  - *Hook 1 (En Vivo / Acción):* "¡Arrancan motores! Las hieleras ya van saliendo de Tampico y Ciudad Madero 🛵💨"
   - *Hook 2 (Atención Local):* "Si ves esta mochila térmica rodando por tu colonia... hoy te toca comer con ganas."
   - *Hook 3 (Aviso de Ruta):* "Rutas de fin de semana activadas en Tampico y Ciudad Madero."
 * **Dirección Visual & B-Roll:**
-  - *Fondo:* Mapa estilizado de la zona conurbada con trazos de luz neón partiendo desde Colonia Flores por Av. Hidalgo, Ejército Mexicano y Boulevard Adolfo López Mateos.
+  - *Fondo:* Mapa estilizado de la zona conurbada con trazos de luz neón partiendo desde Tampico y Ciudad Madero por Av. Hidalgo, Ejército Mexicano y Boulevard Adolfo López Mateos.
   - *Stickers & Composición:* Trío tampiqueño (OVNI, Juancho y Mapache) vestidos con banderines de salida rápida.
   - *Texto en Pantalla:* *"🛵 HIELERAS CARGADAS: SALIDA DE RUTA EN TAMPICO Y MADERO"*.
-  - *Badge:* *«EN RUTA ACTIVA: 1:00 PM A 5:00 PM 🛵⏱️»*.
+  - *Badge:* *«EN RUTA ACTIVA: Servicio en Rutas Activas 🛵⏱️»*.
 * **Caption Completo para Redes:**
 ```text
 ¡HIELERAS CARGADAS Y SALIENDO A RUTA! 🛵💨🦐🌊
 
 Las motos de La Garza Aguachilera ya están en la calle llevando el sabor más reportado de la zona conurbada:
 
-📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
-🛵 Zonas en ruta hoy: Colonia Flores, Altavista, Cascajal, Centro, Petrolera, Universidad, Lomas del Chairel, Unidad Nacional, Ampliación Unidad Nacional, Miramar y alrededores de Ciudad Madero.
+📍 Base de salida: Tampico y Ciudad Madero, Tamaulipas.
+🛵 Zonas en ruta hoy: Tampico y Ciudad Madero, Altavista, Cascajal, Centro, Petrolera, Universidad, Lomas del Chairel, Unidad Nacional, Ampliación Unidad Nacional, Miramar y alrededores de Ciudad Madero.
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
 💰 Solo $170 MXN la bolsa con ~100g de camarón mariposa y TOSTITOS SALSA VERDE.
-⏰ Horario de entrega: De 1:00 PM a 5:00 PM.
+⏰ Horario de entrega: De Servicio en Rutas Activas.
 ⚠️ Cupos limitados por ruta para garantizar la temperatura óptima y el frío del marisco. ¡Una chulada de servicio!
 
 📲 ¡Manda tu ubicación por WhatsApp al 833 252 09 88 para enganchar tu pedido en la siguiente parada!
 ```
-* **Hashtags:** `#RutaActiva #TampicoEnRuta #CdMadero #ServicioADomicilio #LaGarzaAguachilera #TostiaguachileSábado #ColoniaFlores #Tampico`
+* **Hashtags:** `#RutaActiva #TampicoEnRuta #CdMadero #ServicioADomicilio #LaGarzaAguachilera #TostiaguachileSábado #PlayaMiramar #Tampico`
 * **Llamado a la Acción (CTA):** WhatsApp **833 252 09 88**  
   👉 Enlace directo: `https://wa.me/528332520988?text=Hola%20La%20Garza!%20Estoy%20en%20ruta,%20aqui%20te%20mando%20mi%20ubicacion%20para%20mi%20pedido`
 
@@ -554,7 +554,7 @@ Las motos de La Garza Aguachilera ya están en la calle llevando el sabor más r
   - *Hook 2 (Tutorial Exprés):* "3 pasos sencillos para que tus tostiaguachiles toquen a tu puerta este fin de semana."
   - *Hook 3 (Claridad Total):* "Horarios, zonas y paradas en Tampico y Madero: todo lo que necesitas saber."
 * **Dirección Visual & B-Roll:**
-  - *Diseño:* Estilo limpio y moderno con 3 tarjetas informativas translúcidas: Días y Horarios (Sábados y Domingos 1:00 PM a 5:00 PM), Zonas Principales de Reparto y Base Oficial en Colonia Flores.
+  - *Diseño:* Estilo limpio y moderno con 3 tarjetas informativas translúcidas: Días y Horarios (Sábados y Domingos Servicio en Rutas Activas), Zonas Principales de Reparto y Base Oficial en Tampico y Ciudad Madero.
   - *Texto en Pantalla:* *"🗺️ GUÍA DE REPARTO: COBERTURA Y HORARIOS FINES DE SEMANA"*.
   - *Badge:* *«LOGÍSTICA OFICIAL LA GARZA ⏱️📍»*.
 * **Caption Completo para Redes:**
@@ -564,8 +564,8 @@ Las motos de La Garza Aguachilera ya están en la calle llevando el sabor más r
 En La Garza Aguachilera cubrimos los puntos clave de Tampico y Ciudad Madero con la máxima puntualidad:
 
 🗓️ DÍAS DE ENTREGA: Sábados y Domingos exclusivamente.
-⏰ HORARIOS DE SERVICIO: De 1:00 PM a 5:00 PM (anunciamos las rutas activas en nuestras redes sociales).
-📍 BASE DE DISTRIBUCIÓN: Colonia Flores, Tampico, Tamaulipas.
+⏰ HORARIOS DE SERVICIO: De Servicio en Rutas Activas (anunciamos las rutas activas en nuestras redes sociales).
+📍 BASE DE DISTRIBUCIÓN: Tampico y Ciudad Madero, Tamaulipas.
 💰 PRECIO OFICIAL: $170 MXN por bolsa (~100g de camarón mariposa y TOSTITOS SALSA VERDE).
 
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
@@ -585,7 +585,7 @@ En La Garza Aguachilera cubrimos los puntos clave de Tampico y Ciudad Madero con
 
 ### 📌 PIEZA 15 — Alerta de Últimos Cupos: El Camarón Fresco del Día Se Agota
 * **Formato:** Urgencia Visual Cuadrada (1:1 / 1080 x 1080 px) y Vertical Story Countdown (9:16 / 1080 x 1920 px)
-* **Objetivo de Marketing:** Disparar el FOMO ético de cierre de jornada dominical para liquidar las órdenes antes de las 5:00 PM.
+* **Objetivo de Marketing:** Disparar el FOMO ético de cierre de jornada dominical para liquidar las órdenes antes de las Por Pedido.
 * **3 Hooks Virales de Apertura:**
   - *Hook 1 (Alerta Inmediata):* "🚨 ALERTA: Nos quedan únicamente 12 bolsas para la última ruta de hoy..."
   - *Hook 2 (Urgencia de Frescura):* "Si estás pensando en pedir al rato... probablemente ya no alcances camarón fresco."
@@ -593,7 +593,7 @@ En La Garza Aguachilera cubrimos los puntos clave de Tampico y Ciudad Madero con
 * **Dirección Visual & B-Roll:**
   - *Fondo:* Degradado de estudio en tonos carmesí oscuro, oro y verde lima con icono de reloj de arena brillante.
   - *Composición:* Fotografía macro del tostiaguachile recién ensamblado con camarones y salsa verde brillante.
-  - *Texto en Pantalla:* *"⏳ ÚLTIMOS CUPOS DE LA TARDE: CERRAMOS A LAS 5:00 PM"*.
+  - *Texto en Pantalla:* *"⏳ ÚLTIMOS CUPOS DE LA TARDE: cupos limitados por pedido"*.
   - *Badge:* *«ÚLTIMAS BOLSAS DISPONIBLES HOY ⏳🔥»*.
 * **Caption Completo para Redes:**
 ```text
@@ -607,8 +607,8 @@ Compramos el camarón fresco de costa exclusivamente para el fin de semana y no 
 💥 Auténticos TOSTITOS SALSA VERDE ultra crujientes.
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
 
-🛵 Últimos recorridos de hoy en Tampico y Ciudad Madero (servicio hasta las 5:00 PM).
-📍 Salida desde Colonia Flores, Tampico, Tamaulipas.
+🛵 Últimos recorridos de hoy en Tampico y Ciudad Madero (servicio por pedido).
+📍 Salida desde Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¡No te quedes viendo las fotos con el estómago vacío! Manda WhatsApp volando al 833 252 09 88 y asegura tu entrega antes de que se agote.
 ```
@@ -635,7 +635,7 @@ Compramos el camarón fresco de costa exclusivamente para el fin de semana y no 
 
 Ver la emoción de nuestros comensales cuando el repartidor abre la hielera y monta su Tostiaguachile Verde Tradicional frente a su puerta es nuestra mayor satisfacción.
 
-Gracias a cada vecino de Colonia Flores, Altavista, Cascajal, Petrolera, Universidad, Unidad Nacional y Playa Miramar que confió en La Garza Aguachilera durante todo este mes. ¡Qué chulada de comunidad!
+Gracias a cada vecino de Tampico y Ciudad Madero, Altavista, Cascajal, Petrolera, Universidad, Unidad Nacional y Playa Miramar que confió en La Garza Aguachilera durante todo este mes. ¡Qué chulada de comunidad!
 
 Nuestra promesa sigue firme y sin cambios:
 ✨ El producto es preparado frente a usted para corroborar su frescura ✨
@@ -643,8 +643,8 @@ Nuestra promesa sigue firme y sin cambios:
 🟢 Salsa verde serrano artesanal y mucho limón Colima.
 💥 TOSTITOS SALSA VERDE con el crujido intacto por $170 MXN.
 
-🛵 Nos vemos el próximo sábado y domingo de 1:00 PM a 5:00 PM.
-📍 Base de salida: Colonia Flores, Tampico, Tamaulipas.
+🛵 Nos vemos el próximo sábado y domingo de Servicio en Rutas Activas.
+📍 Base de salida: Tampico y Ciudad Madero, Tamaulipas.
 
 📲 ¿Quieres asegurar tu lugar con anticipación? ¡La preventa para el próximo fin de semana ya está abierta en WhatsApp al 833 252 09 88!
 ```
@@ -670,7 +670,7 @@ Nuestra promesa sigue firme y sin cambios:
 
 ### 3.3 Para Control de Calidad y Despliegue (M9 — QA Team)
 - Ejecutar `auditar_multimedia_qa.ps1` y confirmar código de retorno `0`.
-- Comprobar ausencia absoluta de términos prohibidos y validar la dirección oficial `"Colonia Flores, Tampico, Tamaulipas"`.
+- Comprobar ausencia absoluta de términos prohibidos y validar la dirección oficial `"Tampico y Ciudad Madero, Tamaulipas"`.
 - Sincronizar en GitHub Pages (`https://lagarzaaguachilera.github.io/panel_control.html`) con respuesta HTTP `200 OK`.
 
 ---

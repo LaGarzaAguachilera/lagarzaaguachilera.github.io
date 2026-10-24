@@ -151,9 +151,9 @@ Guarda estos atajos con la barra inclinada `/` para contestar en 3 segundos:
 ### `/zonas`
 ```text
 🛵 *TARIFAS DE ENVÍO A DOMICILIO:*
-(Base de salida: Colonia Flores, Tampico, Tamaulipas)
+(Base de salida: Tampico y Ciudad Madero, Tamaulipas)
 
-📍 *Zona 1 ($25 - $30 MXN):* Col. Flores, Guadalupe, Sierra Morena, Altavista, Petrolera, Lomas de Rosales, Jardín, Campbell.
+📍 *Zona 1 ($25 - $30 MXN):* Tampico, Guadalupe, Sierra Morena, Altavista, Petrolera, Lomas de Rosales, Jardín, Campbell.
 📍 *Zona 2 ($35 - $45 MXN):* Centro de Tampico, Cascajal, Tamaulipas, Ampliación Unidad Nacional, Unidad Nacional (Madero), Los Pinos.
 📍 *Zona 3 ($50 - $70 MXN):* Zona Norte (Tampico 2000, Arenal, Tancol), Centro Madero, Playa Miramar.
 

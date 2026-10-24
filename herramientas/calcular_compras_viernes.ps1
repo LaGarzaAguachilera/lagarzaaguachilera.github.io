@@ -19,7 +19,7 @@ $VentaEstimada = $P * 170
 
 Write-Host "================================================================" -ForegroundColor DarkGreen
 Write-Host "  🦐 LA GARZA AGUACHILERA — ALGORITMO DE COMPRAS DE VIERNES" -ForegroundColor Yellow
-Write-Host "  📍 Colonia Flores, Tampico, Tamaulipas | WhatsApp: 833 252 09 88" -ForegroundColor Gray
+Write-Host "  📍 Tampico y Ciudad Madero, Tamaulipas | WhatsApp: 833 252 09 88" -ForegroundColor Gray
 Write-Host "  🎯 Capacidad Oficial: 75 bolsas por tanda (ajustable según producto)" -ForegroundColor Cyan
 Write-Host "================================================================" -ForegroundColor DarkGreen
 Write-Host "Preventas Confirmadas de la Semana  : $Preventas bolsas" -ForegroundColor White

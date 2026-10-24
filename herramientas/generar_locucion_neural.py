@@ -15,7 +15,7 @@ FFMPEG = os.path.join(BASE_DIR, "herramientas", "ffmpeg", "ffmpeg.exe")
 
 PROMO_REGULAR_TEXT = (
     "¡Atención Tampico y Ciudad Madero! En La Garza Aguachilera ya estamos en servicio "
-    "sábados y domingos. Disfruta el auténtico Tostiaguachile Verde con camarón fresco "
+    "Disfruta el auténtico Tostiaguachile Verde con camarón fresco "
     "en mariposa por solo ciento setenta pesos. El producto se prepara frente a ti "
     "para corroborar su frescura. Anunciaremos las rutas de entrega en nuestras redes sociales. "
     "¡Aparta tu pedido por WhatsApp al 833 252 09 88!"
@@ -24,7 +24,7 @@ PROMO_REGULAR_TEXT = (
 PROMO_HALLOWEEN_TEXT = (
     "¡No estaban muertos, solo andaban crudos! Llegó la verdadera cura de Tampico y Madero. "
     "Tostiaguachile Verde Tradicional a solo ciento setenta pesos. Sábados y domingos "
-    "de una a cinco de la tarde. El producto se prepara frente a ti al momento. "
+    "por pedido en WhatsApp. El producto se prepara frente a ti al momento. "
     "¡Aparta tu pedido por WhatsApp al 833 252 09 88!"
 )
 

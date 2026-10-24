@@ -41,7 +41,7 @@ Disfrútalo con tu complemento favorito:
 
 💰 $170 MXN la orden
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS
-📍 Salida: Colonia Flores, Tampico
+📍 Salida: Tampico y Ciudad Madero
 
 📲 ¡Aparta tu orden antes de que se acaben los cupos de esta semana!
 Escríbenos por WhatsApp al 833-252-09-88 o visita el enlace en nuestro perfil.
@@ -67,7 +67,7 @@ Además cuentas con 2 modalidades de servicio:
 Por solo $170 pesos tienes la botana más fresca y adictiva de la zona.
 🛵 Entregas este fin de semana en Tampico y Madero.
 
-Mándanos un WhatsApp al 833-252-09-88 y agenda tu ruta con salida desde Colonia Flores.
+Mándanos un WhatsApp al 833-252-09-88 y agenda tu ruta con Cobertura: Tampico y Ciudad Madero.
 
 #Tostiaguachiles #TampicoMadero #BotanaCostera #CrunchPerfecto #AguachileTampico #FoodPornMexico
 ```
@@ -86,7 +86,7 @@ En La Garza Aguachilera tenemos todo listo para consentirte este SÁBADO y DOMIN
 ✅ Preparado al momento frente a ti o por separado
 ✅ Porción bien reportada por solo $170 MXN
 
-📍 Cobertura en Tampico y Ciudad Madero con salida desde Colonia Flores.
+📍 Cobertura en Tampico y Ciudad Madero con Cobertura: Tampico y Ciudad Madero.
 ⚠️ Recuerda que como compramos el camarón fresco el viernes por la mañana, nuestros cupos son limitados.
 
 📲 ¡No te quedes sin tu orden! Mándanos mensajito directo o al WhatsApp 833-252-09-88 para apartar tu horario de entrega.
@@ -109,7 +109,7 @@ Te tenemos la solución definitiva en 3 pasos:
 🥨 Con Tostitos Salsa Verde, Flamin' Hot, Totopos o Galletas
 💰 $170 MXN la orden
 
-🛵 Rutas activas hoy en Tampico y Madero desde Colonia Flores.
+🛵 Rutas activas hoy en Tampico y Madero desde Tampico y Ciudad Madero.
 Escríbenos rápido al 833-252-09-88 antes de que cierre la última ruta de la tarde.
 
 #ParaRevivir #DomingoTampico #CrudaLevantate #Tostiaguachiles #LaGarzaAguachilera #TampicoHermoso

@@ -1,7 +1,7 @@
 # Dictamen Pericial de Calidad Total e Infraestructura Digital
 ## Empresa Auditora de Control de Calidad — La Garza Aguachilera
 
-> **Fecha de Auditoría:** 2026-10-23 21:37:37
+> **Fecha de Auditoría:** 2026-10-24 13:19:43
 > **Ámbito de Inspección:** Ecosistema Web, Panel de Control, Contenido Audiovisual, Segmentación Socioeconómica y Repositorio Digital.
 > **Estado de Deficiencias:** 0 encontradas.
 
@@ -17,11 +17,13 @@
 - [OK] Asset verificado con cache-busting en index.html: clean_juancho.png?v=170
 - [OK] Asset verificado con cache-busting en index.html: clean_mapache.png?v=170
 - [OK] Asset verificado con cache-busting en index.html: clean_ovni.png?v=170
+- [OK] Asset verificado con cache-busting en index.html: VIDEOS/spot_la_garza_aaa_blender_rtx4060.mp4?v=170
 - [OK] Asset verificado con cache-busting en index.html: VIDEOS/animacion_la_garza_episodio_crudos_60fps.mp4?v=170
 - [OK] Asset verificado con cache-busting en index.html: La garza aguachilera.jpeg?v=170
 - [OK] Viewport responsive presente en index.html
 - [OK] Tag <video> HTML5 presente en index.html
 - [OK] Asset verificado con cache-busting en panel_control.html: La garza aguachilera.jpeg?v=170
+- [OK] Asset verificado con cache-busting en panel_control.html: VIDEOS/spot_la_garza_aaa_blender_rtx4060.mp4?v=170
 - [OK] Asset verificado con cache-busting en panel_control.html: contenido_redes/merchandising/gorras/gorra_01_caballero_formal_trucker.png?v=170
 - [OK] Asset verificado con cache-busting en panel_control.html: contenido_redes/merchandising/gorras/gorra_02_universitaria_streetwear.png?v=170
 - [OK] Asset verificado con cache-busting en panel_control.html: contenido_redes/merchandising/gorras/gorra_03_dama_trucker_rosa.png?v=170
@@ -86,8 +88,8 @@
 
 ### 3. Auditoría de Blindaje de Marca, Precios y Legalidad
 - [OK] Cero residuos del precio antiguo ($150) en index.html
-- [OK] Precio oficial $170 MXN ratificado (18 menciones en index.html)
-- [OK] Ubicación oficial ratificada: 'Colonia Flores, Tampico, Tamaulipas' (0 menciones de Rosa 210)
+- [OK] Precio oficial $170 MXN ratificado (21 menciones en index.html)
+- [OK] Ubicación oficial ratificada: 'Tampico y Ciudad Madero, Tamaulipas' (0 menciones de Rosa 210)
 - [OK] Enlace oficial de Facebook verificado con mibextid
 
 ### 4. Auditoría de Multimedia, Video 60FPS y Paquete ZIP
@@ -95,9 +97,9 @@
 - [OK] Tasa de cuadros: 60.0 FPS constantes verificados por telemetría
 - [OK] Audio master: AAC estéreo con diseño sonoro y auto-ducking
 - [OK] Resolución video promocional: 1080x1920 Full HD (9:16 vertical)
-- [OK] Bitrate de video promocional: 5663 kbps (>= 4000 kbps verificado)
+- [OK] Bitrate de video promocional: 6065 kbps (>= 4000 kbps verificado)
 - [OK] Audio de video promocional: AAC estéreo verificado
-- [OK] Paquete maestro ZIP: 86.89 MB (Dentro de los límites de GitHub < 100 MB)
+- [OK] Paquete maestro ZIP: 88.17 MB (Dentro de los límites de GitHub < 100 MB)
 - [OK] Regeneración física verificada en disco ($170 MXN): flyer_portada_verde.png
 - [OK] Regeneración física verificada en disco ($170 MXN): flyer_post_verde.png
 - [OK] Regeneración física verificada en disco ($170 MXN): flyer_historia_verde.png

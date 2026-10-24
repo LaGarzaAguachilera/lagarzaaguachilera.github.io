@@ -3,7 +3,7 @@
 **Documento Maestro de Gobernanza y Despliegue Operativo IA**  
 **Versión:** 1.0 Oficial | **Fecha:** Octubre 2026  
 **Director General de IA & Operaciones:** Agente Orquestador Supremo  
-**Base de Mando Operativa:** Colonia Flores, Tampico, Tamaulipas (C.P. 89220)  
+**Base de Mando Operativa:** Tampico y Ciudad Madero, Tamaulipas (C.P. 89220)  
 **Línea Oficial WhatsApp:** +52 833 252 09 88  
 
 ---
@@ -71,7 +71,7 @@ La flota opera bajo el mando directo del **Agente Orquestador Supremo (`orquesta
 ```
 ===================================================================================================
                  🦅 AGENTE ORQUESTADOR SUPREMO (`orquestador_supremo_garza`)
-                     Colonia Flores, Tampico, Tamaulipas | WhatsApp: 833 252 09 88
+                     Tampico y Ciudad Madero, Tamaulipas | WhatsApp: 833 252 09 88
 ===================================================================================================
    |
    +--> [ESCUADRÓN MAESTRO DE PRODUCCIÓN DE ANIMACIÓN 60FPS]
@@ -106,10 +106,10 @@ En estricto cumplimiento de la Acción 1 (Depuración de Agentes Duplicados y Op
 
 ---
 
-## 🛵 4. MÓDULO 1: LOGÍSTICA TÁCTICA Y RUTAS DE ENTREGA (desde Colonia Flores, Tampico)
+## 🛵 4. MÓDULO 1: LOGÍSTICA TÁCTICA Y RUTAS DE ENTREGA (desde Tampico y Ciudad Madero)
 
 ### 4.1 Hub Central de Operaciones
-- **Dirección Matriz:** Colonia Flores, Tampico, Tamaulipas.
+- **Dirección Matriz:** Tampico y Ciudad Madero, Tamaulipas.
 - **Punto Geográfico:** A espaldas de la Laguna del Carpintero, con salida directa hacia Av. Hidalgo, Blvd. Adolfo López Mateos y Av. Ejército Mexicano.
 - **Equipamiento de Despacho:** Hieleras térmicas de uso rudo con empaque hermético de neopreno, 4 geles eutécticos congelados a -18°C en base y costados, y termómetro digital con sonda para verificar ≤ 4°C constantes.
 
@@ -124,9 +124,9 @@ En estricto cumplimiento de la Acción 1 (Depuración de Agentes Duplicados y Op
 |         Petrolera, Lomas de Rosales, Faja de Oro, UAT, Unidad Nacional (Madero) |
 |                                     ^                                           |
 |   [ ZONA 1: Inmediata / Centro ]    (0.0 a 3.5 km | 10 - 18 min | $25 - $30 MXN)|
-|         Col. Flores (HUB), Altavista, Cascajal, Centro Tampico, Tolteca         |
+|         Tampico (HUB), Altavista, Cascajal, Centro Tampico, Tolteca         |
 |                                     ^                                           |
-|                 [ HUB CENTRAL: Colonia Flores, Tampico, Tamaulipas ]                         |
+|                 [ HUB CENTRAL: Tampico y Ciudad Madero, Tamaulipas ]                         |
 +---------------------------------------------------------------------------------+
 ```
 
@@ -134,7 +134,7 @@ En estricto cumplimiento de la Acción 1 (Depuración de Agentes Duplicados y Op
 
 | Zona | Radio y Tiempo | Colonias Comprendidas | Vías de Acceso Rápido | Costo Envío | Ventana de Entrega Sugerida |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Zona 1: Inmediata** | 0.0 - 3.5 km<br>10 a 18 min | Col. Flores, Altavista, Cascajal, Centro de Tampico, Del Pueblo, Guadalupe Mainero, Tolteca, Campbell. | Blvd. Adolfo López Mateos, Calle Altamira, Díaz Mirón. | $25 - $30 MXN *(Gratis en pedidos ≥ 3 bolsas)* | Despacho continuo bajo demanda (Sáb/Dom 12:00 a 18:00) |
+| **Zona 1: Inmediata** | 0.0 - 3.5 km<br>10 a 18 min | Tampico, Altavista, Cascajal, Centro de Tampico, Del Pueblo, Guadalupe Mainero, Tolteca, Campbell. | Blvd. Adolfo López Mateos, Calle Altamira, Díaz Mirón. | $25 - $30 MXN *(Gratis en pedidos ≥ 3 bolsas)* | Despacho continuo bajo demanda (Sáb/Dom 12:00 a 18:00) |
 | **Zona 2: Media / Universitaria** | 3.5 - 7.0 km<br>18 a 30 min | Petrolera, Sierra Morena, Lomas de Rosales, Bellavista, Flamboyanes, Los Pinos, Campus UAT / Universidad, Unidad Nacional (Madero). | Av. Hidalgo, Prol. Faja de Oro, Av. Universidad, Av. Monterrey. | $35 - $45 MXN | Rutas en tandas agrupadas (Tanda 1: 13:00 / Tanda 2: 15:00) |
 | **Zona 3: Costera / Norte** | 7.0 - 14.0 km<br>30 a 45 min | Cd. Madero Centro, Ampliación Unidad Nacional, Primero de Mayo, Zona Hotelera / Boulevard Miramar, Escolleras, Tancol / Aeropuerto. | Corredor Urbano Luis Donaldo Colosio, Av. Tamaulipas, Blvd. Costero Miramar, Libramiento Poniente. | $50 - $65 MXN | Rutas programadas en preventa (Salidas únicas: 13:30 y 15:30) |
 
@@ -144,7 +144,7 @@ En estricto cumplimiento de la Acción 1 (Depuración de Agentes Duplicados y Op
 
 ### 4.4 Algoritmo de Asignación y Despacho en Ruta
 1. **Paso 1 (Ingreso de Pedido):** El cliente confirma vía WhatsApp (833 252 09 88). El bot/operador registra calle, colonia, referencia y ubicación GPS.
-2. **Paso 2 (Clasificación Automatizada):** La dirección se evalúa contra la tabla de distancias desde Colonia Flores.
+2. **Paso 2 (Clasificación Automatizada):** La dirección se evalúa contra la tabla de distancias desde Tampico y Ciudad Madero.
 3. **Paso 3 (Agrupación por Sector):** Pedidos de Zona 2 y Zona 3 se agrupan en tandas consecutivas para evitar apertura excesiva de la hielera.
 4. **Paso 4 (Control Térmico):** Se verifica temperatura del lote de camarón en las cubetas antes de salida (0°C a 4°C).
 5. **Paso 5 (Ensamble en Puerta):** El repartidor despliega la mesa y ejecuta el protocolo de ensamble en 120 segundos frente al cliente.
@@ -225,7 +225,7 @@ $VentaEstimada = $P * 170
 
 Write-Host "================================================================" -ForegroundColor DarkGreen
 Write-Host "  🦐 LA GARZA AGUACHILERA — ALGORITMO DE COMPRAS DE VIERNES" -ForegroundColor Yellow
-Write-Host "  📍 Colonia Flores, Tampico, Tamaulipas | WhatsApp: 833 252 09 88" -ForegroundColor Gray
+Write-Host "  📍 Tampico y Ciudad Madero, Tamaulipas | WhatsApp: 833 252 09 88" -ForegroundColor Gray
 Write-Host "  🎯 Capacidad Oficial: 75 bolsas por tanda (ajustable según producto)" -ForegroundColor Cyan
 Write-Host "================================================================" -ForegroundColor DarkGreen
 Write-Host "Preventas Confirmadas de la Semana  : $Preventas bolsas" -ForegroundColor White
@@ -252,4 +252,4 @@ Write-Host "================================================================" -F
    - Precio oficial $170 MXN
    - Tostitos Salsa Verde oficiales
    - Slogan de garantía en vivo: *"El producto es preparado frente a usted para corroborar su frescura"*
-3. **Mesa de Ayuda WhatsApp:** 833 252 09 88. Colonia Flores, Tampico, Tamaulipas.
+3. **Mesa de Ayuda WhatsApp:** 833 252 09 88. Tampico y Ciudad Madero, Tamaulipas.

@@ -1,6 +1,6 @@
 # 🧢 CATÁLOGO OFICIAL DE MERCHANDISING: GORRAS LA GARZA AGUACHILERA
 **Colección Oficial: Tampico & Ciudad Madero, Tamaulipas**  
-**Base Oficial de Operaciones:** Colonia Flores, Tampico, Tamaulipas  
+**Base Oficial de Operaciones:** Tampico y Ciudad Madero, Tamaulipas  
 **WhatsApp Oficial de Pedidos y Preventa:** 833 252 09 88  
 **Enlace Oficial de Facebook:** [La Garza Aguachilera](https://www.facebook.com/share/19mMzwqpL4/?mibextid=wwXIfr)  
 

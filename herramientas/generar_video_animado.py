@@ -157,7 +157,7 @@ SCENES = [
     {
         "id": 6,
         "name": "scene6",
-        "title": "Cierre Comercial Sáb-Dom 1-5 PM, Col. Flores, WhatsApp 833 252 09 88, $170 MXN",
+        "title": "Cierre Comercial Sáb-Dom 1-5 PM, Tampico, WhatsApp 833 252 09 88, $170 MXN",
         "first_frame": str(FRAMES_DIR / "scene6_start.png"),
         "last_frame": str(FRAMES_DIR / "scene6_end.png"),
         "output": str(CLIPS_DIR / "scene6.mp4"),
@@ -167,7 +167,7 @@ SCENES = [
         "prompt": (
             "Smooth 2D Cartoon Network commercial closing title card animation. "
             "Tropical beach kiosk of La Garza Aguachilera with fresh ingredients prepared live in front of customers. "
-            "Displaying the official commercial details: Sábados y Domingos 1:00 PM a 5:00 PM, Col. Flores Tampico, WhatsApp 833 252 09 88, and price $170 MXN. "
+            "Displaying the official commercial details: Sábados y Domingos Servicio en Rutas Activas, Tampico Tampico, WhatsApp 833 252 09 88, and price $170 MXN. "
             "Bouncing cartoon shrimp, spinning Colima lime slices, and clean commercial title card graphics."
         ),
     },

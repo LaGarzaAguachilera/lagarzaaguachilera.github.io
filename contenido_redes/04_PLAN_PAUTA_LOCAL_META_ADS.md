@@ -51,7 +51,7 @@ La eficiencia de este presupuesto depende de no mostrar el anuncio a personas qu
 
 ```mermaid
 flowchart TD
-    A["PIN CENTRAL:<br/>Colonia Flores, Tampico, Tamaulipas"] --> B["RADIO PRINCIPAL: 6 a 7 KM<br/>(Tampico Centro/Norte + Cd. Madero)"]
+    A["PIN CENTRAL:<br/>Tampico y Ciudad Madero, Tamaulipas"] --> B["RADIO PRINCIPAL: 6 a 7 KM<br/>(Tampico Centro/Norte + Cd. Madero)"]
     B --> C["INCLUSIONES PRIORITARIAS:<br/>Petrolera, Guadalupe, Lomas de Rosales,<br/>Unidad Nacional, Centro Madero, Altavista"]
     B --> D["EXCLUSIONES GEOGRÁFICAS:<br/>Pueblo Viejo / Veracruz (Cruce de Río)<br/>Zonas rurales sin ruta de moto"]
 ```
@@ -59,7 +59,7 @@ flowchart TD
 ### 3.1 Coordenadas y Radio Geográfico:
 1. En la sección **Lugares**, selecciona: **"Personas que viven en este lugar"** (no personas que estuvieron recientemente de paso).
 2. Fija un marcador (Drop Pin) en:  
-   📍 **Colonia Flores, Tampico, Tamaulipas**  
+   📍 **Tampico y Ciudad Madero, Tamaulipas**  
    *(Coordenadas aproximadas: Latitud 22.255, Longitud -97.858)*.
 3. Establece el radio en **6 kilómetros** (cubre de forma óptima Tampico y el corazón urbano de Ciudad Madero).
 4. **Exclusiones OBLIGATORIAS:**
@@ -100,7 +100,7 @@ flowchart TD
 
 💰 Solo $170 MXN la bolsa bien servida.
 🛵 Entregas a domicilio SÁBADOS y DOMINGOS.
-📍 Salida desde Col. Flores (Tampico y Madero).
+📍 Salida desde Tampico (Tampico y Madero).
 
 ⚠️ Solo preparamos un número limitado de bolsas por fin de semana con camarón fresco de costa. ¡No te quedes sin la tuya!
 
@@ -168,4 +168,4 @@ Para no desperdiciar ni un solo peso de los $50-$100 diarios:
 2. **Duplicación de Ganadores:** Si el Anuncio en Video 1 genera mensajes a $5.50 MXN y el Anuncio 2 los genera a $12.00 MXN, apagar el Anuncio 2 y concentrar los $100 MXN diarios en el Video 1.
 3. **Pico de Horario:** Los horarios con mayor conversión para comida en Tampico son:
    * Jueves: 6:00 PM a 10:00 PM.
-   * Viernes: 12:30 PM a 3:30 PM y 6:00 PM a 11:00 PM.
+   * Viernes: 12:30 PM a 3:30 PM y 6:00 PM a 1Servicio Activo.
