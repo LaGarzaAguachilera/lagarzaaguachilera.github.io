@@ -1,7 +1,7 @@
 # Dictamen Pericial de Calidad Total e Infraestructura Digital
 ## Empresa Auditora de Control de Calidad — La Garza Aguachilera
 
-> **Fecha de Auditoría:** 2026-10-23 17:04:03
+> **Fecha de Auditoría:** 2026-10-23 21:37:37
 > **Ámbito de Inspección:** Ecosistema Web, Panel de Control, Contenido Audiovisual, Segmentación Socioeconómica y Repositorio Digital.
 > **Estado de Deficiencias:** 0 encontradas.
 
@@ -95,9 +95,9 @@
 - [OK] Tasa de cuadros: 60.0 FPS constantes verificados por telemetría
 - [OK] Audio master: AAC estéreo con diseño sonoro y auto-ducking
 - [OK] Resolución video promocional: 1080x1920 Full HD (9:16 vertical)
-- [OK] Bitrate de video promocional: 4566 kbps (>= 4000 kbps verificado)
+- [OK] Bitrate de video promocional: 5663 kbps (>= 4000 kbps verificado)
 - [OK] Audio de video promocional: AAC estéreo verificado
-- [OK] Paquete maestro ZIP: 86.41 MB (Dentro de los límites de GitHub < 100 MB)
+- [OK] Paquete maestro ZIP: 86.89 MB (Dentro de los límites de GitHub < 100 MB)
 - [OK] Regeneración física verificada en disco ($170 MXN): flyer_portada_verde.png
 - [OK] Regeneración física verificada en disco ($170 MXN): flyer_post_verde.png
 - [OK] Regeneración física verificada en disco ($170 MXN): flyer_historia_verde.png

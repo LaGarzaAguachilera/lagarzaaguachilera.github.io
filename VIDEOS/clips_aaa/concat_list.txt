@@ -1,0 +1,4 @@
+file 'D:/AG/la garza aguachilera/VIDEOS/clips_aaa/sc1.mp4'
+file 'D:/AG/la garza aguachilera/VIDEOS/clips_aaa/sc2.mp4'
+file 'D:/AG/la garza aguachilera/VIDEOS/clips_aaa/sc3.mp4'
+file 'D:/AG/la garza aguachilera/VIDEOS/clips_aaa/sc4.mp4'
